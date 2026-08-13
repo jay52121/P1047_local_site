@@ -143,6 +143,9 @@ const secondaryMap={
 function d(s){return new Date(s+'T00:00:00')}
 function fmt(s){const x=d(s);return x.getFullYear()+'.'+String(x.getMonth()+1).padStart(2,'0')+'.'+String(x.getDate()).padStart(2,'0')}
 function weekText(r){return fmt(r['周开始'])+' — '+fmt(r['周结束'])}
+function startOfWeek(x){const y=new Date(x);const day=y.getDay()||7;y.setDate(y.getDate()-day+1);y.setHours(0,0,0,0);return y}
+function weeksAgo(r){return Math.max(0,Math.round((startOfWeek(new Date())-startOfWeek(d(r['周开始'])))/604800000))}
+function weekSelectText(r){const n=weeksAgo(r);return `${weekText(r)}（${n} week${n===1?'':'s'} ago）`}
 function rel(l,r){return 100*r/l}
 function classify(def,l,r){
  const q=r/l;
@@ -181,7 +184,7 @@ function render(){
   </aside>
  </div>`;
  const L=document.getElementById('leftWeek'),R=document.getElementById('rightWeek');
- ROWS.forEach((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=weekText(r);L.appendChild(o.cloneNode(true));R.appendChild(o)});
+ ROWS.forEach((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=weekSelectText(r);L.appendChild(o.cloneNode(true));R.appendChild(o)});
  L.value=19; R.value=39;
  L.onchange=()=>{if(+L.value>+R.value)R.value=L.value;update()};
  R.onchange=()=>{if(+R.value<+L.value)L.value=R.value;update()};
