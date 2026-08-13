@@ -67,6 +67,7 @@ svg{width:100%;height:100%;overflow:visible}
 .secondaryName{font-size:9px;color:#7f8b9c} .secondaryValue{font-size:16px;font-weight:840;margin-top:3px} .secondaryDelta{font-size:9px;font-weight:800;margin-top:2px}
 .secondaryDelta.good{color:var(--green)} .secondaryDelta.bad{color:var(--red)} .secondaryDelta.neutral{color:#69778a}
 .noteBox{margin-top:11px;padding:9px 10px;background:#f6f8fb;border-radius:10px;color:#667589;font-size:10px;line-height:1.65}
+.emptyState{min-height:420px;display:grid;place-items:center;color:#7a8798;font-size:15px;font-weight:700}
 @media(max-width:1250px){.metricGrid{grid-template-columns:repeat(3,1fr)}.contentGrid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -236,7 +237,12 @@ function renderChart(li,ri,l){
  const events=slice.filter(r=>r['事件标注']).map(r=>fmt(r['周开始']).slice(5)+' · '+r['事件标注']);
  document.getElementById('phaseBar').innerHTML=phases.map(p=>`<span class="phaseChip">${p}</span>`).join('')+events.map(e=>`<span class="phaseChip event">${e}</span>`).join('');
 }
-document.querySelectorAll('.place').forEach(el=>el.onclick=()=>{document.querySelectorAll('.place').forEach(x=>x.classList.remove('active'));el.classList.add('active');activePlace=el.dataset.place;});
+document.querySelectorAll('.place').forEach(el=>el.onclick=()=>{
+ document.querySelectorAll('.place').forEach(x=>x.classList.remove('active'));
+ el.classList.add('active');activePlace=el.dataset.place;
+ if(activePlace==='life')render();
+ else document.getElementById('main').innerHTML='<section class="panel emptyState">选择的人物该数据为空</section>';
+});
 render();
 </script>
 </body></html>
