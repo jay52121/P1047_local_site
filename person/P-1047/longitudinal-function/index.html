@@ -224,12 +224,15 @@ function openVideoSegments(){
 }
 function renderVideoSegments(li,ri){
  const weeks=ROWS.slice(li,ri+1);
- document.getElementById('videoSectionSub').textContent=`所选区间共 ${weeks.length} 周 · 每周对应一个 Pose 播放面板`;
- document.getElementById('videoSegments').innerHTML=weeks.map((r,i)=>`
+ const params=new URLSearchParams();
+ params.set('count',weeks.length);
+ weeks.forEach(r=>params.append('title',weekText(r)));
+ document.getElementById('videoSectionSub').textContent=`所选区间共 ${weeks.length} 周 · 宫格数量与周数一致`;
+ document.getElementById('videoSegments').innerHTML=`
   <article class="poseItem">
-   <div class="posePeriod">第 ${r['周序号']} 周 · ${weekText(r)}</div>
-   <div class="pose-panel"><iframe src="/pose/pose-sessions.html" title="Pose Sessions · ${weekText(r)}" loading="lazy" scrolling="no"></iframe></div>
-  </article>`).join('');
+   <div class="posePeriod">第 ${weeks[0]['周序号']}–${weeks.at(-1)['周序号']} 周 · ${weekText(weeks[0])} 至 ${weekText(weeks.at(-1))}</div>
+   <div class="pose-panel"><iframe src="/pose/pose-sessions.html?${params}" title="Pose Sessions · ${weeks.length} 周" loading="lazy" scrolling="no"></iframe></div>
+  </article>`;
 }
 function renderEvidence(l,r){
  const def=metricDefs[activeMetric];
