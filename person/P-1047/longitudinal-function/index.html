@@ -61,7 +61,7 @@ svg{width:100%;height:100%;overflow:visible}
 .videoButton:hover{transform:translateY(-1px);background:#11744f}.videoButton span{font-size:14px;margin-left:2px}
 .videoSection{margin-top:14px;padding:17px}.videoSection[hidden]{display:none}.videoSectionTitle{font-size:15px;font-weight:820}.videoSectionSub{font-size:10px;color:#8a96a6;margin-top:4px}.videoSegments{margin-top:14px;display:grid;gap:16px}
 .videoLoading{min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#718095;font-size:12px}.videoSpinner{width:30px;height:30px;border:3px solid #dcefe7;border-top-color:var(--green);border-radius:50%;animation:videoSpin .8s linear infinite}@keyframes videoSpin{to{transform:rotate(360deg)}}
-.poseItem{overflow:hidden;border:1px solid var(--line);border-radius:13px;background:#fff}.posePeriod{padding:11px 14px;border-bottom:1px solid var(--line);color:#45546a;font-size:12px;font-weight:800}.pose-panel{width:100%;height:calc(100vh - 64px);min-height:600px;background:#091017}.pose-panel iframe{width:100%;height:100%;border:0;display:block}
+.poseItem{overflow:hidden;border:1px solid var(--line);border-radius:13px;background:#fff}.posePeriod{padding:11px 14px;border-bottom:1px solid var(--line);color:#45546a;font-size:12px;font-weight:800}.pose-panel{width:100%;background:#091017}.pose-panel iframe{width:100%;height:100%;border:0;display:block}
 .detailPanel{padding:15px}
 .detailTitle{font-size:15px;font-weight:820;margin-bottom:3px} .detailExplain{font-size:10px;color:#8290a2;line-height:1.6;margin-bottom:10px}
 .evidence{padding:10px 0;border-top:1px solid #edf0f4} .evidence:first-of-type{border-top:0}
@@ -236,6 +236,7 @@ function scheduleVideoSegments(li,ri){
 }
 function renderVideoSegments(li,ri){
  const weeks=ROWS.slice(li,ri+1);
+ const gridRows=Math.ceil(weeks.length/4),panelHeight=48+gridRows*230+2;
  const params=new URLSearchParams();
  params.set('count',weeks.length);
  params.set('v',Date.now());
@@ -244,7 +245,7 @@ function renderVideoSegments(li,ri){
  document.getElementById('videoSegments').innerHTML=`
   <article class="poseItem">
    <div class="posePeriod">第 ${weeks[0]['周序号']}–${weeks.at(-1)['周序号']} 周 · ${weekText(weeks[0])} 至 ${weekText(weeks.at(-1))}</div>
-   <div class="pose-panel"><iframe src="../../../pose/pose-sessions.html?${params}" title="Pose Sessions · ${weeks.length} 周" loading="lazy" scrolling="no"></iframe></div>
+   <div class="pose-panel" style="height:${panelHeight}px"><iframe src="../../../pose/pose-sessions.html?${params}" title="Pose Sessions · ${weeks.length} 周" loading="lazy" scrolling="no"></iframe></div>
   </article>`;
 }
 function renderEvidence(l,r){
