@@ -230,8 +230,8 @@ function scheduleOpenVideoSegments(){
 function scheduleVideoSegments(li,ri){
  clearTimeout(videoLoadTimer);
  const count=ri-li+1;
- document.getElementById('videoSectionSub').textContent=`正在准备所选区间的 ${count} 周 Pose 数据`;
- document.getElementById('videoSegments').innerHTML='<div class="videoLoading"><span class="videoSpinner"></span><span>正在加载视频数据…</span></div>';
+ document.getElementById('videoSectionSub').textContent=`正在准备所选区间的 ${count} 周核心数据`;
+ document.getElementById('videoSegments').innerHTML='<div class="videoLoading"><span class="videoSpinner"></span><span>正在加载核心数据…</span></div>';
  videoLoadTimer=setTimeout(()=>{renderVideoSegments(li,ri);videoLoadTimer=null},1000);
 }
 function renderVideoSegments(li,ri){
