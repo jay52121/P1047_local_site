@@ -238,6 +238,7 @@ function renderVideoSegments(li,ri){
  const weeks=ROWS.slice(li,ri+1);
  const params=new URLSearchParams();
  params.set('count',weeks.length);
+ params.set('v',Date.now());
  weeks.forEach(r=>params.append('title',weekText(r)));
  document.getElementById('videoSectionSub').textContent=`所选区间共 ${weeks.length} 周 · 宫格数量与周数一致`;
  document.getElementById('videoSegments').innerHTML=`
