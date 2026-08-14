@@ -232,7 +232,7 @@ function scheduleVideoSegments(li,ri){
  const count=ri-li+1;
  document.getElementById('videoSectionSub').textContent=`正在准备所选区间的 ${count} 周 Pose 数据`;
  document.getElementById('videoSegments').innerHTML='<div class="videoLoading"><span class="videoSpinner"></span><span>正在加载视频数据…</span></div>';
- videoLoadTimer=setTimeout(()=>{renderVideoSegments(li,ri);videoLoadTimer=null},5000);
+ videoLoadTimer=setTimeout(()=>{renderVideoSegments(li,ri);videoLoadTimer=null},1000);
 }
 function renderVideoSegments(li,ri){
  const weeks=ROWS.slice(li,ri+1);
