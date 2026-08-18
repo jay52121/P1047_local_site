@@ -45,7 +45,9 @@ def test_protected_demo_assets_are_unchanged():
     for relative, expected in protected.items():
         assert hashlib.sha256((ROOT / relative).read_bytes()).hexdigest() == expected
     attention = hashlib.sha256()
-    for path in sorted((ROOT / "data/demo/C-2308/attention").rglob("*.json")):
+    attention_root = ROOT / "data/demo/C-2308/attention"
+    v1_files = list(attention_root.glob("*-weekly-summary.json")) + [path for directory in attention_root.glob("weeks/*") if directory.is_dir() for path in directory.glob("*.json")]
+    for path in sorted(v1_files):
         attention.update(path.relative_to(ROOT).as_posix().encode())
         attention.update(path.read_bytes())
     assert attention.hexdigest() == "42ae22762243f87aa7d508fcfcd2b68c743153d129e71c8f2827c9a942b0c72a"

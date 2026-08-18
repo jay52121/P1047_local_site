@@ -11,6 +11,10 @@
   "confidencePct": 94.8804,
   "sessions": [
     {
+      "sessionId": "2026-W16-prepare_outing-01",
+      "date": "2026-04-14",
+      "startTime": "09:30",
+      "valid": true,
       "taskType": "prepare_outing",
       "expectedSteps": [
         "change_clothes",
@@ -54,6 +58,10 @@
       }
     },
     {
+      "sessionId": "2026-W16-make_tea-02",
+      "date": "2026-04-16",
+      "startTime": "15:20",
+      "valid": true,
       "taskType": "make_tea",
       "expectedSteps": [
         "prepare_cup",
@@ -93,6 +101,10 @@
       }
     },
     {
+      "sessionId": "2026-W16-organize_medication-03",
+      "date": "2026-04-18",
+      "startTime": "08:10",
+      "valid": true,
       "taskType": "organize_medication",
       "expectedSteps": [
         "open_box",

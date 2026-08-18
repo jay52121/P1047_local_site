@@ -1,4 +1,5 @@
 import { EMOTION_METRICS } from "./domain-defs.js";
+import { mountInteractiveTrend } from "./interactive-trend.js";
 
 const DAY_NAMES = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"];
 const STATE_LABELS = { active: "活跃", low_activity: "低活动", long_still: "长时间静止", unknown: "未知" };
@@ -91,11 +92,19 @@ function summaryEvidence(detail, week) {
 }
 
 export function mountEmotionView({ main, weeks, metricMapping, repository, clock, personId, initialEvidenceOpen = false, onEvidenceChange = () => {} }) {
-  const view = { metric: "behaviorActivation", open: initialEvidenceOpen, token: 0, details: new Map(), visible: new Set(), observer: null, removeClock: null };
-  main.innerHTML = `<section class="panel hero"><div class="heroRow"><div class="weekBox"><div class="weekLabel">历史周</div><select id="emotionLeftWeek" class="weekSelect"></select><div id="emotionLeftMeta" class="weekMeta"></div></div><div class="vs">VS</div><div class="weekBox"><div class="weekLabel">比较周</div><select id="emotionRightWeek" class="weekSelect"></select><div id="emotionRightMeta" class="weekMeta"></div></div></div><div class="summaryLine"><div class="summaryText"><b>心理情绪状态</b> · 相对变化基于左侧所选周</div><div class="summaryPills" id="emotionPills"></div></div></section><div class="metricGrid" id="emotionMetricGrid"></div><div class="contentGrid"><section class="panel chartPanel"><div class="panelHeader"><div><div class="panelTitle" id="emotionChartTitle"></div><div class="panelSub" id="emotionChartSub"></div></div><div class="legend"><span><i style="background:#2f6fe4"></i>周基线</span><span><i style="background:#8ea9db"></i>4周趋势</span><span><i style="background:#ef9b3a"></i>事件</span></div></div><div class="chartWrap"><svg id="emotionChart" viewBox="0 0 900 290"></svg></div><div class="timelineFooter"><div class="phaseBar" id="emotionPhaseBar"></div><button class="videoButton" id="emotionEvidenceButton" type="button" aria-label="展开心理情绪核心数据" title="展开核心数据"><span>▶</span></button></div></section><aside class="panel detailPanel"><div class="detailTitle" id="emotionDetailTitle"></div><div class="detailExplain" id="emotionDetailExplain"></div><div id="emotionEvidenceList"></div><div class="noteBox">本域描述行为中的情绪相关线索，不构成心理或精神疾病诊断。</div></aside></div><section class="panel autoEvidence" id="emotionAutoEvidence" ${view.open ? "" : "hidden"}><div class="evidenceHead"><div><div class="evidenceTitle">核心数据 · 日内行为证据</div><div class="evidenceSub" id="emotionEvidenceSub"></div></div><span class="clockBadge">自动运行</span></div><div class="progressTrack"><span id="emotionProgress"></span></div><div class="emotionGrid" id="emotionGrid"></div></section>`;
+  const view = { metric: "behaviorActivation", open: initialEvidenceOpen, token: 0, details: new Map(), visible: new Set(), observer: null, removeClock: null, trendCleanup: null, mode: "auto", dayIndex: 2, activeWeekId: null };
+  main.innerHTML = `<section class="panel hero"><div class="heroRow"><div class="weekBox"><div class="weekLabel">历史周</div><select id="emotionLeftWeek" class="weekSelect"></select><div id="emotionLeftMeta" class="weekMeta"></div></div><div class="vs">VS</div><div class="weekBox"><div class="weekLabel">比较周</div><select id="emotionRightWeek" class="weekSelect"></select><div id="emotionRightMeta" class="weekMeta"></div></div></div><div class="summaryLine"><div class="summaryText"><b>心理情绪状态</b> · 相对变化基于左侧所选周</div><div class="summaryPills" id="emotionPills"></div></div></section><div class="metricGrid" id="emotionMetricGrid"></div><div class="contentGrid"><section class="panel chartPanel"><div class="panelHeader"><div><div class="panelTitle" id="emotionChartTitle"></div><div class="panelSub" id="emotionChartSub"></div></div><div class="legend"><span><i style="background:#2f6fe4"></i>周基线</span><span><i style="background:#8ea9db"></i>4周趋势</span><span><i style="background:#ef9b3a"></i>事件</span></div></div><div class="chartWrap"><svg id="emotionChart" viewBox="0 0 900 290"></svg></div><div class="timelineFooter"><div class="phaseBar" id="emotionPhaseBar"></div><button class="videoButton" id="emotionEvidenceButton" type="button" aria-label="展开心理情绪核心数据" title="展开核心数据"><span>▶</span></button></div></section><aside class="panel detailPanel"><div class="detailTitle" id="emotionDetailTitle"></div><div class="detailExplain" id="emotionDetailExplain"></div><div id="emotionEvidenceList"></div><div class="noteBox">本域描述行为中的情绪相关线索，不构成心理或精神疾病诊断。</div></aside></div><section class="panel autoEvidence" id="emotionAutoEvidence" ${view.open ? "" : "hidden"}><div class="evidenceHead"><div><div class="evidenceTitle">核心数据 · 日内行为证据</div><div class="evidenceSub" id="emotionEvidenceSub"></div></div><span class="clockBadge">自动运行</span></div><div class="progressTrack"><span id="emotionProgress"></span></div><div class="evidenceNavigator"><div class="weekChips" id="emotionWeekChips"></div><div class="dayChips" id="emotionDayChips"></div><button class="resumeAuto" id="emotionResume" hidden>继续自动运行</button></div><div class="emotionGrid" id="emotionGrid"></div></section>`;
   const left = document.getElementById("emotionLeftWeek"), right = document.getElementById("emotionRightWeek");
   weeks.forEach((week, index) => { const option = document.createElement("option"); option.value = index; option.textContent = selectorText(week); left.appendChild(option.cloneNode(true)); right.appendChild(option); });
   left.value = Math.min(19, weeks.length - 1); right.value = weeks.length - 1;
+
+  function renderNavigator(selected = weeks.slice(+left.value, +right.value + 1)) {
+    if (!view.activeWeekId || !selected.some(week => week.weekId === view.activeWeekId)) view.activeWeekId = selected[0]?.weekId;
+    document.getElementById("emotionWeekChips").innerHTML = selected.map(week => `<button class="${week.weekId === view.activeWeekId ? "active" : ""}" data-emotion-week="${week.weekId}">${week.weekId.slice(5)}</button>`).join("");
+    document.getElementById("emotionDayChips").innerHTML = DAY_NAMES.map((label, index) => `<button class="${index === view.dayIndex ? "active" : ""}" data-emotion-day="${index}">${label.slice(-1)}</button>`).join("");
+    document.querySelectorAll("[data-emotion-week]").forEach(button => button.onclick = () => { view.mode = "manual"; view.activeWeekId = button.dataset.emotionWeek; document.getElementById("emotionResume").hidden = false; renderNavigator(selected); document.querySelector(`[data-week-id="${view.activeWeekId}"]`)?.scrollIntoView({ behavior: "smooth", block: "center" }); });
+    document.querySelectorAll("[data-emotion-day]").forEach(button => button.onclick = () => { view.mode = "manual"; view.dayIndex = +button.dataset.emotionDay; document.getElementById("emotionResume").hidden = false; renderNavigator(selected); view.visible.forEach(card => renderCard(card, 0)); });
+  }
 
   function update() {
     const leftIndex = +left.value, rightIndex = +right.value, leftWeek = weeks[leftIndex], rightWeek = weeks[rightIndex];
@@ -108,6 +117,7 @@ export function mountEmotionView({ main, weeks, metricMapping, repository, clock
     const definition = EMOTION_METRICS[view.metric], chart = chartSvg(weeks, definition, leftIndex, rightIndex);
     document.getElementById("emotionDetailTitle").textContent = `${definition.label} · 变化依据`; document.getElementById("emotionDetailExplain").textContent = definition.description; document.getElementById("emotionEvidenceList").innerHTML = evidenceHtml(definition, leftWeek, rightWeek, metricMapping);
     document.getElementById("emotionChartTitle").textContent = `${definition.label} · 长期变化曲线`; document.getElementById("emotionChartSub").textContent = chart.sub; document.getElementById("emotionChart").innerHTML = chart.svg;
+    const sliceValues = weeks.slice(leftIndex, rightIndex + 1).map(week => relative(leftWeek.indexes[definition.field], week.indexes[definition.field])); view.trendCleanup?.(); view.trendCleanup = mountInteractiveTrend({ wrap: document.getElementById("emotionChart").closest(".chartWrap"), svg: document.getElementById("emotionChart"), weeks: weeks.slice(leftIndex, rightIndex + 1), values: sliceValues, leftIndex: 0, metricLabel: definition.label, higherIsBetter: !definition.risk, onSetLeft: index => { const next=leftIndex+index;left.value=next;if(next>+right.value)right.value=next;update(); }, onSetRight: index => { const next=leftIndex+index;right.value=next;if(next<+left.value)left.value=next;update(); }, onInspect: (index, open) => { if (open && !view.open) document.getElementById("emotionEvidenceButton").click(); } });
     const slice = weeks.slice(leftIndex, rightIndex + 1), phases = [...new Set(slice.map(week => week.phase))], events = slice.filter(week => week.event);
     document.getElementById("emotionPhaseBar").innerHTML = phases.map(label => `<span class="phaseChip">${label}</span>`).join("") + events.map(week => `<span class="phaseChip event">${formatDate(week.weekStart).slice(5)} · ${week.event}</span>`).join("");
     if (view.open) loadEvidence(leftIndex, rightIndex);
@@ -115,11 +125,12 @@ export function mountEmotionView({ main, weeks, metricMapping, repository, clock
 
   async function loadEvidence(leftIndex, rightIndex) {
     const token = ++view.token, selected = weeks.slice(leftIndex, rightIndex + 1), grid = document.getElementById("emotionGrid");
+    renderNavigator(selected);
     document.getElementById("emotionEvidenceSub").textContent = `正在准备所选区间的 ${selected.length} 周核心数据`;
     grid.innerHTML = selected.map(week => `<article class="emotionCard loading" data-week-id="${week.weekId}"><div class="emotionCardHead"><b>${weekText(week)}</b><span>${statusText(week)}</span></div><div class="emotionLoading"><span class="spinner"></span><span>核心数据 loading</span></div></article>`).join("");
     view.observer?.disconnect(); view.visible.clear();
     view.observer = new IntersectionObserver(entries => entries.forEach(entry => entry.isIntersecting ? view.visible.add(entry.target) : view.visible.delete(entry.target)), { rootMargin: "160px" });
-    grid.querySelectorAll(".emotionCard").forEach(card => view.observer.observe(card));
+    grid.querySelectorAll(".emotionCard").forEach(card => { view.observer.observe(card); card.onclick = () => { view.mode = "manual"; view.activeWeekId = card.dataset.weekId; document.getElementById("emotionResume").hidden = false; renderNavigator(selected); }; });
     await wait(1000);
     for (const week of selected) {
       if (token !== view.token) return;
@@ -134,8 +145,8 @@ export function mountEmotionView({ main, weeks, metricMapping, repository, clock
 
   function renderCard(card, phase) {
     const detail = card._emotionDetail, week = card._emotionWeek; if (!detail) return;
-    const dayIndex = Math.min(6, Math.floor(phase / .12));
-    if (phase >= .84) { card.innerHTML = `<div class="emotionCardHead"><b>${weekText(week)}</b><span>${statusText(week)}</span></div>${summaryEvidence(detail, week)}`; return; }
+    const dayIndex = view.mode === "manual" ? view.dayIndex : Math.min(6, Math.floor(phase / .12));
+    if (view.mode === "auto" && phase >= .84) { card.innerHTML = `<div class="emotionCardHead"><b>${weekText(week)}</b><span>${statusText(week)}</span></div>${summaryEvidence(detail, week)}`; return; }
     const unit = detail.units[dayIndex];
     card.innerHTML = `<div class="emotionCardHead"><b>${weekText(week)}</b><span>${statusText(week)}</span></div>${unit ? timelineHtml(unit) : `<div class="emotionNotObserved"><b>${DAY_NAMES[dayIndex]}</b><span>尚未观察</span></div>`}`;
   }
@@ -143,7 +154,8 @@ export function mountEmotionView({ main, weeks, metricMapping, repository, clock
   left.onchange = () => { if (+left.value > +right.value) right.value = left.value; update(); };
   right.onchange = () => { if (+right.value < +left.value) left.value = right.value; update(); };
   document.getElementById("emotionEvidenceButton").onclick = () => { view.open = !view.open; onEvidenceChange(view.open); const section = document.getElementById("emotionAutoEvidence"); section.hidden = !view.open; if (view.open) { loadEvidence(+left.value, +right.value); section.scrollIntoView({ behavior: "smooth", block: "start" }); } else { view.token++; view.observer?.disconnect(); view.visible.clear(); } };
-  view.removeClock = clock.add({ renderAt(phase) { const progress = document.getElementById("emotionProgress"); if (progress) progress.style.width = `${phase * 100}%`; view.visible.forEach(card => renderCard(card, phase)); } });
+  document.getElementById("emotionResume").onclick = () => { view.mode = "auto"; document.getElementById("emotionResume").hidden = true; clock.restart(); };
+  view.removeClock = clock.add({ renderAt(phase) { const progress = document.getElementById("emotionProgress"); if (progress) progress.style.width = `${phase * 100}%`; if (view.mode === "auto") { const next = Math.min(6, Math.floor(phase / .12)); if (next !== view.dayIndex) { view.dayIndex = next; renderNavigator(); } } view.visible.forEach(card => renderCard(card, phase)); } });
   update();
-  return () => { view.token++; view.observer?.disconnect(); view.visible.clear(); view.removeClock?.(); };
+  return () => { view.token++; view.observer?.disconnect(); view.visible.clear(); view.removeClock?.(); view.trendCleanup?.(); };
 }

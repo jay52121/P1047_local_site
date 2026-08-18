@@ -111,7 +111,10 @@ def generate_cognition(scenario_weeks):
             if omission: events.append({"type": "omission", "step": expected[2 if len(expected) > 4 else 1]})
             if prompt: events.append({"type": "prompt", "label": "外部提示"})
             if self_corrected or prompt: events.append({"type": "correction", "label": "返回正确路径"})
-            sessions.append({"taskType": task, "expectedSteps": expected, "actualSteps": actual, "events": events, "result": result})
+            week_start = date.fromisoformat(scenario.week_start)
+            day_offset = min((1, 3, 5, 2)[order], 3 if scenario.status == "in_progress" else 6)
+            task_date = week_start + timedelta(days=day_offset)
+            sessions.append({"sessionId": f"{scenario.week_id}-{task}-{order + 1:02d}", "date": task_date.isoformat(), "startTime": ("09:30", "15:20", "08:10", "17:10")[order], "valid": True, "taskType": task, "expectedSteps": expected, "actualSteps": actual, "events": events, "result": result})
         results = [session["result"] for session in sessions]
         values = lambda key: [result[key] for result in results if result[key] is not None]
         metrics = {

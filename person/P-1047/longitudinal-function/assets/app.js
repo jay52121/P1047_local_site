@@ -3,13 +3,15 @@ import { JsonDataRepository } from "./data-repository.js";
 import { DOMAINS, LIFE_EVIDENCE, LIFE_METRICS, LIFE_SECONDARY } from "./domain-defs.js";
 import { mountEmotionView } from "./emotion-view.js";
 import { mountShowcaseView } from "./showcase-view.js";
+import { mountInteractiveTrend } from "./interactive-trend.js";
 
 const repository = new JsonDataRepository();
 const clock = new AutoClock(12000);
-const state = { personId: "P-1047", domain: "life", metric: "transfer", weeks: [], lifeWeeks: [], evidenceTimer: null, evidenceToken: 0, evidenceOpen: false, removeClockView: null, domainCleanup: null };
+const state = { personId: "P-1047", domain: "life", metric: "transfer", weeks: [], lifeWeeks: [], evidenceTimer: null, evidenceToken: 0, evidenceOpen: false, removeClockView: null, domainCleanup: null, trendCleanup: null };
 
 const main = document.getElementById("main");
 document.getElementById("serverStatus").textContent = location.host || "127.0.0.1:5173";
+document.getElementById("personSwitch").onchange = event => { location.href = event.target.value === "C-2308" ? "/person/C-2308/task-longitudinal/" : "/person/P-1047/longitudinal-function/"; };
 
 function date(value) { return new Date(`${value}T00:00:00`); }
 function formatDate(value) { const d = date(value); return `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")}`; }
@@ -91,6 +93,7 @@ function renderChart(leftIndex, rightIndex) {
   const step = Math.max(1, Math.ceil(slice.length / 6)); for (let index = 0; index < slice.length; index += step) html += `<text x="${x(index)}" y="${H - 14}" text-anchor="middle" font-size="10" fill="#8e9aac">${formatDate(slice[index].weekStart).slice(2, 7)}</text>`;
   const chart = document.getElementById("chart"); chart.setAttribute("viewBox", `0 0 ${W} ${H}`); chart.innerHTML = html; document.getElementById("chartTitle").textContent = `${definition.label} · 长期变化曲线`; document.getElementById("chartSub").textContent = `所选区间 ${slice.length} 周 · 相对左侧所选周 · 最低 ${Math.min(...values).toFixed(1)} / 最高 ${Math.max(...values).toFixed(1)} / 终点 ${values.at(-1).toFixed(1)}`;
   const phases = []; slice.forEach(week => { if (week.phase && phases.at(-1) !== week.phase) phases.push(week.phase); }); const events = slice.filter(week => week.event).map(week => `${formatDate(week.weekStart).slice(5)} · ${week.event}`); document.getElementById("phaseBar").innerHTML = phases.map(value => `<span class="phaseChip">${value}</span>`).join("") + events.map(value => `<span class="phaseChip event">${value}</span>`).join("");
+  state.trendCleanup?.(); state.trendCleanup = mountInteractiveTrend({ wrap: chart.closest(".chartWrap"), svg: chart, weeks: slice, values, leftIndex: 0, metricLabel: definition.label, higherIsBetter: !definition.risk, onSetLeft: index => { const next=leftIndex+index;document.getElementById("leftWeek").value=next;if(next>+document.getElementById("rightWeek").value)document.getElementById("rightWeek").value=next;updateLife(); }, onSetRight: index => { const next=leftIndex+index;document.getElementById("rightWeek").value=next;if(next<+document.getElementById("leftWeek").value)document.getElementById("leftWeek").value=next;updateLife(); }, onInspect: (index, open) => { if (open && !state.evidenceOpen) toggleAutoEvidence(); } });
 }
 
 function scheduleAutoEvidence(leftIndex, rightIndex) {
@@ -101,7 +104,7 @@ function scheduleAutoEvidence(leftIndex, rightIndex) {
 }
 
 async function selectDomain(domain) {
-  state.domainCleanup?.(); state.domainCleanup = null; state.domain = domain; document.querySelectorAll("[data-domain]").forEach(button => button.classList.toggle("active", button.dataset.domain === domain)); clearTimeout(state.evidenceTimer); state.evidenceToken++;
+  state.domainCleanup?.(); state.domainCleanup = null; state.trendCleanup?.(); state.trendCleanup = null; state.domain = domain; document.querySelectorAll("[data-domain]").forEach(button => button.classList.toggle("active", button.dataset.domain === domain)); clearTimeout(state.evidenceTimer); state.evidenceToken++;
   if (!DOMAINS[domain].available) { state.removeClockView?.(); state.removeClockView = null; main.innerHTML = `<section class="panel emptyState">选择的人物该数据为空</section>`; return; }
   if (domain === "life") { state.weeks = state.lifeWeeks; renderLife(); return; }
   if (domain === "attention") {

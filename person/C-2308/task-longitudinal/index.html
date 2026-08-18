@@ -20,17 +20,12 @@
         <p>Child task longitudinal baseline · weekly comparison</p>
         <div class="personMeta" id="personMeta"></div>
       </div>
-      <div class="status" id="serverStatus"></div>
+      <div class="headActions"><label>人物 <select id="personSwitch"><option value="C-2308">CH-2308</option><option value="P-1047">STS-1047</option></select></label><div class="status" id="serverStatus"></div></div>
     </header>
     <div class="shell">
       <aside class="sidebar">
-        <div class="sideTitle">观察任务</div>
-        <button class="place active" data-task="homework"><span class="placeDot"></span>课后作业</button>
-        <button class="place" data-task="piano"><span class="placeDot"></span>钢琴练习</button>
-        <button class="place" data-task="reading"><span class="placeDot"></span>独立阅读</button>
-        <button class="place" data-task="writing"><span class="placeDot"></span>汉字书写</button>
-        <button class="place" data-task="building"><span class="placeDot"></span>益智拼搭</button>
-        <button class="place" data-task="tidying"><span class="placeDot"></span>房间整理</button>
+        <div class="sideTitle">分析域</div>
+        <button class="place" data-domain="life"><span class="placeDot"></span>综合生活能力</button><button class="place" data-domain="emotion"><span class="placeDot"></span>心理情绪状态</button><button class="place" data-domain="cognition"><span class="placeDot"></span>认知行为状态</button><button class="place" data-domain="sleep"><span class="placeDot"></span>睡眠与生活节律</button><button class="place active" data-domain="attention"><span class="placeDot"></span>专注与学习状态</button><button class="place" data-domain="participation"><span class="placeDot"></span>活动与社会参与</button>
       </aside>
       <main class="main" id="main"><section class="panel pageLoading"><span class="spinner"></span><span>正在加载核心数据…</span></section></main>
     </div>

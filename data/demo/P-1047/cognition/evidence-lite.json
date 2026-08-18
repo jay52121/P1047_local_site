@@ -14,6 +14,10 @@
       "confidencePct": 94.2631,
       "sessions": [
         {
+          "sessionId": "2025-W46-prepare_outing-01",
+          "date": "2025-11-11",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -49,6 +53,10 @@
           }
         },
         {
+          "sessionId": "2025-W46-make_tea-02",
+          "date": "2025-11-13",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -79,6 +87,10 @@
           }
         },
         {
+          "sessionId": "2025-W46-organize_medication-03",
+          "date": "2025-11-15",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -137,6 +149,10 @@
       "confidencePct": 93.1872,
       "sessions": [
         {
+          "sessionId": "2025-W47-prepare_outing-01",
+          "date": "2025-11-18",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -172,6 +188,10 @@
           }
         },
         {
+          "sessionId": "2025-W47-make_tea-02",
+          "date": "2025-11-20",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -207,6 +227,10 @@
           }
         },
         {
+          "sessionId": "2025-W47-organize_medication-03",
+          "date": "2025-11-22",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -265,6 +289,10 @@
       "confidencePct": 93.5638,
       "sessions": [
         {
+          "sessionId": "2025-W48-prepare_outing-01",
+          "date": "2025-11-25",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -295,6 +323,10 @@
           }
         },
         {
+          "sessionId": "2025-W48-make_tea-02",
+          "date": "2025-11-27",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -330,6 +362,10 @@
           }
         },
         {
+          "sessionId": "2025-W48-organize_medication-03",
+          "date": "2025-11-29",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -383,6 +419,10 @@
       "confidencePct": 93.3522,
       "sessions": [
         {
+          "sessionId": "2025-W49-prepare_outing-01",
+          "date": "2025-12-02",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -422,6 +462,10 @@
           }
         },
         {
+          "sessionId": "2025-W49-make_tea-02",
+          "date": "2025-12-04",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -457,6 +501,10 @@
           }
         },
         {
+          "sessionId": "2025-W49-organize_medication-03",
+          "date": "2025-12-06",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -515,6 +563,10 @@
       "confidencePct": 94.351,
       "sessions": [
         {
+          "sessionId": "2025-W50-prepare_outing-01",
+          "date": "2025-12-09",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -555,6 +607,10 @@
           }
         },
         {
+          "sessionId": "2025-W50-make_tea-02",
+          "date": "2025-12-11",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -585,6 +641,10 @@
           }
         },
         {
+          "sessionId": "2025-W50-organize_medication-03",
+          "date": "2025-12-13",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -643,6 +703,10 @@
       "confidencePct": 94.3095,
       "sessions": [
         {
+          "sessionId": "2025-W51-prepare_outing-01",
+          "date": "2025-12-16",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -678,6 +742,10 @@
           }
         },
         {
+          "sessionId": "2025-W51-make_tea-02",
+          "date": "2025-12-18",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -713,6 +781,10 @@
           }
         },
         {
+          "sessionId": "2025-W51-organize_medication-03",
+          "date": "2025-12-20",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -774,6 +846,10 @@
       "confidencePct": 93.3182,
       "sessions": [
         {
+          "sessionId": "2025-W52-prepare_outing-01",
+          "date": "2025-12-23",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -804,6 +880,10 @@
           }
         },
         {
+          "sessionId": "2025-W52-make_tea-02",
+          "date": "2025-12-25",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -844,6 +924,10 @@
           }
         },
         {
+          "sessionId": "2025-W52-organize_medication-03",
+          "date": "2025-12-27",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -902,6 +986,10 @@
       "confidencePct": 94.527,
       "sessions": [
         {
+          "sessionId": "2026-W01-prepare_outing-01",
+          "date": "2025-12-30",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -937,6 +1025,10 @@
           }
         },
         {
+          "sessionId": "2026-W01-make_tea-02",
+          "date": "2026-01-01",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -967,6 +1059,10 @@
           }
         },
         {
+          "sessionId": "2026-W01-organize_medication-03",
+          "date": "2026-01-03",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -1020,6 +1116,10 @@
       "confidencePct": 93.9616,
       "sessions": [
         {
+          "sessionId": "2026-W02-prepare_outing-01",
+          "date": "2026-01-06",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -1050,6 +1150,10 @@
           }
         },
         {
+          "sessionId": "2026-W02-make_tea-02",
+          "date": "2026-01-08",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -1085,6 +1189,10 @@
           }
         },
         {
+          "sessionId": "2026-W02-organize_medication-03",
+          "date": "2026-01-10",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -1138,6 +1246,10 @@
       "confidencePct": 93.463,
       "sessions": [
         {
+          "sessionId": "2026-W03-prepare_outing-01",
+          "date": "2026-01-13",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -1168,6 +1280,10 @@
           }
         },
         {
+          "sessionId": "2026-W03-make_tea-02",
+          "date": "2026-01-15",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -1198,6 +1314,10 @@
           }
         },
         {
+          "sessionId": "2026-W03-organize_medication-03",
+          "date": "2026-01-17",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -1256,6 +1376,10 @@
       "confidencePct": 94.8337,
       "sessions": [
         {
+          "sessionId": "2026-W04-prepare_outing-01",
+          "date": "2026-01-20",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -1291,6 +1415,10 @@
           }
         },
         {
+          "sessionId": "2026-W04-make_tea-02",
+          "date": "2026-01-22",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -1321,6 +1449,10 @@
           }
         },
         {
+          "sessionId": "2026-W04-organize_medication-03",
+          "date": "2026-01-24",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -1379,6 +1511,10 @@
       "confidencePct": 93.6267,
       "sessions": [
         {
+          "sessionId": "2026-W05-prepare_outing-01",
+          "date": "2026-01-27",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -1414,6 +1550,10 @@
           }
         },
         {
+          "sessionId": "2026-W05-make_tea-02",
+          "date": "2026-01-29",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -1444,6 +1584,10 @@
           }
         },
         {
+          "sessionId": "2026-W05-organize_medication-03",
+          "date": "2026-01-31",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -1510,6 +1654,10 @@
       "confidencePct": 92.8861,
       "sessions": [
         {
+          "sessionId": "2026-W06-prepare_outing-01",
+          "date": "2026-02-03",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -1562,6 +1710,10 @@
           }
         },
         {
+          "sessionId": "2026-W06-make_tea-02",
+          "date": "2026-02-05",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -1614,6 +1766,10 @@
           }
         },
         {
+          "sessionId": "2026-W06-organize_medication-03",
+          "date": "2026-02-07",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -1689,6 +1845,10 @@
       "confidencePct": 93.8902,
       "sessions": [
         {
+          "sessionId": "2026-W07-prepare_outing-01",
+          "date": "2026-02-10",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -1729,6 +1889,10 @@
           }
         },
         {
+          "sessionId": "2026-W07-make_tea-02",
+          "date": "2026-02-12",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -1764,6 +1928,10 @@
           }
         },
         {
+          "sessionId": "2026-W07-organize_medication-03",
+          "date": "2026-02-14",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -1822,6 +1990,10 @@
       "confidencePct": 94.9664,
       "sessions": [
         {
+          "sessionId": "2026-W08-prepare_outing-01",
+          "date": "2026-02-17",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -1857,6 +2029,10 @@
           }
         },
         {
+          "sessionId": "2026-W08-make_tea-02",
+          "date": "2026-02-19",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -1897,6 +2073,10 @@
           }
         },
         {
+          "sessionId": "2026-W08-organize_medication-03",
+          "date": "2026-02-21",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -1958,6 +2138,10 @@
       "confidencePct": 93.183,
       "sessions": [
         {
+          "sessionId": "2026-W09-prepare_outing-01",
+          "date": "2026-02-24",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -1993,6 +2177,10 @@
           }
         },
         {
+          "sessionId": "2026-W09-make_tea-02",
+          "date": "2026-02-26",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -2028,6 +2216,10 @@
           }
         },
         {
+          "sessionId": "2026-W09-organize_medication-03",
+          "date": "2026-02-28",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -2103,6 +2295,10 @@
       "confidencePct": 93.5888,
       "sessions": [
         {
+          "sessionId": "2026-W10-prepare_outing-01",
+          "date": "2026-03-03",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -2133,6 +2329,10 @@
           }
         },
         {
+          "sessionId": "2026-W10-make_tea-02",
+          "date": "2026-03-05",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -2168,6 +2368,10 @@
           }
         },
         {
+          "sessionId": "2026-W10-organize_medication-03",
+          "date": "2026-03-07",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -2226,6 +2430,10 @@
       "confidencePct": 94.2702,
       "sessions": [
         {
+          "sessionId": "2026-W11-prepare_outing-01",
+          "date": "2026-03-10",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -2261,6 +2469,10 @@
           }
         },
         {
+          "sessionId": "2026-W11-make_tea-02",
+          "date": "2026-03-12",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -2291,6 +2503,10 @@
           }
         },
         {
+          "sessionId": "2026-W11-organize_medication-03",
+          "date": "2026-03-14",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -2344,6 +2560,10 @@
       "confidencePct": 93.1596,
       "sessions": [
         {
+          "sessionId": "2026-W12-prepare_outing-01",
+          "date": "2026-03-17",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -2374,6 +2594,10 @@
           }
         },
         {
+          "sessionId": "2026-W12-make_tea-02",
+          "date": "2026-03-19",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -2404,6 +2628,10 @@
           }
         },
         {
+          "sessionId": "2026-W12-organize_medication-03",
+          "date": "2026-03-21",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -2467,6 +2695,10 @@
       "confidencePct": 92.6272,
       "sessions": [
         {
+          "sessionId": "2026-W13-prepare_outing-01",
+          "date": "2026-03-24",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -2507,6 +2739,10 @@
           }
         },
         {
+          "sessionId": "2026-W13-make_tea-02",
+          "date": "2026-03-26",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -2542,6 +2778,10 @@
           }
         },
         {
+          "sessionId": "2026-W13-organize_medication-03",
+          "date": "2026-03-28",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -2600,6 +2840,10 @@
       "confidencePct": 94.7177,
       "sessions": [
         {
+          "sessionId": "2026-W14-prepare_outing-01",
+          "date": "2026-03-31",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -2635,6 +2879,10 @@
           }
         },
         {
+          "sessionId": "2026-W14-make_tea-02",
+          "date": "2026-04-02",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -2670,6 +2918,10 @@
           }
         },
         {
+          "sessionId": "2026-W14-organize_medication-03",
+          "date": "2026-04-04",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -2736,6 +2988,10 @@
       "confidencePct": 93.9622,
       "sessions": [
         {
+          "sessionId": "2026-W15-prepare_outing-01",
+          "date": "2026-04-07",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -2766,6 +3022,10 @@
           }
         },
         {
+          "sessionId": "2026-W15-make_tea-02",
+          "date": "2026-04-09",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -2796,6 +3056,10 @@
           }
         },
         {
+          "sessionId": "2026-W15-organize_medication-03",
+          "date": "2026-04-11",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -2866,6 +3130,10 @@
       "confidencePct": 94.8804,
       "sessions": [
         {
+          "sessionId": "2026-W16-prepare_outing-01",
+          "date": "2026-04-14",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -2909,6 +3177,10 @@
           }
         },
         {
+          "sessionId": "2026-W16-make_tea-02",
+          "date": "2026-04-16",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -2948,6 +3220,10 @@
           }
         },
         {
+          "sessionId": "2026-W16-organize_medication-03",
+          "date": "2026-04-18",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -3014,6 +3290,10 @@
       "confidencePct": 95.2216,
       "sessions": [
         {
+          "sessionId": "2026-W17-prepare_outing-01",
+          "date": "2026-04-21",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -3044,6 +3324,10 @@
           }
         },
         {
+          "sessionId": "2026-W17-make_tea-02",
+          "date": "2026-04-23",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -3079,6 +3363,10 @@
           }
         },
         {
+          "sessionId": "2026-W17-organize_medication-03",
+          "date": "2026-04-25",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -3137,6 +3425,10 @@
       "confidencePct": 93.5005,
       "sessions": [
         {
+          "sessionId": "2026-W18-prepare_outing-01",
+          "date": "2026-04-28",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -3167,6 +3459,10 @@
           }
         },
         {
+          "sessionId": "2026-W18-make_tea-02",
+          "date": "2026-04-30",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -3202,6 +3498,10 @@
           }
         },
         {
+          "sessionId": "2026-W18-organize_medication-03",
+          "date": "2026-05-02",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -3260,6 +3560,10 @@
       "confidencePct": 94.9166,
       "sessions": [
         {
+          "sessionId": "2026-W19-prepare_outing-01",
+          "date": "2026-05-05",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -3295,6 +3599,10 @@
           }
         },
         {
+          "sessionId": "2026-W19-make_tea-02",
+          "date": "2026-05-07",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -3330,6 +3638,10 @@
           }
         },
         {
+          "sessionId": "2026-W19-organize_medication-03",
+          "date": "2026-05-09",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -3400,6 +3712,10 @@
       "confidencePct": 94.2028,
       "sessions": [
         {
+          "sessionId": "2026-W20-prepare_outing-01",
+          "date": "2026-05-12",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -3435,6 +3751,10 @@
           }
         },
         {
+          "sessionId": "2026-W20-make_tea-02",
+          "date": "2026-05-14",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -3470,6 +3790,10 @@
           }
         },
         {
+          "sessionId": "2026-W20-organize_medication-03",
+          "date": "2026-05-16",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -3523,6 +3847,10 @@
       "confidencePct": 94.0878,
       "sessions": [
         {
+          "sessionId": "2026-W21-prepare_outing-01",
+          "date": "2026-05-19",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -3558,6 +3886,10 @@
           }
         },
         {
+          "sessionId": "2026-W21-make_tea-02",
+          "date": "2026-05-21",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -3593,6 +3925,10 @@
           }
         },
         {
+          "sessionId": "2026-W21-organize_medication-03",
+          "date": "2026-05-23",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -3656,6 +3992,10 @@
       "confidencePct": 94.1878,
       "sessions": [
         {
+          "sessionId": "2026-W22-prepare_outing-01",
+          "date": "2026-05-26",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -3691,6 +4031,10 @@
           }
         },
         {
+          "sessionId": "2026-W22-make_tea-02",
+          "date": "2026-05-28",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -3721,6 +4065,10 @@
           }
         },
         {
+          "sessionId": "2026-W22-organize_medication-03",
+          "date": "2026-05-30",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -3779,6 +4127,10 @@
       "confidencePct": 93.1376,
       "sessions": [
         {
+          "sessionId": "2026-W23-prepare_outing-01",
+          "date": "2026-06-02",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -3809,6 +4161,10 @@
           }
         },
         {
+          "sessionId": "2026-W23-make_tea-02",
+          "date": "2026-06-04",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -3849,6 +4205,10 @@
           }
         },
         {
+          "sessionId": "2026-W23-organize_medication-03",
+          "date": "2026-06-06",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -3907,6 +4267,10 @@
       "confidencePct": 93.9313,
       "sessions": [
         {
+          "sessionId": "2026-W24-prepare_outing-01",
+          "date": "2026-06-09",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -3942,6 +4306,10 @@
           }
         },
         {
+          "sessionId": "2026-W24-make_tea-02",
+          "date": "2026-06-11",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -3972,6 +4340,10 @@
           }
         },
         {
+          "sessionId": "2026-W24-organize_medication-03",
+          "date": "2026-06-13",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -4038,6 +4410,10 @@
       "confidencePct": 95.1783,
       "sessions": [
         {
+          "sessionId": "2026-W25-prepare_outing-01",
+          "date": "2026-06-16",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -4086,6 +4462,10 @@
           }
         },
         {
+          "sessionId": "2026-W25-make_tea-02",
+          "date": "2026-06-18",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -4121,6 +4501,10 @@
           }
         },
         {
+          "sessionId": "2026-W25-organize_medication-03",
+          "date": "2026-06-20",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -4179,6 +4563,10 @@
       "confidencePct": 93.3159,
       "sessions": [
         {
+          "sessionId": "2026-W26-prepare_outing-01",
+          "date": "2026-06-23",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -4209,6 +4597,10 @@
           }
         },
         {
+          "sessionId": "2026-W26-make_tea-02",
+          "date": "2026-06-25",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -4249,6 +4641,10 @@
           }
         },
         {
+          "sessionId": "2026-W26-organize_medication-03",
+          "date": "2026-06-27",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -4307,6 +4703,10 @@
       "confidencePct": 94.5918,
       "sessions": [
         {
+          "sessionId": "2026-W27-prepare_outing-01",
+          "date": "2026-06-30",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -4342,6 +4742,10 @@
           }
         },
         {
+          "sessionId": "2026-W27-make_tea-02",
+          "date": "2026-07-02",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -4377,6 +4781,10 @@
           }
         },
         {
+          "sessionId": "2026-W27-organize_medication-03",
+          "date": "2026-07-04",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -4447,6 +4855,10 @@
       "confidencePct": 94.2286,
       "sessions": [
         {
+          "sessionId": "2026-W28-prepare_outing-01",
+          "date": "2026-07-07",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -4485,6 +4897,10 @@
           }
         },
         {
+          "sessionId": "2026-W28-make_tea-02",
+          "date": "2026-07-09",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -4515,6 +4931,10 @@
           }
         },
         {
+          "sessionId": "2026-W28-organize_medication-03",
+          "date": "2026-07-11",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -4573,6 +4993,10 @@
       "confidencePct": 94.9942,
       "sessions": [
         {
+          "sessionId": "2026-W29-prepare_outing-01",
+          "date": "2026-07-14",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -4616,6 +5040,10 @@
           }
         },
         {
+          "sessionId": "2026-W29-make_tea-02",
+          "date": "2026-07-16",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -4668,6 +5096,10 @@
           }
         },
         {
+          "sessionId": "2026-W29-organize_medication-03",
+          "date": "2026-07-18",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -4726,6 +5158,10 @@
       "confidencePct": 94.823,
       "sessions": [
         {
+          "sessionId": "2026-W30-prepare_outing-01",
+          "date": "2026-07-21",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -4761,6 +5197,10 @@
           }
         },
         {
+          "sessionId": "2026-W30-make_tea-02",
+          "date": "2026-07-23",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -4796,6 +5236,10 @@
           }
         },
         {
+          "sessionId": "2026-W30-organize_medication-03",
+          "date": "2026-07-25",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -4854,6 +5298,10 @@
       "confidencePct": 95.3402,
       "sessions": [
         {
+          "sessionId": "2026-W31-prepare_outing-01",
+          "date": "2026-07-28",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -4889,6 +5337,10 @@
           }
         },
         {
+          "sessionId": "2026-W31-make_tea-02",
+          "date": "2026-07-30",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -4924,6 +5376,10 @@
           }
         },
         {
+          "sessionId": "2026-W31-organize_medication-03",
+          "date": "2026-08-01",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -4987,6 +5443,10 @@
       "confidencePct": 94.6244,
       "sessions": [
         {
+          "sessionId": "2026-W32-prepare_outing-01",
+          "date": "2026-08-04",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -5017,6 +5477,10 @@
           }
         },
         {
+          "sessionId": "2026-W32-make_tea-02",
+          "date": "2026-08-06",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -5069,6 +5533,10 @@
           }
         },
         {
+          "sessionId": "2026-W32-organize_medication-03",
+          "date": "2026-08-08",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -5144,6 +5612,10 @@
       "confidencePct": 93.8483,
       "sessions": [
         {
+          "sessionId": "2026-W33-prepare_outing-01",
+          "date": "2026-08-11",
+          "startTime": "09:30",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",
@@ -5179,6 +5651,10 @@
           }
         },
         {
+          "sessionId": "2026-W33-make_tea-02",
+          "date": "2026-08-13",
+          "startTime": "15:20",
+          "valid": true,
           "taskType": "make_tea",
           "expectedSteps": [
             "prepare_cup",
@@ -5214,6 +5690,10 @@
           }
         },
         {
+          "sessionId": "2026-W33-organize_medication-03",
+          "date": "2026-08-13",
+          "startTime": "08:10",
+          "valid": true,
           "taskType": "organize_medication",
           "expectedSteps": [
             "open_box",
@@ -5259,6 +5739,10 @@
           }
         },
         {
+          "sessionId": "2026-W33-prepare_outing-04",
+          "date": "2026-08-12",
+          "startTime": "17:10",
+          "valid": true,
           "taskType": "prepare_outing",
           "expectedSteps": [
             "change_clothes",

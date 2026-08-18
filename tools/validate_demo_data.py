@@ -96,6 +96,32 @@ def validate_attention():
             check(abs(cursor - session["durationMin"]) < 0.001, f"{task_id}/{week['weekId']}: segments do not cover task duration")
 
 
+def validate_attention_showcase():
+    base = DATA / "C-2308/attention"
+    summary = load(base / "weekly-summary.json")
+    if not summary:
+        return
+    check(summary.get("calculationVersion") == "v2-attention-demo-1", "attention V2: calculation version mismatch")
+    check(len(summary.get("weeks", [])) == 24, "attention V2: expected 24 weeks")
+    task_variation = {}
+    for week in summary["weeks"]:
+        detail = load(base / "weeks" / f"{week['weekId']}.json")
+        if not detail:
+            continue
+        check(4 <= len(detail["sessions"]) <= 10, f"attention V2/{week['weekId']}: session count must be 4-10")
+        for session in detail["sessions"]:
+            cursor = 0.0
+            for segment in session["segments"]:
+                check(close(segment["startMin"], cursor, 0.001), f"attention V2/{session['sessionId']}: segment gap")
+                cursor = segment["endMin"]
+            check(close(cursor, session["durationMin"], 0.001), f"attention V2/{session['sessionId']}: segments must cover duration")
+            row = task_variation.setdefault(session["taskId"], {"duration": set(), "distraction": set()})
+            row["duration"].add(session["durationMin"]); row["distraction"].add(session["result"]["distractionCount"])
+    for task_id, row in task_variation.items():
+        check(len(row["duration"]) > 5, f"attention V2/{task_id}: duration variation is too small")
+        check({0, 1}.issubset(row["distraction"]) and any(value >= 2 for value in row["distraction"]), f"attention V2/{task_id}: distraction variation is too small")
+
+
 def close(left, right, tolerance=0.01):
     if left is None or right is None:
         return left is None and right is None
@@ -228,6 +254,7 @@ def validate_showcase_domains():
 def main():
     validate_life()
     validate_attention()
+    validate_attention_showcase()
     validate_emotion()
     validate_showcase_domains()
     validate_public_boundary()

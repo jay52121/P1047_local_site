@@ -1,0 +1,569 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "C-2308",
+  "domain": "attention",
+  "weekId": "2026-W31",
+  "weekIndex": 23,
+  "weekStart": "2026-07-27",
+  "weekEnd": "2026-08-02",
+  "status": "complete",
+  "phase": "策略支持恢复期",
+  "event": null,
+  "validSessions": 10,
+  "confidencePct": 92.9695,
+  "sessions": [
+    {
+      "sessionId": "2026-W31-2026-07-27-piano-01",
+      "date": "2026-07-27",
+      "startTime": "15:10",
+      "taskId": "piano",
+      "taskLabel": "钢琴练习",
+      "plannedDurationMin": 20.0208,
+      "durationMin": 20.0208,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 20.0208,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 14.9381,
+          "type": "task_switch"
+        },
+        {
+          "minute": 20.0208,
+          "type": "completion"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 100.0,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 1,
+        "autonomousRecoveryRatePct": 100.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false
+      }
+    },
+    {
+      "sessionId": "2026-W31-2026-07-27-piano-02",
+      "date": "2026-07-27",
+      "startTime": "16:20",
+      "taskId": "piano",
+      "taskLabel": "钢琴练习",
+      "plannedDurationMin": 22.7407,
+      "durationMin": 22.7407,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 22.7407,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 18.2576,
+          "type": "task_switch"
+        },
+        {
+          "minute": 22.7407,
+          "type": "completion"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 99.9999,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 1,
+        "autonomousRecoveryRatePct": 100.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false
+      }
+    },
+    {
+      "sessionId": "2026-W31-2026-07-28-reading-01",
+      "date": "2026-07-28",
+      "startTime": "15:40",
+      "taskId": "reading",
+      "taskLabel": "独立阅读",
+      "plannedDurationMin": 14.4339,
+      "durationMin": 14.4339,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 3.2428,
+          "state": "focused"
+        },
+        {
+          "startMin": 3.2428,
+          "endMin": 5.7038,
+          "state": "off_task"
+        },
+        {
+          "startMin": 5.7038,
+          "endMin": 14.4339,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 3.2428,
+          "type": "distraction",
+          "subtype": "off_task",
+          "order": 1
+        },
+        {
+          "minute": 3.3928,
+          "type": "leave_seat"
+        },
+        {
+          "minute": 14.4339,
+          "type": "completion"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": 3.2428,
+        "focusedRatePct": 82.9499,
+        "distractionCount": 1,
+        "offTaskMin": 2.461,
+        "leaveSeatCount": 1,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 0.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false
+      }
+    },
+    {
+      "sessionId": "2026-W31-2026-07-28-writing-02",
+      "date": "2026-07-28",
+      "startTime": "16:10",
+      "taskId": "writing",
+      "taskLabel": "汉字书写",
+      "plannedDurationMin": 14.6999,
+      "durationMin": 14.6999,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 4.6748,
+          "state": "focused"
+        },
+        {
+          "startMin": 4.6748,
+          "endMin": 5.8885,
+          "state": "deviating"
+        },
+        {
+          "startMin": 5.8885,
+          "endMin": 6.8885,
+          "state": "focused"
+        },
+        {
+          "startMin": 6.8885,
+          "endMin": 8.9846,
+          "state": "deviating"
+        },
+        {
+          "startMin": 8.9846,
+          "endMin": 14.6999,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 4.6748,
+          "type": "distraction",
+          "subtype": "deviating",
+          "order": 1
+        },
+        {
+          "minute": 5.8885,
+          "type": "recovery",
+          "origin": "self"
+        },
+        {
+          "minute": 6.8885,
+          "type": "distraction",
+          "subtype": "deviating",
+          "order": 2
+        },
+        {
+          "minute": 8.9846,
+          "type": "recovery",
+          "origin": "self"
+        },
+        {
+          "minute": 14.6999,
+          "type": "completion"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": 4.6748,
+        "focusedRatePct": 77.484,
+        "distractionCount": 2,
+        "offTaskMin": 3.3098,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 100.0,
+        "recoveryLatencyMin": 1.6549,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false
+      }
+    },
+    {
+      "sessionId": "2026-W31-2026-07-29-reading-01",
+      "date": "2026-07-29",
+      "startTime": "15:40",
+      "taskId": "reading",
+      "taskLabel": "独立阅读",
+      "plannedDurationMin": 16.6119,
+      "durationMin": 16.6119,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 5.3099,
+          "state": "focused"
+        },
+        {
+          "startMin": 5.3099,
+          "endMin": 6.9206,
+          "state": "deviating"
+        },
+        {
+          "startMin": 6.9206,
+          "endMin": 11.5587,
+          "state": "focused"
+        },
+        {
+          "startMin": 11.5587,
+          "endMin": 13.8091,
+          "state": "deviating"
+        },
+        {
+          "startMin": 13.8091,
+          "endMin": 16.6119,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 5.3099,
+          "type": "distraction",
+          "subtype": "deviating",
+          "order": 1
+        },
+        {
+          "minute": 6.4706,
+          "type": "prompt"
+        },
+        {
+          "minute": 6.9206,
+          "type": "recovery",
+          "origin": "prompt"
+        },
+        {
+          "minute": 11.5587,
+          "type": "distraction",
+          "subtype": "deviating",
+          "order": 2
+        },
+        {
+          "minute": 13.8091,
+          "type": "recovery",
+          "origin": "self"
+        },
+        {
+          "minute": 16.6119,
+          "type": "completion"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": 5.3099,
+        "focusedRatePct": 76.7572,
+        "distractionCount": 2,
+        "offTaskMin": 3.8611,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 50.0,
+        "recoveryLatencyMin": 1.9305,
+        "promptCount": 1,
+        "completed": true,
+        "unpromptedCompletion": false,
+        "earlyEnd": false
+      }
+    },
+    {
+      "sessionId": "2026-W31-2026-07-29-writing-02",
+      "date": "2026-07-29",
+      "startTime": "16:50",
+      "taskId": "writing",
+      "taskLabel": "汉字书写",
+      "plannedDurationMin": 23.4803,
+      "durationMin": 23.4803,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 12.1167,
+          "state": "focused"
+        },
+        {
+          "startMin": 12.1167,
+          "endMin": 14.4624,
+          "state": "deviating"
+        },
+        {
+          "startMin": 14.4624,
+          "endMin": 23.4803,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 12.1167,
+          "type": "distraction",
+          "subtype": "deviating",
+          "order": 1
+        },
+        {
+          "minute": 14.0124,
+          "type": "prompt"
+        },
+        {
+          "minute": 14.4624,
+          "type": "recovery",
+          "origin": "prompt"
+        },
+        {
+          "minute": 23.4803,
+          "type": "completion"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": 12.1167,
+        "focusedRatePct": 90.0099,
+        "distractionCount": 1,
+        "offTaskMin": 2.3457,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 0.0,
+        "recoveryLatencyMin": 2.3457,
+        "promptCount": 1,
+        "completed": true,
+        "unpromptedCompletion": false,
+        "earlyEnd": false
+      }
+    },
+    {
+      "sessionId": "2026-W31-2026-07-30-writing-01",
+      "date": "2026-07-30",
+      "startTime": "15:20",
+      "taskId": "writing",
+      "taskLabel": "汉字书写",
+      "plannedDurationMin": 17.5016,
+      "durationMin": 17.5016,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 13.8541,
+          "state": "focused"
+        },
+        {
+          "startMin": 13.8541,
+          "endMin": 16.6748,
+          "state": "distracted"
+        },
+        {
+          "startMin": 16.6748,
+          "endMin": 17.5016,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 13.8541,
+          "type": "distraction",
+          "subtype": "distracted",
+          "order": 1
+        },
+        {
+          "minute": 16.2248,
+          "type": "prompt"
+        },
+        {
+          "minute": 16.6748,
+          "type": "recovery",
+          "origin": "prompt"
+        },
+        {
+          "minute": 5.4518,
+          "type": "task_switch"
+        },
+        {
+          "minute": 17.5016,
+          "type": "completion"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": 13.8541,
+        "focusedRatePct": 83.8833,
+        "distractionCount": 1,
+        "offTaskMin": 2.8208,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 1,
+        "autonomousRecoveryRatePct": 0.0,
+        "recoveryLatencyMin": 2.8208,
+        "promptCount": 1,
+        "completed": true,
+        "unpromptedCompletion": false,
+        "earlyEnd": false
+      }
+    },
+    {
+      "sessionId": "2026-W31-2026-07-31-reading-01",
+      "date": "2026-07-31",
+      "startTime": "15:20",
+      "taskId": "reading",
+      "taskLabel": "独立阅读",
+      "plannedDurationMin": 29.2329,
+      "durationMin": 29.2329,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 29.2329,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 29.2329,
+          "type": "completion"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 100.0001,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 100.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false
+      }
+    },
+    {
+      "sessionId": "2026-W31-2026-07-31-reading-02",
+      "date": "2026-07-31",
+      "startTime": "16:30",
+      "taskId": "reading",
+      "taskLabel": "独立阅读",
+      "plannedDurationMin": 23.429,
+      "durationMin": 23.429,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 23.429,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 23.429,
+          "type": "completion"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 99.9999,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 100.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false
+      }
+    },
+    {
+      "sessionId": "2026-W31-2026-08-01-tidying-01",
+      "date": "2026-08-01",
+      "startTime": "15:20",
+      "taskId": "tidying",
+      "taskLabel": "房间整理",
+      "plannedDurationMin": 19.7606,
+      "durationMin": 19.7606,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 19.7606,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 19.7606,
+          "type": "completion"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 100.0002,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 100.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false
+      }
+    }
+  ],
+  "metrics": {
+    "focusRatePct": 92.6709,
+    "firstDistractionSharePct": 31.9644,
+    "distractionsPer30Min": 1.0401,
+    "offTaskRatePct": 7.3291,
+    "leaveSeatPer30Min": 0.1486,
+    "autonomousRecoveryRatePct": 0.0,
+    "recoveryLatencyMin": 0.0,
+    "promptsPerSession": 0.3,
+    "completionRatePct": 100.0,
+    "unpromptedCompletionRatePct": 70.0,
+    "earlyEndRatePct": 0.0
+  }
+}
