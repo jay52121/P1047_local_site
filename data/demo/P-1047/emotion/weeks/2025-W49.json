@@ -1620,5 +1620,21 @@
       "longStillMin": 393.2737,
       "lowActivityEpisodeCount": 42
     }
+  },
+  "evidenceSummary": {
+    "topDeclineFactors": [
+      {
+        "metric": "initiativeEventsPer8h",
+        "changePct": -6.9286
+      },
+      {
+        "metric": "longStillRatePct",
+        "changePct": 3.3613
+      },
+      {
+        "metric": "activeRatePct",
+        "changePct": -0.1334
+      }
+    ]
   }
 }

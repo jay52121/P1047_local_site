@@ -11,7 +11,8 @@
     },
     "emotion": {
       "status": "available",
-      "weeklySummary": "emotion/weekly-summary.json"
+      "weeklySummary": "emotion/weekly-summary.json",
+      "metricMapping": "emotion/emotion_metric_mapping.json"
     }
   }
 }

@@ -6,7 +6,7 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
-from demo_generation.emotion import EMOTION_INDEXES, EMOTION_METRICS, aggregate_emotion_week, derive_emotion_day_result
+from demo_generation.emotion import EMOTION_INDEXES, EMOTION_METRICS, aggregate_emotion_week, build_emotion_evidence_summary, derive_emotion_day_result
 from demo_generation.normalization import build_baselines, calculate_indexes
 from demo_generation.quality import unit_quality, week_confidence
 
@@ -101,6 +101,16 @@ def close(left, right, tolerance=0.01):
     return abs(float(left) - float(right)) <= tolerance
 
 
+def nested_keys(value):
+    if isinstance(value, dict):
+        for key, child in value.items():
+            yield str(key).lower()
+            yield from nested_keys(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from nested_keys(child)
+
+
 def validate_emotion():
     path = DATA / "P-1047/emotion/weekly-summary.json"
     summary = load(path)
@@ -116,6 +126,10 @@ def validate_emotion():
     check([week["weekId"] for week in summary["weeks"][:5]] == summary["baseline"]["weekIds"], "emotion: baseline week ids mismatch")
     forbidden_metrics = {"effectiveZoneCount", "zoneTransitionsPer8h", "outsideMinutesPerValidDay", "outingDaysRatePct", "outingsPerValidDay", "interactionMinutesPer8h", "interactionEpisodesPer8h", "activityEffectiveTypes", "activityCategoryCount"}
     forbidden_events = {"outing", "zone_transition", "location", "interaction_session"}
+    forbidden_key_tokens = ("outside", "location", "zone", "outing", "interactionduration", "interaction_duration")
+    mapping = load(path.parent / "emotion_metric_mapping.json")
+    check(bool(mapping) and set(mapping.get("rawMetrics", {})) == set(EMOTION_METRICS), "emotion: metric mapping raw keys mismatch")
+    check(bool(mapping) and set(mapping.get("indexes", {})) == set(EMOTION_INDEXES), "emotion: metric mapping index keys mismatch")
     recalculated_metrics = []
     details = []
     for week in summary["weeks"]:
@@ -129,6 +143,8 @@ def validate_emotion():
         check(set(week["metrics"]) == set(EMOTION_METRICS), f"emotion/{week['weekId']}: raw metric keys must be exact")
         check(set(week["indexes"]) == set(EMOTION_INDEXES), f"emotion/{week['weekId']}: index keys must be exact")
         check(not forbidden_metrics.intersection(week["metrics"]), f"emotion/{week['weekId']}: participation metric leaked into emotion")
+        leaked_keys = [key for key in nested_keys(detail) if any(token in key for token in forbidden_key_tokens)]
+        check(not leaked_keys, f"emotion/{week['weekId']}: participation key leaked into emotion: {leaked_keys[:3]}")
         if week["weekId"] == "2026-W33":
             check(week["status"] == "in_progress" and week["observedThroughDate"] == "2026-08-13", "emotion/W33: current-week status mismatch")
             check([unit["date"] for unit in detail["units"]] == ["2026-08-10", "2026-08-11", "2026-08-12", "2026-08-13"], "emotion/W33: must contain Mon-Thu only")
@@ -171,10 +187,11 @@ def validate_emotion():
         check(close(confidence, week["confidencePct"]), f"emotion/{week['weekId']}: confidence mismatch")
     if len(recalculated_metrics) == 40:
         baselines = build_baselines(recalculated_metrics)
-        for week, metrics in zip(summary["weeks"], recalculated_metrics):
+        for week, detail, metrics in zip(summary["weeks"], details, recalculated_metrics):
             indexes, _ = calculate_indexes(metrics, baselines, EMOTION_INDEXES)
             if week["dataStatus"] != "sufficient": indexes = {key: None for key in EMOTION_INDEXES}
             for key in EMOTION_INDEXES: check(close(indexes[key], week["indexes"][key]), f"emotion/{week['weekId']}: index {key} mismatch")
+            check(detail.get("evidenceSummary") == build_emotion_evidence_summary(metrics, baselines), f"emotion/{week['weekId']}: evidence summary mismatch")
 
 
 def validate_public_boundary():

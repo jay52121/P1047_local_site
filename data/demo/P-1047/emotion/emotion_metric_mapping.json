@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "domain": "emotion",
+  "rawMetrics": {
+    "activeRatePct": {"label": "活跃时间占比", "unit": "%", "higherIsBetter": true, "source": "active segments"},
+    "initiativeEventsPer8h": {"label": "自主启动频率", "unit": " 次/8h", "higherIsBetter": true, "source": "activity_start events"},
+    "selfInitiatedSharePct": {"label": "自主启动占比", "unit": "%", "higherIsBetter": true, "source": "activity_start events"},
+    "interestOpportunityAcceptancePct": {"label": "兴趣机会接受率", "unit": "%", "higherIsBetter": true, "source": "interest_opportunity events"},
+    "interestEngagementPct": {"label": "兴趣投入比例", "unit": "%", "higherIsBetter": true, "source": "interest_opportunity events"},
+    "responseRatePct": {"label": "交流机会回应率", "unit": "%", "higherIsBetter": true, "source": "social_opportunity events"},
+    "responseLatencySec": {"label": "回应延迟中位数", "unit": " sec", "higherIsBetter": false, "source": "social_opportunity events"},
+    "longStillRatePct": {"label": "长时间静止占比", "unit": "%", "higherIsBetter": false, "source": "long_still segments"},
+    "medianLowActivityEpisodeMin": {"label": "低活动时段中位数", "unit": " min", "higherIsBetter": false, "source": "low_activity and long_still segments"}
+  },
+  "indexes": {
+    "behaviorActivation": {"rawMetrics": ["activeRatePct"], "source": ["active segments"]},
+    "initiative": {"rawMetrics": ["initiativeEventsPer8h", "selfInitiatedSharePct"], "source": ["activity_start events"]},
+    "interestEngagement": {"rawMetrics": ["interestOpportunityAcceptancePct", "interestEngagementPct"], "source": ["interest_opportunity events"]},
+    "socialResponsiveness": {"rawMetrics": ["responseRatePct", "responseLatencySec"], "source": ["social_opportunity events"]},
+    "withdrawalBurden": {"rawMetrics": ["longStillRatePct", "medianLowActivityEpisodeMin"], "source": ["long_still and low_activity segments"]}
+  }
+}

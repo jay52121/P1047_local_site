@@ -5,8 +5,8 @@ from pathlib import Path
 from jsonschema import Draft202012Validator, RefResolver
 
 from tools.demo_generation.emotion import (
-    EMOTION_INDEXES, EMOTION_METRICS, aggregate_emotion_week,
-    build_emotion_dataset, derive_emotion_day_result,
+    EMOTION_INDEXES, EMOTION_METRICS, EMOTION_RESPONSE_COEFFICIENTS, aggregate_emotion_week,
+    build_emotion_dataset, build_emotion_evidence_summary, derive_emotion_day_result,
 )
 from tools.demo_generation.normalization import build_baselines, calculate_indexes
 from tools.demo_generation.quality import unit_quality
@@ -86,6 +86,35 @@ class EmotionDatasetTests(unittest.TestCase):
         self.assertGreaterEqual(recovered, 4)
         impact = lambda week: sum(abs(week["indexes"][key] - 100) for key in EMOTION_INDEXES)
         self.assertLess(impact(w22), impact(w06))
+
+    def test_manual_review_weeks_preserve_behavior_quality_boundary(self):
+        w52, w06, w08, w22 = (self.by_id[key] for key in ("2025-W52", "2026-W06", "2026-W08", "2026-W22"))
+        self.assertGreater(w06["metrics"]["responseRatePct"], 0)
+        self.assertGreaterEqual(w06["confidencePct"], w52["confidencePct"] - 5)
+        self.assertGreater(w08["indexes"]["behaviorActivation"], w06["indexes"]["behaviorActivation"])
+        self.assertGreater(w08["indexes"]["initiative"], w06["indexes"]["initiative"])
+        self.assertLess(w08["indexes"]["withdrawalBurden"], w06["indexes"]["withdrawalBurden"])
+        self.assertGreater(w22["indexes"]["behaviorActivation"], w06["indexes"]["behaviorActivation"])
+        self.assertGreater(len(set(EMOTION_RESPONSE_COEFFICIENTS.values())), 4)
+
+    def test_evidence_summary_is_recomputable_cache(self):
+        baselines = build_baselines([detail["weekAggregate"]["metrics"] for detail in self.details])
+        for detail in self.details:
+            self.assertEqual(detail["evidenceSummary"], build_emotion_evidence_summary(detail["weekAggregate"]["metrics"], baselines))
+
+    def test_domain_boundary_and_trace_mapping(self):
+        mapping = load(ROOT / "data/demo/P-1047/emotion/emotion_metric_mapping.json")
+        self.assertEqual(set(mapping["rawMetrics"]), set(EMOTION_METRICS))
+        self.assertEqual(set(mapping["indexes"]), set(EMOTION_INDEXES))
+        keys = []
+        def collect(value):
+            if isinstance(value, dict):
+                for key, child in value.items(): keys.append(key.lower()); collect(child)
+            elif isinstance(value, list):
+                for child in value: collect(child)
+        collect(self.details)
+        for token in ("outside", "location", "zone", "outing", "interactionduration", "interaction_duration"):
+            self.assertFalse(any(token in key for key in keys), token)
 
     def test_zero_and_null_opportunity_semantics(self):
         empty = {"observedAwakeMin":600,"activeMin":0,"longStillMin":0,"lowActivityEpisodesMin":[],"allActivityStarts":0,"selfInitiatedStarts":0,"interestOpportunityCount":0,"interestAcceptedCount":0,"interestOpportunityMin":0,"interestEngagedMin":0,"socialOpportunityCount":0,"socialRespondedCount":0,"responseLatenciesSec":[]}

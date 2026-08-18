@@ -1583,5 +1583,21 @@
       "longStillMin": 439.035,
       "lowActivityEpisodeCount": 39
     }
+  },
+  "evidenceSummary": {
+    "topDeclineFactors": [
+      {
+        "metric": "interestEngagementPct",
+        "changePct": -33.7036
+      },
+      {
+        "metric": "responseLatencySec",
+        "changePct": 27.7663
+      },
+      {
+        "metric": "longStillRatePct",
+        "changePct": 22.174
+      }
+    ]
   }
 }

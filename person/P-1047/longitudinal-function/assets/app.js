@@ -107,9 +107,9 @@ async function selectDomain(domain) {
     state.removeClockView?.(); state.removeClockView = null;
     main.innerHTML = `<section class="panel pageLoading"><span class="spinner"></span><span>正在加载心理情绪核心数据…</span></section>`;
     try {
-      const summary = await repository.getWeeklySummary(state.personId, "emotion");
+      const [summary, metricMapping] = await Promise.all([repository.getWeeklySummary(state.personId, "emotion"), repository.getJson(`${state.personId}/emotion/emotion_metric_mapping.json`)]);
       if (state.domain !== "emotion") return;
-      state.domainCleanup = mountEmotionView({ main, weeks: summary.weeks, repository, clock, personId: state.personId });
+      state.domainCleanup = mountEmotionView({ main, weeks: summary.weeks, metricMapping, repository, clock, personId: state.personId });
     } catch (error) {
       console.error(error); main.innerHTML = `<section class="panel emptyState errorState">心理情绪核心数据加载失败。</section>`;
     }

@@ -6,11 +6,26 @@
     { "$ref": "event-first-week.schema.json" },
     {
       "type": "object",
-      "required": ["weekStart", "weekEnd"],
+      "required": ["weekStart", "weekEnd", "evidenceSummary"],
       "properties": {
         "domain": { "const": "emotion" },
         "weekStart": { "type": "string", "format": "date" },
         "weekEnd": { "type": "string", "format": "date" },
+        "evidenceSummary": {
+          "type": "object", "additionalProperties": false, "required": ["topDeclineFactors"],
+          "properties": {
+            "topDeclineFactors": {
+              "type": "array", "maxItems": 3,
+              "items": {
+                "type": "object", "additionalProperties": false, "required": ["metric", "changePct"],
+                "properties": {
+                  "metric": { "enum": ["activeRatePct", "initiativeEventsPer8h", "selfInitiatedSharePct", "interestOpportunityAcceptancePct", "interestEngagementPct", "responseRatePct", "responseLatencySec", "longStillRatePct", "medianLowActivityEpisodeMin"] },
+                  "changePct": { "type": "number" }
+                }
+              }
+            }
+          }
+        },
         "units": {
           "type": "array",
           "items": {

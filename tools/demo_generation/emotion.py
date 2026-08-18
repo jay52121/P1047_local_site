@@ -8,6 +8,7 @@ from .common import clamp
 from .normalization import build_baselines, calculate_indexes
 from .quality import emotion_or_participation_day_valid, unit_quality, week_confidence
 from .randomness import stable_rng
+from .metric_specs import RAW_METRICS
 
 
 WINDOW_MIN = 1020.0
@@ -33,6 +34,15 @@ QUALITY_OVERRIDES = {
     "2026-03-17": "low_coverage",       # W12
     "2026-06-09": "long_unknown_gap",  # W24
     "2026-07-28": "low_coverage",       # W31
+}
+EMOTION_RESPONSE_COEFFICIENTS = {
+    "active": 0.20,
+    "initiative": 0.80,
+    "interest_acceptance": 0.90,
+    "interest_engagement": 0.70,
+    "social_response": 0.62,
+    "response_latency": 38.0,
+    "withdrawal": 0.11,
 }
 
 
@@ -141,8 +151,8 @@ def generate_emotion_day(person_id: str, day: date, week_id: str, week_burden: f
     else:
         unknown_total, unknown_count = quality_rng.uniform(130.0, 300.0), 3
     observed = WINDOW_MIN - unknown_total
-    active_share = clamp(0.46 - 0.20 * burden + behavior_rng.gauss(0, 0.025), 0.25, 0.55)
-    long_share = clamp(0.055 + 0.11 * burden + behavior_rng.gauss(0, 0.01), 0.04, 0.18)
+    active_share = clamp(0.46 - EMOTION_RESPONSE_COEFFICIENTS["active"] * burden + behavior_rng.gauss(0, 0.025), 0.25, 0.55)
+    long_share = clamp(0.055 + EMOTION_RESPONSE_COEFFICIENTS["withdrawal"] * burden + behavior_rng.gauss(0, 0.01), 0.04, 0.18)
     long_min = max(45.1, observed * long_share)
     active_min = observed * active_share
     low_min = observed - active_min - long_min
@@ -176,7 +186,7 @@ def generate_emotion_day(person_id: str, day: date, week_id: str, week_burden: f
 
     events = []
     active_segments = [segment for segment in segments if segment["state"] == "active"]
-    p_self = clamp(0.90 - 0.80 * burden + behavior_rng.gauss(0, 0.01), 0.28, 0.92)
+    p_self = clamp(0.90 - EMOTION_RESPONSE_COEFFICIENTS["initiative"] * burden + behavior_rng.gauss(0, 0.01), 0.28, 0.92)
     self_count = round(len(active_segments) * p_self)
     for index, segment in enumerate(active_segments, 1):
         origin = "self" if index <= self_count else ("prompted" if behavior_rng.random() < 0.60 else "external")
@@ -184,27 +194,27 @@ def generate_emotion_day(person_id: str, day: date, week_id: str, week_burden: f
 
     runs = [run for run in _observed_runs(segments) if run[1] - run[0] >= 55]
     interest_count = 2
-    p_accept = clamp(0.94 - 0.90 * burden + behavior_rng.gauss(0, 0.015), 0.25, 0.94)
+    p_accept = clamp(0.94 - EMOTION_RESPONSE_COEFFICIENTS["interest_acceptance"] * burden + behavior_rng.gauss(0, 0.015), 0.25, 0.94)
     for index in range(interest_count):
         run = runs[index % len(runs)]
         duration = min(context_rng.uniform(25, 50), run[1] - run[0] - 2)
         start = run[0] + 1 + (index * 7) % max(1, run[1] - run[0] - duration - 1)
         end = start + duration
         accepted = behavior_rng.random() < p_accept
-        engagement_ratio = clamp(0.88 - 0.70 * burden + behavior_rng.gauss(0, 0.02), 0.25, 0.92)
+        engagement_ratio = clamp(0.88 - EMOTION_RESPONSE_COEFFICIENTS["interest_engagement"] * burden + behavior_rng.gauss(0, 0.02), 0.25, 0.92)
         engaged = duration * engagement_ratio
         engagement_start = start + min(2.0, duration * 0.08) if accepted else None
         engagement_end = min(end, engagement_start + engaged) if accepted else None
         events.append({"id": f"{day.isoformat()}-i{index + 1}", "type": "interest_opportunity", "startMin": round(start, 4), "endMin": round(end, 4), "interestType": context_rng.choice(("reading", "music", "gardening", "television")), "accepted": accepted, "engagementStartMin": _round(engagement_start), "engagementEndMin": _round(engagement_end)})
 
     social_count = 3
-    p_response = clamp(0.98 - 0.62 * burden + behavior_rng.gauss(0, 0.015), 0.42, 0.97)
+    p_response = clamp(0.98 - EMOTION_RESPONSE_COEFFICIENTS["social_response"] * burden + behavior_rng.gauss(0, 0.015), 0.42, 0.97)
     response_count = round(social_count * p_response)
     for index in range(social_count):
         run = runs[(index + 1) % len(runs)]
         at_min = run[0] + min(run[1] - run[0] - 2, 4 + index * 9)
         responded = index < response_count
-        latency_sec = clamp(10 + 38 * burden + behavior_rng.gauss(0, 6), 2, 90)
+        latency_sec = clamp(10 + EMOTION_RESPONSE_COEFFICIENTS["response_latency"] * burden + behavior_rng.gauss(0, 6), 2, 90)
         events.append({"id": f"{day.isoformat()}-s{index + 1}", "type": "social_opportunity", "atMin": round(at_min, 4), "source": context_rng.choice(("household_member", "visitor", "phone_call")), "responded": responded, "responseAtMin": round(at_min + latency_sec / 60.0, 4) if responded else None})
     events.sort(key=lambda event: event.get("atMin", event.get("startMin", 0)))
     result = derive_emotion_day_result(segments, events)
@@ -275,6 +285,20 @@ def calculate_emotion_metric_confidence(week_confidence_pct: float, metrics: dic
     return {key: _round(value) for key, value in result.items()}
 
 
+def build_emotion_evidence_summary(metrics: dict, baselines: dict) -> dict:
+    factors = []
+    for key in EMOTION_METRICS:
+        value, baseline = metrics.get(key), baselines.get(key)
+        if value is None or baseline is None or abs(baseline.center) < 1e-9:
+            continue
+        change_pct = (float(value) / baseline.center - 1.0) * 100.0
+        direction = RAW_METRICS[key].direction
+        adverse = change_pct if direction in {"lower", "burden"} else -change_pct
+        factors.append((adverse, {"metric": key, "changePct": _round(change_pct)}))
+    factors.sort(key=lambda row: row[0], reverse=True)
+    return {"topDeclineFactors": [factor for _, factor in factors[:3]]}
+
+
 def build_emotion_dataset(scenario_weeks: Iterable[object], person_id: str = "P-1047") -> tuple[List[dict], dict]:
     details = []
     for scenario in scenario_weeks:
@@ -291,6 +315,8 @@ def build_emotion_dataset(scenario_weeks: Iterable[object], person_id: str = "P-
         })
     weekly_metrics = [detail["weekAggregate"]["metrics"] for detail in details]
     baselines = build_baselines(weekly_metrics)
+    for detail in details:
+        detail["evidenceSummary"] = build_emotion_evidence_summary(detail["weekAggregate"]["metrics"], baselines)
     summary_weeks = []
     for scenario, detail in zip(scenario_weeks, details):
         valid_units = sum(unit["valid"] for unit in detail["units"])
