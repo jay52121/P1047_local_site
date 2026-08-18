@@ -4,7 +4,7 @@ import { DOMAINS, LIFE_EVIDENCE, LIFE_METRICS, LIFE_SECONDARY } from "./domain-d
 
 const repository = new JsonDataRepository();
 const clock = new AutoClock(12000);
-const state = { personId: "P-1047", domain: "life", metric: "transfer", weeks: [], evidenceTimer: null, evidenceToken: 0, removeClockView: null };
+const state = { personId: "P-1047", domain: "life", metric: "transfer", weeks: [], evidenceTimer: null, evidenceToken: 0, evidenceOpen: false, removeClockView: null };
 
 const main = document.getElementById("main");
 document.getElementById("serverStatus").textContent = location.host || "127.0.0.1:5173";
@@ -35,12 +35,14 @@ function renderProfile(profile) {
 }
 
 function renderLife() {
-  main.innerHTML = `<section class="panel hero"><div class="heroRow"><div class="weekBox"><div class="weekLabel">历史周</div><select id="leftWeek" class="weekSelect"></select><div id="leftMeta" class="weekMeta"></div></div><div class="vs">VS</div><div class="weekBox"><div class="weekLabel">比较周</div><select id="rightWeek" class="weekSelect"></select><div id="rightMeta" class="weekMeta"></div></div></div><div class="summaryLine"><div class="summaryText"><b>综合生活能力</b> · 相对变化基于左侧所选周</div><div class="summaryPills" id="summaryPills"></div></div></section><div class="metricGrid" id="metricGrid"></div><div class="contentGrid"><section class="panel chartPanel"><div class="panelHeader"><div><div class="panelTitle" id="chartTitle"></div><div class="panelSub" id="chartSub"></div></div><div class="legend"><span><i style="background:#2f6fe4"></i>周基线</span><span><i style="background:#8ea9db"></i>4周趋势</span><span><i style="background:#ef9b3a"></i>事件</span></div></div><div class="chartWrap"><svg id="chart"></svg></div><div class="timelineFooter"><div class="phaseBar" id="phaseBar"></div></div></section><aside class="panel detailPanel"><div class="detailTitle" id="detailTitle"></div><div class="detailExplain" id="detailExplain"></div><div id="evidenceList"></div><div class="noteBox">一级指数仅表达同一人的纵向相对变化。关节与运动学指标用于解释变化来源，不作为单次动作的临床绝对诊断。</div></aside></div><section class="panel autoEvidence"><div class="evidenceHead"><div><div class="evidenceTitle">核心数据 · 周代表动作</div><div class="evidenceSub" id="autoEvidenceSub"></div></div><span class="clockBadge">自动运行</span></div><div class="progressTrack"><span id="autoProgress"></span></div><div class="evidenceBody" id="autoEvidenceBody"></div></section>`;
+  main.innerHTML = `<section class="panel hero"><div class="heroRow"><div class="weekBox"><div class="weekLabel">历史周</div><select id="leftWeek" class="weekSelect"></select><div id="leftMeta" class="weekMeta"></div></div><div class="vs">VS</div><div class="weekBox"><div class="weekLabel">比较周</div><select id="rightWeek" class="weekSelect"></select><div id="rightMeta" class="weekMeta"></div></div></div><div class="summaryLine"><div class="summaryText"><b>综合生活能力</b> · 相对变化基于左侧所选周</div><div class="summaryPills" id="summaryPills"></div></div></section><div class="metricGrid" id="metricGrid"></div><div class="contentGrid"><section class="panel chartPanel"><div class="panelHeader"><div><div class="panelTitle" id="chartTitle"></div><div class="panelSub" id="chartSub"></div></div><div class="legend"><span><i style="background:#2f6fe4"></i>周基线</span><span><i style="background:#8ea9db"></i>4周趋势</span><span><i style="background:#ef9b3a"></i>事件</span></div></div><div class="chartWrap"><svg id="chart"></svg></div><div class="timelineFooter"><div class="phaseBar" id="phaseBar"></div><button class="videoButton" id="evidenceButton" type="button" aria-label="播放核心数据" title="播放核心数据"><span>▶</span></button></div></section><aside class="panel detailPanel"><div class="detailTitle" id="detailTitle"></div><div class="detailExplain" id="detailExplain"></div><div id="evidenceList"></div><div class="noteBox">一级指数仅表达同一人的纵向相对变化。关节与运动学指标用于解释变化来源，不作为单次动作的临床绝对诊断。</div></aside></div><section class="panel autoEvidence" id="autoEvidence" hidden><div class="evidenceHead"><div><div class="evidenceTitle">核心数据 · 周代表动作</div><div class="evidenceSub" id="autoEvidenceSub"></div></div><span class="clockBadge">自动运行</span></div><div class="progressTrack"><span id="autoProgress"></span></div><div class="evidenceBody" id="autoEvidenceBody"></div></section>`;
   const left = document.getElementById("leftWeek"), right = document.getElementById("rightWeek");
   state.weeks.forEach((week, index) => { const option = document.createElement("option"); option.value = index; option.textContent = weekSelectText(week); left.appendChild(option.cloneNode(true)); right.appendChild(option); });
   left.value = Math.min(19, state.weeks.length - 1); right.value = state.weeks.length - 1;
   left.onchange = () => { if (+left.value > +right.value) right.value = left.value; updateLife(); };
   right.onchange = () => { if (+right.value < +left.value) left.value = right.value; updateLife(); };
+  state.evidenceOpen = false;
+  document.getElementById("evidenceButton").onclick = toggleAutoEvidence;
   state.removeClockView?.();
   state.removeClockView = clock.add({ renderAt(phase) { const bar = document.getElementById("autoProgress"); if (bar) bar.style.width = `${phase * 100}%`; } });
   updateLife();
@@ -56,7 +58,16 @@ function updateLife() {
   document.getElementById("summaryPills").innerHTML = `<span class="pill good">${good} 项改善</span><span class="pill bad">${bad} 项下降</span><span class="pill neutral">${stable} 项稳定</span>`;
   document.getElementById("metricGrid").innerHTML = Object.entries(LIFE_METRICS).map(([key, definition]) => { const left = leftWeek.indexes[definition.field], right = rightWeek.indexes[definition.field], value = relative(left, right), [label, css] = classify(definition, left, right); return `<article class="metric ${key === state.metric ? "selected" : ""}" data-metric="${key}"><div class="metricLabel">${definition.label}</div><div class="metricValue">${value.toFixed(1)}<small>相对值</small></div><div class="metricDelta ${css}">${change(left, right)} · ${label}</div><div class="spark">${sparkSvg(state.weeks, definition, leftIndex, rightIndex)}</div></article>`; }).join("");
   document.querySelectorAll("[data-metric]").forEach(card => card.onclick = () => { state.metric = card.dataset.metric; updateLife(); });
-  renderEvidence(leftWeek, rightWeek); renderChart(leftIndex, rightIndex); scheduleAutoEvidence(leftIndex, rightIndex);
+  renderEvidence(leftWeek, rightWeek); renderChart(leftIndex, rightIndex); if (state.evidenceOpen) scheduleAutoEvidence(leftIndex, rightIndex);
+}
+
+function toggleAutoEvidence() {
+  const section = document.getElementById("autoEvidence");
+  state.evidenceOpen = !state.evidenceOpen;
+  section.hidden = !state.evidenceOpen;
+  if (!state.evidenceOpen) { clearTimeout(state.evidenceTimer); state.evidenceToken++; return; }
+  scheduleAutoEvidence(+document.getElementById("leftWeek").value, +document.getElementById("rightWeek").value);
+  section.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function renderEvidence(leftWeek, rightWeek) {
@@ -84,7 +95,7 @@ function scheduleAutoEvidence(leftIndex, rightIndex) {
   clearTimeout(state.evidenceTimer); const token = ++state.evidenceToken, weeks = state.weeks.slice(leftIndex, rightIndex + 1), rows = Math.ceil(weeks.length / 4), height = 64 + rows * 230 + 2;
   document.getElementById("autoEvidenceSub").textContent = `正在准备所选区间的 ${weeks.length} 周核心数据`;
   document.getElementById("autoEvidenceBody").innerHTML = `<div class="loadingGrid">${weeks.map(week => `<div class="loadingCell"><span class="spinner"></span><span>${formatDate(week.weekStart)}</span></div>`).join("")}</div>`;
-  state.evidenceTimer = setTimeout(() => { if (token !== state.evidenceToken) return; const params = new URLSearchParams({ count: String(weeks.length), autoplay: "1", controls: "0" }); weeks.forEach(week => params.append("title", weekText(week))); document.getElementById("autoEvidenceSub").textContent = `所选区间共 ${weeks.length} 周 · 所有周使用同一自动时钟`; document.getElementById("autoEvidenceBody").innerHTML = `<iframe class="poseFrame" style="height:${height}px" src="/pose/pose-sessions.html?${params}" title="Pose Sessions · ${weeks.length} 周" loading="eager" scrolling="no"></iframe>`; clock.restart(); }, 1000);
+  state.evidenceTimer = setTimeout(() => { if (token !== state.evidenceToken) return; const params = new URLSearchParams({ count: String(weeks.length), autoplay: "1", controls: "0", stagger: "140" }); weeks.forEach(week => params.append("title", weekText(week))); document.getElementById("autoEvidenceSub").textContent = `所选区间共 ${weeks.length} 周 · 正在按日期顺序加载`; document.getElementById("autoEvidenceBody").innerHTML = `<iframe class="poseFrame" style="height:${height}px" src="/pose/pose-sessions.html?${params}" title="Pose Sessions · ${weeks.length} 周" loading="eager" scrolling="no"></iframe>`; clock.restart(); }, 1000);
 }
 
 async function selectDomain(domain) {

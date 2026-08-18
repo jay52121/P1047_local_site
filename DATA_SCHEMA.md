@@ -39,6 +39,40 @@ data/demo/
 
 V1 已有周指标按 `calculationVersion: "v1-migrated"` 原值迁移，页面显示结果与迁移前一致。新生成的详情数据用于建立证据结构，不反向改变 V1 指标。
 
+第二阶段新增四域采用正式的 event-first 模式：
+
+```json
+{
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated"
+}
+```
+
+三个字段分别表达数据来源、计算方式和证据来源。现有 life/attention 保持 `migrated-summary + reconstructed`，未来真实数据使用 `real + generated-from-events + observed`。
+
+## 第二阶段稳健个人基线
+
+四个新域的每个周级原始量使用建立期 W46–W50：
+
+```text
+B = median(五周原始量)
+R = max(1.4826 × MAD, sensitivityFloor)
+```
+
+越高越好的量：`clamp(100 + 10 × (x-B)/R, 70, 130)`；越低越好的量反向计算。所有 sensitivity floor 和一级指数权重集中保存在 `tools/demo_generation/metric_specs.py`。
+
+## 缺失与数据状态
+
+- `0`：已观察且事件确实没有发生。
+- `null`：数学上不可定义或没有评价机会。
+- `invalid`：应当可以观察，但数据质量不足；通过 unit 的 `valid: false` 和 `invalidReason` 表达。
+- `status` 只表达日历状态：`complete / in_progress`。
+- `dataStatus` 只表达数据充分度：`sufficient / partial / insufficient`。
+
+`confidencePct` 只根据 coverage、continuity、structural completeness 和有效 unit 数量计算，不包含行为表现和 CV。
+
 ## 自动证据
 
 综合生活能力详情包含代表性坐站动作参数。专注详情包含：
