@@ -1,0 +1,442 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "participation",
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated",
+  "weekId": "2026-W22",
+  "detailLevel": "full",
+  "confidencePct": 94.4493,
+  "days": [
+    {
+      "date": "2026-05-25",
+      "valid": true,
+      "observedMinutes": 698.3465,
+      "zoneMinutes": {
+        "bedroom": 332.396,
+        "living_room": 174.7598,
+        "dining_room": 111.4282,
+        "bathroom": 62.4228,
+        "doorway": 17.3397,
+        "outside": 0.0
+      },
+      "transitionCount": 10,
+      "outsideMinutes": 0.0,
+      "outingCount": 0,
+      "activityMinutesByCategory": {
+        "self_care": 0.0,
+        "meal": 36.0668,
+        "household": 0.0,
+        "leisure": 0.0,
+        "rehab_exercise": 0.0,
+        "outdoor": 0.0,
+        "social": 0.0
+      },
+      "meaningfulActivityMinutes": 36.0668,
+      "meaningfulActivityEpisodes": 2,
+      "interactionMinutes": 43.2495,
+      "interactionEpisodes": 4,
+      "initiatedInteractionEpisodes": 3,
+      "participatingDay": false,
+      "locationSegments": [
+        {
+          "startMin": 0.0,
+          "endMin": 332.396,
+          "zone": "bedroom"
+        },
+        {
+          "startMin": 332.396,
+          "endMin": 507.1558,
+          "zone": "living_room"
+        },
+        {
+          "startMin": 507.1558,
+          "endMin": 618.584,
+          "zone": "dining_room"
+        },
+        {
+          "startMin": 618.584,
+          "endMin": 681.0068,
+          "zone": "bathroom"
+        },
+        {
+          "startMin": 681.0068,
+          "endMin": 698.3465,
+          "zone": "doorway"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "valid": true,
+      "observedMinutes": 694.0407,
+      "zoneMinutes": {
+        "bedroom": 331.3278,
+        "living_room": 173.0773,
+        "dining_room": 110.4697,
+        "bathroom": 61.9559,
+        "doorway": 17.21,
+        "outside": 0.0
+      },
+      "transitionCount": 11,
+      "outsideMinutes": 0.0,
+      "outingCount": 0,
+      "activityMinutesByCategory": {
+        "self_care": 17.1923,
+        "meal": 20.2262,
+        "household": 12.8717,
+        "leisure": 0.0,
+        "rehab_exercise": 0.0,
+        "outdoor": 0.0,
+        "social": 0.0
+      },
+      "meaningfulActivityMinutes": 50.2902,
+      "meaningfulActivityEpisodes": 1,
+      "interactionMinutes": 20.7197,
+      "interactionEpisodes": 2,
+      "initiatedInteractionEpisodes": 2,
+      "participatingDay": false,
+      "locationSegments": [
+        {
+          "startMin": 0.0,
+          "endMin": 331.3278,
+          "zone": "bedroom"
+        },
+        {
+          "startMin": 331.3278,
+          "endMin": 504.4051,
+          "zone": "living_room"
+        },
+        {
+          "startMin": 504.4051,
+          "endMin": 614.8748,
+          "zone": "dining_room"
+        },
+        {
+          "startMin": 614.8748,
+          "endMin": 676.8307,
+          "zone": "bathroom"
+        },
+        {
+          "startMin": 676.8307,
+          "endMin": 694.0407,
+          "zone": "doorway"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "valid": true,
+      "observedMinutes": 781.483,
+      "zoneMinutes": {
+        "bedroom": 363.117,
+        "living_room": 201.0206,
+        "dining_room": 127.1423,
+        "bathroom": 70.5938,
+        "doorway": 19.6094,
+        "outside": 0.0
+      },
+      "transitionCount": 11,
+      "outsideMinutes": 0.0,
+      "outingCount": 0,
+      "activityMinutesByCategory": {
+        "self_care": 0.0,
+        "meal": 0.0,
+        "household": 0.0,
+        "leisure": 0.0,
+        "rehab_exercise": 0.0,
+        "outdoor": 0.0,
+        "social": 0.0
+      },
+      "meaningfulActivityMinutes": 25.2063,
+      "meaningfulActivityEpisodes": 3,
+      "interactionMinutes": 29.4252,
+      "interactionEpisodes": 2,
+      "initiatedInteractionEpisodes": 1,
+      "participatingDay": false,
+      "locationSegments": [
+        {
+          "startMin": 0.0,
+          "endMin": 363.117,
+          "zone": "bedroom"
+        },
+        {
+          "startMin": 363.117,
+          "endMin": 564.1376,
+          "zone": "living_room"
+        },
+        {
+          "startMin": 564.1376,
+          "endMin": 691.2799,
+          "zone": "dining_room"
+        },
+        {
+          "startMin": 691.2799,
+          "endMin": 761.8737,
+          "zone": "bathroom"
+        },
+        {
+          "startMin": 761.8737,
+          "endMin": 781.4831,
+          "zone": "doorway"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "valid": true,
+      "observedMinutes": 725.3354,
+      "zoneMinutes": {
+        "bedroom": 343.5634,
+        "living_room": 182.5486,
+        "dining_room": 116.1991,
+        "bathroom": 64.9756,
+        "doorway": 18.0488,
+        "outside": 0.0
+      },
+      "transitionCount": 10,
+      "outsideMinutes": 0.0,
+      "outingCount": 0,
+      "activityMinutesByCategory": {
+        "self_care": 31.503,
+        "meal": 37.0624,
+        "household": 23.8254,
+        "leisure": 19.2955,
+        "rehab_exercise": 17.7957,
+        "outdoor": 8.5298,
+        "social": 10.5891
+      },
+      "meaningfulActivityMinutes": 148.6009,
+      "meaningfulActivityEpisodes": 7,
+      "interactionMinutes": 54.1458,
+      "interactionEpisodes": 4,
+      "initiatedInteractionEpisodes": 4,
+      "participatingDay": true,
+      "locationSegments": [
+        {
+          "startMin": 0.0,
+          "endMin": 343.5634,
+          "zone": "bedroom"
+        },
+        {
+          "startMin": 343.5634,
+          "endMin": 526.112,
+          "zone": "living_room"
+        },
+        {
+          "startMin": 526.112,
+          "endMin": 642.3111,
+          "zone": "dining_room"
+        },
+        {
+          "startMin": 642.3111,
+          "endMin": 707.2867,
+          "zone": "bathroom"
+        },
+        {
+          "startMin": 707.2867,
+          "endMin": 725.3355,
+          "zone": "doorway"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "valid": true,
+      "observedMinutes": 795.7117,
+      "zoneMinutes": {
+        "bedroom": 376.7209,
+        "living_room": 200.3697,
+        "dining_room": 127.5224,
+        "bathroom": 71.2947,
+        "doorway": 19.8041,
+        "outside": 0.0
+      },
+      "transitionCount": 11,
+      "outsideMinutes": 0.0,
+      "outingCount": 0,
+      "activityMinutesByCategory": {
+        "self_care": 31.5575,
+        "meal": 37.1265,
+        "household": 23.8809,
+        "leisure": 19.3444,
+        "rehab_exercise": 17.8304,
+        "outdoor": 8.5595,
+        "social": 10.6137
+      },
+      "meaningfulActivityMinutes": 148.913,
+      "meaningfulActivityEpisodes": 7,
+      "interactionMinutes": 34.2559,
+      "interactionEpisodes": 3,
+      "initiatedInteractionEpisodes": 2,
+      "participatingDay": true,
+      "locationSegments": [
+        {
+          "startMin": 0.0,
+          "endMin": 376.7209,
+          "zone": "bedroom"
+        },
+        {
+          "startMin": 376.7209,
+          "endMin": 577.0906,
+          "zone": "living_room"
+        },
+        {
+          "startMin": 577.0906,
+          "endMin": 704.613,
+          "zone": "dining_room"
+        },
+        {
+          "startMin": 704.613,
+          "endMin": 775.9077,
+          "zone": "bathroom"
+        },
+        {
+          "startMin": 775.9077,
+          "endMin": 795.7118,
+          "zone": "doorway"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-30",
+      "valid": true,
+      "observedMinutes": 705.1985,
+      "zoneMinutes": {
+        "bedroom": 322.2596,
+        "living_room": 184.7343,
+        "dining_room": 116.2287,
+        "bathroom": 64.1551,
+        "doorway": 17.8209,
+        "outside": 0.0
+      },
+      "transitionCount": 11,
+      "outsideMinutes": 0.0,
+      "outingCount": 0,
+      "activityMinutesByCategory": {
+        "self_care": 36.6033,
+        "meal": 43.0628,
+        "household": 28.9036,
+        "leisure": 23.7458,
+        "rehab_exercise": 21.0084,
+        "outdoor": 11.1919,
+        "social": 12.846
+      },
+      "meaningfulActivityMinutes": 177.3618,
+      "meaningfulActivityEpisodes": 7,
+      "interactionMinutes": 20.2569,
+      "interactionEpisodes": 2,
+      "initiatedInteractionEpisodes": 2,
+      "participatingDay": true,
+      "locationSegments": [
+        {
+          "startMin": 0.0,
+          "endMin": 322.2596,
+          "zone": "bedroom"
+        },
+        {
+          "startMin": 322.2596,
+          "endMin": 506.9939,
+          "zone": "living_room"
+        },
+        {
+          "startMin": 506.9939,
+          "endMin": 623.2226,
+          "zone": "dining_room"
+        },
+        {
+          "startMin": 623.2226,
+          "endMin": 687.3777,
+          "zone": "bathroom"
+        },
+        {
+          "startMin": 687.3777,
+          "endMin": 705.1986,
+          "zone": "doorway"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-31",
+      "valid": true,
+      "observedMinutes": 721.4114,
+      "zoneMinutes": {
+        "bedroom": 332.3313,
+        "living_room": 171.3251,
+        "dining_room": 109.5847,
+        "bathroom": 61.6027,
+        "doorway": 23.9566,
+        "outside": 22.611
+      },
+      "transitionCount": 12,
+      "outsideMinutes": 22.611,
+      "outingCount": 1,
+      "activityMinutesByCategory": {
+        "self_care": 33.6129,
+        "meal": 39.5446,
+        "household": 24.9667,
+        "leisure": 20.0942,
+        "rehab_exercise": 18.8642,
+        "outdoor": 8.6243,
+        "social": 11.0963
+      },
+      "meaningfulActivityMinutes": 156.8033,
+      "meaningfulActivityEpisodes": 9,
+      "interactionMinutes": 56.0127,
+      "interactionEpisodes": 4,
+      "initiatedInteractionEpisodes": 1,
+      "participatingDay": true,
+      "locationSegments": [
+        {
+          "startMin": 0.0,
+          "endMin": 332.3313,
+          "zone": "bedroom"
+        },
+        {
+          "startMin": 332.3313,
+          "endMin": 503.6564,
+          "zone": "living_room"
+        },
+        {
+          "startMin": 503.6564,
+          "endMin": 613.2411,
+          "zone": "dining_room"
+        },
+        {
+          "startMin": 613.2411,
+          "endMin": 674.8438,
+          "zone": "bathroom"
+        },
+        {
+          "startMin": 674.8438,
+          "endMin": 698.8004,
+          "zone": "doorway"
+        },
+        {
+          "startMin": 698.8004,
+          "endMin": 721.4114,
+          "zone": "outside"
+        }
+      ]
+    }
+  ],
+  "representativeDay": "2026-05-25",
+  "weekAggregate": {
+    "metrics": {
+      "effectiveZoneCount": 3.7815,
+      "zoneTransitionsPer8h": 7.1229,
+      "activityEffectiveTypes": 6.0051,
+      "activityCategoryCount": 7.0,
+      "outsideMinutesPerValidDay": 3.2301,
+      "outingDaysRatePct": 14.2857,
+      "outingsPerValidDay": 0.1429,
+      "interactionMinutesPer8h": 24.1864,
+      "interactionEpisodesPer8h": 1.9682,
+      "initiatedInteractionRatePct": 71.4286,
+      "participatingDaysRatePct": 57.1429,
+      "longestLowParticipationStreakDays": 3.0
+    }
+  }
+}

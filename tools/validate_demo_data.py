@@ -9,6 +9,7 @@ from pathlib import Path
 from demo_generation.emotion import EMOTION_INDEXES, EMOTION_METRICS, aggregate_emotion_week, build_emotion_evidence_summary, derive_emotion_day_result
 from demo_generation.normalization import build_baselines, calculate_indexes
 from demo_generation.quality import unit_quality, week_confidence
+from demo_generation.metric_specs import DOMAIN_INDEXES
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -200,16 +201,41 @@ def validate_public_boundary():
         check('"sourceType": "real"' not in payload, f"{path.relative_to(ROOT)}: real data cannot be committed to public demo data")
 
 
+def validate_showcase_domains():
+    anchors = {
+        "cognition": {"2025-W46", "2026-W06", "2026-W16", "2026-W33"},
+        "sleep": {"2025-W46", "2026-W06", "2026-W16", "2026-W33"},
+        "participation": {"2025-W46", "2026-W22", "2026-W29", "2026-W33"},
+    }
+    comparisons = {"cognition": ("2026-W06", "2026-W16"), "sleep": ("2026-W06", "2026-W16"), "participation": ("2026-W22", "2026-W29")}
+    for domain in anchors:
+        base = DATA / "P-1047" / domain
+        summary, evidence, mapping = load(base / "weekly-summary.json"), load(base / "evidence-lite.json"), load(base / "metric-mapping.json")
+        if not all((summary, evidence, mapping)):
+            continue
+        check(len(summary["weeks"]) == 40 and len(evidence["weeks"]) == 40, f"{domain}: expected 40 summary and lite weeks")
+        check(set(mapping["indexes"]) == set(DOMAIN_INDEXES[domain]), f"{domain}: index mapping mismatch")
+        check({path.stem for path in (base / "weeks").glob("*.json")} == anchors[domain], f"{domain}: full detail anchors mismatch")
+        current = next(week for week in evidence["weeks"] if week["weekId"] == "2026-W33")
+        units = current.get("sessions") or current.get("nights") or current.get("days")
+        check(len(units) == 4, f"{domain}: W33 must contain Mon-Thu only")
+        by_id = {week["weekId"]: week for week in summary["weeks"]}
+        left, right = (by_id[week_id] for week_id in comparisons[domain])
+        recovered = sum(right["indexes"][key] > left["indexes"][key] for key in DOMAIN_INDEXES[domain])
+        check(recovered >= 4, f"{domain}: default comparison must recover in at least four indexes")
+
+
 def main():
     validate_life()
     validate_attention()
     validate_emotion()
+    validate_showcase_domains()
     validate_public_boundary()
     if ERRORS:
         print("Demo data validation failed:")
         print("\n".join(f"- {error}" for error in ERRORS))
         return 1
-    print("Demo data validation passed: 40 life weeks, 40 emotion weeks, 6 attention tasks × 24 weeks")
+    print("Demo data validation passed: life, emotion and three showcase domains; 6 attention tasks × 24 weeks")
     return 0
 
 

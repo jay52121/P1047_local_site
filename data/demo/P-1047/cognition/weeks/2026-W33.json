@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "cognition",
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated",
+  "weekId": "2026-W33",
+  "detailLevel": "full",
+  "confidencePct": 93.8483,
+  "sessions": [
+    {
+      "taskType": "prepare_outing",
+      "expectedSteps": [
+        "change_clothes",
+        "get_phone",
+        "get_keys",
+        "put_on_shoes",
+        "leave_home"
+      ],
+      "actualSteps": [
+        "change_clothes",
+        "get_phone",
+        "get_keys",
+        "put_on_shoes",
+        "leave_home"
+      ],
+      "events": [
+        {
+          "type": "hesitation",
+          "label": "犹豫 1 次"
+        }
+      ],
+      "result": {
+        "startupLatencySec": 30.7241,
+        "stepCoveragePct": 100.0,
+        "completed": true,
+        "orderIntegrityPct": 94.2467,
+        "repeatRatePct": 0.0,
+        "hesitationSecPerStep": 1.0711,
+        "selfCorrectionRatePct": 85.253,
+        "correctionLatencySec": 11.7224,
+        "promptPerStep": 0.0,
+        "unpromptedCompletion": true
+      }
+    },
+    {
+      "taskType": "make_tea",
+      "expectedSteps": [
+        "prepare_cup",
+        "get_water",
+        "add_tea",
+        "pour_water",
+        "finish"
+      ],
+      "actualSteps": [
+        "prepare_cup",
+        "get_water",
+        "add_tea",
+        "pour_water",
+        "finish"
+      ],
+      "events": [
+        {
+          "type": "hesitation",
+          "label": "犹豫 1 次"
+        }
+      ],
+      "result": {
+        "startupLatencySec": 31.2467,
+        "stepCoveragePct": 100.0,
+        "completed": true,
+        "orderIntegrityPct": 93.1066,
+        "repeatRatePct": 0.0,
+        "hesitationSecPerStep": 1.0943,
+        "selfCorrectionRatePct": 78.87,
+        "correctionLatencySec": 16.5013,
+        "promptPerStep": 0.0,
+        "unpromptedCompletion": true
+      }
+    },
+    {
+      "taskType": "organize_medication",
+      "expectedSteps": [
+        "open_box",
+        "check_day",
+        "select_dose",
+        "place_dose",
+        "close_box",
+        "confirm"
+      ],
+      "actualSteps": [
+        "open_box",
+        "check_day",
+        "place_dose",
+        "close_box",
+        "select_dose",
+        "confirm"
+      ],
+      "events": [
+        {
+          "type": "hesitation",
+          "label": "犹豫 2 次"
+        },
+        {
+          "type": "omission",
+          "step": "select_dose"
+        },
+        {
+          "type": "correction",
+          "label": "返回正确路径"
+        }
+      ],
+      "result": {
+        "startupLatencySec": 33.4902,
+        "stepCoveragePct": 83.3333,
+        "completed": true,
+        "orderIntegrityPct": 90.5774,
+        "repeatRatePct": 0.0,
+        "hesitationSecPerStep": 1.9647,
+        "selfCorrectionRatePct": 100.0,
+        "correctionLatencySec": 15.7354,
+        "promptPerStep": 0.0,
+        "unpromptedCompletion": true
+      }
+    },
+    {
+      "taskType": "prepare_outing",
+      "expectedSteps": [
+        "change_clothes",
+        "get_phone",
+        "get_keys",
+        "put_on_shoes",
+        "leave_home"
+      ],
+      "actualSteps": [
+        "change_clothes",
+        "get_phone",
+        "get_phone",
+        "get_keys",
+        "put_on_shoes",
+        "leave_home"
+      ],
+      "events": [
+        {
+          "type": "hesitation",
+          "label": "犹豫 2 次"
+        },
+        {
+          "type": "repeat",
+          "step": "get_phone"
+        }
+      ],
+      "result": {
+        "startupLatencySec": 31.3513,
+        "stepCoveragePct": 100.0,
+        "completed": true,
+        "orderIntegrityPct": 83.9979,
+        "repeatRatePct": 20.0,
+        "hesitationSecPerStep": 2.0324,
+        "selfCorrectionRatePct": 85.7596,
+        "correctionLatencySec": 11.7029,
+        "promptPerStep": 0.0,
+        "unpromptedCompletion": true
+      }
+    }
+  ],
+  "weekAggregate": {
+    "metrics": {
+      "startupLatencySec": 31.299,
+      "stepCoveragePct": 100.0,
+      "taskCompletionRatePct": 100.0,
+      "orderIntegrityPct": 91.842,
+      "repeatRatePct": 0.0,
+      "hesitationSecPerStep": 1.5295,
+      "selfCorrectionRatePct": 85.5063,
+      "correctionLatencySec": 13.7289,
+      "promptPerStep": 0.0,
+      "unpromptedCompletionRatePct": 100.0
+    }
+  }
+}

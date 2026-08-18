@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "cognition",
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated",
+  "weekId": "2026-W06",
+  "detailLevel": "full",
+  "confidencePct": 92.8861,
+  "sessions": [
+    {
+      "taskType": "prepare_outing",
+      "expectedSteps": [
+        "change_clothes",
+        "get_phone",
+        "get_keys",
+        "put_on_shoes",
+        "leave_home"
+      ],
+      "actualSteps": [
+        "change_clothes",
+        "get_phone",
+        "get_phone",
+        "put_on_shoes",
+        "get_keys",
+        "leave_home"
+      ],
+      "events": [
+        {
+          "type": "hesitation",
+          "label": "犹豫 2 次"
+        },
+        {
+          "type": "repeat",
+          "step": "get_phone"
+        },
+        {
+          "type": "omission",
+          "step": "get_keys"
+        },
+        {
+          "type": "prompt",
+          "label": "外部提示"
+        },
+        {
+          "type": "correction",
+          "label": "返回正确路径"
+        }
+      ],
+      "result": {
+        "startupLatencySec": 33.2707,
+        "stepCoveragePct": 80.0,
+        "completed": true,
+        "orderIntegrityPct": 72.0,
+        "repeatRatePct": 20.0,
+        "hesitationSecPerStep": 3.2,
+        "selfCorrectionRatePct": 0.0,
+        "correctionLatencySec": null,
+        "promptPerStep": 0.2,
+        "unpromptedCompletion": false
+      }
+    },
+    {
+      "taskType": "make_tea",
+      "expectedSteps": [
+        "prepare_cup",
+        "get_water",
+        "add_tea",
+        "pour_water",
+        "finish"
+      ],
+      "actualSteps": [
+        "prepare_cup",
+        "get_water",
+        "get_water",
+        "pour_water",
+        "add_tea",
+        "finish"
+      ],
+      "events": [
+        {
+          "type": "hesitation",
+          "label": "犹豫 2 次"
+        },
+        {
+          "type": "repeat",
+          "step": "get_water"
+        },
+        {
+          "type": "omission",
+          "step": "add_tea"
+        },
+        {
+          "type": "prompt",
+          "label": "外部提示"
+        },
+        {
+          "type": "correction",
+          "label": "返回正确路径"
+        }
+      ],
+      "result": {
+        "startupLatencySec": 30.7944,
+        "stepCoveragePct": 80.0,
+        "completed": true,
+        "orderIntegrityPct": 72.0,
+        "repeatRatePct": 20.0,
+        "hesitationSecPerStep": 3.2,
+        "selfCorrectionRatePct": 0.0,
+        "correctionLatencySec": null,
+        "promptPerStep": 0.2,
+        "unpromptedCompletion": false
+      }
+    },
+    {
+      "taskType": "organize_medication",
+      "expectedSteps": [
+        "open_box",
+        "check_day",
+        "select_dose",
+        "place_dose",
+        "close_box",
+        "confirm"
+      ],
+      "actualSteps": [
+        "open_box",
+        "check_day",
+        "check_day",
+        "place_dose",
+        "close_box",
+        "select_dose",
+        "confirm"
+      ],
+      "events": [
+        {
+          "type": "hesitation",
+          "label": "犹豫 2 次"
+        },
+        {
+          "type": "repeat",
+          "step": "check_day"
+        },
+        {
+          "type": "omission",
+          "step": "select_dose"
+        },
+        {
+          "type": "prompt",
+          "label": "外部提示"
+        },
+        {
+          "type": "correction",
+          "label": "返回正确路径"
+        }
+      ],
+      "result": {
+        "startupLatencySec": 38.6466,
+        "stepCoveragePct": 83.3333,
+        "completed": true,
+        "orderIntegrityPct": 72.0,
+        "repeatRatePct": 16.6667,
+        "hesitationSecPerStep": 2.6667,
+        "selfCorrectionRatePct": 0.0,
+        "correctionLatencySec": null,
+        "promptPerStep": 0.1667,
+        "unpromptedCompletion": false
+      }
+    }
+  ],
+  "weekAggregate": {
+    "metrics": {
+      "startupLatencySec": 33.2707,
+      "stepCoveragePct": 80.0,
+      "taskCompletionRatePct": 100.0,
+      "orderIntegrityPct": 72.0,
+      "repeatRatePct": 20.0,
+      "hesitationSecPerStep": 3.2,
+      "selfCorrectionRatePct": 0.0,
+      "correctionLatencySec": null,
+      "promptPerStep": 0.2,
+      "unpromptedCompletionRatePct": 0.0
+    }
+  }
+}

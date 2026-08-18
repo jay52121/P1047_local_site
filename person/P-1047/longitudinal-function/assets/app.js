@@ -2,6 +2,7 @@ import { AutoClock } from "./auto-clock.js";
 import { JsonDataRepository } from "./data-repository.js";
 import { DOMAINS, LIFE_EVIDENCE, LIFE_METRICS, LIFE_SECONDARY } from "./domain-defs.js";
 import { mountEmotionView } from "./emotion-view.js";
+import { mountShowcaseView } from "./showcase-view.js";
 
 const repository = new JsonDataRepository();
 const clock = new AutoClock(12000);
@@ -42,7 +43,7 @@ function renderLife() {
   left.value = Math.min(19, state.weeks.length - 1); right.value = state.weeks.length - 1;
   left.onchange = () => { if (+left.value > +right.value) right.value = left.value; updateLife(); };
   right.onchange = () => { if (+right.value < +left.value) left.value = right.value; updateLife(); };
-  state.evidenceOpen = false;
+  document.getElementById("autoEvidence").hidden = !state.evidenceOpen;
   document.getElementById("evidenceButton").onclick = toggleAutoEvidence;
   state.removeClockView?.();
   state.removeClockView = clock.add({ renderAt(phase) { const bar = document.getElementById("autoProgress"); if (bar) bar.style.width = `${phase * 100}%`; } });
@@ -103,15 +104,35 @@ async function selectDomain(domain) {
   state.domainCleanup?.(); state.domainCleanup = null; state.domain = domain; document.querySelectorAll("[data-domain]").forEach(button => button.classList.toggle("active", button.dataset.domain === domain)); clearTimeout(state.evidenceTimer); state.evidenceToken++;
   if (!DOMAINS[domain].available) { state.removeClockView?.(); state.removeClockView = null; main.innerHTML = `<section class="panel emptyState">选择的人物该数据为空</section>`; return; }
   if (domain === "life") { state.weeks = state.lifeWeeks; renderLife(); return; }
+  if (domain === "attention") {
+    state.removeClockView?.(); state.removeClockView = null;
+    main.innerHTML = `<section class="panel attentionEmpty showcaseEnter"><div class="attentionIcon">—</div><h2>该人物不适用专注与学习状态分析</h2><p>P-1047 当前没有儿童任务数据。可切换至示例人物查看完整的学习任务长期分析。</p><a href="/person/C-2308/task-longitudinal/">查看 C-2308 儿童示例 →</a></section>`;
+    return;
+  }
   if (domain === "emotion") {
     state.removeClockView?.(); state.removeClockView = null;
     main.innerHTML = `<section class="panel pageLoading"><span class="spinner"></span><span>正在加载心理情绪核心数据…</span></section>`;
     try {
       const [summary, metricMapping] = await Promise.all([repository.getWeeklySummary(state.personId, "emotion"), repository.getJson(`${state.personId}/emotion/emotion_metric_mapping.json`)]);
       if (state.domain !== "emotion") return;
-      state.domainCleanup = mountEmotionView({ main, weeks: summary.weeks, metricMapping, repository, clock, personId: state.personId });
+      state.domainCleanup = mountEmotionView({ main, weeks: summary.weeks, metricMapping, repository, clock, personId: state.personId, initialEvidenceOpen: state.evidenceOpen, onEvidenceChange: open => { state.evidenceOpen = open; } });
     } catch (error) {
       console.error(error); main.innerHTML = `<section class="panel emptyState errorState">心理情绪核心数据加载失败。</section>`;
+    }
+  }
+  if (["cognition", "sleep", "participation"].includes(domain)) {
+    state.removeClockView?.(); state.removeClockView = null;
+    main.innerHTML = `<section class="panel pageLoading"><span class="spinner"></span><span>正在加载${DOMAINS[domain].label}核心数据…</span></section>`;
+    try {
+      const [summary, evidence, metricMapping] = await Promise.all([
+        repository.getWeeklySummary(state.personId, domain),
+        repository.getJson(`${state.personId}/${domain}/evidence-lite.json`),
+        repository.getJson(`${state.personId}/${domain}/metric-mapping.json`),
+      ]);
+      if (state.domain !== domain) return;
+      state.domainCleanup = mountShowcaseView({ main, domain, weeks: summary.weeks, evidenceWeeks: evidence.weeks, metricMapping, repository, clock, personId: state.personId, initialEvidenceOpen: state.evidenceOpen, onEvidenceChange: open => { state.evidenceOpen = open; } });
+    } catch (error) {
+      console.error(error); main.innerHTML = `<section class="panel emptyState errorState">${DOMAINS[domain].label}核心数据加载失败。</section>`;
     }
   }
 }

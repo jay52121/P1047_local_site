@@ -1,0 +1,2780 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "participation",
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated",
+  "baseline": {
+    "weekIds": [
+      "2025-W46",
+      "2025-W47",
+      "2025-W48",
+      "2025-W49",
+      "2025-W50"
+    ]
+  },
+  "weeks": [
+    {
+      "weekId": "2025-W46",
+      "weekIndex": 1,
+      "weekStart": "2025-11-10",
+      "weekEnd": "2025-11-16",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.8332,
+      "metricConfidencePct": {
+        "spaceRange": 95.8332,
+        "activityDiversity": 95.8332,
+        "outsideParticipation": 95.8332,
+        "socialParticipation": 95.8332,
+        "participationContinuity": 95.8332
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.8388,
+        "zoneTransitionsPer8h": 10.0285,
+        "activityEffectiveTypes": 6.6652,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 61.3825,
+        "outingDaysRatePct": 57.1429,
+        "outingsPerValidDay": 0.7143,
+        "interactionMinutesPer8h": 54.1498,
+        "interactionEpisodesPer8h": 3.1518,
+        "initiatedInteractionRatePct": 63.6364,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 99.1693,
+        "activityDiversity": 99.972,
+        "outsideParticipation": 103.7319,
+        "socialParticipation": 98.7924,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 102.0765,
+          "zoneTransitionsPer8h": 94.8085
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 99.9627,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 105.6476,
+          "outingDaysRatePct": 100.0,
+          "outingsPerValidDay": 104.7619
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 99.3199,
+          "interactionEpisodesPer8h": 97.1508,
+          "initiatedInteractionRatePct": 100.4785
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W47",
+      "weekIndex": 2,
+      "weekStart": "2025-11-17",
+      "weekEnd": "2025-11-23",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.2319,
+      "metricConfidencePct": {
+        "spaceRange": 93.2319,
+        "activityDiversity": 93.2319,
+        "outsideParticipation": 93.2319,
+        "socialParticipation": 93.2319,
+        "participationContinuity": 93.2319
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.7315,
+        "zoneTransitionsPer8h": 9.8161,
+        "activityEffectiveTypes": 6.6651,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 49.1721,
+        "outingDaysRatePct": 57.1429,
+        "outingsPerValidDay": 0.5714,
+        "interactionMinutesPer8h": 55.17,
+        "interactionEpisodesPer8h": 3.3655,
+        "initiatedInteractionRatePct": 63.8889,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 96.7104,
+        "activityDiversity": 99.9711,
+        "outsideParticipation": 99.7941,
+        "socialParticipation": 100.1462,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 99.3945,
+          "zoneTransitionsPer8h": 92.6841
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 99.9615,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 99.5424,
+          "outingDaysRatePct": 100.0,
+          "outingsPerValidDay": 100.0
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 100.0,
+          "interactionEpisodesPer8h": 100.0,
+          "initiatedInteractionRatePct": 100.731
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W48",
+      "weekIndex": 3,
+      "weekStart": "2025-11-24",
+      "weekEnd": "2025-11-30",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.0549,
+      "metricConfidencePct": {
+        "spaceRange": 95.0549,
+        "activityDiversity": 95.0549,
+        "outsideParticipation": 95.0549,
+        "socialParticipation": 95.0549,
+        "participationContinuity": 95.0549
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.7557,
+        "zoneTransitionsPer8h": 10.552,
+        "activityEffectiveTypes": 6.6667,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 50.0873,
+        "outingDaysRatePct": 57.1429,
+        "outingsPerValidDay": 0.5714,
+        "interactionMinutesPer8h": 57.7896,
+        "interactionEpisodesPer8h": 3.4196,
+        "initiatedInteractionRatePct": 57.1429,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 100.0175,
+        "activityDiversity": 100.0,
+        "outsideParticipation": 100.0,
+        "socialParticipation": 99.8355,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 100.0,
+          "zoneTransitionsPer8h": 100.0437
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 100.0,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 100.0,
+          "outingDaysRatePct": 100.0,
+          "outingsPerValidDay": 100.0
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 101.7464,
+          "interactionEpisodesPer8h": 100.7217,
+          "initiatedInteractionRatePct": 93.985
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W49",
+      "weekIndex": 4,
+      "weekStart": "2025-12-01",
+      "weekEnd": "2025-12-07",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.4106,
+      "metricConfidencePct": {
+        "spaceRange": 94.4106,
+        "activityDiversity": 94.4106,
+        "outsideParticipation": 94.4106,
+        "socialParticipation": 94.4106,
+        "participationContinuity": 94.4106
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.9234,
+        "zoneTransitionsPer8h": 10.5476,
+        "activityEffectiveTypes": 6.6684,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 70.162,
+        "outingDaysRatePct": 71.4286,
+        "outingsPerValidDay": 0.8571,
+        "interactionMinutesPer8h": 61.9346,
+        "interactionEpisodesPer8h": 3.7459,
+        "initiatedInteractionRatePct": 63.1579,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 102.5157,
+        "activityDiversity": 100.0328,
+        "outsideParticipation": 109.7549,
+        "socialParticipation": 103.8045,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 104.1928,
+          "zoneTransitionsPer8h": 100.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 100.0437,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 110.0374,
+          "outingDaysRatePct": 109.5238,
+          "outingsPerValidDay": 109.5238
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 104.5098,
+          "interactionEpisodesPer8h": 105.0718,
+          "initiatedInteractionRatePct": 100.0
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W50",
+      "weekIndex": 5,
+      "weekStart": "2025-12-08",
+      "weekEnd": "2025-12-14",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.1552,
+      "metricConfidencePct": {
+        "spaceRange": 93.1552,
+        "activityDiversity": 93.1552,
+        "outsideParticipation": 93.1552,
+        "socialParticipation": 93.1552,
+        "participationContinuity": 93.1552
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.611,
+        "zoneTransitionsPer8h": 10.5496,
+        "activityEffectiveTypes": 6.6716,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 35.6533,
+        "outingDaysRatePct": 42.8571,
+        "outingsPerValidDay": 0.4286,
+        "interactionMinutesPer8h": 54.437,
+        "interactionEpisodesPer8h": 3.3567,
+        "initiatedInteractionRatePct": 60.0,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 97.837,
+        "activityDiversity": 100.0934,
+        "outsideParticipation": 92.7047,
+        "socialParticipation": 99.1073,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 96.3823,
+          "zoneTransitionsPer8h": 100.0191
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 100.1245,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 92.783,
+          "outingDaysRatePct": 90.4762,
+          "outingsPerValidDay": 95.2381
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 99.5114,
+          "interactionEpisodesPer8h": 99.8823,
+          "initiatedInteractionRatePct": 96.8421
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W51",
+      "weekIndex": 6,
+      "weekStart": "2025-12-15",
+      "weekEnd": "2025-12-21",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.8319,
+      "metricConfidencePct": {
+        "spaceRange": 94.8319,
+        "activityDiversity": 94.8319,
+        "outsideParticipation": 94.8319,
+        "socialParticipation": 94.8319,
+        "participationContinuity": 94.8319
+      },
+      "phase": "轻度改善期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.9905,
+        "zoneTransitionsPer8h": 10.6283,
+        "activityEffectiveTypes": 6.6749,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 80.8679,
+        "outingDaysRatePct": 100.0,
+        "outingsPerValidDay": 1.0,
+        "interactionMinutesPer8h": 57.1795,
+        "interactionEpisodesPer8h": 3.3817,
+        "initiatedInteractionRatePct": 60.0,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 103.8444,
+        "activityDiversity": 100.1539,
+        "outsideParticipation": 119.0685,
+        "socialParticipation": 100.0469,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 105.8699,
+          "zoneTransitionsPer8h": 100.8062
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 100.2053,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 115.3903,
+          "outingDaysRatePct": 128.5714,
+          "outingsPerValidDay": 114.2857
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 101.3397,
+          "interactionEpisodesPer8h": 100.2162,
+          "initiatedInteractionRatePct": 96.8421
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W52",
+      "weekIndex": 7,
+      "weekStart": "2025-12-22",
+      "weekEnd": "2025-12-28",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.5786,
+      "metricConfidencePct": {
+        "spaceRange": 94.5786,
+        "activityDiversity": 94.5786,
+        "outsideParticipation": 94.5786,
+        "socialParticipation": 94.5786,
+        "participationContinuity": 94.5786
+      },
+      "phase": "轻度改善期",
+      "event": "日常活动增加",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.9056,
+        "zoneTransitionsPer8h": 10.5411,
+        "activityEffectiveTypes": 6.6745,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 68.2785,
+        "outingDaysRatePct": 85.7143,
+        "outingsPerValidDay": 0.8571,
+        "interactionMinutesPer8h": 59.4651,
+        "interactionEpisodesPer8h": 3.6087,
+        "initiatedInteractionRatePct": 73.6842,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 102.222,
+        "activityDiversity": 100.1474,
+        "outsideParticipation": 112.1883,
+        "socialParticipation": 104.5285,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 103.7472,
+          "zoneTransitionsPer8h": 99.9343
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 100.1966,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 109.0956,
+          "outingDaysRatePct": 119.0476,
+          "outingsPerValidDay": 109.5238
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 102.8634,
+          "interactionEpisodesPer8h": 103.242,
+          "initiatedInteractionRatePct": 110.5263
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W01",
+      "weekIndex": 8,
+      "weekStart": "2025-12-29",
+      "weekEnd": "2026-01-04",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.3753,
+      "metricConfidencePct": {
+        "spaceRange": 94.3753,
+        "activityDiversity": 94.3753,
+        "outsideParticipation": 94.3753,
+        "socialParticipation": 94.3753,
+        "participationContinuity": 94.3753
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.8674,
+        "zoneTransitionsPer8h": 9.6663,
+        "activityEffectiveTypes": 6.6521,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 67.5479,
+        "outingDaysRatePct": 71.4286,
+        "outingsPerValidDay": 0.8571,
+        "interactionMinutesPer8h": 48.3226,
+        "interactionEpisodesPer8h": 2.9743,
+        "initiatedInteractionRatePct": 46.875,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 98.1499,
+        "activityDiversity": 99.7279,
+        "outsideParticipation": 109.1667,
+        "socialParticipation": 92.8634,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 102.792,
+          "zoneTransitionsPer8h": 91.1869
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 99.6371,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 108.7303,
+          "outingDaysRatePct": 109.5238,
+          "outingsPerValidDay": 109.5238
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 95.4351,
+          "interactionEpisodesPer8h": 94.7833,
+          "initiatedInteractionRatePct": 83.7171
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W02",
+      "weekIndex": 9,
+      "weekStart": "2026-01-05",
+      "weekEnd": "2026-01-11",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.8661,
+      "metricConfidencePct": {
+        "spaceRange": 93.8661,
+        "activityDiversity": 93.8661,
+        "outsideParticipation": 93.8661,
+        "socialParticipation": 93.8661,
+        "participationContinuity": 93.8661
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.7708,
+        "zoneTransitionsPer8h": 9.584,
+        "activityEffectiveTypes": 6.6351,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 55.6654,
+        "outingDaysRatePct": 71.4286,
+        "outingsPerValidDay": 0.7143,
+        "interactionMinutesPer8h": 50.5083,
+        "interactionEpisodesPer8h": 3.1627,
+        "initiatedInteractionRatePct": 84.8485,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 96.3726,
+        "activityDiversity": 99.4081,
+        "outsideParticipation": 105.3027,
+        "socialParticipation": 101.9932,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 100.3789,
+          "zoneTransitionsPer8h": 90.3631
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 99.2108,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 102.789,
+          "outingDaysRatePct": 109.5238,
+          "outingsPerValidDay": 104.7619
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 96.8922,
+          "interactionEpisodesPer8h": 97.296,
+          "initiatedInteractionRatePct": 121.6906
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W03",
+      "weekIndex": 10,
+      "weekStart": "2026-01-12",
+      "weekEnd": "2026-01-18",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.0387,
+      "metricConfidencePct": {
+        "spaceRange": 95.0387,
+        "activityDiversity": 95.0387,
+        "outsideParticipation": 95.0387,
+        "socialParticipation": 95.0387,
+        "participationContinuity": 95.0387
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.7808,
+        "zoneTransitionsPer8h": 9.3654,
+        "activityEffectiveTypes": 6.6084,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 59.5072,
+        "outingDaysRatePct": 71.4286,
+        "outingsPerValidDay": 0.8571,
+        "interactionMinutesPer8h": 46.8416,
+        "interactionEpisodesPer8h": 3.0896,
+        "initiatedInteractionRatePct": 56.25,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 95.6472,
+        "activityDiversity": 98.9079,
+        "outsideParticipation": 107.3576,
+        "socialParticipation": 94.8325,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 100.6267,
+          "zoneTransitionsPer8h": 88.1779
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 98.5439,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 104.71,
+          "outingDaysRatePct": 109.5238,
+          "outingsPerValidDay": 109.5238
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 94.4477,
+          "interactionEpisodesPer8h": 96.3217,
+          "initiatedInteractionRatePct": 93.0921
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W04",
+      "weekIndex": 11,
+      "weekStart": "2026-01-19",
+      "weekEnd": "2026-01-25",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.971,
+      "metricConfidencePct": {
+        "spaceRange": 95.971,
+        "activityDiversity": 95.971,
+        "outsideParticipation": 95.971,
+        "socialParticipation": 95.971,
+        "participationContinuity": 95.971
+      },
+      "phase": "缓慢下降期",
+      "event": "活动量开始减少",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.1703,
+        "zoneTransitionsPer8h": 9.1515,
+        "activityEffectiveTypes": 6.2514,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 10.6743,
+        "outingDaysRatePct": 14.2857,
+        "outingsPerValidDay": 0.1429,
+        "interactionMinutesPer8h": 43.3819,
+        "interactionEpisodesPer8h": 3.0837,
+        "initiatedInteractionRatePct": 64.5161,
+        "participatingDaysRatePct": 42.8571,
+        "longestLowParticipationStreakDays": 3.0
+      },
+      "indexes": {
+        "spaceRange": 85.6349,
+        "activityDiversity": 92.2141,
+        "outsideParticipation": 78.9892,
+        "socialParticipation": 95.42,
+        "participationContinuity": 70.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 85.3656,
+          "zoneTransitionsPer8h": 86.0389
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 89.6188,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 80.2935,
+          "outingDaysRatePct": 71.4286,
+          "outingsPerValidDay": 85.7143
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 92.1413,
+          "interactionEpisodesPer8h": 96.2422,
+          "initiatedInteractionRatePct": 101.3582
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 70.0,
+          "longestLowParticipationStreakDays": 70.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W05",
+      "weekIndex": 12,
+      "weekStart": "2026-01-26",
+      "weekEnd": "2026-02-01",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.0659,
+      "metricConfidencePct": {
+        "spaceRange": 93.0659,
+        "activityDiversity": 93.0659,
+        "outsideParticipation": 93.0659,
+        "socialParticipation": 93.0659,
+        "participationContinuity": 93.0659
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.2672,
+        "zoneTransitionsPer8h": 7.675,
+        "activityEffectiveTypes": 6.4387,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 23.9567,
+        "outingDaysRatePct": 42.8571,
+        "outingsPerValidDay": 0.7143,
+        "interactionMinutesPer8h": 31.3944,
+        "interactionEpisodesPer8h": 2.5583,
+        "initiatedInteractionRatePct": 73.0769,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 81.1821,
+        "activityDiversity": 95.7266,
+        "outsideParticipation": 92.4539,
+        "socialParticipation": 91.0844,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 87.7875,
+          "zoneTransitionsPer8h": 71.2739
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 94.3022,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 86.9347,
+          "outingDaysRatePct": 90.4762,
+          "outingsPerValidDay": 104.7619
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 84.1496,
+          "interactionEpisodesPer8h": 89.2378,
+          "initiatedInteractionRatePct": 109.919
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W06",
+      "weekIndex": 13,
+      "weekStart": "2026-02-02",
+      "weekEnd": "2026-02-08",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.9401,
+      "metricConfidencePct": {
+        "spaceRange": 94.9401,
+        "activityDiversity": 94.9401,
+        "outsideParticipation": 94.9401,
+        "socialParticipation": 94.9401,
+        "participationContinuity": 94.9401
+      },
+      "phase": "事件后快速变化期",
+      "event": "家中异常事件，短期活动明显减少",
+      "eventKind": "external",
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.01,
+        "zoneTransitionsPer8h": 6.3171,
+        "activityEffectiveTypes": 6.2481,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 16.3868,
+        "outingDaysRatePct": 42.8571,
+        "outingsPerValidDay": 0.4286,
+        "interactionMinutesPer8h": 26.3281,
+        "interactionEpisodesPer8h": 2.2014,
+        "initiatedInteractionRatePct": 47.8261,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 76.8145,
+        "activityDiversity": 92.153,
+        "outsideParticipation": 88.3698,
+        "socialParticipation": 82.8487,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 81.3575,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 89.5373,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 83.1497,
+          "outingDaysRatePct": 90.4762,
+          "outingsPerValidDay": 95.2381
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 80.7721,
+          "interactionEpisodesPer8h": 84.479,
+          "initiatedInteractionRatePct": 84.6682
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W07",
+      "weekIndex": 14,
+      "weekStart": "2026-02-09",
+      "weekEnd": "2026-02-15",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.8885,
+      "metricConfidencePct": {
+        "spaceRange": 94.8885,
+        "activityDiversity": 94.8885,
+        "outsideParticipation": 94.8885,
+        "socialParticipation": 94.8885,
+        "participationContinuity": 94.8885
+      },
+      "phase": "事件后快速变化期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 3.71,
+        "zoneTransitionsPer8h": 6.8273,
+        "activityEffectiveTypes": 5.3015,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 0.0,
+        "outingDaysRatePct": 0.0,
+        "outingsPerValidDay": 0.0,
+        "interactionMinutesPer8h": 27.5626,
+        "interactionEpisodesPer8h": 2.1809,
+        "initiatedInteractionRatePct": 30.4348,
+        "participatingDaysRatePct": 28.5714,
+        "longestLowParticipationStreakDays": 4.0
+      },
+      "indexes": {
+        "spaceRange": 72.3145,
+        "activityDiversity": 77.5,
+        "outsideParticipation": 74.9684,
+        "socialParticipation": 80.1898,
+        "participationContinuity": 70.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 73.8574,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 70.0,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 74.9563,
+          "outingDaysRatePct": 70.0,
+          "outingsPerValidDay": 80.9524
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 81.5951,
+          "interactionEpisodesPer8h": 84.2058,
+          "initiatedInteractionRatePct": 70.0
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 70.0,
+          "longestLowParticipationStreakDays": 70.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W08",
+      "weekIndex": 15,
+      "weekStart": "2026-02-16",
+      "weekEnd": "2026-02-22",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.4291,
+      "metricConfidencePct": {
+        "spaceRange": 94.4291,
+        "activityDiversity": 94.4291,
+        "outsideParticipation": 94.4291,
+        "socialParticipation": 94.4291,
+        "participationContinuity": 94.4291
+      },
+      "phase": "干预恢复期",
+      "event": "开始规律康复训练",
+      "eventKind": "intervention",
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 3.7582,
+        "zoneTransitionsPer8h": 7.3318,
+        "activityEffectiveTypes": 5.901,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 0.0,
+        "outingDaysRatePct": 0.0,
+        "outingsPerValidDay": 0.0,
+        "interactionMinutesPer8h": 32.6989,
+        "interactionEpisodesPer8h": 2.7012,
+        "initiatedInteractionRatePct": 60.7143,
+        "participatingDaysRatePct": 42.8571,
+        "longestLowParticipationStreakDays": 2.0
+      },
+      "indexes": {
+        "spaceRange": 73.0379,
+        "activityDiversity": 85.6446,
+        "outsideParticipation": 74.9684,
+        "socialParticipation": 89.6699,
+        "participationContinuity": 73.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 75.0632,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 80.8595,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 74.9563,
+          "outingDaysRatePct": 70.0,
+          "outingsPerValidDay": 80.9524
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 85.0193,
+          "interactionEpisodesPer8h": 91.1427,
+          "initiatedInteractionRatePct": 97.5564
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 70.0,
+          "longestLowParticipationStreakDays": 80.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W09",
+      "weekIndex": 16,
+      "weekStart": "2026-02-23",
+      "weekEnd": "2026-03-01",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.7176,
+      "metricConfidencePct": {
+        "spaceRange": 93.7176,
+        "activityDiversity": 93.7176,
+        "outsideParticipation": 93.7176,
+        "socialParticipation": 93.7176,
+        "participationContinuity": 93.7176
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.2891,
+        "zoneTransitionsPer8h": 7.7812,
+        "activityEffectiveTypes": 6.2554,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 28.0558,
+        "outingDaysRatePct": 57.1429,
+        "outingsPerValidDay": 0.5714,
+        "interactionMinutesPer8h": 31.3363,
+        "interactionEpisodesPer8h": 2.3723,
+        "initiatedInteractionRatePct": 56.0,
+        "participatingDaysRatePct": 71.4286,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 81.9349,
+        "activityDiversity": 92.2894,
+        "outsideParticipation": 95.0429,
+        "socialParticipation": 86.7835,
+        "participationContinuity": 83.6667
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 88.3345,
+          "zoneTransitionsPer8h": 72.3356
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 89.7193,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 88.9843,
+          "outingDaysRatePct": 100.0,
+          "outingsPerValidDay": 100.0
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 84.1109,
+          "interactionEpisodesPer8h": 86.7575,
+          "initiatedInteractionRatePct": 92.8421
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 80.9524,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W10",
+      "weekIndex": 17,
+      "weekStart": "2026-03-02",
+      "weekEnd": "2026-03-08",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.4965,
+      "metricConfidencePct": {
+        "spaceRange": 93.4965,
+        "activityDiversity": 93.4965,
+        "outsideParticipation": 93.4965,
+        "socialParticipation": 93.4965,
+        "participationContinuity": 93.4965
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.2785,
+        "zoneTransitionsPer8h": 7.3955,
+        "activityEffectiveTypes": 6.4749,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 23.5184,
+        "outingDaysRatePct": 42.8571,
+        "outingsPerValidDay": 0.5714,
+        "interactionMinutesPer8h": 33.1322,
+        "interactionEpisodesPer8h": 2.5932,
+        "initiatedInteractionRatePct": 44.4444,
+        "participatingDaysRatePct": 71.4286,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 80.8416,
+        "activityDiversity": 96.4037,
+        "outsideParticipation": 91.1649,
+        "socialParticipation": 86.042,
+        "participationContinuity": 83.6667
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 88.0694,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 95.205,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 86.7155,
+          "outingDaysRatePct": 90.4762,
+          "outingsPerValidDay": 100.0
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 85.3081,
+          "interactionEpisodesPer8h": 89.7031,
+          "initiatedInteractionRatePct": 81.2865
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 80.9524,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W11",
+      "weekIndex": 18,
+      "weekStart": "2026-03-09",
+      "weekEnd": "2026-03-15",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.7809,
+      "metricConfidencePct": {
+        "spaceRange": 93.7809,
+        "activityDiversity": 93.7809,
+        "outsideParticipation": 93.7809,
+        "socialParticipation": 93.7809,
+        "participationContinuity": 93.7809
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.0659,
+        "zoneTransitionsPer8h": 7.6069,
+        "activityEffectiveTypes": 6.1895,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 9.1773,
+        "outingDaysRatePct": 14.2857,
+        "outingsPerValidDay": 0.1429,
+        "interactionMinutesPer8h": 37.1866,
+        "interactionEpisodesPer8h": 2.7235,
+        "initiatedInteractionRatePct": 68.9655,
+        "participatingDaysRatePct": 57.1429,
+        "longestLowParticipationStreakDays": 2.0
+      },
+      "indexes": {
+        "spaceRange": 77.8904,
+        "activityDiversity": 91.0528,
+        "outsideParticipation": 78.6524,
+        "socialParticipation": 92.7702,
+        "participationContinuity": 74.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 82.7557,
+          "zoneTransitionsPer8h": 70.5924
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 88.0704,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 79.545,
+          "outingDaysRatePct": 71.4286,
+          "outingsPerValidDay": 85.7143
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 88.0111,
+          "interactionEpisodesPer8h": 91.4393,
+          "initiatedInteractionRatePct": 105.8076
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 71.4286,
+          "longestLowParticipationStreakDays": 80.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W12",
+      "weekIndex": 19,
+      "weekStart": "2026-03-16",
+      "weekEnd": "2026-03-22",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.9362,
+      "metricConfidencePct": {
+        "spaceRange": 94.9362,
+        "activityDiversity": 94.9362,
+        "outsideParticipation": 94.9362,
+        "socialParticipation": 94.9362,
+        "participationContinuity": 94.9362
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.4019,
+        "zoneTransitionsPer8h": 8.2581,
+        "activityEffectiveTypes": 6.5271,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 30.0544,
+        "outingDaysRatePct": 42.8571,
+        "outingsPerValidDay": 0.5714,
+        "interactionMinutesPer8h": 42.4756,
+        "interactionEpisodesPer8h": 2.9425,
+        "initiatedInteractionRatePct": 58.0645,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 85.5354,
+        "activityDiversity": 97.3826,
+        "outsideParticipation": 92.6354,
+        "socialParticipation": 93.1991,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 91.1561,
+          "zoneTransitionsPer8h": 77.1043
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 96.5101,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 89.9835,
+          "outingDaysRatePct": 90.4762,
+          "outingsPerValidDay": 100.0
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 91.5371,
+          "interactionEpisodesPer8h": 94.3603,
+          "initiatedInteractionRatePct": 94.9066
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W13",
+      "weekIndex": 20,
+      "weekStart": "2026-03-23",
+      "weekEnd": "2026-03-29",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.4819,
+      "metricConfidencePct": {
+        "spaceRange": 95.4819,
+        "activityDiversity": 95.4819,
+        "outsideParticipation": 95.4819,
+        "socialParticipation": 95.4819,
+        "participationContinuity": 95.4819
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.5175,
+        "zoneTransitionsPer8h": 8.4041,
+        "activityEffectiveTypes": 6.4968,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 38.7911,
+        "outingDaysRatePct": 42.8571,
+        "outingsPerValidDay": 0.5714,
+        "interactionMinutesPer8h": 37.8651,
+        "interactionEpisodesPer8h": 2.5495,
+        "initiatedInteractionRatePct": 51.8519,
+        "participatingDaysRatePct": 85.7143,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 87.8531,
+        "activityDiversity": 96.816,
+        "outsideParticipation": 94.6012,
+        "socialParticipation": 88.7395,
+        "participationContinuity": 90.3333
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 94.0457,
+          "zoneTransitionsPer8h": 78.5642
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 95.7546,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 94.3519,
+          "outingDaysRatePct": 90.4762,
+          "outingsPerValidDay": 100.0
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 88.4634,
+          "interactionEpisodesPer8h": 89.1206,
+          "initiatedInteractionRatePct": 88.694
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 90.4762,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W14",
+      "weekIndex": 21,
+      "weekStart": "2026-03-30",
+      "weekEnd": "2026-04-05",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.9816,
+      "metricConfidencePct": {
+        "spaceRange": 95.9816,
+        "activityDiversity": 95.9816,
+        "outsideParticipation": 95.9816,
+        "socialParticipation": 95.9816,
+        "participationContinuity": 95.9816
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.447,
+        "zoneTransitionsPer8h": 9.334,
+        "activityEffectiveTypes": 6.5307,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 28.8299,
+        "outingDaysRatePct": 42.8571,
+        "outingsPerValidDay": 0.4286,
+        "interactionMinutesPer8h": 46.5214,
+        "interactionEpisodesPer8h": 3.1113,
+        "initiatedInteractionRatePct": 75.0,
+        "participatingDaysRatePct": 85.7143,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 90.5156,
+        "activityDiversity": 97.4511,
+        "outsideParticipation": 91.1695,
+        "socialParticipation": 98.5878,
+        "participationContinuity": 90.3333
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 92.2833,
+          "zoneTransitionsPer8h": 87.864
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 96.6015,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 89.3713,
+          "outingDaysRatePct": 90.4762,
+          "outingsPerValidDay": 95.2381
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 94.2343,
+          "interactionEpisodesPer8h": 96.6112,
+          "initiatedInteractionRatePct": 111.8421
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 90.4762,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W15",
+      "weekIndex": 22,
+      "weekStart": "2026-04-06",
+      "weekEnd": "2026-04-12",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.0404,
+      "metricConfidencePct": {
+        "spaceRange": 93.0404,
+        "activityDiversity": 93.0404,
+        "outsideParticipation": 93.0404,
+        "socialParticipation": 93.0404,
+        "participationContinuity": 93.0404
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.4747,
+        "zoneTransitionsPer8h": 8.9548,
+        "activityEffectiveTypes": 6.5649,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 29.0656,
+        "outingDaysRatePct": 28.5714,
+        "outingsPerValidDay": 0.4286,
+        "interactionMinutesPer8h": 47.2373,
+        "interactionEpisodesPer8h": 3.1437,
+        "initiatedInteractionRatePct": 66.6667,
+        "participatingDaysRatePct": 85.7143,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 89.4142,
+        "activityDiversity": 98.0912,
+        "outsideParticipation": 88.3654,
+        "socialParticipation": 97.2869,
+        "participationContinuity": 90.3333
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 92.9758,
+          "zoneTransitionsPer8h": 84.0718
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 97.4549,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 89.4892,
+          "outingDaysRatePct": 80.9524,
+          "outingsPerValidDay": 95.2381
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 94.7115,
+          "interactionEpisodesPer8h": 97.0428,
+          "initiatedInteractionRatePct": 103.5088
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 90.4762,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W16",
+      "weekIndex": 23,
+      "weekStart": "2026-04-13",
+      "weekEnd": "2026-04-19",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.998,
+      "metricConfidencePct": {
+        "spaceRange": 95.998,
+        "activityDiversity": 95.998,
+        "outsideParticipation": 95.998,
+        "socialParticipation": 95.998,
+        "participationContinuity": 95.998
+      },
+      "phase": "部分恢复后波动期",
+      "event": "恢复到较稳定活动水平",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.7626,
+        "zoneTransitionsPer8h": 9.5847,
+        "activityEffectiveTypes": 6.5696,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 54.8575,
+        "outingDaysRatePct": 57.1429,
+        "outingsPerValidDay": 0.7143,
+        "interactionMinutesPer8h": 50.7205,
+        "interactionEpisodesPer8h": 3.0671,
+        "initiatedInteractionRatePct": 71.875,
+        "participatingDaysRatePct": 85.7143,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 96.2516,
+        "activityDiversity": 98.18,
+        "outsideParticipation": 102.2638,
+        "socialParticipation": 99.0161,
+        "participationContinuity": 90.3333
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 100.1721,
+          "zoneTransitionsPer8h": 90.3708
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 97.5733,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 102.3851,
+          "outingDaysRatePct": 100.0,
+          "outingsPerValidDay": 104.7619
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 97.0337,
+          "interactionEpisodesPer8h": 96.0214,
+          "initiatedInteractionRatePct": 108.7171
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 90.4762,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W17",
+      "weekIndex": 24,
+      "weekStart": "2026-04-20",
+      "weekEnd": "2026-04-26",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.3482,
+      "metricConfidencePct": {
+        "spaceRange": 94.3482,
+        "activityDiversity": 94.3482,
+        "outsideParticipation": 94.3482,
+        "socialParticipation": 94.3482,
+        "participationContinuity": 94.3482
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.6394,
+        "zoneTransitionsPer8h": 9.5285,
+        "activityEffectiveTypes": 6.5444,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 44.6981,
+        "outingDaysRatePct": 57.1429,
+        "outingsPerValidDay": 0.5714,
+        "interactionMinutesPer8h": 44.6646,
+        "interactionEpisodesPer8h": 2.8784,
+        "initiatedInteractionRatePct": 51.7241,
+        "participatingDaysRatePct": 85.7143,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 94.1795,
+        "activityDiversity": 97.708,
+        "outsideParticipation": 98.7874,
+        "socialParticipation": 92.2885,
+        "participationContinuity": 90.3333
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 97.0935,
+          "zoneTransitionsPer8h": 89.8086
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 96.9439,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 97.3054,
+          "outingDaysRatePct": 100.0,
+          "outingsPerValidDay": 100.0
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 92.9964,
+          "interactionEpisodesPer8h": 93.5053,
+          "initiatedInteractionRatePct": 88.5662
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 90.4762,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W18",
+      "weekIndex": 25,
+      "weekStart": "2026-04-27",
+      "weekEnd": "2026-05-03",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.8238,
+      "metricConfidencePct": {
+        "spaceRange": 94.8238,
+        "activityDiversity": 94.8238,
+        "outsideParticipation": 94.8238,
+        "socialParticipation": 94.8238,
+        "participationContinuity": 94.8238
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.486,
+        "zoneTransitionsPer8h": 9.0832,
+        "activityEffectiveTypes": 6.4013,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 34.3851,
+        "outingDaysRatePct": 42.8571,
+        "outingsPerValidDay": 0.5714,
+        "interactionMinutesPer8h": 42.523,
+        "interactionEpisodesPer8h": 2.9301,
+        "initiatedInteractionRatePct": 46.6667,
+        "participatingDaysRatePct": 71.4286,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 90.0961,
+        "activityDiversity": 95.0244,
+        "outsideParticipation": 93.6099,
+        "socialParticipation": 90.8756,
+        "participationContinuity": 83.6667
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 93.2567,
+          "zoneTransitionsPer8h": 85.3553
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 93.3658,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 92.1489,
+          "outingDaysRatePct": 90.4762,
+          "outingsPerValidDay": 100.0
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 91.5687,
+          "interactionEpisodesPer8h": 94.194,
+          "initiatedInteractionRatePct": 83.5088
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 80.9524,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W19",
+      "weekIndex": 26,
+      "weekStart": "2026-05-04",
+      "weekEnd": "2026-05-10",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.8985,
+      "metricConfidencePct": {
+        "spaceRange": 93.8985,
+        "activityDiversity": 93.8985,
+        "outsideParticipation": 93.8985,
+        "socialParticipation": 93.8985,
+        "participationContinuity": 93.8985
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.0483,
+        "zoneTransitionsPer8h": 7.8401,
+        "activityEffectiveTypes": 6.3259,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 7.9451,
+        "outingDaysRatePct": 14.2857,
+        "outingsPerValidDay": 0.1429,
+        "interactionMinutesPer8h": 33.5302,
+        "interactionEpisodesPer8h": 2.4559,
+        "initiatedInteractionRatePct": 50.0,
+        "participatingDaysRatePct": 71.4286,
+        "longestLowParticipationStreakDays": 2.0
+      },
+      "indexes": {
+        "spaceRange": 78.5587,
+        "activityDiversity": 93.6117,
+        "outsideParticipation": 78.3752,
+        "socialParticipation": 86.6318,
+        "participationContinuity": 80.6667
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 82.315,
+          "zoneTransitionsPer8h": 72.9243
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 91.4823,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 78.9289,
+          "outingDaysRatePct": 71.4286,
+          "outingsPerValidDay": 85.7143
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 85.5735,
+          "interactionEpisodesPer8h": 87.8723,
+          "initiatedInteractionRatePct": 86.8421
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 80.9524,
+          "longestLowParticipationStreakDays": 80.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W20",
+      "weekIndex": 27,
+      "weekStart": "2026-05-11",
+      "weekEnd": "2026-05-17",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.8144,
+      "metricConfidencePct": {
+        "spaceRange": 95.8144,
+        "activityDiversity": 95.8144,
+        "outsideParticipation": 95.8144,
+        "socialParticipation": 95.8144,
+        "participationContinuity": 95.8144
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.1073,
+        "zoneTransitionsPer8h": 7.9808,
+        "activityEffectiveTypes": 6.4629,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 14.1462,
+        "outingDaysRatePct": 28.5714,
+        "outingsPerValidDay": 0.2857,
+        "interactionMinutesPer8h": 36.7708,
+        "interactionEpisodesPer8h": 2.7229,
+        "initiatedInteractionRatePct": 41.3793,
+        "participatingDaysRatePct": 85.7143,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 80.0069,
+        "activityDiversity": 96.1787,
+        "outsideParticipation": 83.818,
+        "socialParticipation": 87.1255,
+        "participationContinuity": 90.3333
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 83.7903,
+          "zoneTransitionsPer8h": 74.3318
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 94.905,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 82.0295,
+          "outingDaysRatePct": 80.9524,
+          "outingsPerValidDay": 90.4762
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 87.7338,
+          "interactionEpisodesPer8h": 91.4315,
+          "initiatedInteractionRatePct": 78.2214
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 90.4762,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W21",
+      "weekIndex": 28,
+      "weekStart": "2026-05-18",
+      "weekEnd": "2026-05-24",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.3585,
+      "metricConfidencePct": {
+        "spaceRange": 95.3585,
+        "activityDiversity": 95.3585,
+        "outsideParticipation": 95.3585,
+        "socialParticipation": 95.3585,
+        "participationContinuity": 95.3585
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 3.7499,
+        "zoneTransitionsPer8h": 7.4119,
+        "activityEffectiveTypes": 6.2851,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 0.0,
+        "outingDaysRatePct": 0.0,
+        "outingsPerValidDay": 0.0,
+        "interactionMinutesPer8h": 27.5778,
+        "interactionEpisodesPer8h": 2.3102,
+        "initiatedInteractionRatePct": 66.6667,
+        "participatingDaysRatePct": 85.7143,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 72.9128,
+        "activityDiversity": 92.8466,
+        "outsideParticipation": 74.9684,
+        "socialParticipation": 87.4993,
+        "participationContinuity": 90.3333
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 74.8546,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 90.4622,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 74.9563,
+          "outingDaysRatePct": 70.0,
+          "outingsPerValidDay": 80.9524
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 81.6052,
+          "interactionEpisodesPer8h": 85.9293,
+          "initiatedInteractionRatePct": 103.5088
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 90.4762,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W22",
+      "weekIndex": 29,
+      "weekStart": "2026-05-25",
+      "weekEnd": "2026-05-31",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.4493,
+      "metricConfidencePct": {
+        "spaceRange": 94.4493,
+        "activityDiversity": 94.4493,
+        "outsideParticipation": 94.4493,
+        "socialParticipation": 94.4493,
+        "participationContinuity": 94.4493
+      },
+      "phase": "环境影响与再次下降期",
+      "event": "高温天气，外出活动减少",
+      "eventKind": "external",
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 3.7815,
+        "zoneTransitionsPer8h": 7.1229,
+        "activityEffectiveTypes": 6.0051,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 3.2301,
+        "outingDaysRatePct": 14.2857,
+        "outingsPerValidDay": 0.1429,
+        "interactionMinutesPer8h": 24.1864,
+        "interactionEpisodesPer8h": 1.9682,
+        "initiatedInteractionRatePct": 71.4286,
+        "participatingDaysRatePct": 57.1429,
+        "longestLowParticipationStreakDays": 3.0
+      },
+      "indexes": {
+        "spaceRange": 73.3864,
+        "activityDiversity": 87.5964,
+        "outsideParticipation": 77.3143,
+        "socialParticipation": 85.8381,
+        "participationContinuity": 71.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 75.644,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 83.4619,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 76.5714,
+          "outingDaysRatePct": 71.4286,
+          "outingsPerValidDay": 85.7143
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 79.3443,
+          "interactionEpisodesPer8h": 81.3688,
+          "initiatedInteractionRatePct": 108.2707
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 71.4286,
+          "longestLowParticipationStreakDays": 70.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W23",
+      "weekIndex": 30,
+      "weekStart": "2026-06-01",
+      "weekEnd": "2026-06-07",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.0489,
+      "metricConfidencePct": {
+        "spaceRange": 94.0489,
+        "activityDiversity": 94.0489,
+        "outsideParticipation": 94.0489,
+        "socialParticipation": 94.0489,
+        "participationContinuity": 94.0489
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 3.9215,
+        "zoneTransitionsPer8h": 6.7622,
+        "activityEffectiveTypes": 6.2178,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 9.6155,
+        "outingDaysRatePct": 28.5714,
+        "outingsPerValidDay": 0.2857,
+        "interactionMinutesPer8h": 28.2726,
+        "interactionEpisodesPer8h": 2.348,
+        "initiatedInteractionRatePct": 52.0,
+        "participatingDaysRatePct": 71.4286,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 75.4869,
+        "activityDiversity": 91.5845,
+        "outsideParticipation": 82.7986,
+        "socialParticipation": 84.9508,
+        "participationContinuity": 83.6667
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 79.1448,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 88.7793,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 79.7641,
+          "outingDaysRatePct": 80.9524,
+          "outingsPerValidDay": 90.4762
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 82.0684,
+          "interactionEpisodesPer8h": 86.4331,
+          "initiatedInteractionRatePct": 88.8421
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 80.9524,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W24",
+      "weekIndex": 31,
+      "weekStart": "2026-06-08",
+      "weekEnd": "2026-06-14",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.579,
+      "metricConfidencePct": {
+        "spaceRange": 95.579,
+        "activityDiversity": 95.579,
+        "outsideParticipation": 95.579,
+        "socialParticipation": 95.579,
+        "participationContinuity": 95.579
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 3.7721,
+        "zoneTransitionsPer8h": 6.2076,
+        "activityEffectiveTypes": 6.2169,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 2.1429,
+        "outingDaysRatePct": 14.2857,
+        "outingsPerValidDay": 0.1429,
+        "interactionMinutesPer8h": 26.9572,
+        "interactionEpisodesPer8h": 2.1965,
+        "initiatedInteractionRatePct": 47.8261,
+        "participatingDaysRatePct": 85.7143,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 73.2462,
+        "activityDiversity": 91.5672,
+        "outsideParticipation": 77.0696,
+        "socialParticipation": 83.0145,
+        "participationContinuity": 90.3333
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 75.4103,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 88.7562,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 76.0278,
+          "outingDaysRatePct": 71.4286,
+          "outingsPerValidDay": 85.7143
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 81.1914,
+          "interactionEpisodesPer8h": 84.4136,
+          "initiatedInteractionRatePct": 84.6682
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 90.4762,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W25",
+      "weekIndex": 32,
+      "weekStart": "2026-06-15",
+      "weekEnd": "2026-06-21",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.7793,
+      "metricConfidencePct": {
+        "spaceRange": 93.7793,
+        "activityDiversity": 93.7793,
+        "outsideParticipation": 93.7793,
+        "socialParticipation": 93.7793,
+        "participationContinuity": 93.7793
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 3.7065,
+        "zoneTransitionsPer8h": 6.9087,
+        "activityEffectiveTypes": 6.1164,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 0.0,
+        "outingDaysRatePct": 0.0,
+        "outingsPerValidDay": 0.0,
+        "interactionMinutesPer8h": 24.7722,
+        "interactionEpisodesPer8h": 2.1767,
+        "initiatedInteractionRatePct": 52.1739,
+        "participatingDaysRatePct": 71.4286,
+        "longestLowParticipationStreakDays": 2.0
+      },
+      "indexes": {
+        "spaceRange": 72.2628,
+        "activityDiversity": 89.6819,
+        "outsideParticipation": 74.9684,
+        "socialParticipation": 83.1362,
+        "participationContinuity": 80.6667
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 73.7713,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 86.2425,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 74.9563,
+          "outingDaysRatePct": 70.0,
+          "outingsPerValidDay": 80.9524
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 79.7348,
+          "interactionEpisodesPer8h": 84.1495,
+          "initiatedInteractionRatePct": 89.016
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 80.9524,
+          "longestLowParticipationStreakDays": 80.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W26",
+      "weekIndex": 33,
+      "weekStart": "2026-06-22",
+      "weekEnd": "2026-06-28",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.6207,
+      "metricConfidencePct": {
+        "spaceRange": 93.6207,
+        "activityDiversity": 93.6207,
+        "outsideParticipation": 93.6207,
+        "socialParticipation": 93.6207,
+        "participationContinuity": 93.6207
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 3.9479,
+        "zoneTransitionsPer8h": 6.7451,
+        "activityEffectiveTypes": 6.1556,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 9.7007,
+        "outingDaysRatePct": 14.2857,
+        "outingsPerValidDay": 0.2857,
+        "interactionMinutesPer8h": 21.9466,
+        "interactionEpisodesPer8h": 1.71,
+        "initiatedInteractionRatePct": 50.0,
+        "participatingDaysRatePct": 71.4286,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 75.8825,
+        "activityDiversity": 90.4177,
+        "outsideParticipation": 79.9606,
+        "socialParticipation": 79.6758,
+        "participationContinuity": 83.6667
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 79.8042,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 87.2237,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 79.8067,
+          "outingDaysRatePct": 71.4286,
+          "outingsPerValidDay": 90.4762
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 77.8511,
+          "interactionEpisodesPer8h": 77.9268,
+          "initiatedInteractionRatePct": 86.8421
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 80.9524,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W27",
+      "weekIndex": 34,
+      "weekStart": "2026-06-29",
+      "weekEnd": "2026-07-05",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.2092,
+      "metricConfidencePct": {
+        "spaceRange": 95.2092,
+        "activityDiversity": 95.2092,
+        "outsideParticipation": 95.2092,
+        "socialParticipation": 95.2092,
+        "participationContinuity": 95.2092
+      },
+      "phase": "环境影响与再次下降期",
+      "event": "连续数周活动量偏低",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 3.8728,
+        "zoneTransitionsPer8h": 6.5354,
+        "activityEffectiveTypes": 6.1353,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 6.0844,
+        "outingDaysRatePct": 14.2857,
+        "outingsPerValidDay": 0.1429,
+        "interactionMinutesPer8h": 22.5219,
+        "interactionEpisodesPer8h": 1.9061,
+        "initiatedInteractionRatePct": 52.381,
+        "participatingDaysRatePct": 71.4286,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 74.7561,
+        "activityDiversity": 90.0373,
+        "outsideParticipation": 77.9565,
+        "socialParticipation": 81.2398,
+        "participationContinuity": 83.6667
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 77.9268,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 86.7164,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 77.9985,
+          "outingDaysRatePct": 71.4286,
+          "outingsPerValidDay": 85.7143
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 78.2346,
+          "interactionEpisodesPer8h": 80.5418,
+          "initiatedInteractionRatePct": 89.2231
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 80.9524,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W28",
+      "weekIndex": 35,
+      "weekStart": "2026-07-06",
+      "weekEnd": "2026-07-12",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.4212,
+      "metricConfidencePct": {
+        "spaceRange": 95.4212,
+        "activityDiversity": 95.4212,
+        "outsideParticipation": 95.4212,
+        "socialParticipation": 95.4212,
+        "participationContinuity": 95.4212
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.0967,
+        "zoneTransitionsPer8h": 7.2465,
+        "activityEffectiveTypes": 6.2346,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 14.2739,
+        "outingDaysRatePct": 28.5714,
+        "outingsPerValidDay": 0.2857,
+        "interactionMinutesPer8h": 32.9181,
+        "interactionEpisodesPer8h": 2.4791,
+        "initiatedInteractionRatePct": 42.3077,
+        "participatingDaysRatePct": 71.4286,
+        "longestLowParticipationStreakDays": 1.0
+      },
+      "indexes": {
+        "spaceRange": 78.1158,
+        "activityDiversity": 91.8993,
+        "outsideParticipation": 83.8468,
+        "socialParticipation": 85.0177,
+        "participationContinuity": 83.6667
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 83.5264,
+          "zoneTransitionsPer8h": 70.0
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 89.1991,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 82.0933,
+          "outingDaysRatePct": 80.9524,
+          "outingsPerValidDay": 90.4762
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 85.1654,
+          "interactionEpisodesPer8h": 88.1807,
+          "initiatedInteractionRatePct": 79.1498
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 80.9524,
+          "longestLowParticipationStreakDays": 90.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W29",
+      "weekIndex": 36,
+      "weekStart": "2026-07-13",
+      "weekEnd": "2026-07-19",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.967,
+      "metricConfidencePct": {
+        "spaceRange": 94.967,
+        "activityDiversity": 94.967,
+        "outsideParticipation": 94.967,
+        "socialParticipation": 94.967,
+        "participationContinuity": 94.967
+      },
+      "phase": "近期恢复期",
+      "event": "日常活动逐步恢复",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.644,
+        "zoneTransitionsPer8h": 8.279,
+        "activityEffectiveTypes": 6.509,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 53.7855,
+        "outingDaysRatePct": 100.0,
+        "outingsPerValidDay": 1.0,
+        "interactionMinutesPer8h": 39.6223,
+        "interactionEpisodesPer8h": 2.888,
+        "initiatedInteractionRatePct": 63.3333,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 89.2499,
+        "activityDiversity": 97.0437,
+        "outsideParticipation": 112.9749,
+        "socialParticipation": 93.1425,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 97.2076,
+          "zoneTransitionsPer8h": 77.3134
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 96.0583,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 101.8491,
+          "outingDaysRatePct": 128.5714,
+          "outingsPerValidDay": 114.2857
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 89.6349,
+          "interactionEpisodesPer8h": 93.6335,
+          "initiatedInteractionRatePct": 100.1754
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W30",
+      "weekIndex": 37,
+      "weekStart": "2026-07-20",
+      "weekEnd": "2026-07-26",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.0764,
+      "metricConfidencePct": {
+        "spaceRange": 93.0764,
+        "activityDiversity": 93.0764,
+        "outsideParticipation": 93.0764,
+        "socialParticipation": 93.0764,
+        "participationContinuity": 93.0764
+      },
+      "phase": "近期恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.7033,
+        "zoneTransitionsPer8h": 8.8113,
+        "activityEffectiveTypes": 6.5407,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 56.6343,
+        "outingDaysRatePct": 71.4286,
+        "outingsPerValidDay": 1.0,
+        "interactionMinutesPer8h": 36.434,
+        "interactionEpisodesPer8h": 2.5455,
+        "initiatedInteractionRatePct": 42.3077,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 92.2682,
+        "activityDiversity": 97.6383,
+        "outsideParticipation": 107.9016,
+        "socialParticipation": 86.3824,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 98.6892,
+          "zoneTransitionsPer8h": 82.6367
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 96.8511,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 103.2735,
+          "outingDaysRatePct": 109.5238,
+          "outingsPerValidDay": 114.2857
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 87.5094,
+          "interactionEpisodesPer8h": 89.0665,
+          "initiatedInteractionRatePct": 79.1498
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W31",
+      "weekIndex": 38,
+      "weekStart": "2026-07-27",
+      "weekEnd": "2026-08-02",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.3737,
+      "metricConfidencePct": {
+        "spaceRange": 93.3737,
+        "activityDiversity": 93.3737,
+        "outsideParticipation": 93.3737,
+        "socialParticipation": 93.3737,
+        "participationContinuity": 93.3737
+      },
+      "phase": "近期恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.4299,
+        "zoneTransitionsPer8h": 8.7105,
+        "activityEffectiveTypes": 6.5702,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 28.9241,
+        "outingDaysRatePct": 42.8571,
+        "outingsPerValidDay": 0.4286,
+        "interactionMinutesPer8h": 44.5106,
+        "interactionEpisodesPer8h": 2.9673,
+        "initiatedInteractionRatePct": 51.6129,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 87.7651,
+        "activityDiversity": 98.1909,
+        "outsideParticipation": 91.1906,
+        "socialParticipation": 92.635,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 91.8561,
+          "zoneTransitionsPer8h": 81.6286
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 97.5879,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 89.4184,
+          "outingDaysRatePct": 90.4762,
+          "outingsPerValidDay": 95.2381
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 92.8938,
+          "interactionEpisodesPer8h": 94.6908,
+          "initiatedInteractionRatePct": 88.455
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W32",
+      "weekIndex": 39,
+      "weekStart": "2026-08-03",
+      "weekEnd": "2026-08-09",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.1445,
+      "metricConfidencePct": {
+        "spaceRange": 94.1445,
+        "activityDiversity": 94.1445,
+        "outsideParticipation": 94.1445,
+        "socialParticipation": 94.1445,
+        "participationContinuity": 94.1445
+      },
+      "phase": "近期恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "effectiveZoneCount": 4.783,
+        "zoneTransitionsPer8h": 8.9393,
+        "activityEffectiveTypes": 6.5825,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 63.019,
+        "outingDaysRatePct": 71.4286,
+        "outingsPerValidDay": 1.0,
+        "interactionMinutesPer8h": 41.3832,
+        "interactionEpisodesPer8h": 2.7875,
+        "initiatedInteractionRatePct": 44.8276,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 93.9766,
+        "activityDiversity": 98.4218,
+        "outsideParticipation": 109.3382,
+        "socialParticipation": 89.5006,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 100.6837,
+          "zoneTransitionsPer8h": 83.916
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 97.8958,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 106.4659,
+          "outingDaysRatePct": 109.5238,
+          "outingsPerValidDay": 114.2857
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 90.8088,
+          "interactionEpisodesPer8h": 92.2934,
+          "initiatedInteractionRatePct": 81.6697
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W33",
+      "weekIndex": 40,
+      "weekStart": "2026-08-10",
+      "weekEnd": "2026-08-16",
+      "status": "in_progress",
+      "dataStatus": "sufficient",
+      "provisional": true,
+      "observedThroughDate": "2026-08-13",
+      "expectedUnits": 4,
+      "validUnits": 4,
+      "confidencePct": 93.7221,
+      "metricConfidencePct": {
+        "spaceRange": 93.7221,
+        "activityDiversity": 93.7221,
+        "outsideParticipation": 93.7221,
+        "socialParticipation": 93.7221,
+        "participationContinuity": 93.7221
+      },
+      "phase": "近期恢复期",
+      "event": "当前周（进行中）",
+      "eventKind": "data_status",
+      "note": "当前周数据截至 2026-08-13，结果为暂定",
+      "metrics": {
+        "effectiveZoneCount": 4.5585,
+        "zoneTransitionsPer8h": 9.6729,
+        "activityEffectiveTypes": 6.603,
+        "activityCategoryCount": 7.0,
+        "outsideMinutesPerValidDay": 35.9574,
+        "outingDaysRatePct": 50.0,
+        "outingsPerValidDay": 0.5,
+        "interactionMinutesPer8h": 45.933,
+        "interactionEpisodesPer8h": 2.9364,
+        "initiatedInteractionRatePct": 58.8235,
+        "participatingDaysRatePct": 100.0,
+        "longestLowParticipationStreakDays": 0.0
+      },
+      "indexes": {
+        "spaceRange": 93.5424,
+        "activityDiversity": 98.8062,
+        "outsideParticipation": 94.797,
+        "socialParticipation": 94.3596,
+        "participationContinuity": 100.0
+      },
+      "indexComponents": {
+        "spaceRange": {
+          "effectiveZoneCount": 95.0692,
+          "zoneTransitionsPer8h": 91.2522
+        },
+        "activityDiversity": {
+          "activityEffectiveTypes": 98.4082,
+          "activityCategoryCount": 100.0
+        },
+        "outsideParticipation": {
+          "outsideMinutesPerValidDay": 92.935,
+          "outingDaysRatePct": 95.2381,
+          "outingsPerValidDay": 97.619
+        },
+        "socialParticipation": {
+          "interactionMinutesPer8h": 93.842,
+          "interactionEpisodesPer8h": 94.2787,
+          "initiatedInteractionRatePct": 95.6656
+        },
+        "participationContinuity": {
+          "participatingDaysRatePct": 100.0,
+          "longestLowParticipationStreakDays": 100.0
+        }
+      }
+    }
+  ]
+}

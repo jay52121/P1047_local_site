@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "domain": "sleep",
+  "rawMetrics": {
+    "onsetMADMin": {
+      "label": "入睡时间波动",
+      "unit": " min",
+      "higherIsBetter": false,
+      "source": "sleep nights"
+    },
+    "riseMADMin": {
+      "label": "起床时间波动",
+      "unit": " min",
+      "higherIsBetter": false,
+      "source": "sleep nights"
+    },
+    "sleepLatencyMin": {
+      "label": "入睡延迟",
+      "unit": " min",
+      "higherIsBetter": false,
+      "source": "sleep nights"
+    },
+    "sleepLatencyMADMin": {
+      "label": "入睡延迟波动",
+      "unit": " min",
+      "higherIsBetter": false,
+      "source": "sleep nights"
+    },
+    "sleepContinuityPct": {
+      "label": "睡眠连续性",
+      "unit": "%",
+      "higherIsBetter": true,
+      "source": "sleep windows"
+    },
+    "awakeningsPerNight": {
+      "label": "夜醒次数",
+      "unit": " 次/夜",
+      "higherIsBetter": false,
+      "source": "awakening events"
+    },
+    "outOfBedMinPerNight": {
+      "label": "夜间离床",
+      "unit": " min/夜",
+      "higherIsBetter": false,
+      "source": "awakening events"
+    },
+    "napMinPerDay": {
+      "label": "午睡时长",
+      "unit": " min/日",
+      "higherIsBetter": false,
+      "source": "nap intervals"
+    },
+    "dayLowActivityRatePct": {
+      "label": "白天低活动占比",
+      "unit": "%",
+      "higherIsBetter": false,
+      "source": "day observations"
+    },
+    "midpointDeviationMin": {
+      "label": "睡眠中点偏离",
+      "unit": " min",
+      "higherIsBetter": false,
+      "source": "sleep nights"
+    },
+    "dayActivitySharePct": {
+      "label": "昼间活动占比",
+      "unit": "%",
+      "higherIsBetter": true,
+      "source": "day observations"
+    }
+  },
+  "indexes": {
+    "scheduleRegularity": {
+      "rawMetrics": [
+        "onsetMADMin",
+        "riseMADMin"
+      ]
+    },
+    "sleepOnsetStability": {
+      "rawMetrics": [
+        "sleepLatencyMin",
+        "sleepLatencyMADMin"
+      ]
+    },
+    "nightContinuity": {
+      "rawMetrics": [
+        "sleepContinuityPct",
+        "awakeningsPerNight",
+        "outOfBedMinPerNight"
+      ]
+    },
+    "daytimeWakefulness": {
+      "rawMetrics": [
+        "napMinPerDay",
+        "dayLowActivityRatePct"
+      ]
+    },
+    "circadianAlignment": {
+      "rawMetrics": [
+        "midpointDeviationMin",
+        "dayActivitySharePct"
+      ]
+    }
+  }
+}

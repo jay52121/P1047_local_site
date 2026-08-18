@@ -1,10 +1,10 @@
 export const DOMAINS = {
   life: { label: "综合生活能力", available: true },
   emotion: { label: "心理情绪状态", available: true },
-  cognition: { label: "认知行为状态", available: false },
-  sleep: { label: "睡眠与生活节律", available: false },
-  attention: { label: "专注与学习状态", available: false },
-  participation: { label: "活动与社会参与", available: false },
+  cognition: { label: "认知行为状态", available: true },
+  sleep: { label: "睡眠与生活节律", available: true },
+  attention: { label: "专注与学习状态", available: true },
+  participation: { label: "活动与社会参与", available: true },
 };
 
 export const EMOTION_METRICS = {

@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "cognition",
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated",
+  "weekId": "2026-W16",
+  "detailLevel": "full",
+  "confidencePct": 94.8804,
+  "sessions": [
+    {
+      "taskType": "prepare_outing",
+      "expectedSteps": [
+        "change_clothes",
+        "get_phone",
+        "get_keys",
+        "put_on_shoes",
+        "leave_home"
+      ],
+      "actualSteps": [
+        "change_clothes",
+        "get_phone",
+        "put_on_shoes",
+        "get_keys",
+        "leave_home"
+      ],
+      "events": [
+        {
+          "type": "hesitation",
+          "label": "犹豫 1 次"
+        },
+        {
+          "type": "omission",
+          "step": "get_keys"
+        },
+        {
+          "type": "correction",
+          "label": "返回正确路径"
+        }
+      ],
+      "result": {
+        "startupLatencySec": 26.2612,
+        "stepCoveragePct": 100.0,
+        "completed": true,
+        "orderIntegrityPct": 97.0,
+        "repeatRatePct": 0.0,
+        "hesitationSecPerStep": 0.4,
+        "selfCorrectionRatePct": 100.0,
+        "correctionLatencySec": 7.0,
+        "promptPerStep": 0.0,
+        "unpromptedCompletion": true
+      }
+    },
+    {
+      "taskType": "make_tea",
+      "expectedSteps": [
+        "prepare_cup",
+        "get_water",
+        "add_tea",
+        "pour_water",
+        "finish"
+      ],
+      "actualSteps": [
+        "prepare_cup",
+        "get_water",
+        "pour_water",
+        "add_tea",
+        "finish"
+      ],
+      "events": [
+        {
+          "type": "omission",
+          "step": "add_tea"
+        },
+        {
+          "type": "correction",
+          "label": "返回正确路径"
+        }
+      ],
+      "result": {
+        "startupLatencySec": 24.0697,
+        "stepCoveragePct": 100.0,
+        "completed": true,
+        "orderIntegrityPct": 97.0,
+        "repeatRatePct": 0.0,
+        "hesitationSecPerStep": 0.0,
+        "selfCorrectionRatePct": 100.0,
+        "correctionLatencySec": 7.0,
+        "promptPerStep": 0.0,
+        "unpromptedCompletion": true
+      }
+    },
+    {
+      "taskType": "organize_medication",
+      "expectedSteps": [
+        "open_box",
+        "check_day",
+        "select_dose",
+        "place_dose",
+        "close_box",
+        "confirm"
+      ],
+      "actualSteps": [
+        "open_box",
+        "check_day",
+        "place_dose",
+        "close_box",
+        "select_dose",
+        "confirm"
+      ],
+      "events": [
+        {
+          "type": "hesitation",
+          "label": "犹豫 1 次"
+        },
+        {
+          "type": "omission",
+          "step": "select_dose"
+        },
+        {
+          "type": "correction",
+          "label": "返回正确路径"
+        }
+      ],
+      "result": {
+        "startupLatencySec": 39.0209,
+        "stepCoveragePct": 100.0,
+        "completed": true,
+        "orderIntegrityPct": 97.0,
+        "repeatRatePct": 0.0,
+        "hesitationSecPerStep": 0.3333,
+        "selfCorrectionRatePct": 100.0,
+        "correctionLatencySec": 7.0,
+        "promptPerStep": 0.0,
+        "unpromptedCompletion": true
+      }
+    }
+  ],
+  "weekAggregate": {
+    "metrics": {
+      "startupLatencySec": 26.2612,
+      "stepCoveragePct": 100.0,
+      "taskCompletionRatePct": 100.0,
+      "orderIntegrityPct": 97.0,
+      "repeatRatePct": 0.0,
+      "hesitationSecPerStep": 0.3333,
+      "selfCorrectionRatePct": 100.0,
+      "correctionLatencySec": 7.0,
+      "promptPerStep": 0.0,
+      "unpromptedCompletionRatePct": 100.0
+    }
+  }
+}

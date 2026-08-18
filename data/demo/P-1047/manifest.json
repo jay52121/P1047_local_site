@@ -13,6 +13,21 @@
       "status": "available",
       "weeklySummary": "emotion/weekly-summary.json",
       "metricMapping": "emotion/emotion_metric_mapping.json"
+    },
+    "cognition": {
+      "status": "available",
+      "weeklySummary": "cognition/weekly-summary.json",
+      "evidenceLite": "cognition/evidence-lite.json"
+    },
+    "sleep": {
+      "status": "available",
+      "weeklySummary": "sleep/weekly-summary.json",
+      "evidenceLite": "sleep/evidence-lite.json"
+    },
+    "participation": {
+      "status": "available",
+      "weeklySummary": "participation/weekly-summary.json",
+      "evidenceLite": "participation/evidence-lite.json"
     }
   }
 }

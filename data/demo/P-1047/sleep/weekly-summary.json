@@ -1,0 +1,2700 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "sleep",
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated",
+  "baseline": {
+    "weekIds": [
+      "2025-W46",
+      "2025-W47",
+      "2025-W48",
+      "2025-W49",
+      "2025-W50"
+    ]
+  },
+  "weeks": [
+    {
+      "weekId": "2025-W46",
+      "weekIndex": 1,
+      "weekStart": "2025-11-10",
+      "weekEnd": "2025-11-16",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.3907,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.3907,
+        "sleepOnsetStability": 95.3907,
+        "nightContinuity": 95.3907,
+        "daytimeWakefulness": 95.3907,
+        "circadianAlignment": 95.3907
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 2.9674,
+        "riseMADMin": 5.3464,
+        "sleepLatencyMin": 21.766,
+        "sleepLatencyMADMin": 4.6065,
+        "sleepContinuityPct": 99.0352,
+        "awakeningsPerNight": 0.7143,
+        "outOfBedMinPerNight": 0.0,
+        "napMinPerDay": 3.7546,
+        "dayLowActivityRatePct": 15.9474,
+        "midpointDeviationMin": 6.0374,
+        "dayActivitySharePct": 99.4186
+      },
+      "indexes": {
+        "scheduleRegularity": 102.5534,
+        "sleepOnsetStability": 101.6748,
+        "nightContinuity": 100.3281,
+        "daytimeWakefulness": 100.2063,
+        "circadianAlignment": 100.0
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 105.7166,
+          "riseMADMin": 99.3903
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 103.3487,
+          "sleepLatencyMADMin": 98.5663
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 100.0,
+          "awakeningsPerNight": 100.0,
+          "outOfBedMinPerNight": 101.6406
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 100.3751,
+          "dayLowActivityRatePct": 100.0
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 100.0,
+          "dayActivitySharePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W47",
+      "weekIndex": 2,
+      "weekStart": "2025-11-17",
+      "weekEnd": "2025-11-23",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.2462,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.2462,
+        "sleepOnsetStability": 94.2462,
+        "nightContinuity": 94.2462,
+        "daytimeWakefulness": 94.2462,
+        "circadianAlignment": 94.2462
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 9.8738,
+        "riseMADMin": 3.6718,
+        "sleepLatencyMin": 27.0523,
+        "sleepLatencyMADMin": 2.4361,
+        "sleepContinuityPct": 98.5928,
+        "awakeningsPerNight": 1.0,
+        "outOfBedMinPerNight": 3.1719,
+        "napMinPerDay": 3.4481,
+        "dayLowActivityRatePct": 15.8848,
+        "midpointDeviationMin": 1.2229,
+        "dayActivitySharePct": 99.1879
+      },
+      "indexes": {
+        "scheduleRegularity": 99.9375,
+        "sleepOnsetStability": 99.2516,
+        "nightContinuity": 96.6548,
+        "daytimeWakefulness": 100.375,
+        "circadianAlignment": 101.7413
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 98.8102,
+          "riseMADMin": 101.0649
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 98.0624,
+          "sleepLatencyMADMin": 101.4601
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 98.5251,
+          "awakeningsPerNight": 92.8571,
+          "outOfBedMinPerNight": 97.6758
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 100.5794,
+          "dayLowActivityRatePct": 100.1251
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 103.2097,
+          "dayActivitySharePct": 99.5387
+        }
+      }
+    },
+    {
+      "weekId": "2025-W48",
+      "weekIndex": 3,
+      "weekStart": "2025-11-24",
+      "weekEnd": "2025-11-30",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.8944,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.8944,
+        "sleepOnsetStability": 94.8944,
+        "nightContinuity": 94.8944,
+        "daytimeWakefulness": 94.8944,
+        "circadianAlignment": 94.8944
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 5.8913,
+        "riseMADMin": 5.6451,
+        "sleepLatencyMin": 25.1147,
+        "sleepLatencyMADMin": 1.6337,
+        "sleepContinuityPct": 99.3364,
+        "awakeningsPerNight": 0.7143,
+        "outOfBedMinPerNight": 1.3125,
+        "napMinPerDay": 5.4993,
+        "dayLowActivityRatePct": 17.1201,
+        "midpointDeviationMin": 7.4642,
+        "dayActivitySharePct": 99.6076
+      },
+      "indexes": {
+        "scheduleRegularity": 100.9421,
+        "sleepOnsetStability": 100.8855,
+        "nightContinuity": 100.5019,
+        "daytimeWakefulness": 98.5112,
+        "circadianAlignment": 99.5805
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 102.7927,
+          "riseMADMin": 99.0916
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 100.0,
+          "sleepLatencyMADMin": 102.53
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 101.0038,
+          "awakeningsPerNight": 100.0,
+          "outOfBedMinPerNight": 100.0
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 99.212,
+          "dayLowActivityRatePct": 97.6546
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 99.0488,
+          "dayActivitySharePct": 100.3781
+        }
+      }
+    },
+    {
+      "weekId": "2025-W49",
+      "weekIndex": 4,
+      "weekStart": "2025-12-01",
+      "weekEnd": "2025-12-07",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.7062,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.7062,
+        "sleepOnsetStability": 94.7062,
+        "nightContinuity": 94.7062,
+        "daytimeWakefulness": 94.7062,
+        "circadianAlignment": 94.7062
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 10.7136,
+        "riseMADMin": 4.2655,
+        "sleepLatencyMin": 24.7864,
+        "sleepLatencyMADMin": 4.3311,
+        "sleepContinuityPct": 98.9602,
+        "awakeningsPerNight": 0.7143,
+        "outOfBedMinPerNight": 2.8647,
+        "napMinPerDay": 7.5684,
+        "dayLowActivityRatePct": 16.3121,
+        "midpointDeviationMin": 8.8003,
+        "dayActivitySharePct": 99.3841
+      },
+      "indexes": {
+        "scheduleRegularity": 99.2208,
+        "sleepOnsetStability": 99.8401,
+        "nightContinuity": 99.4868,
+        "daytimeWakefulness": 98.4797,
+        "circadianAlignment": 98.8673
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 97.9704,
+          "riseMADMin": 100.4712
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 100.3283,
+          "sleepLatencyMADMin": 98.9335
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 99.7497,
+          "awakeningsPerNight": 100.0,
+          "outOfBedMinPerNight": 98.0597
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 97.8326,
+          "dayLowActivityRatePct": 99.2706
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 98.1581,
+          "dayActivitySharePct": 99.9311
+        }
+      }
+    },
+    {
+      "weekId": "2025-W50",
+      "weekIndex": 5,
+      "weekStart": "2025-12-08",
+      "weekEnd": "2025-12-14",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.3181,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.3181,
+        "sleepOnsetStability": 94.3181,
+        "nightContinuity": 94.3181,
+        "daytimeWakefulness": 94.3181,
+        "circadianAlignment": 94.3181
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 8.684,
+        "riseMADMin": 4.7367,
+        "sleepLatencyMin": 26.1341,
+        "sleepLatencyMADMin": 3.5312,
+        "sleepContinuityPct": 99.2695,
+        "awakeningsPerNight": 0.4286,
+        "outOfBedMinPerNight": 0.5927,
+        "napMinPerDay": 4.3173,
+        "dayLowActivityRatePct": 15.4968,
+        "midpointDeviationMin": 4.7287,
+        "dayActivitySharePct": 99.5675
+      },
+      "indexes": {
+        "scheduleRegularity": 100.0,
+        "sleepOnsetStability": 99.3374,
+        "nightContinuity": 102.7133,
+        "daytimeWakefulness": 100.4055,
+        "circadianAlignment": 100.6426
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 100.0,
+          "riseMADMin": 100.0
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 98.9806,
+          "sleepLatencyMADMin": 100.0
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 100.7809,
+          "awakeningsPerNight": 107.1429,
+          "outOfBedMinPerNight": 100.8998
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 100.0,
+          "dayLowActivityRatePct": 100.9011
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 100.8725,
+          "dayActivitySharePct": 100.2979
+        }
+      }
+    },
+    {
+      "weekId": "2025-W51",
+      "weekIndex": 6,
+      "weekStart": "2025-12-15",
+      "weekEnd": "2025-12-21",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.021,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.021,
+        "sleepOnsetStability": 95.021,
+        "nightContinuity": 95.021,
+        "daytimeWakefulness": 95.021,
+        "circadianAlignment": 95.021
+      },
+      "phase": "轻度改善期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 6.9324,
+        "riseMADMin": 6.8996,
+        "sleepLatencyMin": 23.3025,
+        "sleepLatencyMADMin": 3.9586,
+        "sleepContinuityPct": 99.0593,
+        "awakeningsPerNight": 0.8571,
+        "outOfBedMinPerNight": 0.966,
+        "napMinPerDay": 2.8818,
+        "dayLowActivityRatePct": 17.7234,
+        "midpointDeviationMin": 7.8942,
+        "dayActivitySharePct": 99.4514
+      },
+      "indexes": {
+        "scheduleRegularity": 99.7943,
+        "sleepOnsetStability": 100.9785,
+        "nightContinuity": 99.0553,
+        "daytimeWakefulness": 98.9279,
+        "circadianAlignment": 99.2836
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 101.7516,
+          "riseMADMin": 97.8371
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 101.8122,
+          "sleepLatencyMADMin": 99.4301
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 100.0802,
+          "awakeningsPerNight": 96.4286,
+          "outOfBedMinPerNight": 100.4331
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 100.957,
+          "dayLowActivityRatePct": 96.448
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 98.7621,
+          "dayActivitySharePct": 100.0657
+        }
+      }
+    },
+    {
+      "weekId": "2025-W52",
+      "weekIndex": 7,
+      "weekStart": "2025-12-22",
+      "weekEnd": "2025-12-28",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.6582,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.6582,
+        "sleepOnsetStability": 95.6582,
+        "nightContinuity": 95.6582,
+        "daytimeWakefulness": 95.6582,
+        "circadianAlignment": 95.6582
+      },
+      "phase": "轻度改善期",
+      "event": "日常活动增加",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 8.0665,
+        "riseMADMin": 9.4327,
+        "sleepLatencyMin": 21.7253,
+        "sleepLatencyMADMin": 0.9573,
+        "sleepContinuityPct": 99.211,
+        "awakeningsPerNight": 0.5714,
+        "outOfBedMinPerNight": 1.9704,
+        "napMinPerDay": 0.0,
+        "dayLowActivityRatePct": 16.6417,
+        "midpointDeviationMin": 3.7112,
+        "dayActivitySharePct": 99.5332
+      },
+      "indexes": {
+        "scheduleRegularity": 97.9607,
+        "sleepOnsetStability": 103.4043,
+        "nightContinuity": 101.1998,
+        "daytimeWakefulness": 100.9582,
+        "circadianAlignment": 101.0222
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 100.6175,
+          "riseMADMin": 95.304
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 103.3894,
+          "sleepLatencyMADMin": 103.4319
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 100.5858,
+          "awakeningsPerNight": 103.5714,
+          "outOfBedMinPerNight": 99.1776
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 102.8782,
+          "dayLowActivityRatePct": 98.6114
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 101.5508,
+          "dayActivitySharePct": 100.2294
+        }
+      }
+    },
+    {
+      "weekId": "2026-W01",
+      "weekIndex": 8,
+      "weekStart": "2025-12-29",
+      "weekEnd": "2026-01-04",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.1433,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.1433,
+        "sleepOnsetStability": 95.1433,
+        "nightContinuity": 95.1433,
+        "daytimeWakefulness": 95.1433,
+        "circadianAlignment": 95.1433
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 5.6703,
+        "riseMADMin": 2.4916,
+        "sleepLatencyMin": 25.4786,
+        "sleepLatencyMADMin": 2.4988,
+        "sleepContinuityPct": 98.8736,
+        "awakeningsPerNight": 0.7143,
+        "outOfBedMinPerNight": 0.0,
+        "napMinPerDay": 6.5199,
+        "dayLowActivityRatePct": 17.5616,
+        "midpointDeviationMin": 2.3728,
+        "dayActivitySharePct": 99.334
+      },
+      "indexes": {
+        "scheduleRegularity": 102.6294,
+        "sleepOnsetStability": 100.2453,
+        "nightContinuity": 100.0588,
+        "daytimeWakefulness": 97.7396,
+        "circadianAlignment": 101.3982
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 103.0137,
+          "riseMADMin": 102.2451
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 99.6361,
+          "sleepLatencyMADMin": 101.3765
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 99.4613,
+          "awakeningsPerNight": 100.0,
+          "outOfBedMinPerNight": 101.6406
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 98.5316,
+          "dayLowActivityRatePct": 96.7715
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 102.4431,
+          "dayActivitySharePct": 99.8308
+        }
+      }
+    },
+    {
+      "weekId": "2026-W02",
+      "weekIndex": 9,
+      "weekStart": "2026-01-05",
+      "weekEnd": "2026-01-11",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.7786,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.7786,
+        "sleepOnsetStability": 95.7786,
+        "nightContinuity": 95.7786,
+        "daytimeWakefulness": 95.7786,
+        "circadianAlignment": 95.7786
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 13.9721,
+        "riseMADMin": 6.5173,
+        "sleepLatencyMin": 18.9248,
+        "sleepLatencyMADMin": 2.6392,
+        "sleepContinuityPct": 98.9683,
+        "awakeningsPerNight": 0.8571,
+        "outOfBedMinPerNight": 0.6441,
+        "napMinPerDay": 6.8943,
+        "dayLowActivityRatePct": 17.1861,
+        "midpointDeviationMin": 5.4546,
+        "dayActivitySharePct": 99.3903
+      },
+      "indexes": {
+        "scheduleRegularity": 96.4656,
+        "sleepOnsetStability": 104.4397,
+        "nightContinuity": 98.9841,
+        "daytimeWakefulness": 97.9403,
+        "circadianAlignment": 100.2105
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 94.7119,
+          "riseMADMin": 98.2194
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 106.1899,
+          "sleepLatencyMADMin": 101.1893
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 99.7768,
+          "awakeningsPerNight": 96.4286,
+          "outOfBedMinPerNight": 100.8355
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 98.282,
+          "dayLowActivityRatePct": 97.5226
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 100.3885,
+          "dayActivitySharePct": 99.9435
+        }
+      }
+    },
+    {
+      "weekId": "2026-W03",
+      "weekIndex": 10,
+      "weekStart": "2026-01-12",
+      "weekEnd": "2026-01-18",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.7419,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.7419,
+        "sleepOnsetStability": 95.7419,
+        "nightContinuity": 95.7419,
+        "daytimeWakefulness": 95.7419,
+        "circadianAlignment": 95.7419
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 6.089,
+        "riseMADMin": 11.1751,
+        "sleepLatencyMin": 25.2456,
+        "sleepLatencyMADMin": 3.3913,
+        "sleepContinuityPct": 97.9817,
+        "awakeningsPerNight": 1.1429,
+        "outOfBedMinPerNight": 2.6363,
+        "napMinPerDay": 4.2699,
+        "dayLowActivityRatePct": 17.3699,
+        "midpointDeviationMin": 4.6796,
+        "dayActivitySharePct": 98.789
+      },
+      "indexes": {
+        "scheduleRegularity": 98.0783,
+        "sleepOnsetStability": 99.9802,
+        "nightContinuity": 94.6988,
+        "daytimeWakefulness": 98.7371,
+        "circadianAlignment": 100.0395
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 102.595,
+          "riseMADMin": 93.5616
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 99.8691,
+          "sleepLatencyMADMin": 100.1865
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 96.4881,
+          "awakeningsPerNight": 89.2857,
+          "outOfBedMinPerNight": 98.3453
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 100.0316,
+          "dayLowActivityRatePct": 97.1549
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 100.9052,
+          "dayActivitySharePct": 98.7409
+        }
+      }
+    },
+    {
+      "weekId": "2026-W04",
+      "weekIndex": 11,
+      "weekStart": "2026-01-19",
+      "weekEnd": "2026-01-25",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.9196,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.9196,
+        "sleepOnsetStability": 95.9196,
+        "nightContinuity": 95.9196,
+        "daytimeWakefulness": 95.9196,
+        "circadianAlignment": 95.9196
+      },
+      "phase": "缓慢下降期",
+      "event": "活动量开始减少",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 6.926,
+        "riseMADMin": 5.9248,
+        "sleepLatencyMin": 29.4082,
+        "sleepLatencyMADMin": 2.8654,
+        "sleepContinuityPct": 97.9377,
+        "awakeningsPerNight": 1.0,
+        "outOfBedMinPerNight": 3.9311,
+        "napMinPerDay": 16.5898,
+        "dayLowActivityRatePct": 18.8403,
+        "midpointDeviationMin": 6.6152,
+        "dayActivitySharePct": 98.816
+      },
+      "indexes": {
+        "scheduleRegularity": 100.2849,
+        "sleepOnsetStability": 97.5199,
+        "nightContinuity": 95.3733,
+        "daytimeWakefulness": 92.8965,
+        "circadianAlignment": 99.2868
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 101.758,
+          "riseMADMin": 98.8119
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 95.7065,
+          "sleepLatencyMADMin": 100.8877
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 96.3417,
+          "awakeningsPerNight": 92.8571,
+          "outOfBedMinPerNight": 96.7268
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 91.8183,
+          "dayLowActivityRatePct": 94.2142
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 99.6148,
+          "dayActivitySharePct": 98.7949
+        }
+      }
+    },
+    {
+      "weekId": "2026-W05",
+      "weekIndex": 12,
+      "weekStart": "2026-01-26",
+      "weekEnd": "2026-02-01",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.3457,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.3457,
+        "sleepOnsetStability": 95.3457,
+        "nightContinuity": 95.3457,
+        "daytimeWakefulness": 95.3457,
+        "circadianAlignment": 95.3457
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 9.0362,
+        "riseMADMin": 8.3358,
+        "sleepLatencyMin": 35.8368,
+        "sleepLatencyMADMin": 0.9175,
+        "sleepContinuityPct": 96.0564,
+        "awakeningsPerNight": 1.5714,
+        "outOfBedMinPerNight": 7.02,
+        "napMinPerDay": 8.6478,
+        "dayLowActivityRatePct": 23.8273,
+        "midpointDeviationMin": 8.5214,
+        "dayActivitySharePct": 97.6525
+      },
+      "indexes": {
+        "scheduleRegularity": 98.0244,
+        "sleepOnsetStability": 94.2504,
+        "nightContinuity": 87.1799,
+        "daytimeWakefulness": 91.3202,
+        "circadianAlignment": 97.5935
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 99.6478,
+          "riseMADMin": 96.4009
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 89.2779,
+          "sleepLatencyMADMin": 103.4849
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 90.0706,
+          "awakeningsPerNight": 78.5714,
+          "outOfBedMinPerNight": 92.8657
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 97.113,
+          "dayLowActivityRatePct": 84.2402
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 98.344,
+          "dayActivitySharePct": 96.4678
+        }
+      }
+    },
+    {
+      "weekId": "2026-W06",
+      "weekIndex": 13,
+      "weekStart": "2026-02-02",
+      "weekEnd": "2026-02-08",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.5596,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.5596,
+        "sleepOnsetStability": 94.5596,
+        "nightContinuity": 94.5596,
+        "daytimeWakefulness": 94.5596,
+        "circadianAlignment": 94.5596
+      },
+      "phase": "事件后快速变化期",
+      "event": "家中异常事件，短期活动明显减少",
+      "eventKind": "external",
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 12.1122,
+        "riseMADMin": 13.0668,
+        "sleepLatencyMin": 42.9226,
+        "sleepLatencyMADMin": 3.8825,
+        "sleepContinuityPct": 93.2948,
+        "awakeningsPerNight": 2.0,
+        "outOfBedMinPerNight": 10.6507,
+        "napMinPerDay": 37.2028,
+        "dayLowActivityRatePct": 27.6548,
+        "midpointDeviationMin": 20.972,
+        "dayActivitySharePct": 96.0511
+      },
+      "indexes": {
+        "scheduleRegularity": 94.1208,
+        "sleepOnsetStability": 88.2609,
+        "nightContinuity": 79.0981,
+        "daytimeWakefulness": 77.4053,
+        "circadianAlignment": 91.3322
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 96.5718,
+          "riseMADMin": 91.6699
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 82.1921,
+          "sleepLatencyMADMin": 99.5316
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 80.8653,
+          "awakeningsPerNight": 70.0,
+          "outOfBedMinPerNight": 88.3273
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 78.0763,
+          "dayLowActivityRatePct": 76.5851
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 90.0436,
+          "dayActivitySharePct": 93.2651
+        }
+      }
+    },
+    {
+      "weekId": "2026-W07",
+      "weekIndex": 14,
+      "weekStart": "2026-02-09",
+      "weekEnd": "2026-02-15",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.7562,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.7562,
+        "sleepOnsetStability": 95.7562,
+        "nightContinuity": 95.7562,
+        "daytimeWakefulness": 95.7562,
+        "circadianAlignment": 95.7562
+      },
+      "phase": "事件后快速变化期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 4.9466,
+        "riseMADMin": 7.301,
+        "sleepLatencyMin": 42.9441,
+        "sleepLatencyMADMin": 4.4904,
+        "sleepContinuityPct": 94.1573,
+        "awakeningsPerNight": 1.7143,
+        "outOfBedMinPerNight": 9.5203,
+        "napMinPerDay": 19.3085,
+        "dayLowActivityRatePct": 27.026,
+        "midpointDeviationMin": 15.5612,
+        "dayActivitySharePct": 96.7031
+      },
+      "indexes": {
+        "scheduleRegularity": 100.5865,
+        "sleepOnsetStability": 87.9633,
+        "nightContinuity": 82.3182,
+        "daytimeWakefulness": 84.5325,
+        "circadianAlignment": 94.0181
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 103.7374,
+          "riseMADMin": 97.4357
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 82.1706,
+          "sleepLatencyMADMin": 98.7211
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 83.7404,
+          "awakeningsPerNight": 75.0,
+          "outOfBedMinPerNight": 89.7402
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 90.0059,
+          "dayLowActivityRatePct": 77.8428
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 93.6508,
+          "dayActivitySharePct": 94.5691
+        }
+      }
+    },
+    {
+      "weekId": "2026-W08",
+      "weekIndex": 15,
+      "weekStart": "2026-02-16",
+      "weekEnd": "2026-02-22",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.0384,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.0384,
+        "sleepOnsetStability": 95.0384,
+        "nightContinuity": 95.0384,
+        "daytimeWakefulness": 95.0384,
+        "circadianAlignment": 95.0384
+      },
+      "phase": "干预恢复期",
+      "event": "开始规律康复训练",
+      "eventKind": "intervention",
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 3.7619,
+        "riseMADMin": 9.5125,
+        "sleepLatencyMin": 41.0564,
+        "sleepLatencyMADMin": 3.8227,
+        "sleepContinuityPct": 94.1344,
+        "awakeningsPerNight": 1.7143,
+        "outOfBedMinPerNight": 8.6237,
+        "napMinPerDay": 20.5556,
+        "dayLowActivityRatePct": 26.0193,
+        "midpointDeviationMin": 10.9667,
+        "dayActivitySharePct": 96.6099
+      },
+      "indexes": {
+        "scheduleRegularity": 100.0732,
+        "sleepOnsetStability": 89.5019,
+        "nightContinuity": 82.5041,
+        "daytimeWakefulness": 84.9812,
+        "circadianAlignment": 95.7814
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 104.9221,
+          "riseMADMin": 95.2242
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 84.0583,
+          "sleepLatencyMADMin": 99.6113
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 83.6638,
+          "awakeningsPerNight": 75.0,
+          "outOfBedMinPerNight": 90.861
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 89.1745,
+          "dayLowActivityRatePct": 79.8561
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 96.7138,
+          "dayActivitySharePct": 94.3828
+        }
+      }
+    },
+    {
+      "weekId": "2026-W09",
+      "weekIndex": 16,
+      "weekStart": "2026-02-23",
+      "weekEnd": "2026-03-01",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.1891,
+      "metricConfidencePct": {
+        "scheduleRegularity": 96.1891,
+        "sleepOnsetStability": 96.1891,
+        "nightContinuity": 96.1891,
+        "daytimeWakefulness": 96.1891,
+        "circadianAlignment": 96.1891
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 15.1356,
+        "riseMADMin": 9.9482,
+        "sleepLatencyMin": 43.3791,
+        "sleepLatencyMADMin": 3.5973,
+        "sleepContinuityPct": 94.6637,
+        "awakeningsPerNight": 1.8571,
+        "outOfBedMinPerNight": 11.3569,
+        "napMinPerDay": 25.9305,
+        "dayLowActivityRatePct": 25.4683,
+        "midpointDeviationMin": 15.7005,
+        "dayActivitySharePct": 96.8423
+      },
+      "indexes": {
+        "scheduleRegularity": 94.1684,
+        "sleepOnsetStability": 88.0973,
+        "nightContinuity": 81.6315,
+        "daytimeWakefulness": 83.5063,
+        "circadianAlignment": 94.0738
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 93.5484,
+          "riseMADMin": 94.7885
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 81.7356,
+          "sleepLatencyMADMin": 99.9119
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 85.4281,
+          "awakeningsPerNight": 71.4286,
+          "outOfBedMinPerNight": 87.4445
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 85.5912,
+          "dayLowActivityRatePct": 80.9581
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 93.5579,
+          "dayActivitySharePct": 94.8476
+        }
+      }
+    },
+    {
+      "weekId": "2026-W10",
+      "weekIndex": 17,
+      "weekStart": "2026-03-02",
+      "weekEnd": "2026-03-08",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.4756,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.4756,
+        "sleepOnsetStability": 94.4756,
+        "nightContinuity": 94.4756,
+        "daytimeWakefulness": 94.4756,
+        "circadianAlignment": 94.4756
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 1.8745,
+        "riseMADMin": 6.2111,
+        "sleepLatencyMin": 36.2837,
+        "sleepLatencyMADMin": 1.482,
+        "sleepContinuityPct": 95.4836,
+        "awakeningsPerNight": 1.7143,
+        "outOfBedMinPerNight": 7.4591,
+        "napMinPerDay": 8.8631,
+        "dayLowActivityRatePct": 23.436,
+        "midpointDeviationMin": 10.5065,
+        "dayActivitySharePct": 97.3102
+      },
+      "indexes": {
+        "scheduleRegularity": 102.6675,
+        "sleepOnsetStability": 93.6964,
+        "nightContinuity": 85.0439,
+        "daytimeWakefulness": 91.5934,
+        "circadianAlignment": 96.5257
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 106.8095,
+          "riseMADMin": 98.5256
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 88.831,
+          "sleepLatencyMADMin": 102.7323
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 88.1612,
+          "awakeningsPerNight": 75.0,
+          "outOfBedMinPerNight": 92.3167
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 96.9695,
+          "dayLowActivityRatePct": 85.0227
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 97.0206,
+          "dayActivitySharePct": 95.7833
+        }
+      }
+    },
+    {
+      "weekId": "2026-W11",
+      "weekIndex": 18,
+      "weekStart": "2026-03-09",
+      "weekEnd": "2026-03-15",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 93.7877,
+      "metricConfidencePct": {
+        "scheduleRegularity": 93.7877,
+        "sleepOnsetStability": 93.7877,
+        "nightContinuity": 93.7877,
+        "daytimeWakefulness": 93.7877,
+        "circadianAlignment": 93.7877
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 10.9859,
+        "riseMADMin": 9.4573,
+        "sleepLatencyMin": 38.7811,
+        "sleepLatencyMADMin": 4.3902,
+        "sleepContinuityPct": 95.4303,
+        "awakeningsPerNight": 1.7143,
+        "outOfBedMinPerNight": 8.5271,
+        "napMinPerDay": 18.7014,
+        "dayLowActivityRatePct": 23.0617,
+        "midpointDeviationMin": 12.6076,
+        "dayActivitySharePct": 97.3967
+      },
+      "indexes": {
+        "scheduleRegularity": 96.4887,
+        "sleepOnsetStability": 90.716,
+        "nightContinuity": 84.6881,
+        "daytimeWakefulness": 88.323,
+        "circadianAlignment": 95.7544
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 97.6981,
+          "riseMADMin": 95.2794
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 86.3336,
+          "sleepLatencyMADMin": 98.8547
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 87.9834,
+          "awakeningsPerNight": 75.0,
+          "outOfBedMinPerNight": 90.9818
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 90.4106,
+          "dayLowActivityRatePct": 85.7714
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 95.6199,
+          "dayActivitySharePct": 95.9563
+        }
+      }
+    },
+    {
+      "weekId": "2026-W12",
+      "weekIndex": 19,
+      "weekStart": "2026-03-16",
+      "weekEnd": "2026-03-22",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.2079,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.2079,
+        "sleepOnsetStability": 94.2079,
+        "nightContinuity": 94.2079,
+        "daytimeWakefulness": 94.2079,
+        "circadianAlignment": 94.2079
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 12.9338,
+        "riseMADMin": 6.9048,
+        "sleepLatencyMin": 37.302,
+        "sleepLatencyMADMin": 1.8069,
+        "sleepContinuityPct": 96.0821,
+        "awakeningsPerNight": 1.5714,
+        "outOfBedMinPerNight": 7.4298,
+        "napMinPerDay": 13.7489,
+        "dayLowActivityRatePct": 22.3489,
+        "midpointDeviationMin": 7.924,
+        "dayActivitySharePct": 97.7246
+      },
+      "indexes": {
+        "scheduleRegularity": 96.791,
+        "sleepOnsetStability": 92.8829,
+        "nightContinuity": 87.1202,
+        "daytimeWakefulness": 90.7804,
+        "circadianAlignment": 97.8902
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 95.7502,
+          "riseMADMin": 97.8319
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 87.8127,
+          "sleepLatencyMADMin": 102.2991
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 90.1561,
+          "awakeningsPerNight": 78.5714,
+          "outOfBedMinPerNight": 92.3534
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 93.7122,
+          "dayLowActivityRatePct": 87.1969
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 98.7423,
+          "dayActivitySharePct": 96.612
+        }
+      }
+    },
+    {
+      "weekId": "2026-W13",
+      "weekIndex": 20,
+      "weekStart": "2026-03-23",
+      "weekEnd": "2026-03-29",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.0955,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.0955,
+        "sleepOnsetStability": 94.0955,
+        "nightContinuity": 94.0955,
+        "daytimeWakefulness": 94.0955,
+        "circadianAlignment": 94.0955
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 9.1808,
+        "riseMADMin": 2.9938,
+        "sleepLatencyMin": 36.7958,
+        "sleepLatencyMADMin": 6.0877,
+        "sleepContinuityPct": 97.3407,
+        "awakeningsPerNight": 1.1429,
+        "outOfBedMinPerNight": 2.1745,
+        "napMinPerDay": 22.4295,
+        "dayLowActivityRatePct": 20.3753,
+        "midpointDeviationMin": 5.5674,
+        "dayActivitySharePct": 98.4358
+      },
+      "indexes": {
+        "scheduleRegularity": 100.623,
+        "sleepOnsetStability": 91.2143,
+        "nightContinuity": 93.7461,
+        "daytimeWakefulness": 89.3738,
+        "circadianAlignment": 99.4018
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 99.5032,
+          "riseMADMin": 101.7429
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 88.3189,
+          "sleepLatencyMADMin": 96.5913
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 94.3517,
+          "awakeningsPerNight": 89.2857,
+          "outOfBedMinPerNight": 98.9225
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 87.9252,
+          "dayLowActivityRatePct": 91.1442
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 100.3133,
+          "dayActivitySharePct": 98.0344
+        }
+      }
+    },
+    {
+      "weekId": "2026-W14",
+      "weekIndex": 21,
+      "weekStart": "2026-03-30",
+      "weekEnd": "2026-04-05",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.8777,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.8777,
+        "sleepOnsetStability": 95.8777,
+        "nightContinuity": 95.8777,
+        "daytimeWakefulness": 95.8777,
+        "circadianAlignment": 95.8777
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 6.8307,
+        "riseMADMin": 8.8562,
+        "sleepLatencyMin": 31.287,
+        "sleepLatencyMADMin": 1.4909,
+        "sleepContinuityPct": 96.5451,
+        "awakeningsPerNight": 1.4286,
+        "outOfBedMinPerNight": 3.8674,
+        "napMinPerDay": 7.7578,
+        "dayLowActivityRatePct": 21.4102,
+        "midpointDeviationMin": 4.741,
+        "dayActivitySharePct": 97.9983
+      },
+      "indexes": {
+        "scheduleRegularity": 98.8669,
+        "sleepOnsetStability": 96.9401,
+        "nightContinuity": 89.8539,
+        "daytimeWakefulness": 93.822,
+        "circadianAlignment": 99.3824
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 101.8533,
+          "riseMADMin": 95.8805
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 93.8277,
+          "sleepLatencyMADMin": 102.7204
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 91.6995,
+          "awakeningsPerNight": 82.1429,
+          "outOfBedMinPerNight": 96.8064
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 97.7063,
+          "dayLowActivityRatePct": 89.0744
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 100.8643,
+          "dayActivitySharePct": 97.1596
+        }
+      }
+    },
+    {
+      "weekId": "2026-W15",
+      "weekIndex": 22,
+      "weekStart": "2026-04-06",
+      "weekEnd": "2026-04-12",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.1539,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.1539,
+        "sleepOnsetStability": 95.1539,
+        "nightContinuity": 95.1539,
+        "daytimeWakefulness": 95.1539,
+        "circadianAlignment": 95.1539
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 5.1495,
+        "riseMADMin": 6.5708,
+        "sleepLatencyMin": 33.2643,
+        "sleepLatencyMADMin": 3.2892,
+        "sleepContinuityPct": 98.2081,
+        "awakeningsPerNight": 1.0,
+        "outOfBedMinPerNight": 3.0974,
+        "napMinPerDay": 5.5291,
+        "dayLowActivityRatePct": 20.0804,
+        "midpointDeviationMin": 5.4475,
+        "dayActivitySharePct": 98.9728
+      },
+      "indexes": {
+        "scheduleRegularity": 100.8502,
+        "sleepOnsetStability": 94.8157,
+        "nightContinuity": 96.0324,
+        "daytimeWakefulness": 95.836,
+        "circadianAlignment": 99.8793
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 103.5345,
+          "riseMADMin": 98.1659
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 91.8504,
+          "sleepLatencyMADMin": 100.3227
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 97.2429,
+          "awakeningsPerNight": 92.8571,
+          "outOfBedMinPerNight": 97.7688
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 99.1921,
+          "dayLowActivityRatePct": 91.734
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 100.3933,
+          "dayActivitySharePct": 99.1084
+        }
+      }
+    },
+    {
+      "weekId": "2026-W16",
+      "weekIndex": 23,
+      "weekStart": "2026-04-13",
+      "weekEnd": "2026-04-19",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.7548,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.7548,
+        "sleepOnsetStability": 94.7548,
+        "nightContinuity": 94.7548,
+        "daytimeWakefulness": 94.7548,
+        "circadianAlignment": 94.7548
+      },
+      "phase": "部分恢复后波动期",
+      "event": "恢复到较稳定活动水平",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 6.4309,
+        "riseMADMin": 5.197,
+        "sleepLatencyMin": 30.8648,
+        "sleepLatencyMADMin": 1.3427,
+        "sleepContinuityPct": 98.1061,
+        "awakeningsPerNight": 1.0,
+        "outOfBedMinPerNight": 2.9158,
+        "napMinPerDay": 4.2447,
+        "dayLowActivityRatePct": 18.8667,
+        "midpointDeviationMin": 2.9592,
+        "dayActivitySharePct": 98.8754
+      },
+      "indexes": {
+        "scheduleRegularity": 100.8964,
+        "sleepOnsetStability": 97.2837,
+        "nightContinuity": 95.9078,
+        "daytimeWakefulness": 97.3992,
+        "circadianAlignment": 100.7968
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 102.2531,
+          "riseMADMin": 99.5397
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 94.2499,
+          "sleepLatencyMADMin": 102.918
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 96.903,
+          "awakeningsPerNight": 92.8571,
+          "outOfBedMinPerNight": 97.9958
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 100.0484,
+          "dayLowActivityRatePct": 94.1613
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 102.0521,
+          "dayActivitySharePct": 98.9138
+        }
+      }
+    },
+    {
+      "weekId": "2026-W17",
+      "weekIndex": 24,
+      "weekStart": "2026-04-20",
+      "weekEnd": "2026-04-26",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.0537,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.0537,
+        "sleepOnsetStability": 94.0537,
+        "nightContinuity": 94.0537,
+        "daytimeWakefulness": 94.0537,
+        "circadianAlignment": 94.0537
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 7.409,
+        "riseMADMin": 3.1398,
+        "sleepLatencyMin": 33.4482,
+        "sleepLatencyMADMin": 3.1507,
+        "sleepContinuityPct": 97.6703,
+        "awakeningsPerNight": 1.2857,
+        "outOfBedMinPerNight": 3.1888,
+        "napMinPerDay": 10.9623,
+        "dayLowActivityRatePct": 21.1227,
+        "midpointDeviationMin": 1.4778,
+        "dayActivitySharePct": 98.6383
+      },
+      "indexes": {
+        "scheduleRegularity": 101.4359,
+        "sleepOnsetStability": 94.7608,
+        "nightContinuity": 92.9703,
+        "daytimeWakefulness": 92.9057,
+        "circadianAlignment": 101.1996
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 101.275,
+          "riseMADMin": 101.5969
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 91.6665,
+          "sleepLatencyMADMin": 100.5073
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 95.4502,
+          "awakeningsPerNight": 85.7143,
+          "outOfBedMinPerNight": 97.6546
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 95.57,
+          "dayLowActivityRatePct": 89.6493
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 103.0397,
+          "dayActivitySharePct": 98.4394
+        }
+      }
+    },
+    {
+      "weekId": "2026-W18",
+      "weekIndex": 25,
+      "weekStart": "2026-04-27",
+      "weekEnd": "2026-05-03",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.5926,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.5926,
+        "sleepOnsetStability": 94.5926,
+        "nightContinuity": 94.5926,
+        "daytimeWakefulness": 94.5926,
+        "circadianAlignment": 94.5926
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 5.5549,
+        "riseMADMin": 5.4341,
+        "sleepLatencyMin": 32.6512,
+        "sleepLatencyMADMin": 2.0732,
+        "sleepContinuityPct": 97.1732,
+        "awakeningsPerNight": 1.2857,
+        "outOfBedMinPerNight": 5.9325,
+        "napMinPerDay": 10.8697,
+        "dayLowActivityRatePct": 19.9005,
+        "midpointDeviationMin": 8.0721,
+        "dayActivitySharePct": 98.3571
+      },
+      "indexes": {
+        "scheduleRegularity": 101.2158,
+        "sleepOnsetStability": 95.7817,
+        "nightContinuity": 91.4559,
+        "daytimeWakefulness": 94.0397,
+        "circadianAlignment": 98.3369
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 103.1291,
+          "riseMADMin": 99.3026
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 92.4635,
+          "sleepLatencyMADMin": 101.944
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 93.7933,
+          "awakeningsPerNight": 85.7143,
+          "outOfBedMinPerNight": 94.225
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 95.6317,
+          "dayLowActivityRatePct": 92.0938
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 98.6435,
+          "dayActivitySharePct": 97.877
+        }
+      }
+    },
+    {
+      "weekId": "2026-W19",
+      "weekIndex": 26,
+      "weekStart": "2026-05-04",
+      "weekEnd": "2026-05-10",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.1565,
+      "metricConfidencePct": {
+        "scheduleRegularity": 96.1565,
+        "sleepOnsetStability": 96.1565,
+        "nightContinuity": 96.1565,
+        "daytimeWakefulness": 96.1565,
+        "circadianAlignment": 96.1565
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 2.9712,
+        "riseMADMin": 7.6029,
+        "sleepLatencyMin": 33.4903,
+        "sleepLatencyMADMin": 2.4672,
+        "sleepContinuityPct": 97.4427,
+        "awakeningsPerNight": 1.2857,
+        "outOfBedMinPerNight": 5.05,
+        "napMinPerDay": 10.191,
+        "dayLowActivityRatePct": 21.5099,
+        "midpointDeviationMin": 6.9787,
+        "dayActivitySharePct": 98.516
+      },
+      "indexes": {
+        "scheduleRegularity": 101.4233,
+        "sleepOnsetStability": 95.0524,
+        "nightContinuity": 92.1257,
+        "daytimeWakefulness": 92.8401,
+        "circadianAlignment": 98.9014
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 105.7128,
+          "riseMADMin": 97.1338
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 91.6244,
+          "sleepLatencyMADMin": 101.4187
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 94.6916,
+          "awakeningsPerNight": 85.7143,
+          "outOfBedMinPerNight": 95.3281
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 96.0842,
+          "dayLowActivityRatePct": 88.875
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 99.3725,
+          "dayActivitySharePct": 98.1948
+        }
+      }
+    },
+    {
+      "weekId": "2026-W20",
+      "weekIndex": 27,
+      "weekStart": "2026-05-11",
+      "weekEnd": "2026-05-17",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.5518,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.5518,
+        "sleepOnsetStability": 95.5518,
+        "nightContinuity": 95.5518,
+        "daytimeWakefulness": 95.5518,
+        "circadianAlignment": 95.5518
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 2.6914,
+        "riseMADMin": 5.4261,
+        "sleepLatencyMin": 33.0255,
+        "sleepLatencyMADMin": 0.7438,
+        "sleepContinuityPct": 96.5564,
+        "awakeningsPerNight": 1.4286,
+        "outOfBedMinPerNight": 5.9074,
+        "napMinPerDay": 12.1887,
+        "dayLowActivityRatePct": 21.8145,
+        "midpointDeviationMin": 5.7838,
+        "dayActivitySharePct": 98.0137
+      },
+      "indexes": {
+        "scheduleRegularity": 102.6516,
+        "sleepOnsetStability": 96.1588,
+        "nightContinuity": 89.3627,
+        "daytimeWakefulness": 91.8334,
+        "circadianAlignment": 98.9775
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 105.9926,
+          "riseMADMin": 99.3106
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 92.0892,
+          "sleepLatencyMADMin": 103.7165
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 91.7372,
+          "awakeningsPerNight": 82.1429,
+          "outOfBedMinPerNight": 94.2563
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 94.7524,
+          "dayLowActivityRatePct": 88.2658
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 100.1691,
+          "dayActivitySharePct": 97.1902
+        }
+      }
+    },
+    {
+      "weekId": "2026-W21",
+      "weekIndex": 28,
+      "weekStart": "2026-05-18",
+      "weekEnd": "2026-05-24",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.1021,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.1021,
+        "sleepOnsetStability": 94.1021,
+        "nightContinuity": 94.1021,
+        "daytimeWakefulness": 94.1021,
+        "circadianAlignment": 94.1021
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 6.8182,
+        "riseMADMin": 13.4136,
+        "sleepLatencyMin": 35.1334,
+        "sleepLatencyMADMin": 3.2962,
+        "sleepContinuityPct": 97.0825,
+        "awakeningsPerNight": 1.2857,
+        "outOfBedMinPerNight": 2.8001,
+        "napMinPerDay": 8.4792,
+        "dayLowActivityRatePct": 24.5905,
+        "midpointDeviationMin": 11.5873,
+        "dayActivitySharePct": 98.2747
+      },
+      "indexes": {
+        "scheduleRegularity": 96.5944,
+        "sleepOnsetStability": 93.5975,
+        "nightContinuity": 92.0878,
+        "daytimeWakefulness": 90.6952,
+        "circadianAlignment": 96.865
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 101.8658,
+          "riseMADMin": 91.3231
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 89.9813,
+          "sleepLatencyMADMin": 100.3133
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 93.4909,
+          "awakeningsPerNight": 85.7143,
+          "outOfBedMinPerNight": 98.1405
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 97.2254,
+          "dayLowActivityRatePct": 82.7138
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 96.3001,
+          "dayActivitySharePct": 97.7123
+        }
+      }
+    },
+    {
+      "weekId": "2026-W22",
+      "weekIndex": 29,
+      "weekStart": "2026-05-25",
+      "weekEnd": "2026-05-31",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.5529,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.5529,
+        "sleepOnsetStability": 94.5529,
+        "nightContinuity": 94.5529,
+        "daytimeWakefulness": 94.5529,
+        "circadianAlignment": 94.5529
+      },
+      "phase": "环境影响与再次下降期",
+      "event": "高温天气，外出活动减少",
+      "eventKind": "external",
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 4.8637,
+        "riseMADMin": 11.9656,
+        "sleepLatencyMin": 37.2402,
+        "sleepLatencyMADMin": 3.5974,
+        "sleepContinuityPct": 95.3805,
+        "awakeningsPerNight": 1.7143,
+        "outOfBedMinPerNight": 3.649,
+        "napMinPerDay": 17.2801,
+        "dayLowActivityRatePct": 23.8223,
+        "midpointDeviationMin": 11.3483,
+        "dayActivitySharePct": 97.2997
+      },
+      "indexes": {
+        "scheduleRegularity": 98.2957,
+        "sleepOnsetStability": 92.0875,
+        "nightContinuity": 85.8246,
+        "daytimeWakefulness": 88.1595,
+        "circadianAlignment": 96.1806
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 103.8203,
+          "riseMADMin": 92.7711
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 87.8745,
+          "sleepLatencyMADMin": 99.9117
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 87.8174,
+          "awakeningsPerNight": 75.0,
+          "outOfBedMinPerNight": 97.0794
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 91.3581,
+          "dayLowActivityRatePct": 84.2502
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 96.4594,
+          "dayActivitySharePct": 95.7623
+        }
+      }
+    },
+    {
+      "weekId": "2026-W23",
+      "weekIndex": 30,
+      "weekStart": "2026-06-01",
+      "weekEnd": "2026-06-07",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.0292,
+      "metricConfidencePct": {
+        "scheduleRegularity": 96.0292,
+        "sleepOnsetStability": 96.0292,
+        "nightContinuity": 96.0292,
+        "daytimeWakefulness": 96.0292,
+        "circadianAlignment": 96.0292
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 9.9436,
+        "riseMADMin": 6.6722,
+        "sleepLatencyMin": 39.7173,
+        "sleepLatencyMADMin": 0.735,
+        "sleepContinuityPct": 96.7067,
+        "awakeningsPerNight": 1.2857,
+        "outOfBedMinPerNight": 6.27,
+        "napMinPerDay": 20.9675,
+        "dayLowActivityRatePct": 23.2081,
+        "midpointDeviationMin": 11.9076,
+        "dayActivitySharePct": 98.0085
+      },
+      "indexes": {
+        "scheduleRegularity": 98.4024,
+        "sleepOnsetStability": 91.8132,
+        "nightContinuity": 90.594,
+        "daytimeWakefulness": 87.3603,
+        "circadianAlignment": 96.5238
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 98.7404,
+          "riseMADMin": 98.0645
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 85.3974,
+          "sleepLatencyMADMin": 103.7283
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 92.2383,
+          "awakeningsPerNight": 85.7143,
+          "outOfBedMinPerNight": 93.8031
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 88.8999,
+          "dayLowActivityRatePct": 85.4786
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 96.0865,
+          "dayActivitySharePct": 97.1798
+        }
+      }
+    },
+    {
+      "weekId": "2026-W24",
+      "weekIndex": 31,
+      "weekStart": "2026-06-08",
+      "weekEnd": "2026-06-14",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.2949,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.2949,
+        "sleepOnsetStability": 94.2949,
+        "nightContinuity": 94.2949,
+        "daytimeWakefulness": 94.2949,
+        "circadianAlignment": 94.2949
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 10.8175,
+        "riseMADMin": 4.6246,
+        "sleepLatencyMin": 34.9521,
+        "sleepLatencyMADMin": 2.7103,
+        "sleepContinuityPct": 95.5059,
+        "awakeningsPerNight": 1.7143,
+        "outOfBedMinPerNight": 8.344,
+        "napMinPerDay": 18.5031,
+        "dayLowActivityRatePct": 23.5744,
+        "midpointDeviationMin": 13.8333,
+        "dayActivitySharePct": 97.3744
+      },
+      "indexes": {
+        "scheduleRegularity": 98.9893,
+        "sleepOnsetStability": 93.9888,
+        "nightContinuity": 84.8599,
+        "daytimeWakefulness": 87.9342,
+        "circadianAlignment": 95.2463
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 97.8665,
+          "riseMADMin": 100.1121
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 90.1626,
+          "sleepLatencyMADMin": 101.0945
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 88.2355,
+          "awakeningsPerNight": 75.0,
+          "outOfBedMinPerNight": 91.2106
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 90.5428,
+          "dayLowActivityRatePct": 84.746
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 94.8027,
+          "dayActivitySharePct": 95.9117
+        }
+      }
+    },
+    {
+      "weekId": "2026-W25",
+      "weekIndex": 32,
+      "weekStart": "2026-06-15",
+      "weekEnd": "2026-06-21",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.2125,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.2125,
+        "sleepOnsetStability": 95.2125,
+        "nightContinuity": 95.2125,
+        "daytimeWakefulness": 95.2125,
+        "circadianAlignment": 95.2125
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 5.9564,
+        "riseMADMin": 11.1092,
+        "sleepLatencyMin": 38.7904,
+        "sleepLatencyMADMin": 1.676,
+        "sleepContinuityPct": 96.0762,
+        "awakeningsPerNight": 1.4286,
+        "outOfBedMinPerNight": 4.2494,
+        "napMinPerDay": 23.1545,
+        "dayLowActivityRatePct": 25.3402,
+        "midpointDeviationMin": 9.8957,
+        "dayActivitySharePct": 97.6812
+      },
+      "indexes": {
+        "scheduleRegularity": 98.1775,
+        "sleepOnsetStability": 91.9766,
+        "nightContinuity": 88.9769,
+        "daytimeWakefulness": 84.6395,
+        "circadianAlignment": 97.0668
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 102.7276,
+          "riseMADMin": 93.6275
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 86.3243,
+          "sleepLatencyMADMin": 102.4736
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 90.1365,
+          "awakeningsPerNight": 82.1429,
+          "outOfBedMinPerNight": 96.3289
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 87.4419,
+          "dayLowActivityRatePct": 81.2143
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 97.4278,
+          "dayActivitySharePct": 96.5253
+        }
+      }
+    },
+    {
+      "weekId": "2026-W26",
+      "weekIndex": 33,
+      "weekStart": "2026-06-22",
+      "weekEnd": "2026-06-28",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.0493,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.0493,
+        "sleepOnsetStability": 94.0493,
+        "nightContinuity": 94.0493,
+        "daytimeWakefulness": 94.0493,
+        "circadianAlignment": 94.0493
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 4.0874,
+        "riseMADMin": 10.259,
+        "sleepLatencyMin": 38.0904,
+        "sleepLatencyMADMin": 1.0744,
+        "sleepContinuityPct": 96.5979,
+        "awakeningsPerNight": 1.2857,
+        "outOfBedMinPerNight": 5.4657,
+        "napMinPerDay": 26.5023,
+        "dayLowActivityRatePct": 24.5893,
+        "midpointDeviationMin": 10.3602,
+        "dayActivitySharePct": 98.0477
+      },
+      "indexes": {
+        "scheduleRegularity": 99.5371,
+        "sleepOnsetStability": 92.7123,
+        "nightContinuity": 90.6137,
+        "daytimeWakefulness": 84.0878,
+        "circadianAlignment": 97.1742
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 104.5966,
+          "riseMADMin": 94.4777
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 87.0243,
+          "sleepLatencyMADMin": 103.2757
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 91.8755,
+          "awakeningsPerNight": 85.7143,
+          "outOfBedMinPerNight": 94.8085
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 85.21,
+          "dayLowActivityRatePct": 82.7162
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 97.1181,
+          "dayActivitySharePct": 97.2583
+        }
+      }
+    },
+    {
+      "weekId": "2026-W27",
+      "weekIndex": 34,
+      "weekStart": "2026-06-29",
+      "weekEnd": "2026-07-05",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.0242,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.0242,
+        "sleepOnsetStability": 94.0242,
+        "nightContinuity": 94.0242,
+        "daytimeWakefulness": 94.0242,
+        "circadianAlignment": 94.0242
+      },
+      "phase": "环境影响与再次下降期",
+      "event": "连续数周活动量偏低",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 2.9298,
+        "riseMADMin": 3.0566,
+        "sleepLatencyMin": 40.4595,
+        "sleepLatencyMADMin": 0.4216,
+        "sleepContinuityPct": 95.0381,
+        "awakeningsPerNight": 1.7143,
+        "outOfBedMinPerNight": 8.2309,
+        "napMinPerDay": 23.4377,
+        "dayLowActivityRatePct": 26.1032,
+        "midpointDeviationMin": 13.2806,
+        "dayActivitySharePct": 97.139
+      },
+      "indexes": {
+        "scheduleRegularity": 103.7172,
+        "sleepOnsetStability": 91.477,
+        "nightContinuity": 84.1086,
+        "daytimeWakefulness": 83.849,
+        "circadianAlignment": 95.2791
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 105.7542,
+          "riseMADMin": 101.6801
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 84.6552,
+          "sleepLatencyMADMin": 104.1461
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 86.6763,
+          "awakeningsPerNight": 75.0,
+          "outOfBedMinPerNight": 91.3519
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 87.2531,
+          "dayLowActivityRatePct": 79.6884
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 95.1712,
+          "dayActivitySharePct": 95.441
+        }
+      }
+    },
+    {
+      "weekId": "2026-W28",
+      "weekIndex": 35,
+      "weekStart": "2026-07-06",
+      "weekEnd": "2026-07-12",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.0164,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.0164,
+        "sleepOnsetStability": 95.0164,
+        "nightContinuity": 95.0164,
+        "daytimeWakefulness": 95.0164,
+        "circadianAlignment": 95.0164
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 8.5628,
+        "riseMADMin": 6.2033,
+        "sleepLatencyMin": 36.2569,
+        "sleepLatencyMADMin": 0.398,
+        "sleepContinuityPct": 96.7169,
+        "awakeningsPerNight": 1.2857,
+        "outOfBedMinPerNight": 6.4339,
+        "napMinPerDay": 17.4852,
+        "dayLowActivityRatePct": 25.6679,
+        "midpointDeviationMin": 9.4193,
+        "dayActivitySharePct": 98.0648
+      },
+      "indexes": {
+        "scheduleRegularity": 99.3273,
+        "sleepOnsetStability": 94.2197,
+        "nightContinuity": 90.57,
+        "daytimeWakefulness": 86.4233,
+        "circadianAlignment": 97.5642
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 100.1212,
+          "riseMADMin": 98.5334
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 88.8578,
+          "sleepLatencyMADMin": 104.1776
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 92.2722,
+          "awakeningsPerNight": 85.7143,
+          "outOfBedMinPerNight": 93.5982
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 91.2214,
+          "dayLowActivityRatePct": 80.559
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 97.7454,
+          "dayActivitySharePct": 97.2924
+        }
+      }
+    },
+    {
+      "weekId": "2026-W29",
+      "weekIndex": 36,
+      "weekStart": "2026-07-13",
+      "weekEnd": "2026-07-19",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.6905,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.6905,
+        "sleepOnsetStability": 94.6905,
+        "nightContinuity": 94.6905,
+        "daytimeWakefulness": 94.6905,
+        "circadianAlignment": 94.6905
+      },
+      "phase": "近期恢复期",
+      "event": "日常活动逐步恢复",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 1.2102,
+        "riseMADMin": 3.6826,
+        "sleepLatencyMin": 33.6536,
+        "sleepLatencyMADMin": 1.9842,
+        "sleepContinuityPct": 96.7698,
+        "awakeningsPerNight": 1.2857,
+        "outOfBedMinPerNight": 5.2825,
+        "napMinPerDay": 9.1538,
+        "dayLowActivityRatePct": 22.9104,
+        "midpointDeviationMin": 14.218,
+        "dayActivitySharePct": 98.0778
+      },
+      "indexes": {
+        "scheduleRegularity": 104.264,
+        "sleepOnsetStability": 95.1716,
+        "nightContinuity": 90.946,
+        "daytimeWakefulness": 91.9599,
+        "circadianAlignment": 95.6552
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 107.4738,
+          "riseMADMin": 101.0541
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 91.4611,
+          "sleepLatencyMADMin": 102.0627
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 92.4484,
+          "awakeningsPerNight": 85.7143,
+          "outOfBedMinPerNight": 95.0375
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 96.7756,
+          "dayLowActivityRatePct": 86.074
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 94.5463,
+          "dayActivitySharePct": 97.3185
+        }
+      }
+    },
+    {
+      "weekId": "2026-W30",
+      "weekIndex": 37,
+      "weekStart": "2026-07-20",
+      "weekEnd": "2026-07-26",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.183,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.183,
+        "sleepOnsetStability": 95.183,
+        "nightContinuity": 95.183,
+        "daytimeWakefulness": 95.183,
+        "circadianAlignment": 95.183
+      },
+      "phase": "近期恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 7.962,
+        "riseMADMin": 8.4585,
+        "sleepLatencyMin": 34.5824,
+        "sleepLatencyMADMin": 2.4751,
+        "sleepContinuityPct": 97.5039,
+        "awakeningsPerNight": 1.1429,
+        "outOfBedMinPerNight": 2.0373,
+        "napMinPerDay": 3.8108,
+        "dayLowActivityRatePct": 21.583,
+        "midpointDeviationMin": 13.4804,
+        "dayActivitySharePct": 98.5046
+      },
+      "indexes": {
+        "scheduleRegularity": 98.5001,
+        "sleepOnsetStability": 94.3388,
+        "nightContinuity": 94.0524,
+        "daytimeWakefulness": 95.1136,
+        "circadianAlignment": 96.2916
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 100.722,
+          "riseMADMin": 96.2782
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 90.5323,
+          "sleepLatencyMADMin": 101.4081
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 94.8957,
+          "awakeningsPerNight": 89.2857,
+          "outOfBedMinPerNight": 99.094
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 100.3377,
+          "dayLowActivityRatePct": 88.7287
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 95.038,
+          "dayActivitySharePct": 98.1721
+        }
+      }
+    },
+    {
+      "weekId": "2026-W31",
+      "weekIndex": 38,
+      "weekStart": "2026-07-27",
+      "weekEnd": "2026-08-02",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.7421,
+      "metricConfidencePct": {
+        "scheduleRegularity": 95.7421,
+        "sleepOnsetStability": 95.7421,
+        "nightContinuity": 95.7421,
+        "daytimeWakefulness": 95.7421,
+        "circadianAlignment": 95.7421
+      },
+      "phase": "近期恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 10.1423,
+        "riseMADMin": 7.8095,
+        "sleepLatencyMin": 34.4507,
+        "sleepLatencyMADMin": 3.3398,
+        "sleepContinuityPct": 97.7045,
+        "awakeningsPerNight": 1.1429,
+        "outOfBedMinPerNight": 3.7429,
+        "napMinPerDay": 13.2199,
+        "dayLowActivityRatePct": 22.0717,
+        "midpointDeviationMin": 12.2412,
+        "dayActivitySharePct": 98.6475
+      },
+      "indexes": {
+        "scheduleRegularity": 97.7344,
+        "sleepOnsetStability": 94.0209,
+        "nightContinuity": 93.9602,
+        "daytimeWakefulness": 91.2238,
+        "circadianAlignment": 96.9016
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 98.5417,
+          "riseMADMin": 96.9272
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 90.664,
+          "sleepLatencyMADMin": 100.2552
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 95.5642,
+          "awakeningsPerNight": 89.2857,
+          "outOfBedMinPerNight": 96.9619
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 94.0649,
+          "dayLowActivityRatePct": 87.7513
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 95.8641,
+          "dayActivitySharePct": 98.4579
+        }
+      }
+    },
+    {
+      "weekId": "2026-W32",
+      "weekIndex": 39,
+      "weekStart": "2026-08-03",
+      "weekEnd": "2026-08-09",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.759,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.759,
+        "sleepOnsetStability": 94.759,
+        "nightContinuity": 94.759,
+        "daytimeWakefulness": 94.759,
+        "circadianAlignment": 94.759
+      },
+      "phase": "近期恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "onsetMADMin": 2.3502,
+        "riseMADMin": 5.334,
+        "sleepLatencyMin": 28.5152,
+        "sleepLatencyMADMin": 2.912,
+        "sleepContinuityPct": 97.6502,
+        "awakeningsPerNight": 1.2857,
+        "outOfBedMinPerNight": 2.6142,
+        "napMinPerDay": 5.9973,
+        "dayLowActivityRatePct": 19.7552,
+        "midpointDeviationMin": 6.4714,
+        "dayActivitySharePct": 98.6062
+      },
+      "indexes": {
+        "scheduleRegularity": 102.8682,
+        "sleepOnsetStability": 98.0786,
+        "nightContinuity": 93.0805,
+        "daytimeWakefulness": 95.9569,
+        "circadianAlignment": 99.1765
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 106.3338,
+          "riseMADMin": 99.4027
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 96.5995,
+          "sleepLatencyMADMin": 100.8256
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 95.3832,
+          "awakeningsPerNight": 85.7143,
+          "outOfBedMinPerNight": 98.3729
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 98.88,
+          "dayLowActivityRatePct": 92.3843
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 99.7107,
+          "dayActivitySharePct": 98.3753
+        }
+      }
+    },
+    {
+      "weekId": "2026-W33",
+      "weekIndex": 40,
+      "weekStart": "2026-08-10",
+      "weekEnd": "2026-08-16",
+      "status": "in_progress",
+      "dataStatus": "sufficient",
+      "provisional": true,
+      "observedThroughDate": "2026-08-13",
+      "expectedUnits": 4,
+      "validUnits": 4,
+      "confidencePct": 94.6045,
+      "metricConfidencePct": {
+        "scheduleRegularity": 94.6045,
+        "sleepOnsetStability": 94.6045,
+        "nightContinuity": 94.6045,
+        "daytimeWakefulness": 94.6045,
+        "circadianAlignment": 94.6045
+      },
+      "phase": "近期恢复期",
+      "event": "当前周（进行中）",
+      "eventKind": "data_status",
+      "note": "当前周数据截至 2026-08-13，结果为暂定",
+      "metrics": {
+        "onsetMADMin": 0.984,
+        "riseMADMin": 8.0573,
+        "sleepLatencyMin": 34.0245,
+        "sleepLatencyMADMin": 1.1701,
+        "sleepContinuityPct": 98.2989,
+        "awakeningsPerNight": 1.0,
+        "outOfBedMinPerNight": 4.3773,
+        "napMinPerDay": 9.3885,
+        "dayLowActivityRatePct": 22.2919,
+        "midpointDeviationMin": 3.138,
+        "dayActivitySharePct": 99.0105
+      },
+      "indexes": {
+        "scheduleRegularity": 102.1897,
+        "sleepOnsetStability": 95.3105,
+        "nightContinuity": 95.8637,
+        "daytimeWakefulness": 92.4305,
+        "circadianAlignment": 100.8333
+      },
+      "indexComponents": {
+        "scheduleRegularity": {
+          "onsetMADMin": 107.7,
+          "riseMADMin": 96.6794
+        },
+        "sleepOnsetStability": {
+          "sleepLatencyMin": 91.0902,
+          "sleepLatencyMADMin": 103.1481
+        },
+        "nightContinuity": {
+          "sleepContinuityPct": 97.5455,
+          "awakeningsPerNight": 92.8571,
+          "outOfBedMinPerNight": 96.169
+        },
+        "daytimeWakefulness": {
+          "napMinPerDay": 96.6192,
+          "dayLowActivityRatePct": 87.311
+        },
+        "circadianAlignment": {
+          "midpointDeviationMin": 101.9329,
+          "dayActivitySharePct": 99.1838
+        }
+      }
+    }
+  ]
+}
