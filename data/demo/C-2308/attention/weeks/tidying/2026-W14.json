@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "C-2308",
+  "domain": "attention",
+  "taskId": "tidying",
+  "weekId": "2026-W14",
+  "sourceType": "simulation",
+  "representativeSession": {
+    "durationMin": 30.0,
+    "segments": [
+      {
+        "startMin": 0,
+        "endMin": 6.11,
+        "state": "focused"
+      },
+      {
+        "startMin": 6.11,
+        "endMin": 8.11,
+        "state": "distracted"
+      },
+      {
+        "startMin": 8.11,
+        "endMin": 30.0,
+        "state": "focused"
+      }
+    ],
+    "events": [
+      {
+        "minute": 6.11,
+        "type": "distraction",
+        "order": 1
+      },
+      {
+        "minute": 7.31,
+        "type": "prompt"
+      },
+      {
+        "minute": 8.11,
+        "type": "recovery"
+      },
+      {
+        "minute": 30.0,
+        "type": "completion"
+      }
+    ]
+  }
+}

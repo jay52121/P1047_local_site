@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sisp.local/schemas/weekly-summary.schema.json",
+  "title": "SISP weekly summary",
+  "type": "object",
+  "required": ["schemaVersion", "personId", "domain", "sourceType", "weeks"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "personId": { "type": "string", "minLength": 1 },
+    "domain": { "enum": ["life", "emotion", "cognition", "sleep", "attention", "participation"] },
+    "sourceType": { "enum": ["simulation", "real"] },
+    "weeks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["weekId", "weekStart", "weekEnd", "status", "confidencePct", "metrics"],
+        "properties": {
+          "weekId": { "type": "string", "pattern": "^[0-9]{4}-W[0-9]{2}$" },
+          "weekStart": { "type": "string", "format": "date" },
+          "weekEnd": { "type": "string", "format": "date" },
+          "status": { "enum": ["complete", "in_progress", "insufficient"] },
+          "confidencePct": { "type": "number", "minimum": 0, "maximum": 100 },
+          "phase": { "type": ["string", "null"] },
+          "event": { "type": ["string", "null"] },
+          "note": { "type": ["string", "null"] },
+          "metrics": { "type": "object", "additionalProperties": { "type": "number" } },
+          "indexes": { "type": "object", "additionalProperties": { "type": "number" } }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "persons": [
+    {
+      "id": "P-1047",
+      "displayId": "STS-1047",
+      "profilePath": "/data/demo/P-1047/profile.json"
+    },
+    {
+      "id": "C-2308",
+      "displayId": "CH-2308",
+      "profilePath": "/data/demo/C-2308/profile.json"
+    }
+  ]
+}

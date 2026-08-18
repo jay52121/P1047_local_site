@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "C-2308",
+  "domain": "attention",
+  "taskId": "homework",
+  "weekId": "2026-W25",
+  "sourceType": "simulation",
+  "representativeSession": {
+    "durationMin": 30.0,
+    "segments": [
+      {
+        "startMin": 0,
+        "endMin": 12.09,
+        "state": "focused"
+      },
+      {
+        "startMin": 12.09,
+        "endMin": 14.09,
+        "state": "distracted"
+      },
+      {
+        "startMin": 14.09,
+        "endMin": 30.0,
+        "state": "focused"
+      }
+    ],
+    "events": [
+      {
+        "minute": 12.09,
+        "type": "distraction",
+        "order": 1
+      },
+      {
+        "minute": 13.29,
+        "type": "prompt"
+      },
+      {
+        "minute": 14.09,
+        "type": "recovery"
+      },
+      {
+        "minute": 30.0,
+        "type": "completion"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sisp.local/schemas/attention-week.schema.json",
+  "title": "SISP attention week detail",
+  "type": "object",
+  "required": ["schemaVersion", "personId", "domain", "taskId", "weekId", "sourceType", "representativeSession"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "domain": { "const": "attention" },
+    "sourceType": { "enum": ["simulation", "real"] },
+    "representativeSession": {
+      "type": "object",
+      "required": ["durationMin", "segments", "events"],
+      "properties": {
+        "durationMin": { "type": "number", "exclusiveMinimum": 0 },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["startMin", "endMin", "state"],
+            "properties": {
+              "startMin": { "type": "number", "minimum": 0 },
+              "endMin": { "type": "number", "minimum": 0 },
+              "state": { "enum": ["focused", "deviating", "distracted", "off_task"] }
+            }
+          }
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["minute", "type"],
+            "properties": {
+              "minute": { "type": "number", "minimum": 0 },
+              "type": { "enum": ["distraction", "prompt", "task_switch", "recovery", "completion"] }
+            }
+          }
+        }
+      }
+    }
+  }
+}

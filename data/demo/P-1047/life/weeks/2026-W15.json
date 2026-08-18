@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "life",
+  "weekId": "2026-W15",
+  "sourceType": "simulation",
+  "representativeSession": {
+    "sessionType": "sit_to_stand",
+    "poseTemplate": "/pose/pose-sessions.html",
+    "durationSec": 4.8,
+    "parameters": {
+      "powerPhaseSec": 0.854,
+      "handSupportRatePct": 8.89,
+      "retryRatePct": 3.9,
+      "stabilizationSec": 1.039,
+      "swayHeightPct": 1.98
+    }
+  }
+}

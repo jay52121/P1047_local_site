@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "C-2308",
+  "domain": "attention",
+  "taskId": "writing",
+  "weekId": "2026-W23",
+  "sourceType": "simulation",
+  "representativeSession": {
+    "durationMin": 30.0,
+    "segments": [
+      {
+        "startMin": 0,
+        "endMin": 8.62,
+        "state": "focused"
+      },
+      {
+        "startMin": 8.62,
+        "endMin": 10.62,
+        "state": "distracted"
+      },
+      {
+        "startMin": 10.62,
+        "endMin": 30.0,
+        "state": "focused"
+      }
+    ],
+    "events": [
+      {
+        "minute": 8.62,
+        "type": "distraction",
+        "order": 1
+      },
+      {
+        "minute": 9.82,
+        "type": "prompt"
+      },
+      {
+        "minute": 10.62,
+        "type": "recovery"
+      },
+      {
+        "minute": 30.0,
+        "type": "completion"
+      }
+    ]
+  }
+}

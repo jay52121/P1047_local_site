@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "C-2308",
+  "domain": "attention",
+  "taskId": "building",
+  "weekId": "2026-W21",
+  "sourceType": "simulation",
+  "representativeSession": {
+    "durationMin": 30.0,
+    "segments": [
+      {
+        "startMin": 0,
+        "endMin": 18.48,
+        "state": "focused"
+      },
+      {
+        "startMin": 18.48,
+        "endMin": 20.48,
+        "state": "distracted"
+      },
+      {
+        "startMin": 20.48,
+        "endMin": 30.0,
+        "state": "focused"
+      }
+    ],
+    "events": [
+      {
+        "minute": 18.48,
+        "type": "distraction",
+        "order": 1
+      },
+      {
+        "minute": 19.68,
+        "type": "prompt"
+      },
+      {
+        "minute": 20.48,
+        "type": "recovery"
+      },
+      {
+        "minute": 30.0,
+        "type": "completion"
+      }
+    ]
+  }
+}

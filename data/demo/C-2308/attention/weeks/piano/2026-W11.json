@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "C-2308",
+  "domain": "attention",
+  "taskId": "piano",
+  "weekId": "2026-W11",
+  "sourceType": "simulation",
+  "representativeSession": {
+    "durationMin": 30.0,
+    "segments": [
+      {
+        "startMin": 0,
+        "endMin": 8.95,
+        "state": "focused"
+      },
+      {
+        "startMin": 8.95,
+        "endMin": 10.95,
+        "state": "distracted"
+      },
+      {
+        "startMin": 10.95,
+        "endMin": 30.0,
+        "state": "focused"
+      }
+    ],
+    "events": [
+      {
+        "minute": 8.95,
+        "type": "distraction",
+        "order": 1
+      },
+      {
+        "minute": 10.15,
+        "type": "prompt"
+      },
+      {
+        "minute": 10.95,
+        "type": "recovery"
+      },
+      {
+        "minute": 30.0,
+        "type": "completion"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "C-2308",
+  "domain": "attention",
+  "taskId": "reading",
+  "weekId": "2026-W31",
+  "sourceType": "simulation",
+  "representativeSession": {
+    "durationMin": 30.0,
+    "segments": [
+      {
+        "startMin": 0,
+        "endMin": 22.99,
+        "state": "focused"
+      },
+      {
+        "startMin": 22.99,
+        "endMin": 24.99,
+        "state": "distracted"
+      },
+      {
+        "startMin": 24.99,
+        "endMin": 30.0,
+        "state": "focused"
+      }
+    ],
+    "events": [
+      {
+        "minute": 22.99,
+        "type": "distraction",
+        "order": 1
+      },
+      {
+        "minute": 24.19,
+        "type": "prompt"
+      },
+      {
+        "minute": 24.99,
+        "type": "recovery"
+      },
+      {
+        "minute": 30.0,
+        "type": "completion"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "sourceType": "simulation",
+  "snapshotDate": "2026-08-16",
+  "weekCount": 40,
+  "domains": {
+    "life": {
+      "status": "available",
+      "weeklySummary": "life/weekly-summary.json"
+    }
+  }
+}

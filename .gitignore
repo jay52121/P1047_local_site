@@ -1,3 +1,7 @@
 .DS_Store
 SISPLocalSiteApp/.build/
 SISPLocalSiteApp/dist/
+runtime/
+*.sqlite
+*.sqlite3
+*.db
