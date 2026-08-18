@@ -8,6 +8,10 @@
     "life": {
       "status": "available",
       "weeklySummary": "life/weekly-summary.json"
+    },
+    "emotion": {
+      "status": "available",
+      "weeklySummary": "emotion/weekly-summary.json"
     }
   }
 }

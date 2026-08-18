@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sisp.local/schemas/emotion-week-detail.schema.json",
+  "title": "SISP emotion event-first week detail",
+  "allOf": [
+    { "$ref": "event-first-week.schema.json" },
+    {
+      "type": "object",
+      "required": ["weekStart", "weekEnd"],
+      "properties": {
+        "domain": { "const": "emotion" },
+        "weekStart": { "type": "string", "format": "date" },
+        "weekEnd": { "type": "string", "format": "date" },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "date", "valid", "invalidReason", "observedMinutes", "quality", "segments", "events", "result"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^emotion-[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+              "date": { "type": "string", "format": "date" },
+              "valid": { "type": "boolean" },
+              "invalidReason": { "type": ["string", "null"], "enum": ["low_coverage", "long_unknown_gap", "structural_error", null] },
+              "observedMinutes": { "type": "number", "minimum": 0, "maximum": 1020 },
+              "segments": {
+                "type": "array", "minItems": 1,
+                "items": {
+                  "type": "object", "required": ["startMin", "endMin", "state"], "additionalProperties": false,
+                  "properties": {
+                    "startMin": { "type": "number", "minimum": 0, "maximum": 1020 },
+                    "endMin": { "type": "number", "exclusiveMinimum": 0, "maximum": 1020 },
+                    "state": { "enum": ["active", "low_activity", "long_still", "unknown"] }
+                  }
+                }
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "object", "additionalProperties": false,
+                      "required": ["id", "type", "atMin", "origin", "context"],
+                      "properties": {
+                        "id": { "type": "string" }, "type": { "const": "activity_start" },
+                        "atMin": { "type": "number", "minimum": 0, "maximum": 1020 },
+                        "origin": { "enum": ["self", "prompted", "external"] },
+                        "context": { "enum": ["routine", "interest", "social", "other"] }
+                      }
+                    },
+                    {
+                      "type": "object", "additionalProperties": false,
+                      "required": ["id", "type", "startMin", "endMin", "interestType", "accepted", "engagementStartMin", "engagementEndMin"],
+                      "properties": {
+                        "id": { "type": "string" }, "type": { "const": "interest_opportunity" },
+                        "startMin": { "type": "number", "minimum": 0, "maximum": 1020 },
+                        "endMin": { "type": "number", "minimum": 0, "maximum": 1020 },
+                        "interestType": { "enum": ["reading", "music", "gardening", "television"] },
+                        "accepted": { "type": "boolean" },
+                        "engagementStartMin": { "type": ["number", "null"], "minimum": 0, "maximum": 1020 },
+                        "engagementEndMin": { "type": ["number", "null"], "minimum": 0, "maximum": 1020 }
+                      }
+                    },
+                    {
+                      "type": "object", "additionalProperties": false,
+                      "required": ["id", "type", "atMin", "source", "responded", "responseAtMin"],
+                      "properties": {
+                        "id": { "type": "string" }, "type": { "const": "social_opportunity" },
+                        "atMin": { "type": "number", "minimum": 0, "maximum": 1020 },
+                        "source": { "enum": ["household_member", "visitor", "phone_call"] },
+                        "responded": { "type": "boolean" },
+                        "responseAtMin": { "type": ["number", "null"], "minimum": 0, "maximum": 1020 }
+                      }
+                    }
+                  ]
+                }
+              },
+              "result": {
+                "type": "object", "additionalProperties": false,
+                "required": ["observedAwakeMin", "activeMin", "longStillMin", "lowActivityEpisodesMin", "allActivityStarts", "selfInitiatedStarts", "interestOpportunityCount", "interestAcceptedCount", "interestOpportunityMin", "interestEngagedMin", "socialOpportunityCount", "socialRespondedCount", "responseLatenciesSec", "activeRatePct", "initiativeEventsPer8h", "selfInitiatedSharePct", "interestOpportunityAcceptancePct", "interestEngagementPct", "responseRatePct", "responseLatencySec", "longStillRatePct", "medianLowActivityEpisodeMin"],
+                "properties": {
+                  "observedAwakeMin": { "type": "number" }, "activeMin": { "type": "number" }, "longStillMin": { "type": "number" },
+                  "lowActivityEpisodesMin": { "type": "array", "items": { "type": "number", "minimum": 0 } },
+                  "allActivityStarts": { "type": "integer", "minimum": 0 }, "selfInitiatedStarts": { "type": "integer", "minimum": 0 },
+                  "interestOpportunityCount": { "type": "integer", "minimum": 0 }, "interestAcceptedCount": { "type": "integer", "minimum": 0 },
+                  "interestOpportunityMin": { "type": "number", "minimum": 0 }, "interestEngagedMin": { "type": "number", "minimum": 0 },
+                  "socialOpportunityCount": { "type": "integer", "minimum": 0 }, "socialRespondedCount": { "type": "integer", "minimum": 0 },
+                  "responseLatenciesSec": { "type": "array", "items": { "type": "number", "minimum": 0, "maximum": 600 } },
+                  "activeRatePct": { "type": ["number", "null"], "minimum": 0, "maximum": 100 }, "initiativeEventsPer8h": { "type": ["number", "null"], "minimum": 0 },
+                  "selfInitiatedSharePct": { "type": ["number", "null"], "minimum": 0, "maximum": 100 }, "interestOpportunityAcceptancePct": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+                  "interestEngagementPct": { "type": ["number", "null"], "minimum": 0, "maximum": 100 }, "responseRatePct": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+                  "responseLatencySec": { "type": ["number", "null"], "minimum": 0 }, "longStillRatePct": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+                  "medianLowActivityEpisodeMin": { "type": ["number", "null"], "minimum": 0 }
+                }
+              }
+            }
+          }
+        },
+        "weekAggregate": {
+          "type": "object", "required": ["metrics", "evidenceTotals"],
+          "properties": {
+            "metrics": { "$ref": "emotion-weekly-summary.schema.json#/$defs/emotionMetrics" },
+            "evidenceTotals": { "type": "object" }
+          }
+        }
+      }
+    }
+  ]
+}

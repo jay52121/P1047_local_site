@@ -6,6 +6,10 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
+from demo_generation.emotion import EMOTION_INDEXES, EMOTION_METRICS, aggregate_emotion_week, derive_emotion_day_result
+from demo_generation.normalization import build_baselines, calculate_indexes
+from demo_generation.quality import unit_quality, week_confidence
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data/demo"
@@ -91,6 +95,88 @@ def validate_attention():
             check(abs(cursor - session["durationMin"]) < 0.001, f"{task_id}/{week['weekId']}: segments do not cover task duration")
 
 
+def close(left, right, tolerance=0.01):
+    if left is None or right is None:
+        return left is None and right is None
+    return abs(float(left) - float(right)) <= tolerance
+
+
+def validate_emotion():
+    path = DATA / "P-1047/emotion/weekly-summary.json"
+    summary = load(path)
+    if not summary:
+        return
+    expected_provenance = {
+        "sourceType": "simulation", "calculationMode": "generated-from-events",
+        "calculationVersion": "v2-events-1", "evidenceOrigin": "generated",
+    }
+    for key, value in expected_provenance.items():
+        check(summary.get(key) == value, f"emotion summary: {key} must be {value}")
+    validate_weeks(summary, 40, lambda week: path.parent / "weeks" / f"{week['weekId']}.json")
+    check([week["weekId"] for week in summary["weeks"][:5]] == summary["baseline"]["weekIds"], "emotion: baseline week ids mismatch")
+    forbidden_metrics = {"effectiveZoneCount", "zoneTransitionsPer8h", "outsideMinutesPerValidDay", "outingDaysRatePct", "outingsPerValidDay", "interactionMinutesPer8h", "interactionEpisodesPer8h", "activityEffectiveTypes", "activityCategoryCount"}
+    forbidden_events = {"outing", "zone_transition", "location", "interaction_session"}
+    recalculated_metrics = []
+    details = []
+    for week in summary["weeks"]:
+        detail_path = path.parent / "weeks" / f"{week['weekId']}.json"
+        detail = load(detail_path)
+        if not detail:
+            continue
+        details.append(detail)
+        for key, value in expected_provenance.items(): check(detail.get(key) == value, f"emotion/{week['weekId']}: {key} mismatch")
+        check(detail.get("weekId") == week["weekId"], f"emotion/{week['weekId']}: detail week id mismatch")
+        check(set(week["metrics"]) == set(EMOTION_METRICS), f"emotion/{week['weekId']}: raw metric keys must be exact")
+        check(set(week["indexes"]) == set(EMOTION_INDEXES), f"emotion/{week['weekId']}: index keys must be exact")
+        check(not forbidden_metrics.intersection(week["metrics"]), f"emotion/{week['weekId']}: participation metric leaked into emotion")
+        if week["weekId"] == "2026-W33":
+            check(week["status"] == "in_progress" and week["observedThroughDate"] == "2026-08-13", "emotion/W33: current-week status mismatch")
+            check([unit["date"] for unit in detail["units"]] == ["2026-08-10", "2026-08-11", "2026-08-12", "2026-08-13"], "emotion/W33: must contain Mon-Thu only")
+        for unit in detail["units"]:
+            segments = unit["segments"]
+            check(bool(segments) and close(segments[0]["startMin"], 0, 0.001) and close(segments[-1]["endMin"], 1020, 0.001), f"emotion/{week['weekId']}/{unit['date']}: segments must cover 0-1020")
+            cursor = 0.0
+            for segment in segments:
+                check(close(segment["startMin"], cursor, 0.001), f"emotion/{week['weekId']}/{unit['date']}: segment gap/overlap")
+                check(segment["endMin"] > segment["startMin"], f"emotion/{week['weekId']}/{unit['date']}: non-positive segment")
+                check(segment["state"] in {"active", "low_activity", "long_still", "unknown"}, f"emotion/{week['weekId']}/{unit['date']}: illegal state")
+                if segment["state"] == "long_still": check(segment["endMin"] - segment["startMin"] >= 45, f"emotion/{week['weekId']}/{unit['date']}: long_still below 45 min")
+                cursor = segment["endMin"]
+            for event in unit["events"]:
+                check(event["type"] not in forbidden_events, f"emotion/{week['weekId']}/{unit['date']}: forbidden participation event")
+                if event["type"] == "activity_start":
+                    check(any(segment["state"] != "unknown" and segment["startMin"] <= event["atMin"] <= segment["endMin"] for segment in segments), f"emotion/{week['weekId']}/{unit['date']}: activity event in unknown")
+                elif event["type"] == "interest_opportunity":
+                    check(event["startMin"] < event["endMin"], f"emotion/{week['weekId']}/{unit['date']}: invalid interest interval")
+                    if event["accepted"]: check(event["startMin"] <= event["engagementStartMin"] < event["engagementEndMin"] <= event["endMin"], f"emotion/{week['weekId']}/{unit['date']}: invalid engagement interval")
+                    else: check(event["engagementStartMin"] is None and event["engagementEndMin"] is None, f"emotion/{week['weekId']}/{unit['date']}: rejected interest has engagement")
+                elif event["type"] == "social_opportunity":
+                    check((event["responded"] and event["responseAtMin"] >= event["atMin"]) or (not event["responded"] and event["responseAtMin"] is None), f"emotion/{week['weekId']}/{unit['date']}: invalid social response")
+                else: check(False, f"emotion/{week['weekId']}/{unit['date']}: unknown event type")
+            result = derive_emotion_day_result(segments, unit["events"])
+            for key, value in result.items():
+                if isinstance(value, list):
+                    check(len(value) == len(unit["result"][key]) and all(close(a, b, 0.01) for a, b in zip(value, unit["result"][key])), f"emotion/{week['weekId']}/{unit['date']}: {key} mismatch")
+                else: check(close(value, unit["result"][key], 0.01), f"emotion/{week['weekId']}/{unit['date']}: {key} mismatch")
+            unknown = [segment["endMin"] - segment["startMin"] for segment in segments if segment["state"] == "unknown"]
+            quality = unit_quality(result["observedAwakeMin"], 780, unknown, 1020, unit["quality"]["structuralCompletenessPct"])
+            for key, value in (("coveragePct", quality.coverage_pct), ("continuityPct", quality.continuity_pct), ("confidencePct", quality.confidence_pct)):
+                check(close(unit["quality"][key], value, 0.01), f"emotion/{week['weekId']}/{unit['date']}: quality {key} mismatch")
+        aggregate = aggregate_emotion_week(detail["units"])
+        recalculated_metrics.append(aggregate["metrics"])
+        for key in EMOTION_METRICS:
+            check(close(aggregate["metrics"][key], detail["weekAggregate"]["metrics"][key]), f"emotion/{week['weekId']}: detail aggregate {key} mismatch")
+            check(close(aggregate["metrics"][key], week["metrics"][key]), f"emotion/{week['weekId']}: summary metric {key} mismatch")
+        confidence = week_confidence(detail["units"], detail["expectedUnits"])
+        check(close(confidence, week["confidencePct"]), f"emotion/{week['weekId']}: confidence mismatch")
+    if len(recalculated_metrics) == 40:
+        baselines = build_baselines(recalculated_metrics)
+        for week, metrics in zip(summary["weeks"], recalculated_metrics):
+            indexes, _ = calculate_indexes(metrics, baselines, EMOTION_INDEXES)
+            if week["dataStatus"] != "sufficient": indexes = {key: None for key in EMOTION_INDEXES}
+            for key in EMOTION_INDEXES: check(close(indexes[key], week["indexes"][key]), f"emotion/{week['weekId']}: index {key} mismatch")
+
+
 def validate_public_boundary():
     for path in (ROOT / "data").rglob("*.json"):
         payload = path.read_text(encoding="utf-8")
@@ -100,12 +186,13 @@ def validate_public_boundary():
 def main():
     validate_life()
     validate_attention()
+    validate_emotion()
     validate_public_boundary()
     if ERRORS:
         print("Demo data validation failed:")
         print("\n".join(f"- {error}" for error in ERRORS))
         return 1
-    print("Demo data validation passed: 40 life weeks, 6 attention tasks × 24 weeks")
+    print("Demo data validation passed: 40 life weeks, 40 emotion weeks, 6 attention tasks × 24 weeks")
     return 0
 
 

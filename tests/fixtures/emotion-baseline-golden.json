@@ -1,0 +1,11 @@
+{
+  "baselineWeeks": [
+    {"activeRatePct":40,"initiativeEventsPer8h":2,"selfInitiatedSharePct":60,"interestOpportunityAcceptancePct":50,"interestEngagementPct":40,"responseRatePct":60,"responseLatencySec":40,"longStillRatePct":10,"medianLowActivityEpisodeMin":60},
+    {"activeRatePct":42,"initiativeEventsPer8h":2.5,"selfInitiatedSharePct":65,"interestOpportunityAcceptancePct":60,"interestEngagementPct":50,"responseRatePct":70,"responseLatencySec":35,"longStillRatePct":9,"medianLowActivityEpisodeMin":55},
+    {"activeRatePct":44,"initiativeEventsPer8h":3,"selfInitiatedSharePct":70,"interestOpportunityAcceptancePct":70,"interestEngagementPct":60,"responseRatePct":80,"responseLatencySec":30,"longStillRatePct":8,"medianLowActivityEpisodeMin":50},
+    {"activeRatePct":46,"initiativeEventsPer8h":3.5,"selfInitiatedSharePct":75,"interestOpportunityAcceptancePct":80,"interestEngagementPct":70,"responseRatePct":90,"responseLatencySec":25,"longStillRatePct":7,"medianLowActivityEpisodeMin":45},
+    {"activeRatePct":48,"initiativeEventsPer8h":4,"selfInitiatedSharePct":80,"interestOpportunityAcceptancePct":90,"interestEngagementPct":80,"responseRatePct":100,"responseLatencySec":20,"longStillRatePct":6,"medianLowActivityEpisodeMin":40}
+  ],
+  "targetWeek": {"activeRatePct":50,"initiativeEventsPer8h":4.5,"selfInitiatedSharePct":85,"interestOpportunityAcceptancePct":95,"interestEngagementPct":85,"responseRatePct":95,"responseLatencySec":18,"longStillRatePct":5,"medianLowActivityEpisodeMin":35},
+  "expectedIndexes": {"behaviorActivation":112,"initiative":119.5,"interestEngagement":116.862269,"socialResponsiveness":109.482153,"withdrawalBurden":91.625}
+}

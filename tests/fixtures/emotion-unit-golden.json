@@ -1,0 +1,30 @@
+{
+  "segments": [
+    {"startMin": 0, "endMin": 240, "state": "active"},
+    {"startMin": 240, "endMin": 300, "state": "long_still"},
+    {"startMin": 300, "endMin": 600, "state": "low_activity"},
+    {"startMin": 600, "endMin": 1020, "state": "unknown"}
+  ],
+  "events": [
+    {"id":"a1","type":"activity_start","atMin":10,"origin":"self","context":"routine"},
+    {"id":"a2","type":"activity_start","atMin":60,"origin":"self","context":"interest"},
+    {"id":"a3","type":"activity_start","atMin":120,"origin":"self","context":"social"},
+    {"id":"a4","type":"activity_start","atMin":180,"origin":"self","context":"other"},
+    {"id":"a5","type":"activity_start","atMin":320,"origin":"prompted","context":"routine"},
+    {"id":"i1","type":"interest_opportunity","startMin":20,"endMin":60,"interestType":"reading","accepted":true,"engagementStartMin":25,"engagementEndMin":55},
+    {"id":"i2","type":"interest_opportunity","startMin":80,"endMin":120,"interestType":"music","accepted":true,"engagementStartMin":85,"engagementEndMin":115},
+    {"id":"i3","type":"interest_opportunity","startMin":140,"endMin":160,"interestType":"television","accepted":false,"engagementStartMin":null,"engagementEndMin":null},
+    {"id":"s1","type":"social_opportunity","atMin":30,"source":"household_member","responded":true,"responseAtMin":30.1666666667},
+    {"id":"s2","type":"social_opportunity","atMin":90,"source":"visitor","responded":true,"responseAtMin":90.3333333333},
+    {"id":"s3","type":"social_opportunity","atMin":150,"source":"phone_call","responded":true,"responseAtMin":150.5},
+    {"id":"s4","type":"social_opportunity","atMin":350,"source":"household_member","responded":false,"responseAtMin":null}
+  ],
+  "expected": {
+    "observedAwakeMin":600,"activeMin":240,"longStillMin":60,"lowActivityEpisodesMin":[360],
+    "allActivityStarts":5,"selfInitiatedStarts":4,"interestOpportunityCount":3,"interestAcceptedCount":2,
+    "interestOpportunityMin":100,"interestEngagedMin":60,"socialOpportunityCount":4,"socialRespondedCount":3,
+    "responseLatenciesSec":[10,20,30],"activeRatePct":40,"initiativeEventsPer8h":3.2,"selfInitiatedSharePct":80,
+    "interestOpportunityAcceptancePct":66.6667,"interestEngagementPct":60,"responseRatePct":75,
+    "responseLatencySec":20,"longStillRatePct":10,"medianLowActivityEpisodeMin":360
+  }
+}

@@ -73,6 +73,14 @@ R = max(1.4826 × MAD, sensitivityFloor)
 
 `confidencePct` 只根据 coverage、continuity、structural completeness 和有效 unit 数量计算，不包含行为表现和 CV。
 
+## 心理情绪状态（Phase 2B）
+
+心理情绪状态采用完整 event-first 链路：`segments/events → day result → weekAggregate.metrics → W46–W50 个人基线 → indexes`。日观察窗固定为 06:00–23:00；基础状态为 `active / low_activity / long_still / unknown`，事件只允许 `activity_start / interest_opportunity / social_opportunity`。
+
+周级正式原始量严格为 9 项：行为活跃占比、自主启动频率与占比、兴趣机会接受率与投入比例、交流机会回应率与回应延迟、长时间静止占比、低活动 episode 中位时长。外出、位置、活动范围和实际互动总量不进入该域。
+
+完整周至少 5 个有效日才能生成正式指数；W33 截至 2026-08-13，仅包含周一至周四，并以 `in_progress + provisional` 表达。生成器使用 SHA-256 稳定随机流，并将 quality 与 behavior 随机源分离，保证数据质量不受行为表现影响。
+
 ## 自动证据
 
 综合生活能力详情包含代表性坐站动作参数。专注详情包含：

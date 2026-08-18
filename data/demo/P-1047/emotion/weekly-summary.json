@@ -1,0 +1,2540 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "emotion",
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated",
+  "baseline": {
+    "weekIds": [
+      "2025-W46",
+      "2025-W47",
+      "2025-W48",
+      "2025-W49",
+      "2025-W50"
+    ]
+  },
+  "weeks": [
+    {
+      "weekId": "2025-W46",
+      "weekIndex": 1,
+      "weekStart": "2025-11-10",
+      "weekEnd": "2025-11-16",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.0526,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.0526,
+        "withdrawalBurden": 96.0526,
+        "initiative": 96.0526,
+        "interestEngagement": 96.0526,
+        "socialResponsiveness": 96.0526
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 45.4139,
+        "initiativeEventsPer8h": 3.6324,
+        "selfInitiatedSharePct": 86.0,
+        "interestOpportunityAcceptancePct": 85.7143,
+        "interestEngagementPct": 72.772,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 14.334,
+        "longStillRatePct": 6.679,
+        "medianLowActivityEpisodeMin": 68.3087
+      },
+      "indexes": {
+        "behaviorActivation": 100.258,
+        "initiative": 100.5364,
+        "interestEngagement": 100.0,
+        "socialResponsiveness": 99.454,
+        "withdrawalBurden": 100.3207
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 100.258
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 100.1493,
+          "selfInitiatedSharePct": 101.117
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 100.0,
+          "interestEngagementPct": 100.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 98.18
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 100.0,
+          "medianLowActivityEpisodeMin": 100.9163
+        }
+      }
+    },
+    {
+      "weekId": "2025-W47",
+      "weekIndex": 2,
+      "weekStart": "2025-11-17",
+      "weekEnd": "2025-11-23",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.7772,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.7772,
+        "withdrawalBurden": 95.7772,
+        "initiative": 95.7772,
+        "interestEngagement": 95.7772,
+        "socialResponsiveness": 95.7772
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 44.1737,
+        "initiativeEventsPer8h": 3.6212,
+        "selfInitiatedSharePct": 84.0,
+        "interestOpportunityAcceptancePct": 100.0,
+        "interestEngagementPct": 83.4126,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 9.75,
+        "longStillRatePct": 6.3183,
+        "medianLowActivityEpisodeMin": 67.9115
+      },
+      "indexes": {
+        "behaviorActivation": 97.7776,
+        "initiative": 99.4468,
+        "interestEngagement": 111.9164,
+        "socialResponsiveness": 100.3708,
+        "withdrawalBurden": 99.6419
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 97.7776
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 100.0,
+          "selfInitiatedSharePct": 98.617
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 114.2857,
+          "interestEngagementPct": 110.6406
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 101.236
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 99.0982,
+          "medianLowActivityEpisodeMin": 100.6515
+        }
+      }
+    },
+    {
+      "weekId": "2025-W48",
+      "weekIndex": 3,
+      "weekStart": "2025-11-24",
+      "weekEnd": "2025-11-30",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.4196,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.4196,
+        "withdrawalBurden": 95.4196,
+        "initiative": 95.4196,
+        "interestEngagement": 95.4196,
+        "socialResponsiveness": 95.4196
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 47.504,
+        "initiativeEventsPer8h": 3.7114,
+        "selfInitiatedSharePct": 86.0,
+        "interestOpportunityAcceptancePct": 85.7143,
+        "interestEngagementPct": 71.4177,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 10.446,
+        "longStillRatePct": 6.9464,
+        "medianLowActivityEpisodeMin": 59.5383
+      },
+      "indexes": {
+        "behaviorActivation": 104.4382,
+        "initiative": 101.1684,
+        "interestEngagement": 99.1197,
+        "socialResponsiveness": 100.2316,
+        "withdrawalBurden": 98.7088
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 104.4382
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 101.2027,
+          "selfInitiatedSharePct": 101.117
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 100.0,
+          "interestEngagementPct": 98.6457
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 100.772
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 100.6685,
+          "medianLowActivityEpisodeMin": 95.0693
+        }
+      }
+    },
+    {
+      "weekId": "2025-W49",
+      "weekIndex": 4,
+      "weekStart": "2025-12-01",
+      "weekEnd": "2025-12-07",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.2637,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.2637,
+        "withdrawalBurden": 96.2637,
+        "initiative": 96.2637,
+        "interestEngagement": 96.2637,
+        "socialResponsiveness": 96.2637
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 45.2245,
+        "initiativeEventsPer8h": 3.3703,
+        "selfInitiatedSharePct": 85.1064,
+        "interestOpportunityAcceptancePct": 85.7143,
+        "interestEngagementPct": 72.8614,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 11.604,
+        "longStillRatePct": 6.9035,
+        "medianLowActivityEpisodeMin": 66.9343
+      },
+      "indexes": {
+        "behaviorActivation": 99.8792,
+        "initiative": 97.9928,
+        "interestEngagement": 100.0581,
+        "socialResponsiveness": 100.0,
+        "withdrawalBurden": 100.3648
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 99.8792
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 96.6547,
+          "selfInitiatedSharePct": 100.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 100.0,
+          "interestEngagementPct": 100.0894
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 100.0
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 100.5613,
+          "medianLowActivityEpisodeMin": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W50",
+      "weekIndex": 5,
+      "weekStart": "2025-12-08",
+      "weekEnd": "2025-12-14",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.9413,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.9413,
+        "withdrawalBurden": 95.9413,
+        "initiative": 95.9413,
+        "interestEngagement": 95.9413,
+        "socialResponsiveness": 95.9413
+      },
+      "phase": "稳定建立期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 45.2849,
+        "initiativeEventsPer8h": 3.3099,
+        "selfInitiatedSharePct": 84.7826,
+        "interestOpportunityAcceptancePct": 85.7143,
+        "interestEngagementPct": 70.7076,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 13.548,
+        "longStillRatePct": 5.9914,
+        "medianLowActivityEpisodeMin": 63.8109
+      },
+      "indexes": {
+        "behaviorActivation": 100.0,
+        "initiative": 97.3477,
+        "interestEngagement": 98.6581,
+        "socialResponsiveness": 99.6112,
+        "withdrawalBurden": 98.1539
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 100.0
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 95.8493,
+          "selfInitiatedSharePct": 99.5953
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 100.0,
+          "interestEngagementPct": 97.9356
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 98.704
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 98.281,
+          "medianLowActivityEpisodeMin": 97.9177
+        }
+      }
+    },
+    {
+      "weekId": "2025-W51",
+      "weekIndex": 6,
+      "weekStart": "2025-12-15",
+      "weekEnd": "2025-12-21",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.1786,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.1786,
+        "withdrawalBurden": 96.1786,
+        "initiative": 96.1786,
+        "interestEngagement": 96.1786,
+        "socialResponsiveness": 96.1786
+      },
+      "phase": "轻度改善期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 45.9305,
+        "initiativeEventsPer8h": 3.6801,
+        "selfInitiatedSharePct": 86.2745,
+        "interestOpportunityAcceptancePct": 92.8571,
+        "interestEngagementPct": 81.0709,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 7.884,
+        "longStillRatePct": 6.2396,
+        "medianLowActivityEpisodeMin": 68.2297
+      },
+      "indexes": {
+        "behaviorActivation": 101.2912,
+        "initiative": 101.0553,
+        "interestEngagement": 107.8943,
+        "socialResponsiveness": 100.744,
+        "withdrawalBurden": 99.5882
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 101.2912
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 100.7853,
+          "selfInitiatedSharePct": 101.4601
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 107.1428,
+          "interestEngagementPct": 108.2989
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 102.48
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 98.9015,
+          "medianLowActivityEpisodeMin": 100.8636
+        }
+      }
+    },
+    {
+      "weekId": "2025-W52",
+      "weekIndex": 7,
+      "weekStart": "2025-12-22",
+      "weekEnd": "2025-12-28",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.2084,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.2084,
+        "withdrawalBurden": 95.2084,
+        "initiative": 95.2084,
+        "interestEngagement": 95.2084,
+        "socialResponsiveness": 95.2084
+      },
+      "phase": "轻度改善期",
+      "event": "日常活动增加",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "activeRatePct": 43.6646,
+        "initiativeEventsPer8h": 3.7283,
+        "selfInitiatedSharePct": 86.0,
+        "interestOpportunityAcceptancePct": 92.8571,
+        "interestEngagementPct": 77.3822,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 11.784,
+        "longStillRatePct": 6.5512,
+        "medianLowActivityEpisodeMin": 67.9521
+      },
+      "indexes": {
+        "behaviorActivation": 96.7594,
+        "initiative": 101.3036,
+        "interestEngagement": 105.4966,
+        "socialResponsiveness": 99.964,
+        "withdrawalBurden": 100.0298
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 96.7594
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 101.428,
+          "selfInitiatedSharePct": 101.117
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 107.1428,
+          "interestEngagementPct": 104.6102
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 99.88
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 99.6805,
+          "medianLowActivityEpisodeMin": 100.6785
+        }
+      }
+    },
+    {
+      "weekId": "2026-W01",
+      "weekIndex": 8,
+      "weekStart": "2025-12-29",
+      "weekEnd": "2026-01-04",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.233,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.233,
+        "withdrawalBurden": 96.233,
+        "initiative": 96.233,
+        "interestEngagement": 96.233,
+        "socialResponsiveness": 96.233
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 45.4565,
+        "initiativeEventsPer8h": 3.6023,
+        "selfInitiatedSharePct": 86.0,
+        "interestOpportunityAcceptancePct": 85.7143,
+        "interestEngagementPct": 72.3324,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 14.928,
+        "longStillRatePct": 6.0131,
+        "medianLowActivityEpisodeMin": 75.0172
+      },
+      "indexes": {
+        "behaviorActivation": 100.3432,
+        "initiative": 100.2956,
+        "interestEngagement": 99.7143,
+        "socialResponsiveness": 99.3352,
+        "withdrawalBurden": 100.8039
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 100.3432
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 99.748,
+          "selfInitiatedSharePct": 101.117
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 100.0,
+          "interestEngagementPct": 99.5604
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 97.784
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 98.3353,
+          "medianLowActivityEpisodeMin": 105.3886
+        }
+      }
+    },
+    {
+      "weekId": "2026-W02",
+      "weekIndex": 9,
+      "weekStart": "2026-01-05",
+      "weekEnd": "2026-01-11",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.0361,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.0361,
+        "withdrawalBurden": 96.0361,
+        "initiative": 96.0361,
+        "interestEngagement": 96.0361,
+        "socialResponsiveness": 96.0361
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 43.8746,
+        "initiativeEventsPer8h": 3.7091,
+        "selfInitiatedSharePct": 84.6154,
+        "interestOpportunityAcceptancePct": 85.7143,
+        "interestEngagementPct": 70.2566,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 16.872,
+        "longStillRatePct": 6.7152,
+        "medianLowActivityEpisodeMin": 73.7098
+      },
+      "indexes": {
+        "behaviorActivation": 97.1794,
+        "initiative": 100.4577,
+        "interestEngagement": 98.365,
+        "socialResponsiveness": 98.9464,
+        "withdrawalBurden": 101.6398
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 97.1794
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 101.172,
+          "selfInitiatedSharePct": 99.3863
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 100.0,
+          "interestEngagementPct": 97.4846
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 96.488
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 100.0905,
+          "medianLowActivityEpisodeMin": 104.517
+        }
+      }
+    },
+    {
+      "weekId": "2026-W03",
+      "weekIndex": 10,
+      "weekStart": "2026-01-12",
+      "weekEnd": "2026-01-18",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.7914,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.7914,
+        "withdrawalBurden": 95.7914,
+        "initiative": 95.7914,
+        "interestEngagement": 95.7914,
+        "socialResponsiveness": 95.7914
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 43.3569,
+        "initiativeEventsPer8h": 3.0219,
+        "selfInitiatedSharePct": 76.087,
+        "interestOpportunityAcceptancePct": 78.5714,
+        "interestEngagementPct": 61.7394,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 17.55,
+        "longStillRatePct": 6.8097,
+        "medianLowActivityEpisodeMin": 73.5469
+      },
+      "indexes": {
+        "behaviorActivation": 96.144,
+        "initiative": 90.6959,
+        "interestEngagement": 90.3288,
+        "socialResponsiveness": 98.8108,
+        "withdrawalBurden": 101.7553
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 96.144
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 92.0093,
+          "selfInitiatedSharePct": 88.7258
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 92.8571,
+          "interestEngagementPct": 88.9674
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 96.036
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 100.3268,
+          "medianLowActivityEpisodeMin": 104.4084
+        }
+      }
+    },
+    {
+      "weekId": "2026-W04",
+      "weekIndex": 11,
+      "weekStart": "2026-01-19",
+      "weekEnd": "2026-01-25",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.1521,
+      "metricConfidencePct": {
+        "behaviorActivation": 94.1521,
+        "withdrawalBurden": 94.1521,
+        "initiative": 94.1521,
+        "interestEngagement": 94.1521,
+        "socialResponsiveness": 94.1521
+      },
+      "phase": "缓慢下降期",
+      "event": "活动量开始减少",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "activeRatePct": 42.5416,
+        "initiativeEventsPer8h": 2.8548,
+        "selfInitiatedSharePct": 69.5652,
+        "interestOpportunityAcceptancePct": 71.4286,
+        "interestEngagementPct": 48.2452,
+        "responseRatePct": 90.4762,
+        "responseLatencySec": 14.826,
+        "longStillRatePct": 8.16,
+        "medianLowActivityEpisodeMin": 71.0495
+      },
+      "indexes": {
+        "behaviorActivation": 94.5134,
+        "initiative": 86.0982,
+        "interestEngagement": 79.0576,
+        "socialResponsiveness": 91.0223,
+        "withdrawalBurden": 103.3668
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 94.5134
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 89.7813,
+          "selfInitiatedSharePct": 80.5735
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 85.7143,
+          "interestEngagementPct": 75.4732
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 88.0953,
+          "responseLatencySec": 97.852
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 103.7025,
+          "medianLowActivityEpisodeMin": 102.7435
+        }
+      }
+    },
+    {
+      "weekId": "2026-W05",
+      "weekIndex": 12,
+      "weekStart": "2026-01-26",
+      "weekEnd": "2026-02-01",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.8493,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.8493,
+        "withdrawalBurden": 95.8493,
+        "initiative": 95.8493,
+        "interestEngagement": 95.8493,
+        "socialResponsiveness": 95.8493
+      },
+      "phase": "缓慢下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 37.2035,
+        "initiativeEventsPer8h": 2.0577,
+        "selfInitiatedSharePct": 53.3333,
+        "interestOpportunityAcceptancePct": 57.1429,
+        "interestEngagementPct": 33.0498,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 25.662,
+        "longStillRatePct": 10.0063,
+        "medianLowActivityEpisodeMin": 88.0181
+      },
+      "indexes": {
+        "behaviorActivation": 83.8372,
+        "initiative": 75.492,
+        "interestEngagement": 70.5,
+        "socialResponsiveness": 76.1884,
+        "withdrawalBurden": 110.3264
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 83.8372
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 79.1533,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 71.4286,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 90.628
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 108.3183,
+          "medianLowActivityEpisodeMin": 114.0559
+        }
+      }
+    },
+    {
+      "weekId": "2026-W06",
+      "weekIndex": 13,
+      "weekStart": "2026-02-02",
+      "weekEnd": "2026-02-08",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.3924,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.3924,
+        "withdrawalBurden": 96.3924,
+        "initiative": 96.3924,
+        "interestEngagement": 96.3924,
+        "socialResponsiveness": 96.3924
+      },
+      "phase": "事件后快速变化期",
+      "event": "家中异常事件，短期活动明显减少",
+      "eventKind": "external",
+      "note": null,
+      "metrics": {
+        "activeRatePct": 33.8661,
+        "initiativeEventsPer8h": 1.3399,
+        "selfInitiatedSharePct": 37.2093,
+        "interestOpportunityAcceptancePct": 42.8571,
+        "interestEngagementPct": 19.7099,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 35.37,
+        "longStillRatePct": 12.4435,
+        "medianLowActivityEpisodeMin": 92.1209
+      },
+      "indexes": {
+        "behaviorActivation": 77.1624,
+        "initiative": 70.0,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 74.2468,
+        "withdrawalBurden": 115.2442
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 77.1624
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 70.0,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 84.156
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 114.4112,
+          "medianLowActivityEpisodeMin": 116.7911
+        }
+      }
+    },
+    {
+      "weekId": "2026-W07",
+      "weekIndex": 14,
+      "weekStart": "2026-02-09",
+      "weekEnd": "2026-02-15",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.4972,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.4972,
+        "withdrawalBurden": 96.4972,
+        "initiative": 96.4972,
+        "interestEngagement": 96.4972,
+        "socialResponsiveness": 96.4972
+      },
+      "phase": "事件后快速变化期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 35.1024,
+        "initiativeEventsPer8h": 1.4966,
+        "selfInitiatedSharePct": 45.0,
+        "interestOpportunityAcceptancePct": 50.0,
+        "interestEngagementPct": 24.9444,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 30.621,
+        "longStillRatePct": 11.9248,
+        "medianLowActivityEpisodeMin": 101.21
+      },
+      "indexes": {
+        "behaviorActivation": 79.635,
+        "initiative": 71.0032,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 75.1966,
+        "withdrawalBurden": 116.5221
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 79.635
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 71.672,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 87.322
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 113.1145,
+          "medianLowActivityEpisodeMin": 122.8505
+        }
+      }
+    },
+    {
+      "weekId": "2026-W08",
+      "weekIndex": 15,
+      "weekStart": "2026-02-16",
+      "weekEnd": "2026-02-22",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.8884,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.8884,
+        "withdrawalBurden": 96.8884,
+        "initiative": 96.8884,
+        "interestEngagement": 96.8884,
+        "socialResponsiveness": 96.8884
+      },
+      "phase": "干预恢复期",
+      "event": "开始规律康复训练",
+      "eventKind": "intervention",
+      "note": null,
+      "metrics": {
+        "activeRatePct": 37.3436,
+        "initiativeEventsPer8h": 1.715,
+        "selfInitiatedSharePct": 50.0,
+        "interestOpportunityAcceptancePct": 50.0,
+        "interestEngagementPct": 27.3525,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 28.578,
+        "longStillRatePct": 11.2912,
+        "medianLowActivityEpisodeMin": 85.4579
+      },
+      "indexes": {
+        "behaviorActivation": 84.1174,
+        "initiative": 72.7504,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 75.6052,
+        "withdrawalBurden": 111.817
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 84.1174
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 74.584,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 88.684
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 111.5305,
+          "medianLowActivityEpisodeMin": 112.3491
+        }
+      }
+    },
+    {
+      "weekId": "2026-W09",
+      "weekIndex": 16,
+      "weekStart": "2026-02-23",
+      "weekEnd": "2026-03-01",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.3415,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.3415,
+        "withdrawalBurden": 95.3415,
+        "initiative": 95.3415,
+        "interestEngagement": 95.3415,
+        "socialResponsiveness": 95.3415
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 37.5219,
+        "initiativeEventsPer8h": 1.7119,
+        "selfInitiatedSharePct": 51.2821,
+        "interestOpportunityAcceptancePct": 50.0,
+        "interestEngagementPct": 28.1013,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 30.84,
+        "longStillRatePct": 11.6393,
+        "medianLowActivityEpisodeMin": 93.4666
+      },
+      "indexes": {
+        "behaviorActivation": 84.474,
+        "initiative": 72.7256,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 75.1528,
+        "withdrawalBurden": 114.2514
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 84.474
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 74.5427,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 87.176
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 112.4008,
+          "medianLowActivityEpisodeMin": 117.6882
+        }
+      }
+    },
+    {
+      "weekId": "2026-W10",
+      "weekIndex": 17,
+      "weekStart": "2026-03-02",
+      "weekEnd": "2026-03-08",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.6537,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.6537,
+        "withdrawalBurden": 96.6537,
+        "initiative": 96.6537,
+        "interestEngagement": 96.6537,
+        "socialResponsiveness": 96.6537
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 38.8296,
+        "initiativeEventsPer8h": 2.0678,
+        "selfInitiatedSharePct": 56.8182,
+        "interestOpportunityAcceptancePct": 64.2857,
+        "interestEngagementPct": 39.0214,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 27.849,
+        "longStillRatePct": 9.9813,
+        "medianLowActivityEpisodeMin": 79.7423
+      },
+      "indexes": {
+        "behaviorActivation": 87.0894,
+        "initiative": 75.5728,
+        "interestEngagement": 73.0,
+        "socialResponsiveness": 75.751,
+        "withdrawalBurden": 108.3548
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 87.0894
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 79.288,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 78.5714,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 89.17
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 108.2557,
+          "medianLowActivityEpisodeMin": 108.5387
+        }
+      }
+    },
+    {
+      "weekId": "2026-W11",
+      "weekIndex": 18,
+      "weekStart": "2026-03-09",
+      "weekEnd": "2026-03-15",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.5449,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.5449,
+        "withdrawalBurden": 95.5449,
+        "initiative": 95.5449,
+        "interestEngagement": 95.5449,
+        "socialResponsiveness": 95.5449
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 38.3296,
+        "initiativeEventsPer8h": 2.3469,
+        "selfInitiatedSharePct": 57.4468,
+        "interestOpportunityAcceptancePct": 57.1429,
+        "interestEngagementPct": 34.7291,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 21.147,
+        "longStillRatePct": 10.0431,
+        "medianLowActivityEpisodeMin": 78.5177
+      },
+      "indexes": {
+        "behaviorActivation": 86.0894,
+        "initiative": 77.8056,
+        "interestEngagement": 70.5,
+        "socialResponsiveness": 77.0914,
+        "withdrawalBurden": 108.1695
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 86.0894
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 83.0093,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 71.4286,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 93.638
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 108.4103,
+          "medianLowActivityEpisodeMin": 107.7223
+        }
+      }
+    },
+    {
+      "weekId": "2026-W12",
+      "weekIndex": 19,
+      "weekStart": "2026-03-16",
+      "weekEnd": "2026-03-22",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 6,
+      "confidencePct": 91.8693,
+      "metricConfidencePct": {
+        "behaviorActivation": 91.8693,
+        "withdrawalBurden": 91.8693,
+        "initiative": 91.8693,
+        "interestEngagement": 91.8693,
+        "socialResponsiveness": 91.8693
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 38.9044,
+        "initiativeEventsPer8h": 2.3344,
+        "selfInitiatedSharePct": 62.1622,
+        "interestOpportunityAcceptancePct": 75.0,
+        "interestEngagementPct": 48.567,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 21.294,
+        "longStillRatePct": 9.166,
+        "medianLowActivityEpisodeMin": 77.2911
+      },
+      "indexes": {
+        "behaviorActivation": 87.239,
+        "initiative": 78.2335,
+        "interestEngagement": 80.5167,
+        "socialResponsiveness": 77.062,
+        "withdrawalBurden": 106.458
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 87.239
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 82.8427,
+          "selfInitiatedSharePct": 71.3197
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 89.2857,
+          "interestEngagementPct": 75.795
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 93.54
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 106.2175,
+          "medianLowActivityEpisodeMin": 106.9045
+        }
+      }
+    },
+    {
+      "weekId": "2026-W13",
+      "weekIndex": 20,
+      "weekStart": "2026-03-23",
+      "weekEnd": "2026-03-29",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.9364,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.9364,
+        "withdrawalBurden": 95.9364,
+        "initiative": 95.9364,
+        "interestEngagement": 95.9364,
+        "socialResponsiveness": 95.9364
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 41.1119,
+        "initiativeEventsPer8h": 2.4662,
+        "selfInitiatedSharePct": 64.4444,
+        "interestOpportunityAcceptancePct": 57.1429,
+        "interestEngagementPct": 40.6188,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 21.99,
+        "longStillRatePct": 9.1779,
+        "medianLowActivityEpisodeMin": 76.7069
+      },
+      "indexes": {
+        "behaviorActivation": 91.654,
+        "initiative": 80.429,
+        "interestEngagement": 70.5,
+        "socialResponsiveness": 76.9228,
+        "withdrawalBurden": 106.341
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 91.654
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 84.6,
+          "selfInitiatedSharePct": 74.1725
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 71.4286,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 93.076
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 106.2472,
+          "medianLowActivityEpisodeMin": 106.5151
+        }
+      }
+    },
+    {
+      "weekId": "2026-W14",
+      "weekIndex": 21,
+      "weekStart": "2026-03-30",
+      "weekEnd": "2026-04-05",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.6466,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.6466,
+        "withdrawalBurden": 95.6466,
+        "initiative": 95.6466,
+        "interestEngagement": 95.6466,
+        "socialResponsiveness": 95.6466
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 39.777,
+        "initiativeEventsPer8h": 2.7408,
+        "selfInitiatedSharePct": 69.5652,
+        "interestOpportunityAcceptancePct": 85.7143,
+        "interestEngagementPct": 58.7192,
+        "responseRatePct": 71.4286,
+        "responseLatencySec": 20.256,
+        "longStillRatePct": 7.8726,
+        "medianLowActivityEpisodeMin": 80.2187
+      },
+      "indexes": {
+        "behaviorActivation": 88.9842,
+        "initiative": 85.1862,
+        "interestEngagement": 90.8657,
+        "socialResponsiveness": 77.2696,
+        "withdrawalBurden": 105.0393
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 88.9842
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 88.2613,
+          "selfInitiatedSharePct": 80.5735
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 100.0,
+          "interestEngagementPct": 85.9472
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 94.232
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 102.984,
+          "medianLowActivityEpisodeMin": 108.8563
+        }
+      }
+    },
+    {
+      "weekId": "2026-W15",
+      "weekIndex": 22,
+      "weekStart": "2026-04-06",
+      "weekEnd": "2026-04-12",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.6172,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.6172,
+        "withdrawalBurden": 96.6172,
+        "initiative": 96.6172,
+        "interestEngagement": 96.6172,
+        "socialResponsiveness": 96.6172
+      },
+      "phase": "干预恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 41.5248,
+        "initiativeEventsPer8h": 2.661,
+        "selfInitiatedSharePct": 69.5652,
+        "interestOpportunityAcceptancePct": 78.5714,
+        "interestEngagementPct": 56.5415,
+        "responseRatePct": 80.9524,
+        "responseLatencySec": 20.244,
+        "longStillRatePct": 8.0978,
+        "medianLowActivityEpisodeMin": 78.8942
+      },
+      "indexes": {
+        "behaviorActivation": 92.4798,
+        "initiative": 84.5478,
+        "interestEngagement": 86.9502,
+        "socialResponsiveness": 81.6053,
+        "withdrawalBurden": 105.0962
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 92.4798
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 87.1973,
+          "selfInitiatedSharePct": 80.5735
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 92.8571,
+          "interestEngagementPct": 83.7695
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 76.1905,
+          "responseLatencySec": 94.24
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 103.547,
+          "medianLowActivityEpisodeMin": 107.9733
+        }
+      }
+    },
+    {
+      "weekId": "2026-W16",
+      "weekIndex": 23,
+      "weekStart": "2026-04-13",
+      "weekEnd": "2026-04-19",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.2321,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.2321,
+        "withdrawalBurden": 95.2321,
+        "initiative": 95.2321,
+        "interestEngagement": 95.2321,
+        "socialResponsiveness": 95.2321
+      },
+      "phase": "部分恢复后波动期",
+      "event": "恢复到较稳定活动水平",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "activeRatePct": 41.2301,
+        "initiativeEventsPer8h": 3.2095,
+        "selfInitiatedSharePct": 75.5102,
+        "interestOpportunityAcceptancePct": 85.7143,
+        "interestEngagementPct": 63.2367,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 15.354,
+        "longStillRatePct": 8.0911,
+        "medianLowActivityEpisodeMin": 69.1976
+      },
+      "indexes": {
+        "behaviorActivation": 91.8904,
+        "initiative": 91.9083,
+        "interestEngagement": 93.8021,
+        "socialResponsiveness": 99.25,
+        "withdrawalBurden": 102.8228
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 91.8904
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 94.5107,
+          "selfInitiatedSharePct": 88.0048
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 100.0,
+          "interestEngagementPct": 90.4647
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 97.5
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 103.5302,
+          "medianLowActivityEpisodeMin": 101.5089
+        }
+      }
+    },
+    {
+      "weekId": "2026-W17",
+      "weekIndex": 24,
+      "weekStart": "2026-04-20",
+      "weekEnd": "2026-04-26",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.7377,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.7377,
+        "withdrawalBurden": 95.7377,
+        "initiative": 95.7377,
+        "interestEngagement": 95.7377,
+        "socialResponsiveness": 95.7377
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 41.2565,
+        "initiativeEventsPer8h": 2.829,
+        "selfInitiatedSharePct": 71.7391,
+        "interestOpportunityAcceptancePct": 78.5714,
+        "interestEngagementPct": 54.9043,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 20.826,
+        "longStillRatePct": 7.9521,
+        "medianLowActivityEpisodeMin": 71.6237
+      },
+      "indexes": {
+        "behaviorActivation": 91.9432,
+        "initiative": 86.9787,
+        "interestEngagement": 85.886,
+        "socialResponsiveness": 98.1556,
+        "withdrawalBurden": 103.163
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 91.9432
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 89.4373,
+          "selfInitiatedSharePct": 83.2909
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 92.8571,
+          "interestEngagementPct": 82.1323
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 100.0,
+          "responseLatencySec": 93.852
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 103.1827,
+          "medianLowActivityEpisodeMin": 103.1263
+        }
+      }
+    },
+    {
+      "weekId": "2026-W18",
+      "weekIndex": 25,
+      "weekStart": "2026-04-27",
+      "weekEnd": "2026-05-03",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.508,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.508,
+        "withdrawalBurden": 95.508,
+        "initiative": 95.508,
+        "interestEngagement": 95.508,
+        "socialResponsiveness": 95.508
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 42.7035,
+        "initiativeEventsPer8h": 2.7508,
+        "selfInitiatedSharePct": 69.5652,
+        "interestOpportunityAcceptancePct": 78.5714,
+        "interestEngagementPct": 55.4405,
+        "responseRatePct": 80.9524,
+        "responseLatencySec": 18.876,
+        "longStillRatePct": 7.4875,
+        "medianLowActivityEpisodeMin": 70.5349
+      },
+      "indexes": {
+        "behaviorActivation": 94.8372,
+        "initiative": 85.2662,
+        "interestEngagement": 86.2345,
+        "socialResponsiveness": 81.879,
+        "withdrawalBurden": 102.154
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 94.8372
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 88.3947,
+          "selfInitiatedSharePct": 80.5735
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 92.8571,
+          "interestEngagementPct": 82.6685
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 76.1905,
+          "responseLatencySec": 95.152
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 102.0212,
+          "medianLowActivityEpisodeMin": 102.4004
+        }
+      }
+    },
+    {
+      "weekId": "2026-W19",
+      "weekIndex": 26,
+      "weekStart": "2026-05-04",
+      "weekEnd": "2026-05-10",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.8605,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.8605,
+        "withdrawalBurden": 95.8605,
+        "initiative": 95.8605,
+        "interestEngagement": 95.8605,
+        "socialResponsiveness": 95.8605
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 40.6749,
+        "initiativeEventsPer8h": 2.7299,
+        "selfInitiatedSharePct": 69.5652,
+        "interestOpportunityAcceptancePct": 71.4286,
+        "interestEngagementPct": 51.1592,
+        "responseRatePct": 71.4286,
+        "responseLatencySec": 20.436,
+        "longStillRatePct": 8.6055,
+        "medianLowActivityEpisodeMin": 76.0338
+      },
+      "indexes": {
+        "behaviorActivation": 90.78,
+        "initiative": 85.099,
+        "interestEngagement": 80.9517,
+        "socialResponsiveness": 77.2336,
+        "withdrawalBurden": 105.2538
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 90.78
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 88.116,
+          "selfInitiatedSharePct": 80.5735
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 85.7143,
+          "interestEngagementPct": 78.3872
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 94.112
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 104.8162,
+          "medianLowActivityEpisodeMin": 106.0663
+        }
+      }
+    },
+    {
+      "weekId": "2026-W20",
+      "weekIndex": 27,
+      "weekStart": "2026-05-11",
+      "weekEnd": "2026-05-17",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.3577,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.3577,
+        "withdrawalBurden": 95.3577,
+        "initiative": 95.3577,
+        "interestEngagement": 95.3577,
+        "socialResponsiveness": 95.3577
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 40.2368,
+        "initiativeEventsPer8h": 2.5115,
+        "selfInitiatedSharePct": 67.4419,
+        "interestOpportunityAcceptancePct": 42.8571,
+        "interestEngagementPct": 28.6261,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 19.875,
+        "longStillRatePct": 8.6245,
+        "medianLowActivityEpisodeMin": 76.2644
+      },
+      "indexes": {
+        "behaviorActivation": 89.9038,
+        "initiative": 82.2901,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 77.3458,
+        "withdrawalBurden": 105.3385
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 89.9038
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 85.204,
+          "selfInitiatedSharePct": 77.9194
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 94.486
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 104.8637,
+          "medianLowActivityEpisodeMin": 106.2201
+        }
+      }
+    },
+    {
+      "weekId": "2026-W21",
+      "weekIndex": 28,
+      "weekStart": "2026-05-18",
+      "weekEnd": "2026-05-24",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.98,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.98,
+        "withdrawalBurden": 95.98,
+        "initiative": 95.98,
+        "interestEngagement": 95.98,
+        "socialResponsiveness": 95.98
+      },
+      "phase": "部分恢复后波动期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 40.5719,
+        "initiativeEventsPer8h": 2.4714,
+        "selfInitiatedSharePct": 67.4419,
+        "interestOpportunityAcceptancePct": 71.4286,
+        "interestEngagementPct": 46.5007,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 20.868,
+        "longStillRatePct": 8.9414,
+        "medianLowActivityEpisodeMin": 77.0005
+      },
+      "indexes": {
+        "behaviorActivation": 90.574,
+        "initiative": 81.9694,
+        "interestEngagement": 77.9237,
+        "socialResponsiveness": 77.1472,
+        "withdrawalBurden": 106.0252
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 90.574
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 84.6693,
+          "selfInitiatedSharePct": 77.9194
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 85.7143,
+          "interestEngagementPct": 73.7287
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 93.824
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 105.656,
+          "medianLowActivityEpisodeMin": 106.7108
+        }
+      }
+    },
+    {
+      "weekId": "2026-W22",
+      "weekIndex": 29,
+      "weekStart": "2026-05-25",
+      "weekEnd": "2026-05-31",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 97.4168,
+      "metricConfidencePct": {
+        "behaviorActivation": 97.4168,
+        "withdrawalBurden": 97.4168,
+        "initiative": 97.4168,
+        "interestEngagement": 97.4168,
+        "socialResponsiveness": 97.4168
+      },
+      "phase": "环境影响与再次下降期",
+      "event": "高温天气，外出活动减少",
+      "eventKind": "external",
+      "note": null,
+      "metrics": {
+        "activeRatePct": 38.4759,
+        "initiativeEventsPer8h": 2.0794,
+        "selfInitiatedSharePct": 59.0909,
+        "interestOpportunityAcceptancePct": 42.8571,
+        "interestEngagementPct": 27.2841,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 25.047,
+        "longStillRatePct": 9.5064,
+        "medianLowActivityEpisodeMin": 90.9868
+      },
+      "indexes": {
+        "behaviorActivation": 86.382,
+        "initiative": 75.6656,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 76.3114,
+        "withdrawalBurden": 110.2068
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 86.382
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 79.4427,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 91.038
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 107.0685,
+          "medianLowActivityEpisodeMin": 116.035
+        }
+      }
+    },
+    {
+      "weekId": "2026-W23",
+      "weekIndex": 30,
+      "weekStart": "2026-06-01",
+      "weekEnd": "2026-06-07",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.4815,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.4815,
+        "withdrawalBurden": 95.4815,
+        "initiative": 95.4815,
+        "interestEngagement": 95.4815,
+        "socialResponsiveness": 95.4815
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 37.9773,
+        "initiativeEventsPer8h": 2.1567,
+        "selfInitiatedSharePct": 56.8182,
+        "interestOpportunityAcceptancePct": 57.1429,
+        "interestEngagementPct": 35.6652,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 26.946,
+        "longStillRatePct": 9.8217,
+        "medianLowActivityEpisodeMin": 79.5133
+      },
+      "indexes": {
+        "behaviorActivation": 85.3848,
+        "initiative": 76.284,
+        "interestEngagement": 70.5,
+        "socialResponsiveness": 75.9316,
+        "withdrawalBurden": 108.042
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 85.3848
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 80.4733,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 71.4286,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 89.772
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 107.8568,
+          "medianLowActivityEpisodeMin": 108.386
+        }
+      }
+    },
+    {
+      "weekId": "2026-W24",
+      "weekIndex": 31,
+      "weekStart": "2026-06-08",
+      "weekEnd": "2026-06-14",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.9005,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.9005,
+        "withdrawalBurden": 95.9005,
+        "initiative": 95.9005,
+        "interestEngagement": 95.9005,
+        "socialResponsiveness": 95.9005
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 39.2641,
+        "initiativeEventsPer8h": 2.0209,
+        "selfInitiatedSharePct": 54.5455,
+        "interestOpportunityAcceptancePct": 50.0,
+        "interestEngagementPct": 28.3133,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 24.537,
+        "longStillRatePct": 9.9163,
+        "medianLowActivityEpisodeMin": 83.9579
+      },
+      "indexes": {
+        "behaviorActivation": 87.9584,
+        "initiative": 75.1976,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 76.4134,
+        "withdrawalBurden": 109.2328
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 87.9584
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 78.6627,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 91.378
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 108.0932,
+          "medianLowActivityEpisodeMin": 111.3491
+        }
+      }
+    },
+    {
+      "weekId": "2026-W25",
+      "weekIndex": 32,
+      "weekStart": "2026-06-15",
+      "weekEnd": "2026-06-21",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.9319,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.9319,
+        "withdrawalBurden": 95.9319,
+        "initiative": 95.9319,
+        "interestEngagement": 95.9319,
+        "socialResponsiveness": 95.9319
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 37.1252,
+        "initiativeEventsPer8h": 2.1276,
+        "selfInitiatedSharePct": 53.1915,
+        "interestOpportunityAcceptancePct": 71.4286,
+        "interestEngagementPct": 40.2327,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 26.97,
+        "longStillRatePct": 10.5298,
+        "medianLowActivityEpisodeMin": 84.2786
+      },
+      "indexes": {
+        "behaviorActivation": 83.6806,
+        "initiative": 76.0512,
+        "interestEngagement": 75.5,
+        "socialResponsiveness": 75.9268,
+        "withdrawalBurden": 110.3046
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 83.6806
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 80.0853,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 85.7143,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 89.756
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 109.627,
+          "medianLowActivityEpisodeMin": 111.5629
+        }
+      }
+    },
+    {
+      "weekId": "2026-W26",
+      "weekIndex": 33,
+      "weekStart": "2026-06-22",
+      "weekEnd": "2026-06-28",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 94.4331,
+      "metricConfidencePct": {
+        "behaviorActivation": 94.4331,
+        "withdrawalBurden": 94.4331,
+        "initiative": 94.4331,
+        "interestEngagement": 94.4331,
+        "socialResponsiveness": 94.4331
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 36.8526,
+        "initiativeEventsPer8h": 1.9662,
+        "selfInitiatedSharePct": 51.1628,
+        "interestOpportunityAcceptancePct": 50.0,
+        "interestEngagementPct": 28.3991,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 25.866,
+        "longStillRatePct": 10.7694,
+        "medianLowActivityEpisodeMin": 78.3511
+      },
+      "indexes": {
+        "behaviorActivation": 83.1354,
+        "initiative": 74.76,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 76.1476,
+        "withdrawalBurden": 109.3108
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 83.1354
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 77.9333,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 90.492
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 110.226,
+          "medianLowActivityEpisodeMin": 107.6112
+        }
+      }
+    },
+    {
+      "weekId": "2026-W27",
+      "weekIndex": 34,
+      "weekStart": "2026-06-29",
+      "weekEnd": "2026-07-05",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.3551,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.3551,
+        "withdrawalBurden": 96.3551,
+        "initiative": 96.3551,
+        "interestEngagement": 96.3551,
+        "socialResponsiveness": 96.3551
+      },
+      "phase": "环境影响与再次下降期",
+      "event": "连续数周活动量偏低",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "activeRatePct": 36.0859,
+        "initiativeEventsPer8h": 1.9986,
+        "selfInitiatedSharePct": 52.1739,
+        "interestOpportunityAcceptancePct": 42.8571,
+        "interestEngagementPct": 22.7676,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 31.086,
+        "longStillRatePct": 10.0632,
+        "medianLowActivityEpisodeMin": 88.2455
+      },
+      "indexes": {
+        "behaviorActivation": 81.602,
+        "initiative": 75.0192,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 75.1036,
+        "withdrawalBurden": 110.4719
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 81.602
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 78.3653,
+          "selfInitiatedSharePct": 70.0
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 87.012
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 108.4605,
+          "medianLowActivityEpisodeMin": 114.2075
+        }
+      }
+    },
+    {
+      "weekId": "2026-W28",
+      "weekIndex": 35,
+      "weekStart": "2026-07-06",
+      "weekEnd": "2026-07-12",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.2698,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.2698,
+        "withdrawalBurden": 95.2698,
+        "initiative": 95.2698,
+        "interestEngagement": 95.2698,
+        "socialResponsiveness": 95.2698
+      },
+      "phase": "环境影响与再次下降期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 40.2705,
+        "initiativeEventsPer8h": 2.5042,
+        "selfInitiatedSharePct": 61.7021,
+        "interestOpportunityAcceptancePct": 35.7143,
+        "interestEngagementPct": 21.9431,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 27.291,
+        "longStillRatePct": 9.6947,
+        "medianLowActivityEpisodeMin": 78.8092
+      },
+      "indexes": {
+        "behaviorActivation": 89.9712,
+        "initiative": 79.3619,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 75.8626,
+        "withdrawalBurden": 107.6713
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 89.9712
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 85.1067,
+          "selfInitiatedSharePct": 70.7446
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 89.542
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 107.5392,
+          "medianLowActivityEpisodeMin": 107.9166
+        }
+      }
+    },
+    {
+      "weekId": "2026-W29",
+      "weekIndex": 36,
+      "weekStart": "2026-07-13",
+      "weekEnd": "2026-07-19",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.2788,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.2788,
+        "withdrawalBurden": 96.2788,
+        "initiative": 96.2788,
+        "interestEngagement": 96.2788,
+        "socialResponsiveness": 96.2788
+      },
+      "phase": "近期恢复期",
+      "event": "日常活动逐步恢复",
+      "eventKind": "milestone",
+      "note": null,
+      "metrics": {
+        "activeRatePct": 40.5549,
+        "initiativeEventsPer8h": 2.5348,
+        "selfInitiatedSharePct": 68.1818,
+        "interestOpportunityAcceptancePct": 64.2857,
+        "interestEngagementPct": 42.7376,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 20.928,
+        "longStillRatePct": 8.9117,
+        "medianLowActivityEpisodeMin": 80.5572
+      },
+      "indexes": {
+        "behaviorActivation": 90.54,
+        "initiative": 82.8465,
+        "interestEngagement": 73.0,
+        "socialResponsiveness": 77.1352,
+        "withdrawalBurden": 106.8068
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 90.54
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 85.5147,
+          "selfInitiatedSharePct": 78.8443
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 78.5714,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 93.784
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 105.5817,
+          "medianLowActivityEpisodeMin": 109.0819
+        }
+      }
+    },
+    {
+      "weekId": "2026-W30",
+      "weekIndex": 37,
+      "weekStart": "2026-07-20",
+      "weekEnd": "2026-07-26",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 95.9079,
+      "metricConfidencePct": {
+        "behaviorActivation": 95.9079,
+        "withdrawalBurden": 95.9079,
+        "initiative": 95.9079,
+        "interestEngagement": 95.9079,
+        "socialResponsiveness": 95.9079
+      },
+      "phase": "近期恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 40.8272,
+        "initiativeEventsPer8h": 2.7176,
+        "selfInitiatedSharePct": 66.6667,
+        "interestOpportunityAcceptancePct": 42.8571,
+        "interestEngagementPct": 29.8405,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 21.087,
+        "longStillRatePct": 9.2135,
+        "medianLowActivityEpisodeMin": 74.8462
+      },
+      "indexes": {
+        "behaviorActivation": 91.0846,
+        "initiative": 83.5514,
+        "interestEngagement": 70.0,
+        "socialResponsiveness": 77.1034,
+        "withdrawalBurden": 105.9647
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 91.0846
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 87.952,
+          "selfInitiatedSharePct": 76.9504
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 70.0,
+          "interestEngagementPct": 70.0
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 93.678
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 106.3362,
+          "medianLowActivityEpisodeMin": 105.2746
+        }
+      }
+    },
+    {
+      "weekId": "2026-W31",
+      "weekIndex": 38,
+      "weekStart": "2026-07-27",
+      "weekEnd": "2026-08-02",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 6,
+      "confidencePct": 92.1288,
+      "metricConfidencePct": {
+        "behaviorActivation": 92.1288,
+        "withdrawalBurden": 92.1288,
+        "initiative": 92.1288,
+        "interestEngagement": 92.1288,
+        "socialResponsiveness": 92.1288
+      },
+      "phase": "近期恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 39.4476,
+        "initiativeEventsPer8h": 2.8791,
+        "selfInitiatedSharePct": 69.0476,
+        "interestOpportunityAcceptancePct": 66.6667,
+        "interestEngagementPct": 45.1996,
+        "responseRatePct": 72.2222,
+        "responseLatencySec": 18.936,
+        "longStillRatePct": 8.8754,
+        "medianLowActivityEpisodeMin": 79.6917
+      },
+      "indexes": {
+        "behaviorActivation": 88.3254,
+        "initiative": 86.0338,
+        "interestEngagement": 75.4113,
+        "socialResponsiveness": 77.5336,
+        "withdrawalBurden": 106.5459
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 88.3254
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 90.1053,
+          "selfInitiatedSharePct": 79.9265
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 80.9524,
+          "interestEngagementPct": 72.4276
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 70.0,
+          "responseLatencySec": 95.112
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 105.491,
+          "medianLowActivityEpisodeMin": 108.5049
+        }
+      }
+    },
+    {
+      "weekId": "2026-W32",
+      "weekIndex": 39,
+      "weekStart": "2026-08-03",
+      "weekEnd": "2026-08-09",
+      "status": "complete",
+      "dataStatus": "sufficient",
+      "provisional": false,
+      "observedThroughDate": null,
+      "expectedUnits": 7,
+      "validUnits": 7,
+      "confidencePct": 96.4109,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.4109,
+        "withdrawalBurden": 96.4109,
+        "initiative": 96.4109,
+        "interestEngagement": 96.4109,
+        "socialResponsiveness": 96.4109
+      },
+      "phase": "近期恢复期",
+      "event": null,
+      "eventKind": null,
+      "note": null,
+      "metrics": {
+        "activeRatePct": 41.097,
+        "initiativeEventsPer8h": 2.6803,
+        "selfInitiatedSharePct": 72.7273,
+        "interestOpportunityAcceptancePct": 78.5714,
+        "interestEngagementPct": 56.198,
+        "responseRatePct": 85.7143,
+        "responseLatencySec": 16.302,
+        "longStillRatePct": 8.2461,
+        "medianLowActivityEpisodeMin": 77.3127
+      },
+      "indexes": {
+        "behaviorActivation": 91.6242,
+        "initiative": 86.2833,
+        "interestEngagement": 86.7269,
+        "socialResponsiveness": 86.5604,
+        "withdrawalBurden": 104.9682
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 91.6242
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 87.4547,
+          "selfInitiatedSharePct": 84.5261
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 92.8571,
+          "interestEngagementPct": 83.426
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 82.1429,
+          "responseLatencySec": 96.868
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 103.9177,
+          "medianLowActivityEpisodeMin": 106.9189
+        }
+      }
+    },
+    {
+      "weekId": "2026-W33",
+      "weekIndex": 40,
+      "weekStart": "2026-08-10",
+      "weekEnd": "2026-08-16",
+      "status": "in_progress",
+      "dataStatus": "sufficient",
+      "provisional": true,
+      "observedThroughDate": "2026-08-13",
+      "expectedUnits": 4,
+      "validUnits": 4,
+      "confidencePct": 96.9817,
+      "metricConfidencePct": {
+        "behaviorActivation": 96.9817,
+        "withdrawalBurden": 96.9817,
+        "initiative": 96.9817,
+        "interestEngagement": 96.9817,
+        "socialResponsiveness": 96.9817
+      },
+      "phase": "近期恢复期",
+      "event": "当前周（进行中）",
+      "eventKind": "data_status",
+      "note": "当前周数据截至 2026-08-13，结果为暂定",
+      "metrics": {
+        "activeRatePct": 41.5953,
+        "initiativeEventsPer8h": 2.8342,
+        "selfInitiatedSharePct": 71.4286,
+        "interestOpportunityAcceptancePct": 75.0,
+        "interestEngagementPct": 55.0266,
+        "responseRatePct": 83.3333,
+        "responseLatencySec": 18.873,
+        "longStillRatePct": 6.8748,
+        "medianLowActivityEpisodeMin": 77.6245
+      },
+      "indexes": {
+        "behaviorActivation": 92.6208,
+        "initiative": 86.8651,
+        "interestEngagement": 84.7155,
+        "socialResponsiveness": 83.9628,
+        "withdrawalBurden": 102.8126
+      },
+      "indexComponents": {
+        "behaviorActivation": {
+          "activeRatePct": 92.6208
+        },
+        "initiative": {
+          "initiativeEventsPer8h": 89.5067,
+          "selfInitiatedSharePct": 82.9028
+        },
+        "interestEngagement": {
+          "interestOpportunityAcceptancePct": 89.2857,
+          "interestEngagementPct": 82.2546
+        },
+        "socialResponsiveness": {
+          "responseRatePct": 79.1666,
+          "responseLatencySec": 95.154
+        },
+        "withdrawalBurden": {
+          "longStillRatePct": 100.4895,
+          "medianLowActivityEpisodeMin": 107.1268
+        }
+      }
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 import { AutoClock } from "./auto-clock.js";
 import { JsonDataRepository } from "./data-repository.js";
 import { DOMAINS, LIFE_EVIDENCE, LIFE_METRICS, LIFE_SECONDARY } from "./domain-defs.js";
+import { mountEmotionView } from "./emotion-view.js";
 
 const repository = new JsonDataRepository();
 const clock = new AutoClock(12000);
-const state = { personId: "P-1047", domain: "life", metric: "transfer", weeks: [], evidenceTimer: null, evidenceToken: 0, evidenceOpen: false, removeClockView: null };
+const state = { personId: "P-1047", domain: "life", metric: "transfer", weeks: [], lifeWeeks: [], evidenceTimer: null, evidenceToken: 0, evidenceOpen: false, removeClockView: null, domainCleanup: null };
 
 const main = document.getElementById("main");
 document.getElementById("serverStatus").textContent = location.host || "127.0.0.1:5173";
@@ -99,13 +100,24 @@ function scheduleAutoEvidence(leftIndex, rightIndex) {
 }
 
 async function selectDomain(domain) {
-  state.domain = domain; document.querySelectorAll("[data-domain]").forEach(button => button.classList.toggle("active", button.dataset.domain === domain)); clearTimeout(state.evidenceTimer); state.evidenceToken++;
+  state.domainCleanup?.(); state.domainCleanup = null; state.domain = domain; document.querySelectorAll("[data-domain]").forEach(button => button.classList.toggle("active", button.dataset.domain === domain)); clearTimeout(state.evidenceTimer); state.evidenceToken++;
   if (!DOMAINS[domain].available) { state.removeClockView?.(); state.removeClockView = null; main.innerHTML = `<section class="panel emptyState">选择的人物该数据为空</section>`; return; }
-  renderLife();
+  if (domain === "life") { state.weeks = state.lifeWeeks; renderLife(); return; }
+  if (domain === "emotion") {
+    state.removeClockView?.(); state.removeClockView = null;
+    main.innerHTML = `<section class="panel pageLoading"><span class="spinner"></span><span>正在加载心理情绪核心数据…</span></section>`;
+    try {
+      const summary = await repository.getWeeklySummary(state.personId, "emotion");
+      if (state.domain !== "emotion") return;
+      state.domainCleanup = mountEmotionView({ main, weeks: summary.weeks, repository, clock, personId: state.personId });
+    } catch (error) {
+      console.error(error); main.innerHTML = `<section class="panel emptyState errorState">心理情绪核心数据加载失败。</section>`;
+    }
+  }
 }
 
 async function initialize() {
-  try { const [profile, manifest, summary] = await Promise.all([repository.getProfile(state.personId), repository.getManifest(state.personId), repository.getWeeklySummary(state.personId, "life")]); if (manifest.schemaVersion !== "1.0" || summary.schemaVersion !== "1.0") throw new Error("不支持的数据版本"); renderProfile(profile); state.weeks = summary.weeks; document.querySelectorAll("[data-domain]").forEach(button => button.onclick = () => selectDomain(button.dataset.domain)); renderLife(); } catch (error) { console.error(error); main.innerHTML = `<section class="panel emptyState errorState">核心数据加载失败，请确认本地服务和数据文件完整。</section>`; }
+  try { const [profile, manifest, summary] = await Promise.all([repository.getProfile(state.personId), repository.getManifest(state.personId), repository.getWeeklySummary(state.personId, "life")]); if (manifest.schemaVersion !== "1.0" || summary.schemaVersion !== "1.0") throw new Error("不支持的数据版本"); renderProfile(profile); state.lifeWeeks = summary.weeks; state.weeks = state.lifeWeeks; document.querySelectorAll("[data-domain]").forEach(button => button.onclick = () => selectDomain(button.dataset.domain)); renderLife(); } catch (error) { console.error(error); main.innerHTML = `<section class="panel emptyState errorState">核心数据加载失败，请确认本地服务和数据文件完整。</section>`; }
 }
 
 initialize();
