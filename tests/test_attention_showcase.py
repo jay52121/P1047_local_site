@@ -1,7 +1,11 @@
 import unittest
 from math import sqrt
 
-from tools.demo_generation.attention_showcase import generate_attention_showcase
+from tools.demo_generation.attention_showcase import (
+    attention_realism_stats,
+    generate_attention_showcase,
+    validate_attention_schedule_realism,
+)
 
 
 class AttentionShowcaseTests(unittest.TestCase):
@@ -11,7 +15,28 @@ class AttentionShowcaseTests(unittest.TestCase):
     def test_deterministic_24_week_session_data(self):
         self.assertEqual((self.summary, self.details), generate_attention_showcase())
         self.assertEqual(24, len(self.summary["weeks"]))
-        self.assertTrue(all(4 <= week["validSessions"] <= 10 for week in self.summary["weeks"]))
+        self.assertTrue(all(9 <= week["validSessions"] <= 20 for week in self.summary["weeks"]))
+
+    def test_schedule_matches_child_routine_constraints(self):
+        self.assertEqual([], validate_attention_schedule_realism(self.summary, self.details))
+        stats = attention_realism_stats(self.summary, self.details)
+        self.assertEqual(366, stats["totalSessions"])
+        self.assertEqual(113, stats["taskSessions"]["homework"])
+        self.assertEqual((142, 16, 7, 3), (stats["taskDays"], stats["restDays"], stats["unobservedDays"], stats["invalidDays"]))
+        self.assertGreater(stats["naturalMinuteRate"], .9)
+
+    def test_sessions_do_not_overlap_and_repeated_homework_has_semantics(self):
+        for detail in self.details.values():
+            by_date = {}
+            for session in detail["sessions"]:
+                by_date.setdefault(session["date"], []).append(session)
+            for sessions in by_date.values():
+                sessions.sort(key=lambda session: session["startTime"])
+                for left, right in zip(sessions, sessions[1:]):
+                    self.assertLessEqual(left["endTime"], right["startTime"])
+                homework = [session for session in sessions if session["taskId"] == "homework"]
+                if len(homework) > 1:
+                    self.assertEqual(len(homework), len({(session["subject"], session["sessionRole"]) for session in homework}))
 
     def test_tasks_have_real_duration_and_distraction_variation(self):
         by_task = {}
@@ -45,7 +70,7 @@ class AttentionShowcaseTests(unittest.TestCase):
             for day in detail["daySummaries"]:
                 sessions = [next(item for item in detail["sessions"] if item["sessionId"] == session_id) for session_id in day["sessionIds"]]
                 if not sessions:
-                    self.assertEqual("no_task", day["dayBand"])
+                    self.assertIn(day["dayBand"], {"no_task", "rest_day", "unobserved", "invalid"})
                     continue
                 weights = [sqrt(session["durationMin"]) for session in sessions]
                 mean = sum(session["sessionScore"] * weight for session, weight in zip(sessions, weights)) / sum(weights)

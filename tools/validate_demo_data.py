@@ -7,6 +7,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from demo_generation.emotion import EMOTION_INDEXES, EMOTION_METRICS, aggregate_emotion_week, build_emotion_evidence_summary, derive_emotion_day_result
+from demo_generation.attention_showcase import generate_attention_showcase, validate_attention_schedule_realism
 from demo_generation.normalization import build_baselines, calculate_indexes
 from demo_generation.quality import unit_quality, week_confidence
 from demo_generation.metric_specs import DOMAIN_INDEXES
@@ -101,14 +102,15 @@ def validate_attention_showcase():
     summary = load(base / "weekly-summary.json")
     if not summary:
         return
-    check(summary.get("calculationVersion") == "v2-attention-demo-1", "attention V2: calculation version mismatch")
+    check(summary.get("calculationVersion") == "v3-routine-events-1", "attention V2: calculation version mismatch")
     check(len(summary.get("weeks", [])) == 24, "attention V2: expected 24 weeks")
-    task_variation = {}
+    task_variation, details = {}, {}
     for week in summary["weeks"]:
         detail = load(base / "weeks" / f"{week['weekId']}.json")
         if not detail:
             continue
-        check(4 <= len(detail["sessions"]) <= 10, f"attention V2/{week['weekId']}: session count must be 4-10")
+        details[week["weekId"]] = detail
+        check(9 <= len(detail["sessions"]) <= 20, f"attention V2/{week['weekId']}: session count must be 9-20")
         for session in detail["sessions"]:
             cursor = 0.0
             for segment in session["segments"]:
@@ -125,7 +127,7 @@ def validate_attention_showcase():
         for day in detail.get("daySummaries", []):
             sessions = [next(item for item in detail["sessions"] if item["sessionId"] == session_id) for session_id in day["sessionIds"]]
             if not sessions:
-                check(day["dayBand"] in {"no_task", "invalid", "unobserved"}, f"attention V2/{week['weekId']}/{day['date']}: empty day band mismatch")
+                check(day["dayBand"] in {"no_task", "rest_day", "invalid", "unobserved"}, f"attention V2/{week['weekId']}/{day['date']}: empty day band mismatch")
                 continue
             weights = [session["durationMin"] ** .5 for session in sessions]
             mean = sum(session["sessionScore"] * weight for session, weight in zip(sessions, weights)) / sum(weights)
@@ -137,6 +139,10 @@ def validate_attention_showcase():
     for task_id, row in task_variation.items():
         check(len(row["duration"]) > 5, f"attention V2/{task_id}: duration variation is too small")
         check({0, 1}.issubset(row["distraction"]) and any(value >= 2 for value in row["distraction"]), f"attention V2/{task_id}: distraction variation is too small")
+    for error in validate_attention_schedule_realism(summary, details):
+        check(False, f"attention V2 realism: {error}")
+    generated_summary, generated_details = generate_attention_showcase()
+    check((summary, details) == (generated_summary, generated_details), "attention V2: committed output must exactly match deterministic generator")
 
 
 def close(left, right, tolerance=0.01):

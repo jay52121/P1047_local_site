@@ -1,0 +1,22 @@
+.dayTile.rest_day {
+  background: #edf3f7;
+  color: #668096;
+}
+
+.dayTile.rest_day i {
+  background: #91a9bc;
+}
+
+.dayTile.invalid {
+  border: 1px dashed #d5a24a;
+  background: #fffaf0;
+}
+
+.dayTile.invalid i {
+  background: repeating-linear-gradient(135deg, #d2a24f, #d2a24f 2px, #f7e8c7 2px, #f7e8c7 4px);
+}
+
+.dayTile.unobserved {
+  border-style: dashed;
+  background: repeating-linear-gradient(135deg, #f2f4f7, #f2f4f7 3px, #fff 3px, #fff 6px);
+}
