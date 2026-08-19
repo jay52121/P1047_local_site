@@ -12,6 +12,7 @@ TASKS = {
     "building": ("益智拼搭", 18, 45), "tidying": ("房间整理", 8, 22),
 }
 INDEXES = ("sustainedEngagement", "effectiveFocus", "distractionControl", "recoveryIndependence", "taskCompletion")
+DISPLAY_FLOORS = {"firstShare":8,"focusRate":5,"distractionRate":.7,"offTaskRate":4,"leaveRate":.35,"autonomousRate":10,"recoveryLatency":1,"promptRate":.35,"completion":10}
 
 
 def rounded(value): return None if value is None else round(float(value), 4)
@@ -71,6 +72,63 @@ def aggregate(sessions):
     return {"focusRatePct":focus/total*100,"firstDistractionSharePct":median(first) if first else 100.0,"distractionsPer30Min":distractions/total*30,"offTaskRatePct":sum(s["result"]["offTaskMin"] for s in sessions)/total*100,"leaveSeatPer30Min":sum(s["result"]["leaveSeatCount"] for s in sessions)/total*30,"autonomousRecoveryRatePct":median(recover) if recover else 100.0,"recoveryLatencyMin":median(s["result"]["recoveryLatencyMin"] for s in sessions),"promptsPerSession":sum(s["result"]["promptCount"] for s in sessions)/len(sessions),"completionRatePct":sum(s["result"]["completed"] for s in sessions)/len(sessions)*100,"unpromptedCompletionRatePct":sum(s["result"]["unpromptedCompletion"] for s in sessions)/len(sessions)*100,"earlyEndRatePct":sum(s["result"]["earlyEnd"] for s in sessions)/len(sessions)*100}
 
 
+def clock_add(start_time, minutes):
+    hour, minute = map(int, start_time.split(":")); value = hour * 60 + minute + round(minutes)
+    if value >= 1440: raise ValueError("Attention sessions must not cross midnight")
+    return f"{value // 60:02d}:{value % 60:02d}"
+
+
+def session_display_raw(session):
+    result, duration = session["result"], session["durationMin"]
+    first = result["firstDistractionMin"]
+    return {"firstShare":100.0 if first is None else first/duration*100,"focusRate":result["focusedRatePct"],"distractionRate":result["distractionCount"]/duration*30,"offTaskRate":result["offTaskMin"]/duration*100,"leaveRate":result["leaveSeatCount"]/duration*30,"autonomousRate":result["autonomousRecoveryRatePct"] if result["distractionCount"] else None,"recoveryLatency":result["recoveryLatencyMin"] if result["distractionCount"] else None,"promptRate":result["promptCount"],"completion":100.0 if result["completed"] else 70.0 if result["earlyEnd"] else 82.0}
+
+
+def add_display_summaries(details):
+    baseline_sessions=[session for detail in details[:5] for session in detail["sessions"]]
+    all_raw=[session_display_raw(session) for session in baseline_sessions]
+    by_task={task_id:[session_display_raw(session) for session in baseline_sessions if session["taskId"]==task_id] for task_id in TASKS}
+    def scales(rows,key):
+        values=[row[key] for row in rows if row[key] is not None]
+        if len(values)<3: values=[row[key] for row in all_raw if row[key] is not None]
+        center=median(values); return center,max(1.4826*mad(values,center),DISPLAY_FLOORS[key])
+    task_scales={task:{key:scales(rows,key) for key in DISPLAY_FLOORS} for task,rows in by_task.items()}
+    lower={"distractionRate","offTaskRate","leaveRate","recoveryLatency","promptRate"}
+    def normalized(raw,task,key):
+        if raw[key] is None:return None
+        center,scale=task_scales[task][key]; direction=-1 if key in lower else 1
+        return clamp(100+10*direction*(raw[key]-center)/scale,70,130)
+    for detail in details:
+        by_date={}
+        for session in detail["sessions"]:
+            session["endTime"]=clock_add(session["startTime"],session["durationMin"])
+            session["result"]["terminalStatus"]="completed" if session["result"]["completed"] else "early_end" if session["result"]["earlyEnd"] else "incomplete"
+            raw=session_display_raw(session); task=session["taskId"]
+            components={"engagement":normalized(raw,task,"firstShare"),"effectiveFocus":normalized(raw,task,"focusRate"),"distractionControl":None,"recovery":None,"completion":normalized(raw,task,"completion")}
+            control_keys=[("distractionRate",.45),("offTaskRate",.35)]+([] if task=="tidying" else [("leaveRate",.20)])
+            control=[(normalized(raw,task,key),weight) for key,weight in control_keys];components["distractionControl"]=sum(v*w for v,w in control)/sum(w for v,w in control)
+            if raw["autonomousRate"] is not None:
+                recovery=[(normalized(raw,task,"autonomousRate"),.5),(normalized(raw,task,"recoveryLatency"),.25),(normalized(raw,task,"promptRate"),.25)];components["recovery"]=sum(v*w for v,w in recovery)/sum(w for v,w in recovery)
+            weights={"engagement":.25,"effectiveFocus":.25,"distractionControl":.20,"recovery":.15,"completion":.15}; available=[(components[k],w) for k,w in weights.items() if components[k] is not None]
+            session["sessionComponentScores"]={k:rounded(v) for k,v in components.items()};session["sessionScore"]=rounded(sum(v*w for v,w in available)/sum(w for _,w in available));by_date.setdefault(session["date"],[]).append(session)
+        day_summaries=[]; start=date.fromisoformat(detail["weekStart"])
+        for weekday in range(7):
+            current=(start+timedelta(days=weekday)).isoformat(); sessions=sorted(by_date.get(current,[]),key=lambda item:item["startTime"])
+            if not sessions: day_summaries.append({"date":current,"weekdayIndex":weekday,"observationStatus":"no_task","validSessionCount":0,"sessionIds":[],"dayScore":None,"dayBand":"no_task","componentScores":{},"representativeSessionId":None,"representativeReason":None,"topFactors":[]});continue
+            weights=[s["durationMin"]**.5 for s in sessions]; mean=sum(s["sessionScore"]*w for s,w in zip(sessions,weights))/sum(weights); worst=min(s["sessionScore"] for s in sessions); score=.8*mean+.2*worst
+            band="strong_good" if score>=108 else "good" if score>=96 else "watch" if score>=86 else "poor"
+            component_scores={}
+            for key in ("engagement","effectiveFocus","distractionControl","recovery","completion"):
+                rows=[(s["sessionComponentScores"][key],w) for s,w in zip(sessions,weights) if s["sessionComponentScores"][key] is not None]
+                component_scores[key]=rounded(sum(v*w for v,w in rows)/sum(w for _,w in rows)) if rows else None
+            representative=min(sessions,key=lambda s:s["sessionScore"]) if band in {"watch","poor"} else min(sessions,key=lambda s:(abs(s["sessionScore"]-score),-s["durationMin"]))
+            factors=[key for key,value in sorted(component_scores.items(),key=lambda item:999 if item[1] is None else item[1])[:2]]
+            day_summaries.append({"date":current,"weekdayIndex":weekday,"observationStatus":"observed","validSessionCount":len(sessions),"sessionIds":[s["sessionId"] for s in sessions],"dayScore":rounded(score),"dayBand":band,"componentScores":component_scores,"representativeSessionId":representative["sessionId"],"representativeReason":"lowest_score" if band in {"watch","poor"} else "closest_to_day_score","topFactors":factors})
+        scores=[d["dayScore"] for d in day_summaries if d["dayScore"] is not None]; center=median(scores); spread=mad(scores,center) if len(scores)>=3 else None
+        counts={band:sum(d["dayBand"]==band for d in day_summaries) for band in ("strong_good","good","watch","poor","no_task","invalid","unobserved")}
+        detail["daySummaries"]=day_summaries;detail["weekDaySummary"]={"strongGoodDays":counts["strong_good"],"goodDays":counts["good"],"watchDays":counts["watch"],"poorDays":counts["poor"],"noTaskDays":counts["no_task"],"invalidDays":counts["invalid"],"unobservedDays":counts["unobserved"],"dayScoreMedian":rounded(center),"dayScoreMad":rounded(spread),"stabilityLabel":None if spread is None else "周内稳定" if spread<=5 else "有一定波动" if spread<=10 else "周内波动明显"}
+
+
 def generate_attention_showcase():
     start=date(2026,2,23); details=[]; metrics=[]
     task_ids=list(TASKS)
@@ -86,6 +144,7 @@ def generate_attention_showcase():
         phase="逐步适应期" if wi<5 else "压力上升期" if wi<12 else "策略支持恢复期"
         event="任务要求增加" if wi==8 else "家庭策略介入" if wi==12 else None
         details.append({"schemaVersion":"1.0","personId":"C-2308","domain":"attention","weekId":week_id,"weekIndex":wi+1,"weekStart":ws.isoformat(),"weekEnd":(ws+timedelta(days=6)).isoformat(),"status":"complete","phase":phase,"event":event,"validSessions":len(sessions),"confidencePct":rounded(94+rng.uniform(-1.8,1.8)),"sessions":sessions,"metrics":{k:rounded(v) for k,v in row.items()}})
+    add_display_summaries(details)
     centers={k:median(row[k] for row in metrics[:5]) for k in metrics[0]}; floors={"focusRatePct":5,"firstDistractionSharePct":8,"distractionsPer30Min":.6,"offTaskRatePct":4,"leaveSeatPer30Min":.3,"autonomousRecoveryRatePct":10,"recoveryLatencyMin":1,"promptsPerSession":.35,"completionRatePct":8,"unpromptedCompletionRatePct":10,"earlyEndRatePct":6}
     directions={k:(-1 if k in {"distractionsPer30Min","offTaskRatePct","leaveSeatPer30Min","recoveryLatencyMin","promptsPerSession","earlyEndRatePct"} else 1) for k in centers}
     def norm(row,key): return clamp(100+10*directions[key]*(row[key]-centers[key])/max(1.4826*mad([m[key] for m in metrics[:5]],centers[key]),floors[key]),70,130)

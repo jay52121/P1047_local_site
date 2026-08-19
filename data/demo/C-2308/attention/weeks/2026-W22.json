@@ -71,8 +71,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "16:28",
+      "sessionComponentScores": {
+        "engagement": 95.8318,
+        "effectiveFocus": 96.9423,
+        "distractionControl": 101.4217,
+        "recovery": 95.9382,
+        "completion": 100.0
+      },
+      "sessionScore": 97.8686
     },
     {
       "sessionId": "2026-W22-2026-05-26-homework-01",
@@ -129,8 +139,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "16:17",
+      "sessionComponentScores": {
+        "engagement": 93.872,
+        "effectiveFocus": 103.6023,
+        "distractionControl": 102.1986,
+        "recovery": 103.058,
+        "completion": 100.0
+      },
+      "sessionScore": 100.267
     },
     {
       "sessionId": "2026-W22-2026-05-27-building-01",
@@ -170,8 +190,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "16:14",
+      "sessionComponentScores": {
+        "engagement": 106.7449,
+        "effectiveFocus": 108.0578,
+        "distractionControl": 108.4057,
+        "recovery": null,
+        "completion": 100.0
+      },
+      "sessionScore": 106.3315
     },
     {
       "sessionId": "2026-W22-2026-05-28-writing-01",
@@ -236,8 +266,18 @@
         "promptCount": 1,
         "completed": false,
         "unpromptedCompletion": false,
-        "earlyEnd": true
-      }
+        "earlyEnd": true,
+        "terminalStatus": "early_end"
+      },
+      "endTime": "15:28",
+      "sessionComponentScores": {
+        "engagement": 93.2466,
+        "effectiveFocus": 70.0,
+        "distractionControl": 84.4026,
+        "recovery": 70.3571,
+        "completion": 70.0
+      },
+      "sessionScore": 78.7457
     },
     {
       "sessionId": "2026-W22-2026-05-30-tidying-01",
@@ -356,8 +396,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "15:19",
+      "sessionComponentScores": {
+        "engagement": 70.0,
+        "effectiveFocus": 70.0,
+        "distractionControl": 70.0,
+        "recovery": 87.1405,
+        "completion": 100.0
+      },
+      "sessionScore": 77.0711
     },
     {
       "sessionId": "2026-W22-2026-05-31-building-01",
@@ -418,8 +468,18 @@
         "promptCount": 1,
         "completed": true,
         "unpromptedCompletion": false,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "15:45",
+      "sessionComponentScores": {
+        "engagement": 95.2522,
+        "effectiveFocus": 96.8136,
+        "distractionControl": 101.1217,
+        "recovery": 74.2959,
+        "completion": 100.0
+      },
+      "sessionScore": 94.3852
     }
   ],
   "metrics": {
@@ -434,5 +494,176 @@
     "completionRatePct": 83.3333,
     "unpromptedCompletionRatePct": 66.6667,
     "earlyEndRatePct": 16.6667
+  },
+  "daySummaries": [
+    {
+      "date": "2026-05-25",
+      "weekdayIndex": 0,
+      "observationStatus": "observed",
+      "validSessionCount": 1,
+      "sessionIds": [
+        "2026-W22-2026-05-25-building-01"
+      ],
+      "dayScore": 97.8686,
+      "dayBand": "good",
+      "componentScores": {
+        "engagement": 95.8318,
+        "effectiveFocus": 96.9423,
+        "distractionControl": 101.4217,
+        "recovery": 95.9382,
+        "completion": 100.0
+      },
+      "representativeSessionId": "2026-W22-2026-05-25-building-01",
+      "representativeReason": "closest_to_day_score",
+      "topFactors": [
+        "engagement",
+        "recovery"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "weekdayIndex": 1,
+      "observationStatus": "observed",
+      "validSessionCount": 1,
+      "sessionIds": [
+        "2026-W22-2026-05-26-homework-01"
+      ],
+      "dayScore": 100.267,
+      "dayBand": "good",
+      "componentScores": {
+        "engagement": 93.872,
+        "effectiveFocus": 103.6023,
+        "distractionControl": 102.1986,
+        "recovery": 103.058,
+        "completion": 100.0
+      },
+      "representativeSessionId": "2026-W22-2026-05-26-homework-01",
+      "representativeReason": "closest_to_day_score",
+      "topFactors": [
+        "engagement",
+        "completion"
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "weekdayIndex": 2,
+      "observationStatus": "observed",
+      "validSessionCount": 1,
+      "sessionIds": [
+        "2026-W22-2026-05-27-building-01"
+      ],
+      "dayScore": 106.3315,
+      "dayBand": "good",
+      "componentScores": {
+        "engagement": 106.7449,
+        "effectiveFocus": 108.0578,
+        "distractionControl": 108.4057,
+        "recovery": null,
+        "completion": 100.0
+      },
+      "representativeSessionId": "2026-W22-2026-05-27-building-01",
+      "representativeReason": "closest_to_day_score",
+      "topFactors": [
+        "completion",
+        "engagement"
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "weekdayIndex": 3,
+      "observationStatus": "observed",
+      "validSessionCount": 1,
+      "sessionIds": [
+        "2026-W22-2026-05-28-writing-01"
+      ],
+      "dayScore": 78.7457,
+      "dayBand": "poor",
+      "componentScores": {
+        "engagement": 93.2466,
+        "effectiveFocus": 70.0,
+        "distractionControl": 84.4026,
+        "recovery": 70.3571,
+        "completion": 70.0
+      },
+      "representativeSessionId": "2026-W22-2026-05-28-writing-01",
+      "representativeReason": "lowest_score",
+      "topFactors": [
+        "effectiveFocus",
+        "completion"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "weekdayIndex": 4,
+      "observationStatus": "no_task",
+      "validSessionCount": 0,
+      "sessionIds": [],
+      "dayScore": null,
+      "dayBand": "no_task",
+      "componentScores": {},
+      "representativeSessionId": null,
+      "representativeReason": null,
+      "topFactors": []
+    },
+    {
+      "date": "2026-05-30",
+      "weekdayIndex": 5,
+      "observationStatus": "observed",
+      "validSessionCount": 1,
+      "sessionIds": [
+        "2026-W22-2026-05-30-tidying-01"
+      ],
+      "dayScore": 77.0711,
+      "dayBand": "poor",
+      "componentScores": {
+        "engagement": 70.0,
+        "effectiveFocus": 70.0,
+        "distractionControl": 70.0,
+        "recovery": 87.1405,
+        "completion": 100.0
+      },
+      "representativeSessionId": "2026-W22-2026-05-30-tidying-01",
+      "representativeReason": "lowest_score",
+      "topFactors": [
+        "engagement",
+        "effectiveFocus"
+      ]
+    },
+    {
+      "date": "2026-05-31",
+      "weekdayIndex": 6,
+      "observationStatus": "observed",
+      "validSessionCount": 1,
+      "sessionIds": [
+        "2026-W22-2026-05-31-building-01"
+      ],
+      "dayScore": 94.3852,
+      "dayBand": "watch",
+      "componentScores": {
+        "engagement": 95.2522,
+        "effectiveFocus": 96.8136,
+        "distractionControl": 101.1217,
+        "recovery": 74.2959,
+        "completion": 100.0
+      },
+      "representativeSessionId": "2026-W22-2026-05-31-building-01",
+      "representativeReason": "lowest_score",
+      "topFactors": [
+        "recovery",
+        "engagement"
+      ]
+    }
+  ],
+  "weekDaySummary": {
+    "strongGoodDays": 0,
+    "goodDays": 3,
+    "watchDays": 1,
+    "poorDays": 2,
+    "noTaskDays": 1,
+    "invalidDays": 0,
+    "unobservedDays": 0,
+    "dayScoreMedian": 96.1269,
+    "dayScoreMad": 7.1723,
+    "stabilityLabel": "有一定波动"
   }
 }

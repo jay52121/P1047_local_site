@@ -67,8 +67,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "15:36",
+      "sessionComponentScores": {
+        "engagement": 94.2753,
+        "effectiveFocus": 90.7857,
+        "distractionControl": 93.3836,
+        "recovery": 100.4707,
+        "completion": 100.0
+      },
+      "sessionScore": 95.0126
     },
     {
       "sessionId": "2026-W30-2026-07-20-homework-02",
@@ -125,8 +135,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "16:46",
+      "sessionComponentScores": {
+        "engagement": 103.1584,
+        "effectiveFocus": 101.5334,
+        "distractionControl": 100.5416,
+        "recovery": 103.3112,
+        "completion": 100.0
+      },
+      "sessionScore": 101.7779
     },
     {
       "sessionId": "2026-W30-2026-07-21-homework-01",
@@ -187,8 +207,18 @@
         "promptCount": 1,
         "completed": true,
         "unpromptedCompletion": false,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "15:54",
+      "sessionComponentScores": {
+        "engagement": 96.3841,
+        "effectiveFocus": 103.1175,
+        "distractionControl": 100.9108,
+        "recovery": 90.7957,
+        "completion": 100.0
+      },
+      "sessionScore": 98.6769
     },
     {
       "sessionId": "2026-W30-2026-07-21-piano-02",
@@ -274,8 +304,18 @@
         "promptCount": 2,
         "completed": true,
         "unpromptedCompletion": false,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "16:38",
+      "sessionComponentScores": {
+        "engagement": 70.0,
+        "effectiveFocus": 78.6105,
+        "distractionControl": 77.142,
+        "recovery": 78.5403,
+        "completion": 106.7449
+      },
+      "sessionScore": 80.3738
     },
     {
       "sessionId": "2026-W30-2026-07-22-reading-01",
@@ -357,8 +397,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "15:34",
+      "sessionComponentScores": {
+        "engagement": 94.2663,
+        "effectiveFocus": 72.9336,
+        "distractionControl": 77.5797,
+        "recovery": 99.4603,
+        "completion": 100.0
+      },
+      "sessionScore": 87.235
     },
     {
       "sessionId": "2026-W30-2026-07-22-homework-02",
@@ -415,8 +465,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "17:04",
+      "sessionComponentScores": {
+        "engagement": 104.7371,
+        "effectiveFocus": 102.983,
+        "distractionControl": 101.7733,
+        "recovery": 102.985,
+        "completion": 100.0
+      },
+      "sessionScore": 102.7324
     },
     {
       "sessionId": "2026-W30-2026-07-23-tidying-01",
@@ -452,8 +512,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "16:00",
+      "sessionComponentScores": {
+        "engagement": 106.7449,
+        "effectiveFocus": 104.0881,
+        "distractionControl": 105.6698,
+        "recovery": null,
+        "completion": 100.0
+      },
+      "sessionScore": 104.5202
     },
     {
       "sessionId": "2026-W30-2026-07-23-writing-02",
@@ -489,8 +559,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "17:06",
+      "sessionComponentScores": {
+        "engagement": 106.7449,
+        "effectiveFocus": 104.0881,
+        "distractionControl": 104.8235,
+        "recovery": null,
+        "completion": 100.0
+      },
+      "sessionScore": 104.3211
     },
     {
       "sessionId": "2026-W30-2026-07-24-piano-01",
@@ -526,8 +606,18 @@
         "promptCount": 0,
         "completed": true,
         "unpromptedCompletion": true,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "15:34",
+      "sessionComponentScores": {
+        "engagement": 100.0,
+        "effectiveFocus": 100.0003,
+        "distractionControl": 100.0,
+        "recovery": null,
+        "completion": 106.7449
+      },
+      "sessionScore": 101.1904
     },
     {
       "sessionId": "2026-W30-2026-07-25-piano-01",
@@ -609,8 +699,18 @@
         "promptCount": 1,
         "completed": true,
         "unpromptedCompletion": false,
-        "earlyEnd": false
-      }
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "endTime": "16:12",
+      "sessionComponentScores": {
+        "engagement": 70.0,
+        "effectiveFocus": 70.0,
+        "distractionControl": 77.2957,
+        "recovery": 76.5286,
+        "completion": 106.7449
+      },
+      "sessionScore": 77.9502
     }
   ],
   "metrics": {
@@ -625,5 +725,180 @@
     "completionRatePct": 100.0,
     "unpromptedCompletionRatePct": 70.0,
     "earlyEndRatePct": 0.0
+  },
+  "daySummaries": [
+    {
+      "date": "2026-07-20",
+      "weekdayIndex": 0,
+      "observationStatus": "observed",
+      "validSessionCount": 2,
+      "sessionIds": [
+        "2026-W30-2026-07-20-writing-01",
+        "2026-W30-2026-07-20-homework-02"
+      ],
+      "dayScore": 97.7204,
+      "dayBand": "good",
+      "componentScores": {
+        "engagement": 98.7195,
+        "effectiveFocus": 96.1628,
+        "distractionControl": 96.9648,
+        "recovery": 101.8918,
+        "completion": 100.0
+      },
+      "representativeSessionId": "2026-W30-2026-07-20-writing-01",
+      "representativeReason": "closest_to_day_score",
+      "topFactors": [
+        "effectiveFocus",
+        "distractionControl"
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "weekdayIndex": 1,
+      "observationStatus": "observed",
+      "validSessionCount": 2,
+      "sessionIds": [
+        "2026-W30-2026-07-21-homework-01",
+        "2026-W30-2026-07-21-piano-02"
+      ],
+      "dayScore": 87.4547,
+      "dayBand": "watch",
+      "componentScores": {
+        "engagement": 82.759,
+        "effectiveFocus": 90.4618,
+        "distractionControl": 88.6363,
+        "recovery": 84.4669,
+        "completion": 103.4831
+      },
+      "representativeSessionId": "2026-W30-2026-07-21-piano-02",
+      "representativeReason": "lowest_score",
+      "topFactors": [
+        "engagement",
+        "recovery"
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "weekdayIndex": 2,
+      "observationStatus": "observed",
+      "validSessionCount": 2,
+      "sessionIds": [
+        "2026-W30-2026-07-22-reading-01",
+        "2026-W30-2026-07-22-homework-02"
+      ],
+      "dayScore": 94.7921,
+      "dayBand": "watch",
+      "componentScores": {
+        "engagement": 100.6487,
+        "effectiveFocus": 91.25,
+        "distractionControl": 92.3267,
+        "recovery": 101.6088,
+        "completion": 100.0
+      },
+      "representativeSessionId": "2026-W30-2026-07-22-reading-01",
+      "representativeReason": "lowest_score",
+      "topFactors": [
+        "effectiveFocus",
+        "distractionControl"
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "weekdayIndex": 3,
+      "observationStatus": "observed",
+      "validSessionCount": 2,
+      "sessionIds": [
+        "2026-W30-2026-07-23-tidying-01",
+        "2026-W30-2026-07-23-writing-02"
+      ],
+      "dayScore": 104.4052,
+      "dayBand": "good",
+      "componentScores": {
+        "engagement": 106.7449,
+        "effectiveFocus": 104.0881,
+        "distractionControl": 105.2705,
+        "recovery": null,
+        "completion": 100.0
+      },
+      "representativeSessionId": "2026-W30-2026-07-23-writing-02",
+      "representativeReason": "closest_to_day_score",
+      "topFactors": [
+        "completion",
+        "effectiveFocus"
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "weekdayIndex": 4,
+      "observationStatus": "observed",
+      "validSessionCount": 1,
+      "sessionIds": [
+        "2026-W30-2026-07-24-piano-01"
+      ],
+      "dayScore": 101.1904,
+      "dayBand": "good",
+      "componentScores": {
+        "engagement": 100.0,
+        "effectiveFocus": 100.0003,
+        "distractionControl": 100.0,
+        "recovery": null,
+        "completion": 106.7449
+      },
+      "representativeSessionId": "2026-W30-2026-07-24-piano-01",
+      "representativeReason": "closest_to_day_score",
+      "topFactors": [
+        "engagement",
+        "distractionControl"
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "weekdayIndex": 5,
+      "observationStatus": "observed",
+      "validSessionCount": 1,
+      "sessionIds": [
+        "2026-W30-2026-07-25-piano-01"
+      ],
+      "dayScore": 77.9502,
+      "dayBand": "poor",
+      "componentScores": {
+        "engagement": 70.0,
+        "effectiveFocus": 70.0,
+        "distractionControl": 77.2957,
+        "recovery": 76.5286,
+        "completion": 106.7449
+      },
+      "representativeSessionId": "2026-W30-2026-07-25-piano-01",
+      "representativeReason": "lowest_score",
+      "topFactors": [
+        "engagement",
+        "effectiveFocus"
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "weekdayIndex": 6,
+      "observationStatus": "no_task",
+      "validSessionCount": 0,
+      "sessionIds": [],
+      "dayScore": null,
+      "dayBand": "no_task",
+      "componentScores": {},
+      "representativeSessionId": null,
+      "representativeReason": null,
+      "topFactors": []
+    }
+  ],
+  "weekDaySummary": {
+    "strongGoodDays": 0,
+    "goodDays": 3,
+    "watchDays": 2,
+    "poorDays": 1,
+    "noTaskDays": 1,
+    "invalidDays": 0,
+    "unobservedDays": 0,
+    "dayScoreMedian": 96.2562,
+    "dayScoreMad": 6.5416,
+    "stabilityLabel": "有一定波动"
   }
 }

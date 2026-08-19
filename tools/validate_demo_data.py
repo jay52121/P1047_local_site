@@ -115,8 +115,25 @@ def validate_attention_showcase():
                 check(close(segment["startMin"], cursor, 0.001), f"attention V2/{session['sessionId']}: segment gap")
                 cursor = segment["endMin"]
             check(close(cursor, session["durationMin"], 0.001), f"attention V2/{session['sessionId']}: segments must cover duration")
+            hour, minute = map(int, session["startTime"].split(":"))
+            end = hour * 60 + minute + round(session["durationMin"])
+            check(session.get("endTime") == f"{end // 60:02d}:{end % 60:02d}", f"attention V2/{session['sessionId']}: endTime mismatch")
+            check(session.get("sessionScore") is not None and session.get("sessionComponentScores"), f"attention V2/{session['sessionId']}: missing display score")
             row = task_variation.setdefault(session["taskId"], {"duration": set(), "distraction": set()})
             row["duration"].add(session["durationMin"]); row["distraction"].add(session["result"]["distractionCount"])
+        check(len(detail.get("daySummaries", [])) == 7, f"attention V2/{week['weekId']}: expected seven day summaries")
+        for day in detail.get("daySummaries", []):
+            sessions = [next(item for item in detail["sessions"] if item["sessionId"] == session_id) for session_id in day["sessionIds"]]
+            if not sessions:
+                check(day["dayBand"] in {"no_task", "invalid", "unobserved"}, f"attention V2/{week['weekId']}/{day['date']}: empty day band mismatch")
+                continue
+            weights = [session["durationMin"] ** .5 for session in sessions]
+            mean = sum(session["sessionScore"] * weight for session, weight in zip(sessions, weights)) / sum(weights)
+            score = .8 * mean + .2 * min(session["sessionScore"] for session in sessions)
+            check(close(score, day["dayScore"], .01), f"attention V2/{week['weekId']}/{day['date']}: day score mismatch")
+            expected_band = "strong_good" if score >= 108 else "good" if score >= 96 else "watch" if score >= 86 else "poor"
+            check(day["dayBand"] == expected_band, f"attention V2/{week['weekId']}/{day['date']}: day band mismatch")
+            check(day["representativeSessionId"] in day["sessionIds"], f"attention V2/{week['weekId']}/{day['date']}: representative session mismatch")
     for task_id, row in task_variation.items():
         check(len(row["duration"]) > 5, f"attention V2/{task_id}: duration variation is too small")
         check({0, 1}.issubset(row["distraction"]) and any(value >= 2 for value in row["distraction"]), f"attention V2/{task_id}: distraction variation is too small")
