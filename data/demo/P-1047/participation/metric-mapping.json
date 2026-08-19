@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0",
+  "domain": "participation",
+  "rawMetrics": {
+    "effectiveZoneCount": {
+      "label": "有效活动空间",
+      "unit": " 个",
+      "higherIsBetter": true,
+      "source": "zone minutes"
+    },
+    "zoneTransitionsPer8h": {
+      "label": "区域转换频率",
+      "unit": " 次/8h",
+      "higherIsBetter": true,
+      "source": "zone transitions"
+    },
+    "activityEffectiveTypes": {
+      "label": "有效活动类型",
+      "unit": " 类",
+      "higherIsBetter": true,
+      "source": "activity minutes"
+    },
+    "activityCategoryCount": {
+      "label": "活动类别数",
+      "unit": " 类",
+      "higherIsBetter": true,
+      "source": "activity categories"
+    },
+    "outsideMinutesPerValidDay": {
+      "label": "日均外出时间",
+      "unit": " min/日",
+      "higherIsBetter": true,
+      "source": "outside segments"
+    },
+    "outingDaysRatePct": {
+      "label": "外出天数占比",
+      "unit": "%",
+      "higherIsBetter": true,
+      "source": "outing events"
+    },
+    "outingsPerValidDay": {
+      "label": "日均外出次数",
+      "unit": " 次/日",
+      "higherIsBetter": true,
+      "source": "outing events"
+    },
+    "interactionMinutesPer8h": {
+      "label": "互动时长",
+      "unit": " min/8h",
+      "higherIsBetter": true,
+      "source": "interaction sessions"
+    },
+    "interactionEpisodesPer8h": {
+      "label": "互动频率",
+      "unit": " 次/8h",
+      "higherIsBetter": true,
+      "source": "interaction sessions"
+    },
+    "initiatedInteractionRatePct": {
+      "label": "主动互动占比",
+      "unit": "%",
+      "higherIsBetter": true,
+      "source": "interaction sessions"
+    },
+    "participatingDaysRatePct": {
+      "label": "参与日占比",
+      "unit": "%",
+      "higherIsBetter": true,
+      "source": "day summaries"
+    },
+    "longestLowParticipationStreakDays": {
+      "label": "最长低参与连续日",
+      "unit": " 天",
+      "higherIsBetter": false,
+      "source": "day summaries"
+    }
+  },
+  "indexes": {
+    "spaceRange": {
+      "rawMetrics": [
+        "effectiveZoneCount",
+        "zoneTransitionsPer8h"
+      ]
+    },
+    "activityDiversity": {
+      "rawMetrics": [
+        "activityEffectiveTypes",
+        "activityCategoryCount"
+      ]
+    },
+    "outsideParticipation": {
+      "rawMetrics": [
+        "outsideMinutesPerValidDay",
+        "outingDaysRatePct",
+        "outingsPerValidDay"
+      ]
+    },
+    "socialParticipation": {
+      "rawMetrics": [
+        "interactionMinutesPer8h",
+        "interactionEpisodesPer8h",
+        "initiatedInteractionRatePct"
+      ]
+    },
+    "participationContinuity": {
+      "rawMetrics": [
+        "participatingDaysRatePct",
+        "longestLowParticipationStreakDays"
+      ]
+    }
+  }
+}

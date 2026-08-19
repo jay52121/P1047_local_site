@@ -1,0 +1,1590 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "emotion",
+  "weekId": "2026-W32",
+  "weekStart": "2026-08-03",
+  "weekEnd": "2026-08-09",
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated",
+  "expectedUnits": 7,
+  "observedThroughDate": null,
+  "units": [
+    {
+      "id": "emotion-2026-08-03",
+      "date": "2026-08-03",
+      "valid": true,
+      "invalidReason": null,
+      "observedMinutes": 779.337,
+      "quality": {
+        "coveragePct": 99.915,
+        "continuityPct": 80.8174,
+        "structuralCompletenessPct": 100.0,
+        "confidencePct": 94.2027
+      },
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 81.7332,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 81.7332,
+          "endMin": 146.2701,
+          "state": "active"
+        },
+        {
+          "startMin": 146.2701,
+          "endMin": 226.1051,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 226.1051,
+          "endMin": 325.7253,
+          "state": "unknown"
+        },
+        {
+          "startMin": 325.7253,
+          "endMin": 386.4283,
+          "state": "active"
+        },
+        {
+          "startMin": 386.4283,
+          "endMin": 464.3959,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 464.3959,
+          "endMin": 522.3132,
+          "state": "long_still"
+        },
+        {
+          "startMin": 522.3132,
+          "endMin": 580.9465,
+          "state": "unknown"
+        },
+        {
+          "startMin": 580.9465,
+          "endMin": 649.3276,
+          "state": "active"
+        },
+        {
+          "startMin": 649.3276,
+          "endMin": 703.7838,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 703.7838,
+          "endMin": 786.1933,
+          "state": "unknown"
+        },
+        {
+          "startMin": 786.1933,
+          "endMin": 836.3356,
+          "state": "active"
+        },
+        {
+          "startMin": 836.3356,
+          "endMin": 904.3172,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 904.3172,
+          "endMin": 958.8974,
+          "state": "active"
+        },
+        {
+          "startMin": 958.8974,
+          "endMin": 1020.0,
+          "state": "active"
+        }
+      ],
+      "events": [
+        {
+          "id": "2026-08-03-i1",
+          "type": "interest_opportunity",
+          "startMin": 1.0,
+          "endMin": 41.8274,
+          "interestType": "television",
+          "accepted": true,
+          "engagementStartMin": 3.0,
+          "engagementEndMin": 31.0408
+        },
+        {
+          "id": "2026-08-03-a1",
+          "type": "activity_start",
+          "atMin": 81.8332,
+          "origin": "self",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-03-a2",
+          "type": "activity_start",
+          "atMin": 325.8253,
+          "origin": "self",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-03-s1",
+          "type": "social_opportunity",
+          "atMin": 329.7253,
+          "source": "household_member",
+          "responded": true,
+          "responseAtMin": 329.8677
+        },
+        {
+          "id": "2026-08-03-i2",
+          "type": "interest_opportunity",
+          "startMin": 333.7253,
+          "endMin": 370.352,
+          "interestType": "music",
+          "accepted": true,
+          "engagementStartMin": 335.7253,
+          "engagementEndMin": 361.3615
+        },
+        {
+          "id": "2026-08-03-a3",
+          "type": "activity_start",
+          "atMin": 581.0465,
+          "origin": "self",
+          "context": "other"
+        },
+        {
+          "id": "2026-08-03-s2",
+          "type": "social_opportunity",
+          "atMin": 593.9465,
+          "source": "visitor",
+          "responded": true,
+          "responseAtMin": 594.2255
+        },
+        {
+          "id": "2026-08-03-a4",
+          "type": "activity_start",
+          "atMin": 786.2933,
+          "origin": "self",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-03-s3",
+          "type": "social_opportunity",
+          "atMin": 808.1933,
+          "source": "household_member",
+          "responded": false,
+          "responseAtMin": null
+        },
+        {
+          "id": "2026-08-03-a5",
+          "type": "activity_start",
+          "atMin": 904.4172,
+          "origin": "prompted",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-03-a6",
+          "type": "activity_start",
+          "atMin": 958.9974,
+          "origin": "external",
+          "context": "other"
+        }
+      ],
+      "result": {
+        "observedAwakeMin": 779.337,
+        "activeMin": 359.4461,
+        "longStillMin": 57.9173,
+        "lowActivityEpisodesMin": [
+          81.7332,
+          79.83499999999998,
+          135.88490000000007,
+          54.45620000000008,
+          67.98159999999996
+        ],
+        "allActivityStarts": 6,
+        "selfInitiatedStarts": 4,
+        "interestOpportunityCount": 2,
+        "interestAcceptedCount": 2,
+        "interestOpportunityMin": 77.4541,
+        "interestEngagedMin": 53.677,
+        "socialOpportunityCount": 3,
+        "socialRespondedCount": 2,
+        "responseLatenciesSec": [
+          8.544000000000551,
+          16.73999999999978
+        ],
+        "activeRatePct": 46.122,
+        "initiativeEventsPer8h": 2.4636,
+        "selfInitiatedSharePct": 66.6667,
+        "interestOpportunityAcceptancePct": 100.0,
+        "interestEngagementPct": 69.3017,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 12.642,
+        "longStillRatePct": 7.4316,
+        "medianLowActivityEpisodeMin": 79.835
+      }
+    },
+    {
+      "id": "emotion-2026-08-04",
+      "date": "2026-08-04",
+      "valid": true,
+      "invalidReason": null,
+      "observedMinutes": 813.5922,
+      "quality": {
+        "coveragePct": 100.0,
+        "continuityPct": 84.1757,
+        "structuralCompletenessPct": 100.0,
+        "confidencePct": 95.2527
+      },
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 63.8901,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 63.8901,
+          "endMin": 128.1659,
+          "state": "active"
+        },
+        {
+          "startMin": 128.1659,
+          "endMin": 182.5132,
+          "state": "unknown"
+        },
+        {
+          "startMin": 182.5132,
+          "endMin": 243.9342,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 243.9342,
+          "endMin": 301.4476,
+          "state": "active"
+        },
+        {
+          "startMin": 301.4476,
+          "endMin": 395.9539,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 395.9539,
+          "endMin": 473.2073,
+          "state": "unknown"
+        },
+        {
+          "startMin": 473.2073,
+          "endMin": 514.6904,
+          "state": "active"
+        },
+        {
+          "startMin": 514.6904,
+          "endMin": 584.4208,
+          "state": "long_still"
+        },
+        {
+          "startMin": 584.4208,
+          "endMin": 653.7529,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 653.7529,
+          "endMin": 711.5595,
+          "state": "active"
+        },
+        {
+          "startMin": 711.5595,
+          "endMin": 772.4714,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 772.4714,
+          "endMin": 829.7162,
+          "state": "active"
+        },
+        {
+          "startMin": 829.7162,
+          "endMin": 904.5233,
+          "state": "unknown"
+        },
+        {
+          "startMin": 904.5233,
+          "endMin": 973.3512,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 973.3512,
+          "endMin": 1020.0,
+          "state": "active"
+        }
+      ],
+      "events": [
+        {
+          "id": "2026-08-04-i1",
+          "type": "interest_opportunity",
+          "startMin": 1.0,
+          "endMin": 39.2163,
+          "interestType": "reading",
+          "accepted": true,
+          "engagementStartMin": 3.0,
+          "engagementEndMin": 33.1671
+        },
+        {
+          "id": "2026-08-04-a1",
+          "type": "activity_start",
+          "atMin": 63.9901,
+          "origin": "self",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-04-s1",
+          "type": "social_opportunity",
+          "atMin": 186.5132,
+          "source": "household_member",
+          "responded": true,
+          "responseAtMin": 186.6543
+        },
+        {
+          "id": "2026-08-04-i2",
+          "type": "interest_opportunity",
+          "startMin": 190.5132,
+          "endMin": 231.9505,
+          "interestType": "gardening",
+          "accepted": false,
+          "engagementStartMin": null,
+          "engagementEndMin": null
+        },
+        {
+          "id": "2026-08-04-a2",
+          "type": "activity_start",
+          "atMin": 244.0342,
+          "origin": "self",
+          "context": "other"
+        },
+        {
+          "id": "2026-08-04-a3",
+          "type": "activity_start",
+          "atMin": 473.3073,
+          "origin": "self",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-04-s2",
+          "type": "social_opportunity",
+          "atMin": 486.2073,
+          "source": "visitor",
+          "responded": true,
+          "responseAtMin": 486.3597
+        },
+        {
+          "id": "2026-08-04-a4",
+          "type": "activity_start",
+          "atMin": 653.8529,
+          "origin": "self",
+          "context": "interest"
+        },
+        {
+          "id": "2026-08-04-a5",
+          "type": "activity_start",
+          "atMin": 772.5714,
+          "origin": "self",
+          "context": "interest"
+        },
+        {
+          "id": "2026-08-04-s3",
+          "type": "social_opportunity",
+          "atMin": 926.5233,
+          "source": "visitor",
+          "responded": true,
+          "responseAtMin": 926.8698
+        },
+        {
+          "id": "2026-08-04-a6",
+          "type": "activity_start",
+          "atMin": 973.4512,
+          "origin": "prompted",
+          "context": "interest"
+        }
+      ],
+      "result": {
+        "observedAwakeMin": 813.5922,
+        "activeMin": 324.9725,
+        "longStillMin": 69.7304,
+        "lowActivityEpisodesMin": [
+          63.8901,
+          61.42099999999999,
+          94.50629999999995,
+          139.0625,
+          60.91190000000006,
+          68.8279
+        ],
+        "allActivityStarts": 6,
+        "selfInitiatedStarts": 5,
+        "interestOpportunityCount": 2,
+        "interestAcceptedCount": 1,
+        "interestOpportunityMin": 79.6536,
+        "interestEngagedMin": 30.1671,
+        "socialOpportunityCount": 3,
+        "socialRespondedCount": 3,
+        "responseLatenciesSec": [
+          8.465999999999667,
+          9.144000000000005,
+          20.79000000000633
+        ],
+        "activeRatePct": 39.9429,
+        "initiativeEventsPer8h": 2.9499,
+        "selfInitiatedSharePct": 83.3333,
+        "interestOpportunityAcceptancePct": 50.0,
+        "interestEngagementPct": 37.8729,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 9.144,
+        "longStillRatePct": 8.5707,
+        "medianLowActivityEpisodeMin": 66.359
+      }
+    },
+    {
+      "id": "emotion-2026-08-05",
+      "date": "2026-08-05",
+      "valid": true,
+      "invalidReason": null,
+      "observedMinutes": 867.6379,
+      "quality": {
+        "coveragePct": 100.0,
+        "continuityPct": 89.4743,
+        "structuralCompletenessPct": 100.0,
+        "confidencePct": 96.8423
+      },
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 81.2245,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 81.2245,
+          "endMin": 147.2861,
+          "state": "active"
+        },
+        {
+          "startMin": 147.2861,
+          "endMin": 241.3621,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 241.3621,
+          "endMin": 294.1964,
+          "state": "active"
+        },
+        {
+          "startMin": 294.1964,
+          "endMin": 349.9387,
+          "state": "unknown"
+        },
+        {
+          "startMin": 349.9387,
+          "endMin": 444.6434,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 444.6434,
+          "endMin": 493.604,
+          "state": "unknown"
+        },
+        {
+          "startMin": 493.604,
+          "endMin": 566.217,
+          "state": "long_still"
+        },
+        {
+          "startMin": 566.217,
+          "endMin": 615.0965,
+          "state": "active"
+        },
+        {
+          "startMin": 615.0965,
+          "endMin": 662.7557,
+          "state": "unknown"
+        },
+        {
+          "startMin": 662.7557,
+          "endMin": 777.108,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 777.108,
+          "endMin": 835.1431,
+          "state": "active"
+        },
+        {
+          "startMin": 835.1431,
+          "endMin": 907.3697,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 907.3697,
+          "endMin": 959.815,
+          "state": "active"
+        },
+        {
+          "startMin": 959.815,
+          "endMin": 1020.0,
+          "state": "active"
+        }
+      ],
+      "events": [
+        {
+          "id": "2026-08-05-i1",
+          "type": "interest_opportunity",
+          "startMin": 1.0,
+          "endMin": 49.4445,
+          "interestType": "music",
+          "accepted": true,
+          "engagementStartMin": 3.0,
+          "engagementEndMin": 36.8888
+        },
+        {
+          "id": "2026-08-05-a1",
+          "type": "activity_start",
+          "atMin": 81.3245,
+          "origin": "self",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-05-a2",
+          "type": "activity_start",
+          "atMin": 241.4621,
+          "origin": "self",
+          "context": "other"
+        },
+        {
+          "id": "2026-08-05-s1",
+          "type": "social_opportunity",
+          "atMin": 353.9387,
+          "source": "visitor",
+          "responded": true,
+          "responseAtMin": 354.2846
+        },
+        {
+          "id": "2026-08-05-i2",
+          "type": "interest_opportunity",
+          "startMin": 357.9387,
+          "endMin": 398.4481,
+          "interestType": "music",
+          "accepted": true,
+          "engagementStartMin": 359.9387,
+          "engagementEndMin": 389.7904
+        },
+        {
+          "id": "2026-08-05-s2",
+          "type": "social_opportunity",
+          "atMin": 506.604,
+          "source": "visitor",
+          "responded": true,
+          "responseAtMin": 506.9558
+        },
+        {
+          "id": "2026-08-05-a3",
+          "type": "activity_start",
+          "atMin": 566.317,
+          "origin": "self",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-05-s3",
+          "type": "social_opportunity",
+          "atMin": 684.7557,
+          "source": "phone_call",
+          "responded": false,
+          "responseAtMin": null
+        },
+        {
+          "id": "2026-08-05-a4",
+          "type": "activity_start",
+          "atMin": 777.208,
+          "origin": "self",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-05-a5",
+          "type": "activity_start",
+          "atMin": 907.4697,
+          "origin": "prompted",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-05-a6",
+          "type": "activity_start",
+          "atMin": 959.915,
+          "origin": "prompted",
+          "context": "social"
+        }
+      ],
+      "result": {
+        "observedAwakeMin": 867.6379,
+        "activeMin": 338.4408,
+        "longStillMin": 72.613,
+        "lowActivityEpisodesMin": [
+          81.2245,
+          94.076,
+          94.7047,
+          72.613,
+          114.3522999999999,
+          72.22659999999996
+        ],
+        "allActivityStarts": 6,
+        "selfInitiatedStarts": 4,
+        "interestOpportunityCount": 2,
+        "interestAcceptedCount": 2,
+        "interestOpportunityMin": 88.9539,
+        "interestEngagedMin": 63.7405,
+        "socialOpportunityCount": 3,
+        "socialRespondedCount": 2,
+        "responseLatenciesSec": [
+          20.754000000001724,
+          21.10800000000154
+        ],
+        "activeRatePct": 39.0071,
+        "initiativeEventsPer8h": 2.2129,
+        "selfInitiatedSharePct": 66.6667,
+        "interestOpportunityAcceptancePct": 100.0,
+        "interestEngagementPct": 71.6557,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 20.931,
+        "longStillRatePct": 8.369,
+        "medianLowActivityEpisodeMin": 87.6502
+      }
+    },
+    {
+      "id": "emotion-2026-08-06",
+      "date": "2026-08-06",
+      "valid": true,
+      "invalidReason": null,
+      "observedMinutes": 825.309,
+      "quality": {
+        "coveragePct": 100.0,
+        "continuityPct": 85.3244,
+        "structuralCompletenessPct": 100.0,
+        "confidencePct": 95.5973
+      },
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 62.7009,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 62.7009,
+          "endMin": 103.0737,
+          "state": "active"
+        },
+        {
+          "startMin": 103.0737,
+          "endMin": 192.8351,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 192.8351,
+          "endMin": 245.2054,
+          "state": "unknown"
+        },
+        {
+          "startMin": 245.2054,
+          "endMin": 297.455,
+          "state": "active"
+        },
+        {
+          "startMin": 297.455,
+          "endMin": 389.2235,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 389.2235,
+          "endMin": 447.0541,
+          "state": "unknown"
+        },
+        {
+          "startMin": 447.0541,
+          "endMin": 495.8591,
+          "state": "active"
+        },
+        {
+          "startMin": 495.8591,
+          "endMin": 559.355,
+          "state": "long_still"
+        },
+        {
+          "startMin": 559.355,
+          "endMin": 643.8451,
+          "state": "unknown"
+        },
+        {
+          "startMin": 643.8451,
+          "endMin": 736.5457,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 736.5457,
+          "endMin": 795.7282,
+          "state": "active"
+        },
+        {
+          "startMin": 795.7282,
+          "endMin": 867.265,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 867.265,
+          "endMin": 925.7713,
+          "state": "active"
+        },
+        {
+          "startMin": 925.7713,
+          "endMin": 969.488,
+          "state": "active"
+        },
+        {
+          "startMin": 969.488,
+          "endMin": 1020.0,
+          "state": "active"
+        }
+      ],
+      "events": [
+        {
+          "id": "2026-08-06-i1",
+          "type": "interest_opportunity",
+          "startMin": 1.0,
+          "endMin": 44.4615,
+          "interestType": "television",
+          "accepted": true,
+          "engagementStartMin": 3.0,
+          "engagementEndMin": 32.9943
+        },
+        {
+          "id": "2026-08-06-a1",
+          "type": "activity_start",
+          "atMin": 62.8009,
+          "origin": "self",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-06-a2",
+          "type": "activity_start",
+          "atMin": 245.3054,
+          "origin": "self",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-06-s1",
+          "type": "social_opportunity",
+          "atMin": 249.2054,
+          "source": "visitor",
+          "responded": true,
+          "responseAtMin": 249.5164
+        },
+        {
+          "id": "2026-08-06-i2",
+          "type": "interest_opportunity",
+          "startMin": 253.2054,
+          "endMin": 301.0743,
+          "interestType": "music",
+          "accepted": true,
+          "engagementStartMin": 255.2054,
+          "engagementEndMin": 289.1688
+        },
+        {
+          "id": "2026-08-06-a3",
+          "type": "activity_start",
+          "atMin": 447.1541,
+          "origin": "self",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-06-s2",
+          "type": "social_opportunity",
+          "atMin": 460.0541,
+          "source": "phone_call",
+          "responded": true,
+          "responseAtMin": 460.4095
+        },
+        {
+          "id": "2026-08-06-s3",
+          "type": "social_opportunity",
+          "atMin": 665.8451,
+          "source": "visitor",
+          "responded": false,
+          "responseAtMin": null
+        },
+        {
+          "id": "2026-08-06-a4",
+          "type": "activity_start",
+          "atMin": 736.6457,
+          "origin": "self",
+          "context": "other"
+        },
+        {
+          "id": "2026-08-06-a5",
+          "type": "activity_start",
+          "atMin": 867.365,
+          "origin": "self",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-06-a6",
+          "type": "activity_start",
+          "atMin": 925.8713,
+          "origin": "prompted",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-06-a7",
+          "type": "activity_start",
+          "atMin": 969.588,
+          "origin": "external",
+          "context": "interest"
+        }
+      ],
+      "result": {
+        "observedAwakeMin": 825.309,
+        "activeMin": 353.3449,
+        "longStillMin": 63.4959,
+        "lowActivityEpisodesMin": [
+          62.7009,
+          89.76140000000001,
+          91.76850000000002,
+          63.495900000000006,
+          92.70060000000001,
+          71.53679999999997
+        ],
+        "allActivityStarts": 7,
+        "selfInitiatedStarts": 5,
+        "interestOpportunityCount": 2,
+        "interestAcceptedCount": 2,
+        "interestOpportunityMin": 91.3304,
+        "interestEngagedMin": 63.9577,
+        "socialOpportunityCount": 3,
+        "socialRespondedCount": 2,
+        "responseLatenciesSec": [
+          18.660000000000423,
+          21.323999999998478
+        ],
+        "activeRatePct": 42.8136,
+        "initiativeEventsPer8h": 2.908,
+        "selfInitiatedSharePct": 71.4286,
+        "interestOpportunityAcceptancePct": 100.0,
+        "interestEngagementPct": 70.0289,
+        "responseRatePct": 66.6667,
+        "responseLatencySec": 19.992,
+        "longStillRatePct": 7.6936,
+        "medianLowActivityEpisodeMin": 80.6491
+      }
+    },
+    {
+      "id": "emotion-2026-08-07",
+      "date": "2026-08-07",
+      "valid": true,
+      "invalidReason": null,
+      "observedMinutes": 843.4559,
+      "quality": {
+        "coveragePct": 100.0,
+        "continuityPct": 87.1035,
+        "structuralCompletenessPct": 100.0,
+        "confidencePct": 96.1311
+      },
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 64.2329,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 64.2329,
+          "endMin": 104.524,
+          "state": "active"
+        },
+        {
+          "startMin": 104.524,
+          "endMin": 181.8367,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 181.8367,
+          "endMin": 223.001,
+          "state": "active"
+        },
+        {
+          "startMin": 223.001,
+          "endMin": 274.1597,
+          "state": "unknown"
+        },
+        {
+          "startMin": 274.1597,
+          "endMin": 341.4605,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 341.4605,
+          "endMin": 390.6555,
+          "state": "active"
+        },
+        {
+          "startMin": 390.6555,
+          "endMin": 458.3539,
+          "state": "unknown"
+        },
+        {
+          "startMin": 458.3539,
+          "endMin": 519.6355,
+          "state": "long_still"
+        },
+        {
+          "startMin": 519.6355,
+          "endMin": 581.4949,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 581.4949,
+          "endMin": 639.1819,
+          "state": "unknown"
+        },
+        {
+          "startMin": 639.1819,
+          "endMin": 687.8608,
+          "state": "active"
+        },
+        {
+          "startMin": 687.8608,
+          "endMin": 769.9124,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 769.9124,
+          "endMin": 816.9932,
+          "state": "active"
+        },
+        {
+          "startMin": 816.9932,
+          "endMin": 900.9954,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 900.9954,
+          "endMin": 960.2495,
+          "state": "active"
+        },
+        {
+          "startMin": 960.2495,
+          "endMin": 1020.0,
+          "state": "active"
+        }
+      ],
+      "events": [
+        {
+          "id": "2026-08-07-i1",
+          "type": "interest_opportunity",
+          "startMin": 1.0,
+          "endMin": 32.164,
+          "interestType": "reading",
+          "accepted": false,
+          "engagementStartMin": null,
+          "engagementEndMin": null
+        },
+        {
+          "id": "2026-08-07-a1",
+          "type": "activity_start",
+          "atMin": 64.3329,
+          "origin": "self",
+          "context": "other"
+        },
+        {
+          "id": "2026-08-07-a2",
+          "type": "activity_start",
+          "atMin": 181.9367,
+          "origin": "self",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-07-s1",
+          "type": "social_opportunity",
+          "atMin": 278.1597,
+          "source": "household_member",
+          "responded": true,
+          "responseAtMin": 278.4159
+        },
+        {
+          "id": "2026-08-07-i2",
+          "type": "interest_opportunity",
+          "startMin": 282.1597,
+          "endMin": 310.6636,
+          "interestType": "television",
+          "accepted": true,
+          "engagementStartMin": 284.1597,
+          "engagementEndMin": 304.8265
+        },
+        {
+          "id": "2026-08-07-a3",
+          "type": "activity_start",
+          "atMin": 341.5605,
+          "origin": "self",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-07-s2",
+          "type": "social_opportunity",
+          "atMin": 471.3539,
+          "source": "phone_call",
+          "responded": true,
+          "responseAtMin": 471.5934
+        },
+        {
+          "id": "2026-08-07-a4",
+          "type": "activity_start",
+          "atMin": 639.2819,
+          "origin": "self",
+          "context": "interest"
+        },
+        {
+          "id": "2026-08-07-s3",
+          "type": "social_opportunity",
+          "atMin": 661.1819,
+          "source": "visitor",
+          "responded": true,
+          "responseAtMin": 661.5439
+        },
+        {
+          "id": "2026-08-07-a5",
+          "type": "activity_start",
+          "atMin": 770.0124,
+          "origin": "self",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-07-a6",
+          "type": "activity_start",
+          "atMin": 901.0954,
+          "origin": "external",
+          "context": "other"
+        },
+        {
+          "id": "2026-08-07-a7",
+          "type": "activity_start",
+          "atMin": 960.3495,
+          "origin": "external",
+          "context": "interest"
+        }
+      ],
+      "result": {
+        "observedAwakeMin": 843.4559,
+        "activeMin": 345.4147,
+        "longStillMin": 61.2816,
+        "lowActivityEpisodesMin": [
+          64.2329,
+          77.3127,
+          67.30080000000004,
+          123.14100000000002,
+          82.05160000000001,
+          84.00220000000002
+        ],
+        "allActivityStarts": 7,
+        "selfInitiatedStarts": 5,
+        "interestOpportunityCount": 2,
+        "interestAcceptedCount": 1,
+        "interestOpportunityMin": 59.6679,
+        "interestEngagedMin": 20.6668,
+        "socialOpportunityCount": 3,
+        "socialRespondedCount": 3,
+        "responseLatenciesSec": [
+          15.372000000002117,
+          14.369999999997844,
+          21.71999999999798
+        ],
+        "activeRatePct": 40.9523,
+        "initiativeEventsPer8h": 2.8454,
+        "selfInitiatedSharePct": 71.4286,
+        "interestOpportunityAcceptancePct": 50.0,
+        "interestEngagementPct": 34.6364,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 15.372,
+        "longStillRatePct": 7.2655,
+        "medianLowActivityEpisodeMin": 79.6822
+      }
+    },
+    {
+      "id": "emotion-2026-08-08",
+      "date": "2026-08-08",
+      "valid": true,
+      "invalidReason": null,
+      "observedMinutes": 848.9757,
+      "quality": {
+        "coveragePct": 100.0,
+        "continuityPct": 87.6447,
+        "structuralCompletenessPct": 100.0,
+        "confidencePct": 96.2934
+      },
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 50.877,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 50.877,
+          "endMin": 137.2958,
+          "state": "active"
+        },
+        {
+          "startMin": 137.2958,
+          "endMin": 200.725,
+          "state": "unknown"
+        },
+        {
+          "startMin": 200.725,
+          "endMin": 255.5142,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 255.5142,
+          "endMin": 314.9607,
+          "state": "active"
+        },
+        {
+          "startMin": 314.9607,
+          "endMin": 401.6098,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 401.6098,
+          "endMin": 479.2522,
+          "state": "long_still"
+        },
+        {
+          "startMin": 479.2522,
+          "endMin": 553.4905,
+          "state": "active"
+        },
+        {
+          "startMin": 553.4905,
+          "endMin": 612.0725,
+          "state": "unknown"
+        },
+        {
+          "startMin": 612.0725,
+          "endMin": 689.0438,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 689.0438,
+          "endMin": 757.4547,
+          "state": "active"
+        },
+        {
+          "startMin": 757.4547,
+          "endMin": 806.4678,
+          "state": "unknown"
+        },
+        {
+          "startMin": 806.4678,
+          "endMin": 889.3842,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 889.3842,
+          "endMin": 943.405,
+          "state": "active"
+        },
+        {
+          "startMin": 943.405,
+          "endMin": 1020.0,
+          "state": "low_activity"
+        }
+      ],
+      "events": [
+        {
+          "id": "2026-08-08-i1",
+          "type": "interest_opportunity",
+          "startMin": 1.0,
+          "endMin": 47.0944,
+          "interestType": "gardening",
+          "accepted": false,
+          "engagementStartMin": null,
+          "engagementEndMin": null
+        },
+        {
+          "id": "2026-08-08-a1",
+          "type": "activity_start",
+          "atMin": 50.977,
+          "origin": "self",
+          "context": "other"
+        },
+        {
+          "id": "2026-08-08-s1",
+          "type": "social_opportunity",
+          "atMin": 204.725,
+          "source": "phone_call",
+          "responded": true,
+          "responseAtMin": 205.142
+        },
+        {
+          "id": "2026-08-08-i2",
+          "type": "interest_opportunity",
+          "startMin": 208.725,
+          "endMin": 233.9337,
+          "interestType": "reading",
+          "accepted": true,
+          "engagementStartMin": 210.725,
+          "engagementEndMin": 228.2676
+        },
+        {
+          "id": "2026-08-08-a2",
+          "type": "activity_start",
+          "atMin": 255.6142,
+          "origin": "self",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-08-a3",
+          "type": "activity_start",
+          "atMin": 479.3522,
+          "origin": "self",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-08-s2",
+          "type": "social_opportunity",
+          "atMin": 625.0725,
+          "source": "phone_call",
+          "responded": true,
+          "responseAtMin": 625.3369
+        },
+        {
+          "id": "2026-08-08-a4",
+          "type": "activity_start",
+          "atMin": 689.1438,
+          "origin": "self",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-08-s3",
+          "type": "social_opportunity",
+          "atMin": 828.4678,
+          "source": "household_member",
+          "responded": true,
+          "responseAtMin": 828.7252
+        },
+        {
+          "id": "2026-08-08-a5",
+          "type": "activity_start",
+          "atMin": 889.4842,
+          "origin": "prompted",
+          "context": "other"
+        }
+      ],
+      "result": {
+        "observedAwakeMin": 848.9757,
+        "activeMin": 342.5353,
+        "longStillMin": 77.6424,
+        "lowActivityEpisodesMin": [
+          50.877,
+          54.789199999999994,
+          164.29150000000004,
+          76.97130000000004,
+          82.91639999999995,
+          76.59500000000003
+        ],
+        "allActivityStarts": 5,
+        "selfInitiatedStarts": 4,
+        "interestOpportunityCount": 2,
+        "interestAcceptedCount": 1,
+        "interestOpportunityMin": 71.3031,
+        "interestEngagedMin": 17.5426,
+        "socialOpportunityCount": 3,
+        "socialRespondedCount": 3,
+        "responseLatenciesSec": [
+          25.020000000000095,
+          15.864000000001397,
+          15.443999999997686
+        ],
+        "activeRatePct": 40.3469,
+        "initiativeEventsPer8h": 2.2615,
+        "selfInitiatedSharePct": 80.0,
+        "interestOpportunityAcceptancePct": 50.0,
+        "interestEngagementPct": 24.6029,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 15.864,
+        "longStillRatePct": 9.1454,
+        "medianLowActivityEpisodeMin": 76.7832
+      }
+    },
+    {
+      "id": "emotion-2026-08-09",
+      "date": "2026-08-09",
+      "valid": true,
+      "invalidReason": null,
+      "observedMinutes": 752.348,
+      "quality": {
+        "coveragePct": 96.4549,
+        "continuityPct": 78.1714,
+        "structuralCompletenessPct": 100.0,
+        "confidencePct": 91.6788
+      },
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 84.863,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 84.863,
+          "endMin": 125.4232,
+          "state": "active"
+        },
+        {
+          "startMin": 125.4232,
+          "endMin": 209.2644,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 209.2644,
+          "endMin": 260.2071,
+          "state": "active"
+        },
+        {
+          "startMin": 260.2071,
+          "endMin": 313.3127,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 313.3127,
+          "endMin": 358.7408,
+          "state": "active"
+        },
+        {
+          "startMin": 358.7408,
+          "endMin": 428.6155,
+          "state": "long_still"
+        },
+        {
+          "startMin": 428.6155,
+          "endMin": 482.9282,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 482.9282,
+          "endMin": 521.4556,
+          "state": "active"
+        },
+        {
+          "startMin": 521.4556,
+          "endMin": 578.6121,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 578.6121,
+          "endMin": 672.5553,
+          "state": "unknown"
+        },
+        {
+          "startMin": 672.5553,
+          "endMin": 706.3477,
+          "state": "active"
+        },
+        {
+          "startMin": 706.3477,
+          "endMin": 797.6697,
+          "state": "unknown"
+        },
+        {
+          "startMin": 797.6697,
+          "endMin": 855.8907,
+          "state": "low_activity"
+        },
+        {
+          "startMin": 855.8907,
+          "endMin": 903.2621,
+          "state": "active"
+        },
+        {
+          "startMin": 903.2621,
+          "endMin": 985.6489,
+          "state": "unknown"
+        },
+        {
+          "startMin": 985.6489,
+          "endMin": 1020.0,
+          "state": "active"
+        }
+      ],
+      "events": [
+        {
+          "id": "2026-08-09-i1",
+          "type": "interest_opportunity",
+          "startMin": 1.0,
+          "endMin": 50.8335,
+          "interestType": "television",
+          "accepted": true,
+          "engagementStartMin": 3.0,
+          "engagementEndMin": 38.7497
+        },
+        {
+          "id": "2026-08-09-s2",
+          "type": "social_opportunity",
+          "atMin": 13.0,
+          "source": "phone_call",
+          "responded": true,
+          "responseAtMin": 13.4571
+        },
+        {
+          "id": "2026-08-09-a1",
+          "type": "activity_start",
+          "atMin": 84.963,
+          "origin": "self",
+          "context": "interest"
+        },
+        {
+          "id": "2026-08-09-a2",
+          "type": "activity_start",
+          "atMin": 209.3644,
+          "origin": "self",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-09-a3",
+          "type": "activity_start",
+          "atMin": 313.4127,
+          "origin": "self",
+          "context": "routine"
+        },
+        {
+          "id": "2026-08-09-a4",
+          "type": "activity_start",
+          "atMin": 483.0282,
+          "origin": "self",
+          "context": "other"
+        },
+        {
+          "id": "2026-08-09-a5",
+          "type": "activity_start",
+          "atMin": 672.6553,
+          "origin": "self",
+          "context": "other"
+        },
+        {
+          "id": "2026-08-09-s1",
+          "type": "social_opportunity",
+          "atMin": 801.6697,
+          "source": "phone_call",
+          "responded": true,
+          "responseAtMin": 801.9341
+        },
+        {
+          "id": "2026-08-09-i2",
+          "type": "interest_opportunity",
+          "startMin": 805.6697,
+          "endMin": 853.2104,
+          "interestType": "reading",
+          "accepted": true,
+          "engagementStartMin": 807.6697,
+          "engagementEndMin": 840.1012
+        },
+        {
+          "id": "2026-08-09-s3",
+          "type": "social_opportunity",
+          "atMin": 819.6697,
+          "source": "phone_call",
+          "responded": true,
+          "responseAtMin": 819.8595
+        },
+        {
+          "id": "2026-08-09-a6",
+          "type": "activity_start",
+          "atMin": 855.9907,
+          "origin": "external",
+          "context": "social"
+        },
+        {
+          "id": "2026-08-09-a7",
+          "type": "activity_start",
+          "atMin": 985.7489,
+          "origin": "prompted",
+          "context": "social"
+        }
+      ],
+      "result": {
+        "observedAwakeMin": 752.348,
+        "activeMin": 290.9733,
+        "longStillMin": 69.8747,
+        "lowActivityEpisodesMin": [
+          84.863,
+          83.8412,
+          53.10559999999998,
+          124.18740000000003,
+          57.15650000000005,
+          58.221000000000004
+        ],
+        "allActivityStarts": 7,
+        "selfInitiatedStarts": 5,
+        "interestOpportunityCount": 2,
+        "interestAcceptedCount": 2,
+        "interestOpportunityMin": 97.3742,
+        "interestEngagedMin": 68.1812,
+        "socialOpportunityCount": 3,
+        "socialRespondedCount": 3,
+        "responseLatenciesSec": [
+          27.42600000000003,
+          15.863999999994576,
+          11.387999999999465
+        ],
+        "activeRatePct": 38.6754,
+        "initiativeEventsPer8h": 3.19,
+        "selfInitiatedSharePct": 71.4286,
+        "interestOpportunityAcceptancePct": 100.0,
+        "interestEngagementPct": 70.0198,
+        "responseRatePct": 100.0,
+        "responseLatencySec": 15.864,
+        "longStillRatePct": 9.2876,
+        "medianLowActivityEpisodeMin": 71.0311
+      }
+    }
+  ],
+  "weekAggregate": {
+    "metrics": {
+      "activeRatePct": 41.097,
+      "initiativeEventsPer8h": 2.6803,
+      "selfInitiatedSharePct": 72.7273,
+      "interestOpportunityAcceptancePct": 78.5714,
+      "interestEngagementPct": 56.198,
+      "responseRatePct": 85.7143,
+      "responseLatencySec": 16.302,
+      "longStillRatePct": 8.2461,
+      "medianLowActivityEpisodeMin": 77.3127
+    },
+    "evidenceTotals": {
+      "observedMinutes": 5730.6557,
+      "activeMin": 2355.1276,
+      "selfInitiatedStarts": 32,
+      "allActivityStarts": 44,
+      "interestOpportunityCount": 14,
+      "interestAcceptedCount": 11,
+      "interestOpportunityMin": 565.7372,
+      "interestEngagedMin": 317.9329,
+      "socialOpportunityCount": 21,
+      "socialRespondedCount": 18,
+      "longStillMin": 472.5553,
+      "lowActivityEpisodeCount": 41
+    }
+  },
+  "evidenceSummary": {
+    "topDeclineFactors": [
+      {
+        "metric": "responseLatencySec",
+        "changePct": 40.486
+      },
+      {
+        "metric": "initiativeEventsPer8h",
+        "changePct": -25.9831
+      },
+      {
+        "metric": "longStillRatePct",
+        "changePct": 23.4631
+      }
+    ]
+  }
+}

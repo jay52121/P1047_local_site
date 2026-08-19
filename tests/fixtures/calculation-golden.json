@@ -1,0 +1,88 @@
+{
+  "emotion": {
+    "days": [
+      {
+        "observedAwakeMin": 600,
+        "activeMin": 240,
+        "selfStarts": 4,
+        "allStarts": 5,
+        "interestAccepted": 2,
+        "interestOpportunities": 3,
+        "interestEngagedMin": 60,
+        "interestOpportunityMin": 100,
+        "socialResponded": 3,
+        "socialOpportunities": 4,
+        "responseLatenciesSec": [10, 20, 30],
+        "longStillMin": 60,
+        "lowActivityEpisodesMin": [30, 50]
+      },
+      {
+        "observedAwakeMin": 480,
+        "activeMin": 120,
+        "selfStarts": 2,
+        "allStarts": 4,
+        "interestAccepted": 1,
+        "interestOpportunities": 2,
+        "interestEngagedMin": 30,
+        "interestOpportunityMin": 60,
+        "socialResponded": 2,
+        "socialOpportunities": 3,
+        "responseLatenciesSec": [20, 40],
+        "longStillMin": 48,
+        "lowActivityEpisodesMin": [40]
+      }
+    ],
+    "expected": {
+      "activeRatePct": 33.3333333333,
+      "initiativeEventsPer8h": 2.6666666667,
+      "selfInitiatedSharePct": 66.6666666667,
+      "interestOpportunityAcceptancePct": 60.0,
+      "interestEngagementPct": 56.25,
+      "responseRatePct": 71.4285714286,
+      "responseLatencySec": 20.0,
+      "longStillRatePct": 10.0,
+      "medianLowActivityEpisodeMin": 40.0
+    }
+  },
+  "cognition": {
+    "session": {
+      "expectedSteps": ["boil", "cup", "tea", "water"],
+      "actualSteps": ["cup", "boil", "boil", "tea"],
+      "taskAvailableSec": 10,
+      "taskStartSec": 40,
+      "completed": false,
+      "hesitationDurationsSec": [4, 8],
+      "prompts": [{"atSec": 90}],
+      "errors": [
+        {"errorId": "e1", "correctable": true, "selfCorrected": true, "correctionLatencySec": 12},
+        {"errorId": "e2", "correctable": true, "selfCorrected": false}
+      ]
+    },
+    "expected": {
+      "startupLatencySec": 30.0,
+      "stepCoveragePct": 75.0,
+      "orderIntegrityPct": 66.6666666667,
+      "repeatRatePct": 25.0,
+      "hesitationSecPerStep": 3.0,
+      "selfCorrectionRatePct": 50.0,
+      "correctionLatencySec": 12.0,
+      "promptPerStep": 0.25,
+      "unpromptedCompletion": false
+    }
+  },
+  "sleep": {
+    "nights": [
+      {"sleepWindowMin": 480, "estimatedSleepMin": 420, "awakenings": 2, "outOfBedMin": 15},
+      {"sleepWindowMin": 450, "estimatedSleepMin": 405, "awakenings": 1, "outOfBedMin": 5}
+    ],
+    "expected": {
+      "sleepContinuityPct": 88.7096774194,
+      "awakeningsPerNight": 1.5,
+      "outOfBedMinPerNight": 10.0
+    }
+  },
+  "participation": {
+    "zoneMinutes": {"bedroom": 300, "living_room": 300, "outside": 120},
+    "expectedEffectiveZoneCount": 2.7959833218
+  }
+}

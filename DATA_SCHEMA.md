@@ -39,6 +39,48 @@ data/demo/
 
 V1 已有周指标按 `calculationVersion: "v1-migrated"` 原值迁移，页面显示结果与迁移前一致。新生成的详情数据用于建立证据结构，不反向改变 V1 指标。
 
+第二阶段新增四域采用正式的 event-first 模式：
+
+```json
+{
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated"
+}
+```
+
+三个字段分别表达数据来源、计算方式和证据来源。现有 life/attention 保持 `migrated-summary + reconstructed`，未来真实数据使用 `real + generated-from-events + observed`。
+
+## 第二阶段稳健个人基线
+
+四个新域的每个周级原始量使用建立期 W46–W50：
+
+```text
+B = median(五周原始量)
+R = max(1.4826 × MAD, sensitivityFloor)
+```
+
+越高越好的量：`clamp(100 + 10 × (x-B)/R, 70, 130)`；越低越好的量反向计算。所有 sensitivity floor 和一级指数权重集中保存在 `tools/demo_generation/metric_specs.py`。
+
+## 缺失与数据状态
+
+- `0`：已观察且事件确实没有发生。
+- `null`：数学上不可定义或没有评价机会。
+- `invalid`：应当可以观察，但数据质量不足；通过 unit 的 `valid: false` 和 `invalidReason` 表达。
+- `status` 只表达日历状态：`complete / in_progress`。
+- `dataStatus` 只表达数据充分度：`sufficient / partial / insufficient`。
+
+`confidencePct` 只根据 coverage、continuity、structural completeness 和有效 unit 数量计算，不包含行为表现和 CV。
+
+## 心理情绪状态（Phase 2B）
+
+心理情绪状态采用完整 event-first 链路：`segments/events → day result → weekAggregate.metrics → W46–W50 个人基线 → indexes`。它是行为代理（behavioral proxy），不是情绪识别或心理状态分类器，底层不生成 sadness、happiness、depression、anxiety 或 mood score。日观察窗固定为 06:00–23:00；基础状态为 `active / low_activity / long_still / unknown`，事件只允许 `activity_start / interest_opportunity / social_opportunity`。
+
+周级正式原始量严格为 9 项：行为活跃占比、自主启动频率与占比、兴趣机会接受率与投入比例、交流机会回应率与回应延迟、长时间静止占比、低活动 episode 中位时长。外出、位置、活动范围和实际互动总量不进入该域。`emotion_metric_mapping.json` 保存一级指数、原始量和底层事实的可追溯关系；detail 的 `evidenceSummary` 只是从正式指标生成的排序缓存，删除后不影响任何指标重算。
+
+完整周至少 5 个有效日才能生成正式指数；W33 截至 2026-08-13，仅包含周一至周四，并以 `in_progress + provisional` 表达。生成器使用 SHA-256 稳定随机流，并将 quality 与 behavior 随机源分离，保证数据质量不受行为表现影响。
+
 ## 自动证据
 
 综合生活能力详情包含代表性坐站动作参数。专注详情包含：

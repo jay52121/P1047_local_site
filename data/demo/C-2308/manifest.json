@@ -7,7 +7,9 @@
   "domains": {
     "attention": {
       "status": "available",
-      "summaryPattern": "attention/{taskId}-weekly-summary.json"
+      "weeklySummary": "attention/weekly-summary.json",
+      "summaryPattern": "attention/{taskId}-weekly-summary.json",
+      "calculationVersion": "v2-attention-demo-1"
     }
   }
 }

@@ -1,0 +1,12 @@
+{
+  "dailyResults": [
+    {"observedAwakeMin":600,"activeMin":240,"longStillMin":60,"lowActivityEpisodesMin":[30,60],"allActivityStarts":5,"selfInitiatedStarts":4,"interestOpportunityCount":3,"interestAcceptedCount":2,"interestOpportunityMin":100,"interestEngagedMin":60,"socialOpportunityCount":4,"socialRespondedCount":3,"responseLatenciesSec":[10,20,30]},
+    {"observedAwakeMin":800,"activeMin":320,"longStillMin":40,"lowActivityEpisodesMin":[20,40],"allActivityStarts":6,"selfInitiatedStarts":3,"interestOpportunityCount":4,"interestAcceptedCount":3,"interestOpportunityMin":120,"interestEngagedMin":90,"socialOpportunityCount":3,"socialRespondedCount":2,"responseLatenciesSec":[15,25]},
+    {"observedAwakeMin":700,"activeMin":210,"longStillMin":70,"lowActivityEpisodesMin":[35,70],"allActivityStarts":4,"selfInitiatedStarts":2,"interestOpportunityCount":3,"interestAcceptedCount":1,"interestOpportunityMin":80,"interestEngagedMin":30,"socialOpportunityCount":5,"socialRespondedCount":4,"responseLatenciesSec":[12,18,24,36]}
+  ],
+  "expectedMetrics": {
+    "activeRatePct":36.6667,"initiativeEventsPer8h":2.0571,"selfInitiatedSharePct":60,
+    "interestOpportunityAcceptancePct":60,"interestEngagementPct":60,"responseRatePct":75,
+    "responseLatencySec":20,"longStillRatePct":8.0952,"medianLowActivityEpisodeMin":37.5
+  }
+}

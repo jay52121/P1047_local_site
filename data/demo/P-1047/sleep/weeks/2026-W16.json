@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "sleep",
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated",
+  "weekId": "2026-W16",
+  "detailLevel": "full",
+  "confidencePct": 94.7548,
+  "nights": [
+    {
+      "date": "2026-04-13",
+      "valid": true,
+      "bedEntryMin": 621.3392,
+      "sleepOnsetMin": 652.204,
+      "finalWakeMin": 1119.2093,
+      "finalRiseMin": 1126.5229,
+      "awakenings": [
+        {
+          "startMin": 890.7066,
+          "endMin": 900.9152,
+          "outOfBedMin": 0.0
+        }
+      ],
+      "napIntervals": [],
+      "dayObservedMin": 925.3017,
+      "dayLowActivityMin": 178.2099,
+      "dayActiveMin": 819.4258,
+      "sleepWindowMin": 467.0053,
+      "estimatedSleepMin": 456.7967,
+      "sleepMidpointMin": 885.7066
+    },
+    {
+      "date": "2026-04-14",
+      "valid": true,
+      "bedEntryMin": 612.7569,
+      "sleepOnsetMin": 635.7575,
+      "finalWakeMin": 1130.0565,
+      "finalRiseMin": 1147.6928,
+      "awakenings": [
+        {
+          "startMin": 887.907,
+          "endMin": 894.5095,
+          "outOfBedMin": 4.9062
+        }
+      ],
+      "napIntervals": [],
+      "dayObservedMin": 875.9519,
+      "dayLowActivityMin": 143.8761,
+      "dayActiveMin": 771.256,
+      "sleepWindowMin": 494.2991,
+      "estimatedSleepMin": 487.6966,
+      "sleepMidpointMin": 882.907
+    },
+    {
+      "date": "2026-04-15",
+      "valid": true,
+      "bedEntryMin": 620.0855,
+      "sleepOnsetMin": 644.2024,
+      "finalWakeMin": 1128.4374,
+      "finalRiseMin": 1141.5727,
+      "awakenings": [
+        {
+          "startMin": 891.3199,
+          "endMin": 900.1793,
+          "outOfBedMin": 7.3284
+        }
+      ],
+      "napIntervals": [
+        {
+          "startMin": 133.0299,
+          "endMin": 162.7431
+        }
+      ],
+      "dayObservedMin": 934.4072,
+      "dayLowActivityMin": 199.7767,
+      "dayActiveMin": 823.1725,
+      "sleepWindowMin": 484.235,
+      "estimatedSleepMin": 475.3756,
+      "sleepMidpointMin": 886.3199
+    },
+    {
+      "date": "2026-04-16",
+      "valid": true,
+      "bedEntryMin": 630.4517,
+      "sleepOnsetMin": 662.6592,
+      "finalWakeMin": 1127.6714,
+      "finalRiseMin": 1142.4958,
+      "awakenings": [
+        {
+          "startMin": 900.1653,
+          "endMin": 912.1711,
+          "outOfBedMin": 0.0
+        }
+      ],
+      "napIntervals": [],
+      "dayObservedMin": 883.4643,
+      "dayLowActivityMin": 162.0169,
+      "dayActiveMin": 782.8446,
+      "sleepWindowMin": 465.0123,
+      "estimatedSleepMin": 453.0065,
+      "sleepMidpointMin": 895.1653
+    },
+    {
+      "date": "2026-04-17",
+      "valid": true,
+      "bedEntryMin": 611.8499,
+      "sleepOnsetMin": 645.7731,
+      "finalWakeMin": 1118.5728,
+      "finalRiseMin": 1135.3509,
+      "awakenings": [
+        {
+          "startMin": 887.173,
+          "endMin": 894.0428,
+          "outOfBedMin": 0.0
+        }
+      ],
+      "napIntervals": [],
+      "dayObservedMin": 927.5091,
+      "dayLowActivityMin": 182.2443,
+      "dayActiveMin": 814.0923,
+      "sleepWindowMin": 472.7998,
+      "estimatedSleepMin": 465.93,
+      "sleepMidpointMin": 882.173
+    },
+    {
+      "date": "2026-04-18",
+      "valid": true,
+      "bedEntryMin": 623.1008,
+      "sleepOnsetMin": 654.0085,
+      "finalWakeMin": 1134.6514,
+      "finalRiseMin": 1151.0519,
+      "awakenings": [
+        {
+          "startMin": 899.33,
+          "endMin": 912.8922,
+          "outOfBedMin": 8.1763
+        }
+      ],
+      "napIntervals": [],
+      "dayObservedMin": 871.5234,
+      "dayLowActivityMin": 171.8357,
+      "dayActiveMin": 762.6457,
+      "sleepWindowMin": 480.6429,
+      "estimatedSleepMin": 467.0807,
+      "sleepMidpointMin": 894.33
+    },
+    {
+      "date": "2026-04-19",
+      "valid": true,
+      "bedEntryMin": 622.4814,
+      "sleepOnsetMin": 652.8919,
+      "finalWakeMin": 1130.3651,
+      "finalRiseMin": 1145.9367,
+      "awakenings": [
+        {
+          "startMin": 896.6285,
+          "endMin": 901.8028,
+          "outOfBedMin": 0.0
+        }
+      ],
+      "napIntervals": [],
+      "dayObservedMin": 886.0262,
+      "dayLowActivityMin": 151.432,
+      "dayActiveMin": 790.6237,
+      "sleepWindowMin": 477.4731,
+      "estimatedSleepMin": 472.2988,
+      "sleepMidpointMin": 891.6285
+    }
+  ],
+  "representativeNightDate": "2026-04-19",
+  "weekAggregate": {
+    "metrics": {
+      "onsetMADMin": 6.4309,
+      "riseMADMin": 5.197,
+      "sleepLatencyMin": 30.8648,
+      "sleepLatencyMADMin": 1.3427,
+      "sleepContinuityPct": 98.1061,
+      "awakeningsPerNight": 1.0,
+      "outOfBedMinPerNight": 2.9158,
+      "napMinPerDay": 4.2447,
+      "dayLowActivityRatePct": 18.8667,
+      "midpointDeviationMin": 2.9592,
+      "dayActivitySharePct": 98.8754
+    }
+  }
+}

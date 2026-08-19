@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sisp.local/schemas/emotion-weekly-summary.schema.json",
+  "title": "SISP emotion weekly summary",
+  "allOf": [
+    { "$ref": "weekly-summary.schema.json" },
+    {
+      "type": "object",
+      "required": ["schemaVersion", "personId", "domain", "sourceType", "calculationMode", "calculationVersion", "evidenceOrigin", "baseline", "weeks"],
+      "properties": {
+        "domain": { "const": "emotion" },
+        "sourceType": { "const": "simulation" },
+        "calculationMode": { "const": "generated-from-events" },
+        "calculationVersion": { "const": "v2-events-1" },
+        "evidenceOrigin": { "const": "generated" },
+        "baseline": { "type": "object", "required": ["weekIds"], "properties": { "weekIds": { "type": "array", "minItems": 5, "maxItems": 5, "items": { "type": "string" } } } },
+        "weeks": {
+          "type": "array", "minItems": 40, "maxItems": 40,
+          "items": {
+            "type": "object",
+            "required": ["weekId", "weekIndex", "weekStart", "weekEnd", "status", "dataStatus", "provisional", "observedThroughDate", "expectedUnits", "validUnits", "confidencePct", "metricConfidencePct", "phase", "event", "eventKind", "note", "metrics", "indexes", "indexComponents"],
+            "properties": {
+              "metrics": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/emotionMetrics" },
+              "indexes": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/emotionIndexes" }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "nullableNumber": { "type": ["number", "null"] },
+    "emotionMetrics": {
+      "type": "object", "additionalProperties": false,
+      "required": ["activeRatePct", "initiativeEventsPer8h", "selfInitiatedSharePct", "interestOpportunityAcceptancePct", "interestEngagementPct", "responseRatePct", "responseLatencySec", "longStillRatePct", "medianLowActivityEpisodeMin"],
+      "properties": {
+        "activeRatePct": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" }, "initiativeEventsPer8h": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" },
+        "selfInitiatedSharePct": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" }, "interestOpportunityAcceptancePct": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" },
+        "interestEngagementPct": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" }, "responseRatePct": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" },
+        "responseLatencySec": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" }, "longStillRatePct": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" },
+        "medianLowActivityEpisodeMin": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" }
+      }
+    },
+    "emotionIndexes": {
+      "type": "object", "additionalProperties": false,
+      "required": ["behaviorActivation", "initiative", "interestEngagement", "socialResponsiveness", "withdrawalBurden"],
+      "properties": {
+        "behaviorActivation": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" }, "initiative": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" },
+        "interestEngagement": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" }, "socialResponsiveness": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" },
+        "withdrawalBurden": { "$ref": "https://sisp.local/schemas/emotion-weekly-summary.schema.json#/$defs/nullableNumber" }
+      }
+    }
+  }
+}

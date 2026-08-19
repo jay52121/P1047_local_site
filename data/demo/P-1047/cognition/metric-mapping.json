@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0",
+  "domain": "cognition",
+  "rawMetrics": {
+    "startupLatencySec": {
+      "label": "任务启动延迟",
+      "unit": " sec",
+      "higherIsBetter": false,
+      "source": "task sessions"
+    },
+    "stepCoveragePct": {
+      "label": "步骤覆盖率",
+      "unit": "%",
+      "higherIsBetter": true,
+      "source": "task paths"
+    },
+    "taskCompletionRatePct": {
+      "label": "任务完成率",
+      "unit": "%",
+      "higherIsBetter": true,
+      "source": "task sessions"
+    },
+    "orderIntegrityPct": {
+      "label": "步骤顺序完整度",
+      "unit": "%",
+      "higherIsBetter": true,
+      "source": "task paths"
+    },
+    "repeatRatePct": {
+      "label": "重复步骤率",
+      "unit": "%",
+      "higherIsBetter": false,
+      "source": "task paths"
+    },
+    "hesitationSecPerStep": {
+      "label": "单步犹豫时长",
+      "unit": " sec",
+      "higherIsBetter": false,
+      "source": "hesitation events"
+    },
+    "selfCorrectionRatePct": {
+      "label": "自主纠正率",
+      "unit": "%",
+      "higherIsBetter": true,
+      "source": "correction events"
+    },
+    "correctionLatencySec": {
+      "label": "纠正延迟",
+      "unit": " sec",
+      "higherIsBetter": false,
+      "source": "correction events"
+    },
+    "promptPerStep": {
+      "label": "单步提示次数",
+      "unit": "",
+      "higherIsBetter": false,
+      "source": "prompt events"
+    },
+    "unpromptedCompletionRatePct": {
+      "label": "无提示完成率",
+      "unit": "%",
+      "higherIsBetter": true,
+      "source": "task sessions"
+    }
+  },
+  "indexes": {
+    "taskInitiation": {
+      "rawMetrics": [
+        "startupLatencySec"
+      ]
+    },
+    "taskCompleteness": {
+      "rawMetrics": [
+        "stepCoveragePct",
+        "taskCompletionRatePct"
+      ]
+    },
+    "executionOrganization": {
+      "rawMetrics": [
+        "orderIntegrityPct",
+        "repeatRatePct",
+        "hesitationSecPerStep"
+      ]
+    },
+    "selfCorrection": {
+      "rawMetrics": [
+        "selfCorrectionRatePct",
+        "correctionLatencySec"
+      ]
+    },
+    "promptIndependence": {
+      "rawMetrics": [
+        "promptPerStep",
+        "unpromptedCompletionRatePct"
+      ]
+    }
+  }
+}

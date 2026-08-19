@@ -1,10 +1,18 @@
 export const DOMAINS = {
   life: { label: "综合生活能力", available: true },
-  emotion: { label: "心理情绪状态", available: false },
-  cognition: { label: "认知行为状态", available: false },
-  sleep: { label: "睡眠与生活节律", available: false },
-  attention: { label: "专注与学习状态", available: false },
-  participation: { label: "活动与社会参与", available: false },
+  emotion: { label: "心理情绪状态", available: true },
+  cognition: { label: "认知行为状态", available: true },
+  sleep: { label: "睡眠与生活节律", available: true },
+  attention: { label: "专注与学习状态", available: true },
+  participation: { label: "活动与社会参与", available: true },
+};
+
+export const EMOTION_METRICS = {
+  behaviorActivation: { label: "行为活跃状态", field: "behaviorActivation", risk: false, description: "反映清醒观察期间有目的行为活动占比的长期相对变化。" },
+  initiative: { label: "自主启动状态", field: "initiative", risk: false, description: "反映自然生活中无需明确外部提示即可主动开始行为的长期变化。" },
+  interestEngagement: { label: "兴趣投入状态", field: "interestEngagement", risk: false, description: "反映熟悉兴趣机会出现后是否实际接受并持续投入的长期变化。" },
+  socialResponsiveness: { label: "互动回应状态", field: "socialResponsiveness", risk: false, description: "反映明确交流机会出现后是否回应以及回应速度的长期变化。" },
+  withdrawalBurden: { label: "行为收缩负担", field: "withdrawalBurden", risk: true, description: "反映清醒状态下长期低活动与长时间静止是否相对本人历史增加。" },
 };
 
 export const LIFE_METRICS = {

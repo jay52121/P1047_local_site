@@ -1,0 +1,5802 @@
+{
+  "schemaVersion": "1.0",
+  "personId": "P-1047",
+  "domain": "cognition",
+  "sourceType": "simulation",
+  "calculationMode": "generated-from-events",
+  "calculationVersion": "v2-events-1",
+  "evidenceOrigin": "generated",
+  "detailLevel": "lite",
+  "weeks": [
+    {
+      "weekId": "2025-W46",
+      "detailLevel": "lite",
+      "confidencePct": 94.2631,
+      "sessions": [
+        {
+          "sessionId": "2025-W46-prepare_outing-01",
+          "date": "2025-11-11",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 24.0935,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 95.063,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.5919,
+            "selfCorrectionRatePct": 91.2902,
+            "correctionLatencySec": 9.7172,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W46-make_tea-02",
+          "date": "2025-11-13",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 16.3062,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 95.7771,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 87.2045,
+            "correctionLatencySec": 14.5963,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W46-organize_medication-03",
+          "date": "2025-11-15",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 34.5818,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 95.4559,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.6786,
+            "selfCorrectionRatePct": 87.9572,
+            "correctionLatencySec": 14.5894,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 24.0935,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 95.4559,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.5919,
+          "selfCorrectionRatePct": 87.9572,
+          "correctionLatencySec": 14.5894,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W47",
+      "detailLevel": "lite",
+      "confidencePct": 93.1872,
+      "sessions": [
+        {
+          "sessionId": "2025-W47-prepare_outing-01",
+          "date": "2025-11-18",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 19.2549,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.6244,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.7359,
+            "selfCorrectionRatePct": 90.5898,
+            "correctionLatencySec": 11.0746,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W47-make_tea-02",
+          "date": "2025-11-20",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 17.4992,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 99.3781,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.0796,
+            "selfCorrectionRatePct": 98.1372,
+            "correctionLatencySec": 7.814,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W47-organize_medication-03",
+          "date": "2025-11-22",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 34.7763,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 96.5288,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.76,
+            "selfCorrectionRatePct": 88.3155,
+            "correctionLatencySec": 12.7046,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 19.2549,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 96.5288,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.76,
+          "selfCorrectionRatePct": 90.5898,
+          "correctionLatencySec": 11.0746,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W48",
+      "detailLevel": "lite",
+      "confidencePct": 93.5638,
+      "sessions": [
+        {
+          "sessionId": "2025-W48-prepare_outing-01",
+          "date": "2025-11-25",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 22.4279,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 97.6457,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 92.9995,
+            "correctionLatencySec": 9.2743,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W48-make_tea-02",
+          "date": "2025-11-27",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 11.8072,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 99.2787,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.176,
+            "selfCorrectionRatePct": 89.878,
+            "correctionLatencySec": 10.4156,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W48-organize_medication-03",
+          "date": "2025-11-29",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 24.59,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.9234,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 88.4328,
+            "correctionLatencySec": 13.6681,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 22.4279,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 97.6457,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.0,
+          "selfCorrectionRatePct": 89.878,
+          "correctionLatencySec": 10.4156,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W49",
+      "detailLevel": "lite",
+      "confidencePct": 93.3522,
+      "sessions": [
+        {
+          "sessionId": "2025-W49-prepare_outing-01",
+          "date": "2025-12-02",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "put_on_shoes",
+            "get_keys",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "omission",
+              "step": "get_keys"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 21.0132,
+            "stepCoveragePct": 80.0,
+            "completed": true,
+            "orderIntegrityPct": 95.3115,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 100.0,
+            "correctionLatencySec": 10.3878,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W49-make_tea-02",
+          "date": "2025-12-04",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 13.2001,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 100.0,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.1029,
+            "selfCorrectionRatePct": 92.121,
+            "correctionLatencySec": 9.6432,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W49-organize_medication-03",
+          "date": "2025-12-06",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.6874,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 97.6828,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.7289,
+            "selfCorrectionRatePct": 84.3771,
+            "correctionLatencySec": 12.2238,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 21.0132,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 97.6828,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.7289,
+          "selfCorrectionRatePct": 92.121,
+          "correctionLatencySec": 10.3878,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W50",
+      "detailLevel": "lite",
+      "confidencePct": 94.351,
+      "sessions": [
+        {
+          "sessionId": "2025-W50-prepare_outing-01",
+          "date": "2025-12-09",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_phone"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 21.446,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.9031,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 0.6336,
+            "selfCorrectionRatePct": 88.5667,
+            "correctionLatencySec": 13.65,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W50-make_tea-02",
+          "date": "2025-12-11",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 21.3851,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 95.8823,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 90.7175,
+            "correctionLatencySec": 11.8539,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W50-organize_medication-03",
+          "date": "2025-12-13",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 33.2136,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 96.2271,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.6582,
+            "selfCorrectionRatePct": 87.8672,
+            "correctionLatencySec": 12.2617,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 21.446,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 95.8823,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.6336,
+          "selfCorrectionRatePct": 88.5667,
+          "correctionLatencySec": 12.2617,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W51",
+      "detailLevel": "lite",
+      "confidencePct": 94.3095,
+      "sessions": [
+        {
+          "sessionId": "2025-W51-prepare_outing-01",
+          "date": "2025-12-16",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 18.0498,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 97.7349,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.6836,
+            "selfCorrectionRatePct": 92.2904,
+            "correctionLatencySec": 8.9788,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W51-make_tea-02",
+          "date": "2025-12-18",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 23.554,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 100.0,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.1121,
+            "selfCorrectionRatePct": 93.0539,
+            "correctionLatencySec": 6.0756,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W51-organize_medication-03",
+          "date": "2025-12-20",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 31.6229,
+            "stepCoveragePct": 83.3333,
+            "completed": true,
+            "orderIntegrityPct": 97.8213,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.7267,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 12.9649,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 23.554,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 97.8213,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.7267,
+          "selfCorrectionRatePct": 92.2904,
+          "correctionLatencySec": 8.9788,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2025-W52",
+      "detailLevel": "lite",
+      "confidencePct": 93.3182,
+      "sessions": [
+        {
+          "sessionId": "2025-W52-prepare_outing-01",
+          "date": "2025-12-23",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 16.897,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 96.9155,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 88.8545,
+            "correctionLatencySec": 11.1778,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W52-make_tea-02",
+          "date": "2025-12-25",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_water"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 18.1926,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 87.4753,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 0.5504,
+            "selfCorrectionRatePct": 92.2722,
+            "correctionLatencySec": 9.9123,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2025-W52-organize_medication-03",
+          "date": "2025-12-27",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 37.0126,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 99.1039,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.6444,
+            "selfCorrectionRatePct": 90.4786,
+            "correctionLatencySec": 11.1732,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 18.1926,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 96.9155,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.5504,
+          "selfCorrectionRatePct": 90.4786,
+          "correctionLatencySec": 11.1732,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W01",
+      "detailLevel": "lite",
+      "confidencePct": 94.527,
+      "sessions": [
+        {
+          "sessionId": "2026-W01-prepare_outing-01",
+          "date": "2025-12-30",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 22.0766,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 99.896,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.6554,
+            "selfCorrectionRatePct": 93.9365,
+            "correctionLatencySec": 9.7181,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W01-make_tea-02",
+          "date": "2026-01-01",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 14.6432,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 98.276,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 97.0797,
+            "correctionLatencySec": 8.9725,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W01-organize_medication-03",
+          "date": "2026-01-03",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 26.7849,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.9057,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 88.8633,
+            "correctionLatencySec": 10.5403,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 22.0766,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 98.276,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.0,
+          "selfCorrectionRatePct": 93.9365,
+          "correctionLatencySec": 9.7181,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W02",
+      "detailLevel": "lite",
+      "confidencePct": 93.9616,
+      "sessions": [
+        {
+          "sessionId": "2026-W02-prepare_outing-01",
+          "date": "2026-01-06",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 28.4294,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 92.9954,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 89.2074,
+            "correctionLatencySec": 9.6184,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W02-make_tea-02",
+          "date": "2026-01-08",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 17.2883,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.8657,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.4579,
+            "selfCorrectionRatePct": 88.2505,
+            "correctionLatencySec": 14.4674,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W02-organize_medication-03",
+          "date": "2026-01-10",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 35.6276,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 95.0913,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 86.18,
+            "correctionLatencySec": 13.3238,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 28.4294,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 94.8657,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.0,
+          "selfCorrectionRatePct": 88.2505,
+          "correctionLatencySec": 13.3238,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W03",
+      "detailLevel": "lite",
+      "confidencePct": 93.463,
+      "sessions": [
+        {
+          "sessionId": "2026-W03-prepare_outing-01",
+          "date": "2026-01-13",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 30.604,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.7669,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 87.9581,
+            "correctionLatencySec": 13.805,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W03-make_tea-02",
+          "date": "2026-01-15",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 20.1861,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.532,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 92.9918,
+            "correctionLatencySec": 11.2288,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W03-organize_medication-03",
+          "date": "2026-01-17",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 40.1577,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.1625,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.8747,
+            "selfCorrectionRatePct": 85.4634,
+            "correctionLatencySec": 16.3906,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 30.604,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 93.7669,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.0,
+          "selfCorrectionRatePct": 87.9581,
+          "correctionLatencySec": 13.805,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W04",
+      "detailLevel": "lite",
+      "confidencePct": 94.8337,
+      "sessions": [
+        {
+          "sessionId": "2026-W04-prepare_outing-01",
+          "date": "2026-01-20",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 28.0473,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.4817,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.9526,
+            "selfCorrectionRatePct": 87.6945,
+            "correctionLatencySec": 18.0564,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W04-make_tea-02",
+          "date": "2026-01-22",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 25.9264,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 95.6298,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 89.2988,
+            "correctionLatencySec": 12.4299,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W04-organize_medication-03",
+          "date": "2026-01-24",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 35.0535,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.1371,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.6797,
+            "selfCorrectionRatePct": 87.9857,
+            "correctionLatencySec": 17.825,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 28.0473,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 93.4817,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.6797,
+          "selfCorrectionRatePct": 87.9857,
+          "correctionLatencySec": 17.825,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W05",
+      "detailLevel": "lite",
+      "confidencePct": 93.6267,
+      "sessions": [
+        {
+          "sessionId": "2026-W05-prepare_outing-01",
+          "date": "2026-01-27",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.5144,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 88.9596,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.3007,
+            "selfCorrectionRatePct": 81.4965,
+            "correctionLatencySec": 14.4491,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W05-make_tea-02",
+          "date": "2026-01-29",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 26.576,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.2213,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 94.0873,
+            "correctionLatencySec": 15.4051,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W05-organize_medication-03",
+          "date": "2026-01-31",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 46.3583,
+            "stepCoveragePct": 83.3333,
+            "completed": true,
+            "orderIntegrityPct": 92.0352,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.2606,
+            "selfCorrectionRatePct": 100.0,
+            "correctionLatencySec": 17.9545,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 30.5144,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 91.2213,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 2.2606,
+          "selfCorrectionRatePct": 94.0873,
+          "correctionLatencySec": 15.4051,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W06",
+      "detailLevel": "lite",
+      "confidencePct": 92.8861,
+      "sessions": [
+        {
+          "sessionId": "2026-W06-prepare_outing-01",
+          "date": "2026-02-03",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_phone",
+            "put_on_shoes",
+            "get_keys",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_phone"
+            },
+            {
+              "type": "omission",
+              "step": "get_keys"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 33.2707,
+            "stepCoveragePct": 80.0,
+            "completed": true,
+            "orderIntegrityPct": 72.0,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 3.2,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": null,
+            "promptPerStep": 0.2,
+            "unpromptedCompletion": false
+          }
+        },
+        {
+          "sessionId": "2026-W06-make_tea-02",
+          "date": "2026-02-05",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "get_water",
+            "pour_water",
+            "add_tea",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_water"
+            },
+            {
+              "type": "omission",
+              "step": "add_tea"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.7944,
+            "stepCoveragePct": 80.0,
+            "completed": true,
+            "orderIntegrityPct": 72.0,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 3.2,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": null,
+            "promptPerStep": 0.2,
+            "unpromptedCompletion": false
+          }
+        },
+        {
+          "sessionId": "2026-W06-organize_medication-03",
+          "date": "2026-02-07",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            },
+            {
+              "type": "repeat",
+              "step": "check_day"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 38.6466,
+            "stepCoveragePct": 83.3333,
+            "completed": true,
+            "orderIntegrityPct": 72.0,
+            "repeatRatePct": 16.6667,
+            "hesitationSecPerStep": 2.6667,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": null,
+            "promptPerStep": 0.1667,
+            "unpromptedCompletion": false
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 33.2707,
+          "stepCoveragePct": 80.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 72.0,
+          "repeatRatePct": 20.0,
+          "hesitationSecPerStep": 3.2,
+          "selfCorrectionRatePct": 0.0,
+          "correctionLatencySec": null,
+          "promptPerStep": 0.2,
+          "unpromptedCompletionRatePct": 0.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W07",
+      "detailLevel": "lite",
+      "confidencePct": 93.8902,
+      "sessions": [
+        {
+          "sessionId": "2026-W07-prepare_outing-01",
+          "date": "2026-02-10",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_phone"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 39.5865,
+            "stepCoveragePct": 100.0,
+            "completed": false,
+            "orderIntegrityPct": 85.533,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 2.7072,
+            "selfCorrectionRatePct": 78.9074,
+            "correctionLatencySec": 16.5571,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": false
+          }
+        },
+        {
+          "sessionId": "2026-W07-make_tea-02",
+          "date": "2026-02-12",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 32.589,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 90.9579,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 3.6605,
+            "selfCorrectionRatePct": 82.5828,
+            "correctionLatencySec": 14.1952,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W07-organize_medication-03",
+          "date": "2026-02-14",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 5 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 48.2213,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 89.9455,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 6.1149,
+            "selfCorrectionRatePct": 72.7441,
+            "correctionLatencySec": 18.5122,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 39.5865,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 66.6667,
+          "orderIntegrityPct": 89.9455,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 3.6605,
+          "selfCorrectionRatePct": 78.9074,
+          "correctionLatencySec": 16.5571,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 66.6667
+        }
+      }
+    },
+    {
+      "weekId": "2026-W08",
+      "detailLevel": "lite",
+      "confidencePct": 94.9664,
+      "sessions": [
+        {
+          "sessionId": "2026-W08-prepare_outing-01",
+          "date": "2026-02-17",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 32.1576,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 92.2626,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.6978,
+            "selfCorrectionRatePct": 84.3286,
+            "correctionLatencySec": 16.9694,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W08-make_tea-02",
+          "date": "2026-02-19",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_water"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.0708,
+            "stepCoveragePct": 100.0,
+            "completed": false,
+            "orderIntegrityPct": 83.9695,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 1.1147,
+            "selfCorrectionRatePct": 82.0074,
+            "correctionLatencySec": 17.6757,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": false
+          }
+        },
+        {
+          "sessionId": "2026-W08-organize_medication-03",
+          "date": "2026-02-21",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 43.5102,
+            "stepCoveragePct": 83.3333,
+            "completed": false,
+            "orderIntegrityPct": 90.4159,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 3.8102,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 17.4445,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": false
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 32.1576,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 33.3333,
+          "orderIntegrityPct": 90.4159,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 2.6978,
+          "selfCorrectionRatePct": 82.0074,
+          "correctionLatencySec": 17.4445,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 33.3333
+        }
+      }
+    },
+    {
+      "weekId": "2026-W09",
+      "detailLevel": "lite",
+      "confidencePct": 93.183,
+      "sessions": [
+        {
+          "sessionId": "2026-W09-prepare_outing-01",
+          "date": "2026-02-24",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 34.4958,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 92.3736,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.4968,
+            "selfCorrectionRatePct": 79.6816,
+            "correctionLatencySec": 16.0138,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W09-make_tea-02",
+          "date": "2026-02-26",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.5558,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.0462,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.286,
+            "selfCorrectionRatePct": 84.2456,
+            "correctionLatencySec": 17.2049,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W09-organize_medication-03",
+          "date": "2026-02-28",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            },
+            {
+              "type": "repeat",
+              "step": "check_day"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 49.1238,
+            "stepCoveragePct": 83.3333,
+            "completed": true,
+            "orderIntegrityPct": 81.3492,
+            "repeatRatePct": 16.6667,
+            "hesitationSecPerStep": 2.4518,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 12.8554,
+            "promptPerStep": 0.1667,
+            "unpromptedCompletion": false
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 34.4958,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 92.3736,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 2.4518,
+          "selfCorrectionRatePct": 79.6816,
+          "correctionLatencySec": 16.0138,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 66.6667
+        }
+      }
+    },
+    {
+      "weekId": "2026-W10",
+      "detailLevel": "lite",
+      "confidencePct": 93.5888,
+      "sessions": [
+        {
+          "sessionId": "2026-W10-prepare_outing-01",
+          "date": "2026-03-03",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 36.1017,
+            "stepCoveragePct": 100.0,
+            "completed": false,
+            "orderIntegrityPct": 91.9845,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 85.112,
+            "correctionLatencySec": 16.6099,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": false
+          }
+        },
+        {
+          "sessionId": "2026-W10-make_tea-02",
+          "date": "2026-03-05",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.3447,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 96.5215,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.0399,
+            "selfCorrectionRatePct": 86.1441,
+            "correctionLatencySec": 13.2349,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W10-organize_medication-03",
+          "date": "2026-03-07",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 4 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 40.8094,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.7468,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 4.5513,
+            "selfCorrectionRatePct": 84.5271,
+            "correctionLatencySec": 17.3732,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 36.1017,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 66.6667,
+          "orderIntegrityPct": 91.9845,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.0399,
+          "selfCorrectionRatePct": 85.112,
+          "correctionLatencySec": 16.6099,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 66.6667
+        }
+      }
+    },
+    {
+      "weekId": "2026-W11",
+      "detailLevel": "lite",
+      "confidencePct": 94.2702,
+      "sessions": [
+        {
+          "sessionId": "2026-W11-prepare_outing-01",
+          "date": "2026-03-10",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.075,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.2048,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.1972,
+            "selfCorrectionRatePct": 74.6052,
+            "correctionLatencySec": 17.7237,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W11-make_tea-02",
+          "date": "2026-03-12",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 30.183,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.1397,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 84.083,
+            "correctionLatencySec": 14.237,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W11-organize_medication-03",
+          "date": "2026-03-14",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 42.3331,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.6993,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 76.9973,
+            "correctionLatencySec": 14.7798,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 30.183,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 94.1397,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.0,
+          "selfCorrectionRatePct": 76.9973,
+          "correctionLatencySec": 14.7798,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W12",
+      "detailLevel": "lite",
+      "confidencePct": 93.1596,
+      "sessions": [
+        {
+          "sessionId": "2026-W12-prepare_outing-01",
+          "date": "2026-03-17",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 32.5336,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.5549,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 81.1147,
+            "correctionLatencySec": 17.2088,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W12-make_tea-02",
+          "date": "2026-03-19",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 28.0964,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 95.3433,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 86.7364,
+            "correctionLatencySec": 16.6217,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W12-organize_medication-03",
+          "date": "2026-03-21",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            },
+            {
+              "type": "repeat",
+              "step": "check_day"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 42.4966,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 81.2303,
+            "repeatRatePct": 16.6667,
+            "hesitationSecPerStep": 3.1952,
+            "selfCorrectionRatePct": 81.8415,
+            "correctionLatencySec": 14.2744,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 32.5336,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 91.5549,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.0,
+          "selfCorrectionRatePct": 81.8415,
+          "correctionLatencySec": 16.6217,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W13",
+      "detailLevel": "lite",
+      "confidencePct": 92.6272,
+      "sessions": [
+        {
+          "sessionId": "2026-W13-prepare_outing-01",
+          "date": "2026-03-24",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_phone"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 26.943,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 83.6504,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 1.0276,
+            "selfCorrectionRatePct": 83.6671,
+            "correctionLatencySec": 13.3965,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W13-make_tea-02",
+          "date": "2026-03-26",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 27.7443,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.8454,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.1142,
+            "selfCorrectionRatePct": 80.8214,
+            "correctionLatencySec": 13.8609,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W13-organize_medication-03",
+          "date": "2026-03-28",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 39.3636,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 92.5953,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.022,
+            "selfCorrectionRatePct": 84.4261,
+            "correctionLatencySec": 16.5393,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 27.7443,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 91.8454,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.0276,
+          "selfCorrectionRatePct": 83.6671,
+          "correctionLatencySec": 13.8609,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W14",
+      "detailLevel": "lite",
+      "confidencePct": 94.7177,
+      "sessions": [
+        {
+          "sessionId": "2026-W14-prepare_outing-01",
+          "date": "2026-03-31",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 36.5032,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.7364,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 3.2594,
+            "selfCorrectionRatePct": 85.4771,
+            "correctionLatencySec": 14.7183,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W14-make_tea-02",
+          "date": "2026-04-02",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 29.1336,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.7049,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.9908,
+            "selfCorrectionRatePct": 85.2293,
+            "correctionLatencySec": 16.799,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W14-organize_medication-03",
+          "date": "2026-04-04",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 42.5537,
+            "stepCoveragePct": 83.3333,
+            "completed": true,
+            "orderIntegrityPct": 90.6667,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.9888,
+            "selfCorrectionRatePct": 100.0,
+            "correctionLatencySec": 15.9163,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 36.5032,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 91.7049,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.9888,
+          "selfCorrectionRatePct": 85.4771,
+          "correctionLatencySec": 15.9163,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W15",
+      "detailLevel": "lite",
+      "confidencePct": 93.9622,
+      "sessions": [
+        {
+          "sessionId": "2026-W15-prepare_outing-01",
+          "date": "2026-04-07",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 34.3167,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 92.6225,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 85.5478,
+            "correctionLatencySec": 17.4664,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W15-make_tea-02",
+          "date": "2026-04-09",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 27.7782,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 98.1798,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 88.3664,
+            "correctionLatencySec": 16.5658,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W15-organize_medication-03",
+          "date": "2026-04-11",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 4 次"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 40.0802,
+            "stepCoveragePct": 83.3333,
+            "completed": true,
+            "orderIntegrityPct": 89.4659,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 3.9794,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 18.1248,
+            "promptPerStep": 0.1667,
+            "unpromptedCompletion": false
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 34.3167,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 92.6225,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.0,
+          "selfCorrectionRatePct": 85.5478,
+          "correctionLatencySec": 17.4664,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 66.6667
+        }
+      }
+    },
+    {
+      "weekId": "2026-W16",
+      "detailLevel": "lite",
+      "confidencePct": 94.8804,
+      "sessions": [
+        {
+          "sessionId": "2026-W16-prepare_outing-01",
+          "date": "2026-04-14",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "put_on_shoes",
+            "get_keys",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "omission",
+              "step": "get_keys"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 26.2612,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 97.0,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.4,
+            "selfCorrectionRatePct": 100.0,
+            "correctionLatencySec": 7.0,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W16-make_tea-02",
+          "date": "2026-04-16",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "pour_water",
+            "add_tea",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "omission",
+              "step": "add_tea"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 24.0697,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 97.0,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 100.0,
+            "correctionLatencySec": 7.0,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W16-organize_medication-03",
+          "date": "2026-04-18",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 39.0209,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 97.0,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.3333,
+            "selfCorrectionRatePct": 100.0,
+            "correctionLatencySec": 7.0,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 26.2612,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 97.0,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.3333,
+          "selfCorrectionRatePct": 100.0,
+          "correctionLatencySec": 7.0,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W17",
+      "detailLevel": "lite",
+      "confidencePct": 95.2216,
+      "sessions": [
+        {
+          "sessionId": "2026-W17-prepare_outing-01",
+          "date": "2026-04-21",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 32.2598,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 95.3722,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 80.2842,
+            "correctionLatencySec": 13.3632,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W17-make_tea-02",
+          "date": "2026-04-23",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 33.0034,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 96.2249,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.95,
+            "selfCorrectionRatePct": 87.8059,
+            "correctionLatencySec": 12.7501,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W17-organize_medication-03",
+          "date": "2026-04-25",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 36.2099,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 88.7971,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.006,
+            "selfCorrectionRatePct": 82.465,
+            "correctionLatencySec": 16.6362,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 33.0034,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 95.3722,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.006,
+          "selfCorrectionRatePct": 82.465,
+          "correctionLatencySec": 13.3632,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W18",
+      "detailLevel": "lite",
+      "confidencePct": 93.5005,
+      "sessions": [
+        {
+          "sessionId": "2026-W18-prepare_outing-01",
+          "date": "2026-04-28",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 27.7868,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.1671,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 86.0525,
+            "correctionLatencySec": 13.8635,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W18-make_tea-02",
+          "date": "2026-04-30",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 31.2175,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 95.6598,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.9656,
+            "selfCorrectionRatePct": 89.3385,
+            "correctionLatencySec": 15.2333,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W18-organize_medication-03",
+          "date": "2026-05-02",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 39.1979,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 89.694,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.8879,
+            "selfCorrectionRatePct": 84.2068,
+            "correctionLatencySec": 16.5658,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 31.2175,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 93.1671,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.9656,
+          "selfCorrectionRatePct": 86.0525,
+          "correctionLatencySec": 15.2333,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W19",
+      "detailLevel": "lite",
+      "confidencePct": 94.9166,
+      "sessions": [
+        {
+          "sessionId": "2026-W19-prepare_outing-01",
+          "date": "2026-05-05",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 32.0772,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.5898,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.0431,
+            "selfCorrectionRatePct": 84.757,
+            "correctionLatencySec": 15.4977,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W19-make_tea-02",
+          "date": "2026-05-07",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 34.0121,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 89.6732,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.0135,
+            "selfCorrectionRatePct": 84.1177,
+            "correctionLatencySec": 13.6568,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W19-organize_medication-03",
+          "date": "2026-05-09",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 44.7685,
+            "stepCoveragePct": 83.3333,
+            "completed": true,
+            "orderIntegrityPct": 94.0411,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 3.1067,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 17.6578,
+            "promptPerStep": 0.1667,
+            "unpromptedCompletion": false
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 34.0121,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 93.5898,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.0431,
+          "selfCorrectionRatePct": 84.1177,
+          "correctionLatencySec": 15.4977,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 66.6667
+        }
+      }
+    },
+    {
+      "weekId": "2026-W20",
+      "detailLevel": "lite",
+      "confidencePct": 94.2028,
+      "sessions": [
+        {
+          "sessionId": "2026-W20-prepare_outing-01",
+          "date": "2026-05-12",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 36.292,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.8886,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.055,
+            "selfCorrectionRatePct": 81.8888,
+            "correctionLatencySec": 11.6905,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W20-make_tea-02",
+          "date": "2026-05-14",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 24.8621,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.1792,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.8795,
+            "selfCorrectionRatePct": 85.8884,
+            "correctionLatencySec": 10.3896,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W20-organize_medication-03",
+          "date": "2026-05-16",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 39.2536,
+            "stepCoveragePct": 100.0,
+            "completed": false,
+            "orderIntegrityPct": 90.4665,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 86.9681,
+            "correctionLatencySec": 18.4919,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": false
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 36.292,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 66.6667,
+          "orderIntegrityPct": 91.1792,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.8795,
+          "selfCorrectionRatePct": 85.8884,
+          "correctionLatencySec": 11.6905,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 66.6667
+        }
+      }
+    },
+    {
+      "weekId": "2026-W21",
+      "detailLevel": "lite",
+      "confidencePct": 94.0878,
+      "sessions": [
+        {
+          "sessionId": "2026-W21-prepare_outing-01",
+          "date": "2026-05-19",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 32.9424,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 89.8251,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.9941,
+            "selfCorrectionRatePct": 91.9062,
+            "correctionLatencySec": 13.3199,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W21-make_tea-02",
+          "date": "2026-05-21",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 24.849,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.9936,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.0467,
+            "selfCorrectionRatePct": 83.3213,
+            "correctionLatencySec": 13.6432,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W21-organize_medication-03",
+          "date": "2026-05-23",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "repeat",
+              "step": "check_day"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 38.9153,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 80.9824,
+            "repeatRatePct": 16.6667,
+            "hesitationSecPerStep": 1.0612,
+            "selfCorrectionRatePct": 77.7898,
+            "correctionLatencySec": 14.9357,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 32.9424,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 89.8251,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.0467,
+          "selfCorrectionRatePct": 83.3213,
+          "correctionLatencySec": 13.6432,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W22",
+      "detailLevel": "lite",
+      "confidencePct": 94.1878,
+      "sessions": [
+        {
+          "sessionId": "2026-W22-prepare_outing-01",
+          "date": "2026-05-26",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 28.4485,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 89.7919,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.9722,
+            "selfCorrectionRatePct": 85.1332,
+            "correctionLatencySec": 14.9783,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W22-make_tea-02",
+          "date": "2026-05-28",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 25.7132,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.2319,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 86.0344,
+            "correctionLatencySec": 12.5548,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W22-organize_medication-03",
+          "date": "2026-05-30",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 34.3197,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.2548,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.9892,
+            "selfCorrectionRatePct": 82.1687,
+            "correctionLatencySec": 11.924,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 28.4485,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 91.2548,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.9892,
+          "selfCorrectionRatePct": 85.1332,
+          "correctionLatencySec": 12.5548,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W23",
+      "detailLevel": "lite",
+      "confidencePct": 93.1376,
+      "sessions": [
+        {
+          "sessionId": "2026-W23-prepare_outing-01",
+          "date": "2026-06-02",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 29.0035,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.093,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 82.0767,
+            "correctionLatencySec": 14.1188,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W23-make_tea-02",
+          "date": "2026-06-04",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_water"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 26.8605,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 82.7555,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 1.0536,
+            "selfCorrectionRatePct": 85.7903,
+            "correctionLatencySec": 13.9152,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W23-organize_medication-03",
+          "date": "2026-06-06",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 43.9073,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.5661,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.2236,
+            "selfCorrectionRatePct": 77.1606,
+            "correctionLatencySec": 17.3319,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 29.0035,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 91.5661,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.0536,
+          "selfCorrectionRatePct": 82.0767,
+          "correctionLatencySec": 14.1188,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W24",
+      "detailLevel": "lite",
+      "confidencePct": 93.9313,
+      "sessions": [
+        {
+          "sessionId": "2026-W24-prepare_outing-01",
+          "date": "2026-06-09",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 38.0925,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 89.3517,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.15,
+            "selfCorrectionRatePct": 83.0084,
+            "correctionLatencySec": 15.8196,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W24-make_tea-02",
+          "date": "2026-06-11",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 26.1124,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.1535,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 86.4563,
+            "correctionLatencySec": 14.0819,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W24-organize_medication-03",
+          "date": "2026-06-13",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 38.827,
+            "stepCoveragePct": 83.3333,
+            "completed": false,
+            "orderIntegrityPct": 92.9502,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.9826,
+            "selfCorrectionRatePct": 100.0,
+            "correctionLatencySec": 15.7397,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": false
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 38.0925,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 66.6667,
+          "orderIntegrityPct": 92.9502,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 0.9826,
+          "selfCorrectionRatePct": 86.4563,
+          "correctionLatencySec": 15.7397,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 66.6667
+        }
+      }
+    },
+    {
+      "weekId": "2026-W25",
+      "detailLevel": "lite",
+      "confidencePct": 95.1783,
+      "sessions": [
+        {
+          "sessionId": "2026-W25-prepare_outing-01",
+          "date": "2026-06-16",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_phone",
+            "put_on_shoes",
+            "get_keys",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_phone"
+            },
+            {
+              "type": "omission",
+              "step": "get_keys"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 36.0612,
+            "stepCoveragePct": 80.0,
+            "completed": true,
+            "orderIntegrityPct": 82.9079,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 1.2637,
+            "selfCorrectionRatePct": 100.0,
+            "correctionLatencySec": 16.796,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W25-make_tea-02",
+          "date": "2026-06-18",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 33.5907,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 92.4786,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 3.3505,
+            "selfCorrectionRatePct": 81.6729,
+            "correctionLatencySec": 16.1785,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W25-organize_medication-03",
+          "date": "2026-06-20",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 38.9449,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 88.8859,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 3.1077,
+            "selfCorrectionRatePct": 87.2326,
+            "correctionLatencySec": 16.8079,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 36.0612,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 88.8859,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 3.1077,
+          "selfCorrectionRatePct": 87.2326,
+          "correctionLatencySec": 16.796,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W26",
+      "detailLevel": "lite",
+      "confidencePct": 93.3159,
+      "sessions": [
+        {
+          "sessionId": "2026-W26-prepare_outing-01",
+          "date": "2026-06-23",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 34.3377,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 87.4807,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 81.9669,
+            "correctionLatencySec": 15.122,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W26-make_tea-02",
+          "date": "2026-06-25",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_water"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 37.5998,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 87.4178,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 3.5182,
+            "selfCorrectionRatePct": 83.851,
+            "correctionLatencySec": 15.3637,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W26-organize_medication-03",
+          "date": "2026-06-27",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 46.1049,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.6771,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.2447,
+            "selfCorrectionRatePct": 81.2355,
+            "correctionLatencySec": 14.9684,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 37.5998,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 87.4807,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 2.2447,
+          "selfCorrectionRatePct": 81.9669,
+          "correctionLatencySec": 15.122,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W27",
+      "detailLevel": "lite",
+      "confidencePct": 94.5918,
+      "sessions": [
+        {
+          "sessionId": "2026-W27-prepare_outing-01",
+          "date": "2026-06-30",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 36.5422,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 88.4866,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.3106,
+            "selfCorrectionRatePct": 80.4781,
+            "correctionLatencySec": 14.9695,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W27-make_tea-02",
+          "date": "2026-07-02",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 31.9226,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 92.1295,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.5233,
+            "selfCorrectionRatePct": 79.6296,
+            "correctionLatencySec": 17.1361,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W27-organize_medication-03",
+          "date": "2026-07-04",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 41.5,
+            "stepCoveragePct": 83.3333,
+            "completed": true,
+            "orderIntegrityPct": 89.8752,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.1523,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 19.1292,
+            "promptPerStep": 0.1667,
+            "unpromptedCompletion": false
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 36.5422,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 89.8752,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.3106,
+          "selfCorrectionRatePct": 79.6296,
+          "correctionLatencySec": 17.1361,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 66.6667
+        }
+      }
+    },
+    {
+      "weekId": "2026-W28",
+      "detailLevel": "lite",
+      "confidencePct": 94.2286,
+      "sessions": [
+        {
+          "sessionId": "2026-W28-prepare_outing-01",
+          "date": "2026-07-07",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "omission",
+              "step": "get_keys"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 34.2866,
+            "stepCoveragePct": 80.0,
+            "completed": false,
+            "orderIntegrityPct": 91.9199,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.2271,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 18.7315,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": false
+          }
+        },
+        {
+          "sessionId": "2026-W28-make_tea-02",
+          "date": "2026-07-09",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 30.2301,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 90.9921,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 85.8518,
+            "correctionLatencySec": 14.963,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W28-organize_medication-03",
+          "date": "2026-07-11",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 4 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 38.9079,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 88.3767,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 4.3158,
+            "selfCorrectionRatePct": 79.8355,
+            "correctionLatencySec": 13.5294,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 34.2866,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 66.6667,
+          "orderIntegrityPct": 90.9921,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.2271,
+          "selfCorrectionRatePct": 79.8355,
+          "correctionLatencySec": 14.963,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 66.6667
+        }
+      }
+    },
+    {
+      "weekId": "2026-W29",
+      "detailLevel": "lite",
+      "confidencePct": 94.9942,
+      "sessions": [
+        {
+          "sessionId": "2026-W29-prepare_outing-01",
+          "date": "2026-07-14",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "put_on_shoes",
+            "get_keys",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "omission",
+              "step": "get_keys"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 32.2077,
+            "stepCoveragePct": 80.0,
+            "completed": true,
+            "orderIntegrityPct": 93.9623,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 10.9047,
+            "promptPerStep": 0.2,
+            "unpromptedCompletion": false
+          }
+        },
+        {
+          "sessionId": "2026-W29-make_tea-02",
+          "date": "2026-07-16",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "get_water",
+            "pour_water",
+            "add_tea",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_water"
+            },
+            {
+              "type": "omission",
+              "step": "add_tea"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 26.5027,
+            "stepCoveragePct": 80.0,
+            "completed": true,
+            "orderIntegrityPct": 87.6958,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 1.1479,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 14.662,
+            "promptPerStep": 0.2,
+            "unpromptedCompletion": false
+          }
+        },
+        {
+          "sessionId": "2026-W29-organize_medication-03",
+          "date": "2026-07-18",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 43.4164,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 85.4676,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 3.2525,
+            "selfCorrectionRatePct": 76.8269,
+            "correctionLatencySec": 14.992,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 32.2077,
+          "stepCoveragePct": 80.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 87.6958,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.1479,
+          "selfCorrectionRatePct": 0.0,
+          "correctionLatencySec": 14.662,
+          "promptPerStep": 0.2,
+          "unpromptedCompletionRatePct": 33.3333
+        }
+      }
+    },
+    {
+      "weekId": "2026-W30",
+      "detailLevel": "lite",
+      "confidencePct": 94.823,
+      "sessions": [
+        {
+          "sessionId": "2026-W30-prepare_outing-01",
+          "date": "2026-07-21",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 35.2017,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.1124,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.3877,
+            "selfCorrectionRatePct": 76.1856,
+            "correctionLatencySec": 16.0818,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W30-make_tea-02",
+          "date": "2026-07-23",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.5909,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 91.9845,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 2.5115,
+            "selfCorrectionRatePct": 80.0267,
+            "correctionLatencySec": 19.1736,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W30-organize_medication-03",
+          "date": "2026-07-25",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 46.0213,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 89.6548,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 3.3669,
+            "selfCorrectionRatePct": 79.3322,
+            "correctionLatencySec": 16.702,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 35.2017,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 91.9845,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 2.5115,
+          "selfCorrectionRatePct": 79.3322,
+          "correctionLatencySec": 16.702,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    },
+    {
+      "weekId": "2026-W31",
+      "detailLevel": "lite",
+      "confidencePct": 95.3402,
+      "sessions": [
+        {
+          "sessionId": "2026-W31-prepare_outing-01",
+          "date": "2026-07-28",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 34.2573,
+            "stepCoveragePct": 100.0,
+            "completed": false,
+            "orderIntegrityPct": 91.4501,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.1445,
+            "selfCorrectionRatePct": 75.3932,
+            "correctionLatencySec": 12.5069,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": false
+          }
+        },
+        {
+          "sessionId": "2026-W31-make_tea-02",
+          "date": "2026-07-30",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.3315,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.4179,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.0294,
+            "selfCorrectionRatePct": 86.1801,
+            "correctionLatencySec": 14.255,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W31-organize_medication-03",
+          "date": "2026-08-01",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 6 次"
+            },
+            {
+              "type": "repeat",
+              "step": "check_day"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 32.8282,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 85.5401,
+            "repeatRatePct": 16.6667,
+            "hesitationSecPerStep": 6.4123,
+            "selfCorrectionRatePct": 79.6699,
+            "correctionLatencySec": 16.817,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 32.8282,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 66.6667,
+          "orderIntegrityPct": 91.4501,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.1445,
+          "selfCorrectionRatePct": 79.6699,
+          "correctionLatencySec": 14.255,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 66.6667
+        }
+      }
+    },
+    {
+      "weekId": "2026-W32",
+      "detailLevel": "lite",
+      "confidencePct": 94.6244,
+      "sessions": [
+        {
+          "sessionId": "2026-W32-prepare_outing-01",
+          "date": "2026-08-04",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [],
+          "result": {
+            "startupLatencySec": 32.8618,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.4515,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 0.0,
+            "selfCorrectionRatePct": 80.474,
+            "correctionLatencySec": 11.3204,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W32-make_tea-02",
+          "date": "2026-08-06",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "get_water",
+            "pour_water",
+            "add_tea",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_water"
+            },
+            {
+              "type": "omission",
+              "step": "add_tea"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.6544,
+            "stepCoveragePct": 80.0,
+            "completed": false,
+            "orderIntegrityPct": 87.6613,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 1.0782,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 13.1456,
+            "promptPerStep": 0.2,
+            "unpromptedCompletion": false
+          }
+        },
+        {
+          "sessionId": "2026-W32-organize_medication-03",
+          "date": "2026-08-08",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 3 次"
+            },
+            {
+              "type": "repeat",
+              "step": "check_day"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "prompt",
+              "label": "外部提示"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 38.9095,
+            "stepCoveragePct": 83.3333,
+            "completed": true,
+            "orderIntegrityPct": 83.7228,
+            "repeatRatePct": 16.6667,
+            "hesitationSecPerStep": 3.1909,
+            "selfCorrectionRatePct": 0.0,
+            "correctionLatencySec": 16.1641,
+            "promptPerStep": 0.1667,
+            "unpromptedCompletion": false
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 32.8618,
+          "stepCoveragePct": 83.3333,
+          "taskCompletionRatePct": 66.6667,
+          "orderIntegrityPct": 87.6613,
+          "repeatRatePct": 16.6667,
+          "hesitationSecPerStep": 1.0782,
+          "selfCorrectionRatePct": 0.0,
+          "correctionLatencySec": 13.1456,
+          "promptPerStep": 0.1667,
+          "unpromptedCompletionRatePct": 33.3333
+        }
+      }
+    },
+    {
+      "weekId": "2026-W33",
+      "detailLevel": "lite",
+      "confidencePct": 93.8483,
+      "sessions": [
+        {
+          "sessionId": "2026-W33-prepare_outing-01",
+          "date": "2026-08-11",
+          "startTime": "09:30",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 30.7241,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 94.2467,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.0711,
+            "selfCorrectionRatePct": 85.253,
+            "correctionLatencySec": 11.7224,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W33-make_tea-02",
+          "date": "2026-08-13",
+          "startTime": "15:20",
+          "valid": true,
+          "taskType": "make_tea",
+          "expectedSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "actualSteps": [
+            "prepare_cup",
+            "get_water",
+            "add_tea",
+            "pour_water",
+            "finish"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 1 次"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 31.2467,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 93.1066,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.0943,
+            "selfCorrectionRatePct": 78.87,
+            "correctionLatencySec": 16.5013,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W33-organize_medication-03",
+          "date": "2026-08-13",
+          "startTime": "08:10",
+          "valid": true,
+          "taskType": "organize_medication",
+          "expectedSteps": [
+            "open_box",
+            "check_day",
+            "select_dose",
+            "place_dose",
+            "close_box",
+            "confirm"
+          ],
+          "actualSteps": [
+            "open_box",
+            "check_day",
+            "place_dose",
+            "close_box",
+            "select_dose",
+            "confirm"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            },
+            {
+              "type": "omission",
+              "step": "select_dose"
+            },
+            {
+              "type": "correction",
+              "label": "返回正确路径"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 33.4902,
+            "stepCoveragePct": 83.3333,
+            "completed": true,
+            "orderIntegrityPct": 90.5774,
+            "repeatRatePct": 0.0,
+            "hesitationSecPerStep": 1.9647,
+            "selfCorrectionRatePct": 100.0,
+            "correctionLatencySec": 15.7354,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        },
+        {
+          "sessionId": "2026-W33-prepare_outing-04",
+          "date": "2026-08-12",
+          "startTime": "17:10",
+          "valid": true,
+          "taskType": "prepare_outing",
+          "expectedSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "actualSteps": [
+            "change_clothes",
+            "get_phone",
+            "get_phone",
+            "get_keys",
+            "put_on_shoes",
+            "leave_home"
+          ],
+          "events": [
+            {
+              "type": "hesitation",
+              "label": "犹豫 2 次"
+            },
+            {
+              "type": "repeat",
+              "step": "get_phone"
+            }
+          ],
+          "result": {
+            "startupLatencySec": 31.3513,
+            "stepCoveragePct": 100.0,
+            "completed": true,
+            "orderIntegrityPct": 83.9979,
+            "repeatRatePct": 20.0,
+            "hesitationSecPerStep": 2.0324,
+            "selfCorrectionRatePct": 85.7596,
+            "correctionLatencySec": 11.7029,
+            "promptPerStep": 0.0,
+            "unpromptedCompletion": true
+          }
+        }
+      ],
+      "weekAggregate": {
+        "metrics": {
+          "startupLatencySec": 31.299,
+          "stepCoveragePct": 100.0,
+          "taskCompletionRatePct": 100.0,
+          "orderIntegrityPct": 91.842,
+          "repeatRatePct": 0.0,
+          "hesitationSecPerStep": 1.5295,
+          "selfCorrectionRatePct": 85.5063,
+          "correctionLatencySec": 13.7289,
+          "promptPerStep": 0.0,
+          "unpromptedCompletionRatePct": 100.0
+        }
+      }
+    }
+  ]
+}

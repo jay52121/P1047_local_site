@@ -1,0 +1,20 @@
+const DAY = 604800000;
+const startOfWeek = value => { const d = new Date(value); const day = d.getDay() || 7; d.setDate(d.getDate() - day + 1); d.setHours(0,0,0,0); return d; };
+const weeksAgo = week => Math.max(0, Math.round((startOfWeek(new Date()) - startOfWeek(new Date(`${week.weekStart}T00:00:00`))) / DAY));
+const fmtDate = value => value.replaceAll("-", ".");
+
+export function mountInteractiveTrend({ wrap, svg, weeks, values, leftIndex, metricLabel, unit = "", higherIsBetter = true, onSetLeft, onSetRight, onInspect }) {
+  let pinned = false, current = -1;
+  const W=900,L=48,R=18,T=17,B=38,H=290;
+  const finite=values.filter(Number.isFinite); let min=Math.min(...finite,96),max=Math.max(...finite,104),pad=Math.max(1,(max-min)*.14);min-=pad;max+=pad;
+  const x=i=>L+i*(W-L-R)/Math.max(1,values.length-1), y=v=>T+(max-v)*(H-T-B)/(max-min);
+  const layer=document.createElementNS("http://www.w3.org/2000/svg","g");layer.classList.add("trendHoverLayer");svg.appendChild(layer);
+  const tooltip=document.createElement("div");tooltip.className="trendTooltip";tooltip.hidden=true;wrap.appendChild(tooltip);
+  const show=index=>{if(index<0||!Number.isFinite(values[index]))return;current=index;const week=weeks[index],value=values[index],base=values[leftIndex],delta=base?value/base*100-100:0,good=higherIsBetter?delta>0:delta<0,css=Math.abs(delta)<2?"neutral":good?"good":"bad";layer.innerHTML=`<line x1="${x(index)}" y1="${T}" x2="${x(index)}" y2="${H-B}" class="trendGuide"/><circle cx="${x(index)}" cy="${y(value)}" r="11" class="trendHalo"/><circle cx="${x(index)}" cy="${y(value)}" r="6" class="trendPoint"/>`;tooltip.innerHTML=`<div class="trendTipHead"><b>第 ${week.weekIndex ?? index+1} 周 · ${week.weekId}</b><span>${fmtDate(week.weekStart)} — ${fmtDate(week.weekEnd)}</span><em>${weeksAgo(week)} weeks ago</em></div><div class="trendTipValue"><span>${metricLabel}</span><b>${value.toFixed(1)}${unit}</b><i class="${css}">${delta>=0?"+":""}${delta.toFixed(1)}% · ${css==="good"?"改善":css==="bad"?"下降":"稳定"}</i></div><div class="trendTipMeta"><span>${week.phase || "长期观察"}</span>${week.event?`<span>事件：${week.event}</span>`:""}<span>有效 ${week.validUnits ?? week.validSamples ?? week.validSessions ?? "—"}/${week.expectedUnits ?? "—"} · 可信度 ${Number(week.confidencePct).toFixed(1)}%</span></div><div class="trendTipActions"><button data-tip-action="left">设为历史周</button><button data-tip-action="right">设为比较周</button><button data-tip-action="inspect">查看核心数据</button></div>`;tooltip.hidden=false;const px=x(index)/W*wrap.clientWidth;tooltip.style.left=`${Math.min(Math.max(8,px+12),Math.max(8,wrap.clientWidth-278))}px`;tooltip.style.top=`${Math.max(8,y(value)/H*wrap.clientHeight-65)}px`;tooltip.classList.toggle("pinned",pinned);};
+  const move=event=>{if(pinned)return;const rect=wrap.getBoundingClientRect(),sx=(event.clientX-rect.left)/rect.width*W,sy=(event.clientY-rect.top)/rect.height*H,index=Math.max(0,Math.min(values.length-1,Math.round((sx-L)/(W-L-R)*Math.max(1,values.length-1))));if(Math.abs(sy-y(values[index]))<=38||weeks[index]?.event)show(index);else{tooltip.hidden=true;layer.innerHTML=""}};
+  const leave=()=>{if(!pinned){tooltip.hidden=true;layer.innerHTML=""}};
+  const click=event=>{if(event.target.closest(".trendTooltip"))return;const rect=wrap.getBoundingClientRect(),sx=(event.clientX-rect.left)/rect.width*W;current=Math.max(0,Math.min(values.length-1,Math.round((sx-L)/(W-L-R)*Math.max(1,values.length-1))));pinned=true;show(current);onInspect?.(current)};
+  const tipClick=event=>{const action=event.target.dataset.tipAction;if(!action)return;if(action==="left")onSetLeft?.(current);if(action==="right")onSetRight?.(current);if(action==="inspect")onInspect?.(current,true)};
+  wrap.addEventListener("pointermove",move);wrap.addEventListener("pointerleave",leave);wrap.addEventListener("click",click);tooltip.addEventListener("click",tipClick);
+  return()=>{wrap.removeEventListener("pointermove",move);wrap.removeEventListener("pointerleave",leave);wrap.removeEventListener("click",click);tooltip.remove()};
+}

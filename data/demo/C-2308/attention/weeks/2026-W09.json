@@ -1,0 +1,910 @@
+{
+  "schemaVersion": "1.1",
+  "personId": "C-2308",
+  "domain": "attention",
+  "weekId": "2026-W09",
+  "weekIndex": 1,
+  "weekStart": "2026-02-23",
+  "weekEnd": "2026-03-01",
+  "status": "complete",
+  "calendarMode": "school_normal",
+  "phase": "逐步适应期",
+  "event": null,
+  "weekLoad": 0.1388,
+  "validSessions": 10,
+  "confidencePct": 94.4685,
+  "sessions": [
+    {
+      "sessionId": "2026-W09-2026-02-23-homework-01",
+      "date": "2026-02-23",
+      "startTime": "16:57",
+      "endTime": "17:27",
+      "taskId": "homework",
+      "taskLabel": "英语作业",
+      "subject": "english",
+      "taskContext": "assigned_homework",
+      "sessionRole": "primary",
+      "seriesId": "homework-2026-02-23-english",
+      "sequenceInDay": 1,
+      "continuationOfSessionId": null,
+      "calendarMode": "school_normal",
+      "dayContext": "school_day",
+      "plannedDurationMin": 30.5,
+      "durationMin": 30.5,
+      "sessionLoad": 0.1866,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 22.7528,
+          "state": "focused"
+        },
+        {
+          "startMin": 22.7528,
+          "endMin": 24.7938,
+          "state": "distracted"
+        },
+        {
+          "startMin": 24.7938,
+          "endMin": 30.5,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 22.7528,
+          "type": "distraction",
+          "severity": "clear_distraction",
+          "subtype": "look_away",
+          "order": 1
+        },
+        {
+          "minute": 24.7938,
+          "type": "recovery",
+          "origin": "self"
+        },
+        {
+          "minute": 30.5,
+          "type": "completion",
+          "status": "completed"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": 22.7528,
+        "focusedRatePct": 93.3082,
+        "distractionCount": 1,
+        "offTaskMin": 2.041,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 100.0,
+        "recoveryLatencyMin": 2.041,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "sessionComponentScores": {
+        "engagement": 101.8321,
+        "effectiveFocus": 93.4113,
+        "distractionControl": 97.3755,
+        "recovery": 103.3725,
+        "completion": 100.0
+      },
+      "sessionScore": 98.7918
+    },
+    {
+      "sessionId": "2026-W09-2026-02-24-homework-01",
+      "date": "2026-02-24",
+      "startTime": "16:41",
+      "endTime": "17:30",
+      "taskId": "homework",
+      "taskLabel": "英语作业",
+      "subject": "english",
+      "taskContext": "assigned_homework",
+      "sessionRole": "primary",
+      "seriesId": "homework-2026-02-24-english",
+      "sequenceInDay": 1,
+      "continuationOfSessionId": null,
+      "calendarMode": "school_normal",
+      "dayContext": "school_day",
+      "plannedDurationMin": 48.9,
+      "durationMin": 48.9,
+      "sessionLoad": 0.1629,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 22.5206,
+          "state": "focused"
+        },
+        {
+          "startMin": 22.5206,
+          "endMin": 24.6239,
+          "state": "distracted"
+        },
+        {
+          "startMin": 24.6239,
+          "endMin": 48.9,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 22.5206,
+          "type": "distraction",
+          "severity": "clear_distraction",
+          "subtype": "leave_seat",
+          "order": 1
+        },
+        {
+          "minute": 24.6239,
+          "type": "recovery",
+          "origin": "self"
+        },
+        {
+          "minute": 48.9,
+          "type": "completion",
+          "status": "completed"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": 22.5206,
+        "focusedRatePct": 95.6988,
+        "distractionCount": 1,
+        "offTaskMin": 2.1033,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 100.0,
+        "recoveryLatencyMin": 2.1033,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "sessionComponentScores": {
+        "engagement": 96.3112,
+        "effectiveFocus": 98.1746,
+        "distractionControl": 100.3158,
+        "recovery": 103.2705,
+        "completion": 100.0
+      },
+      "sessionScore": 99.1752
+    },
+    {
+      "sessionId": "2026-W09-2026-02-24-writing-02",
+      "date": "2026-02-24",
+      "startTime": "17:55",
+      "endTime": "18:22",
+      "taskId": "writing",
+      "taskLabel": "汉字书写",
+      "subject": null,
+      "taskContext": "practice",
+      "sessionRole": "primary",
+      "seriesId": "writing-2026-02-24-general",
+      "sequenceInDay": 2,
+      "continuationOfSessionId": null,
+      "calendarMode": "school_normal",
+      "dayContext": "school_day",
+      "plannedDurationMin": 27.1,
+      "durationMin": 27.1,
+      "sessionLoad": 0.3464,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 10.7993,
+          "state": "focused"
+        },
+        {
+          "startMin": 10.7993,
+          "endMin": 12.024,
+          "state": "distracted"
+        },
+        {
+          "startMin": 12.024,
+          "endMin": 27.1,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 10.7993,
+          "type": "distraction",
+          "severity": "clear_distraction",
+          "subtype": "look_away",
+          "order": 1
+        },
+        {
+          "minute": 12.024,
+          "type": "recovery",
+          "origin": "self"
+        },
+        {
+          "minute": 27.1,
+          "type": "completion",
+          "status": "completed"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": 10.7993,
+        "focusedRatePct": 95.4808,
+        "distractionCount": 1,
+        "offTaskMin": 1.2247,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 100.0,
+        "recoveryLatencyMin": 1.2247,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "sessionComponentScores": {
+        "engagement": 99.0658,
+        "effectiveFocus": 100.6108,
+        "distractionControl": 99.8705,
+        "recovery": 100.0,
+        "completion": 100.0
+      },
+      "sessionScore": 99.8932
+    },
+    {
+      "sessionId": "2026-W09-2026-02-24-piano-03",
+      "date": "2026-02-24",
+      "startTime": "18:53",
+      "endTime": "19:16",
+      "taskId": "piano",
+      "taskLabel": "钢琴练习",
+      "subject": null,
+      "taskContext": "practice",
+      "sessionRole": "primary",
+      "seriesId": "piano-2026-02-24-general",
+      "sequenceInDay": 3,
+      "continuationOfSessionId": null,
+      "calendarMode": "school_normal",
+      "dayContext": "school_day",
+      "plannedDurationMin": 27.7,
+      "durationMin": 23.1136,
+      "sessionLoad": 0.233,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 23.1136,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 23.1136,
+          "type": "early_end",
+          "status": "partial"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 100.0002,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 0.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": false,
+        "unpromptedCompletion": false,
+        "earlyEnd": true,
+        "terminalStatus": "partial"
+      },
+      "sessionComponentScores": {
+        "engagement": 106.7449,
+        "effectiveFocus": 105.734,
+        "distractionControl": 105.3959,
+        "recovery": null,
+        "completion": 70.0
+      },
+      "sessionScore": 99.6458
+    },
+    {
+      "sessionId": "2026-W09-2026-02-24-reading-04",
+      "date": "2026-02-24",
+      "startTime": "20:21",
+      "endTime": "20:43",
+      "taskId": "reading",
+      "taskLabel": "独立阅读",
+      "subject": null,
+      "taskContext": "leisure",
+      "sessionRole": "primary",
+      "seriesId": "reading-2026-02-24-general",
+      "sequenceInDay": 4,
+      "continuationOfSessionId": null,
+      "calendarMode": "school_normal",
+      "dayContext": "school_day",
+      "plannedDurationMin": 22.4,
+      "durationMin": 22.4,
+      "sessionLoad": 0.3643,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 22.4,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 22.4,
+          "type": "completion",
+          "status": "completed"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 100.0,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 0.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "sessionComponentScores": {
+        "engagement": 105.7258,
+        "effectiveFocus": 100.6873,
+        "distractionControl": 103.286,
+        "recovery": null,
+        "completion": 100.0
+      },
+      "sessionScore": 102.6594
+    },
+    {
+      "sessionId": "2026-W09-2026-02-25-homework-01",
+      "date": "2026-02-25",
+      "startTime": "16:47",
+      "endTime": "17:31",
+      "taskId": "homework",
+      "taskLabel": "语文作业",
+      "subject": "chinese",
+      "taskContext": "assigned_homework",
+      "sessionRole": "primary",
+      "seriesId": "homework-2026-02-25-chinese",
+      "sequenceInDay": 1,
+      "continuationOfSessionId": null,
+      "calendarMode": "school_normal",
+      "dayContext": "school_day",
+      "plannedDurationMin": 43.9,
+      "durationMin": 43.9,
+      "sessionLoad": 0.2545,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 43.9,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 43.9,
+          "type": "completion",
+          "status": "completed"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 100.0,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 0.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "sessionComponentScores": {
+        "engagement": 106.7449,
+        "effectiveFocus": 106.7449,
+        "distractionControl": 105.4258,
+        "recovery": null,
+        "completion": 100.0
+      },
+      "sessionScore": 105.2442
+    },
+    {
+      "sessionId": "2026-W09-2026-02-25-writing-02",
+      "date": "2026-02-25",
+      "startTime": "17:54",
+      "endTime": "18:20",
+      "taskId": "writing",
+      "taskLabel": "汉字书写",
+      "subject": null,
+      "taskContext": "practice",
+      "sessionRole": "primary",
+      "seriesId": "writing-2026-02-25-general",
+      "sequenceInDay": 2,
+      "continuationOfSessionId": null,
+      "calendarMode": "school_normal",
+      "dayContext": "school_day",
+      "plannedDurationMin": 25.8,
+      "durationMin": 25.8,
+      "sessionLoad": 0.4422,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 7.3906,
+          "state": "focused"
+        },
+        {
+          "startMin": 7.3906,
+          "endMin": 8.5341,
+          "state": "deviating"
+        },
+        {
+          "startMin": 8.5341,
+          "endMin": 10.9447,
+          "state": "focused"
+        },
+        {
+          "startMin": 10.9447,
+          "endMin": 13.6057,
+          "state": "distracted"
+        },
+        {
+          "startMin": 13.6057,
+          "endMin": 23.2851,
+          "state": "focused"
+        },
+        {
+          "startMin": 23.2851,
+          "endMin": 23.5145,
+          "state": "deviating"
+        },
+        {
+          "startMin": 23.5145,
+          "endMin": 25.8,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 7.3906,
+          "type": "distraction",
+          "severity": "brief_deviation",
+          "subtype": "unrelated_drawing",
+          "order": 1
+        },
+        {
+          "minute": 8.5341,
+          "type": "recovery",
+          "origin": "self"
+        },
+        {
+          "minute": 10.9447,
+          "type": "distraction",
+          "severity": "clear_distraction",
+          "subtype": "pen_stop",
+          "order": 2
+        },
+        {
+          "minute": 13.6057,
+          "type": "recovery",
+          "origin": "self"
+        },
+        {
+          "minute": 23.2851,
+          "type": "distraction",
+          "severity": "brief_deviation",
+          "subtype": "leave_seat",
+          "order": 3
+        },
+        {
+          "minute": 23.5145,
+          "type": "recovery",
+          "origin": "self"
+        },
+        {
+          "minute": 25.8,
+          "type": "completion",
+          "status": "completed"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": 7.3906,
+        "focusedRatePct": 84.3647,
+        "distractionCount": 3,
+        "offTaskMin": 4.0339,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 100.0,
+        "recoveryLatencyMin": 1.1436,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "sessionComponentScores": {
+        "engagement": 95.8668,
+        "effectiveFocus": 78.3786,
+        "distractionControl": 77.0406,
+        "recovery": 100.2027,
+        "completion": 100.0
+      },
+      "sessionScore": 88.9999
+    },
+    {
+      "sessionId": "2026-W09-2026-02-25-piano-03",
+      "date": "2026-02-25",
+      "startTime": "18:33",
+      "endTime": "19:02",
+      "taskId": "piano",
+      "taskLabel": "钢琴练习",
+      "subject": null,
+      "taskContext": "practice",
+      "sessionRole": "primary",
+      "seriesId": "piano-2026-02-25-general",
+      "sequenceInDay": 3,
+      "continuationOfSessionId": null,
+      "calendarMode": "school_normal",
+      "dayContext": "school_day",
+      "plannedDurationMin": 28.8,
+      "durationMin": 28.8,
+      "sessionLoad": 0.2785,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 28.8,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 28.8,
+          "type": "completion",
+          "status": "completed"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 100.0,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 0.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "sessionComponentScores": {
+        "engagement": 106.7449,
+        "effectiveFocus": 105.7336,
+        "distractionControl": 105.3959,
+        "recovery": null,
+        "completion": 100.0
+      },
+      "sessionScore": 104.9398
+    },
+    {
+      "sessionId": "2026-W09-2026-02-25-reading-04",
+      "date": "2026-02-25",
+      "startTime": "20:07",
+      "endTime": "20:27",
+      "taskId": "reading",
+      "taskLabel": "独立阅读",
+      "subject": null,
+      "taskContext": "leisure",
+      "sessionRole": "primary",
+      "seriesId": "reading-2026-02-25-general",
+      "sequenceInDay": 4,
+      "continuationOfSessionId": null,
+      "calendarMode": "school_normal",
+      "dayContext": "school_day",
+      "plannedDurationMin": 25.4,
+      "durationMin": 20.1633,
+      "sessionLoad": 0.2529,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 20.1633,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 20.1633,
+          "type": "early_end",
+          "status": "partial"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 99.9999,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 0.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": false,
+        "unpromptedCompletion": false,
+        "earlyEnd": true,
+        "terminalStatus": "partial"
+      },
+      "sessionComponentScores": {
+        "engagement": 105.7258,
+        "effectiveFocus": 100.6871,
+        "distractionControl": 103.286,
+        "recovery": null,
+        "completion": 70.0
+      },
+      "sessionScore": 97.3652
+    },
+    {
+      "sessionId": "2026-W09-2026-02-27-homework-01",
+      "date": "2026-02-27",
+      "startTime": "16:42",
+      "endTime": "17:19",
+      "taskId": "homework",
+      "taskLabel": "语文作业",
+      "subject": "chinese",
+      "taskContext": "assigned_homework",
+      "sessionRole": "primary",
+      "seriesId": "homework-2026-02-27-chinese",
+      "sequenceInDay": 1,
+      "continuationOfSessionId": null,
+      "calendarMode": "school_normal",
+      "dayContext": "school_day",
+      "plannedDurationMin": 36.7,
+      "durationMin": 36.7,
+      "sessionLoad": 0.3532,
+      "valid": true,
+      "segments": [
+        {
+          "startMin": 0.0,
+          "endMin": 36.7,
+          "state": "focused"
+        }
+      ],
+      "events": [
+        {
+          "minute": 36.7,
+          "type": "completion",
+          "status": "completed"
+        }
+      ],
+      "result": {
+        "firstDistractionMin": null,
+        "focusedRatePct": 100.0,
+        "distractionCount": 0,
+        "offTaskMin": 0.0,
+        "leaveSeatCount": 0,
+        "taskSwitchCount": 0,
+        "autonomousRecoveryRatePct": 0.0,
+        "recoveryLatencyMin": 0.0,
+        "promptCount": 0,
+        "completed": true,
+        "unpromptedCompletion": true,
+        "earlyEnd": false,
+        "terminalStatus": "completed"
+      },
+      "sessionComponentScores": {
+        "engagement": 106.7449,
+        "effectiveFocus": 106.7449,
+        "distractionControl": 105.4258,
+        "recovery": null,
+        "completion": 100.0
+      },
+      "sessionScore": 105.2442
+    }
+  ],
+  "metrics": {
+    "focusRatePct": 96.9409,
+    "firstDistractionSharePct": 42.9521,
+    "distractionsPer30Min": 0.5856,
+    "offTaskRatePct": 3.0591,
+    "leaveSeatPer30Min": 0.0,
+    "autonomousRecoveryRatePct": 100.0,
+    "recoveryLatencyMin": 1.6328,
+    "promptsPerSession": 0.0,
+    "completionRatePct": 80.0,
+    "unpromptedCompletionRatePct": 80.0,
+    "earlyEndRatePct": 20.0
+  },
+  "daySummaries": [
+    {
+      "date": "2026-02-23",
+      "weekdayIndex": 0,
+      "dayContext": "school_day",
+      "observationStatus": "observed",
+      "taskStatus": "has_task",
+      "validSessionCount": 1,
+      "sessionIds": [
+        "2026-W09-2026-02-23-homework-01"
+      ],
+      "dayScore": 98.7918,
+      "dayBand": "good",
+      "componentScores": {
+        "engagement": 101.8321,
+        "effectiveFocus": 93.4113,
+        "distractionControl": 97.3755,
+        "recovery": 103.3725,
+        "completion": 100.0
+      },
+      "representativeSessionId": "2026-W09-2026-02-23-homework-01",
+      "representativeReason": "closest_to_day_score",
+      "topFactors": [
+        "effectiveFocus",
+        "distractionControl"
+      ]
+    },
+    {
+      "date": "2026-02-24",
+      "weekdayIndex": 1,
+      "dayContext": "school_day",
+      "observationStatus": "observed",
+      "taskStatus": "has_task",
+      "validSessionCount": 4,
+      "sessionIds": [
+        "2026-W09-2026-02-24-homework-01",
+        "2026-W09-2026-02-24-writing-02",
+        "2026-W09-2026-02-24-piano-03",
+        "2026-W09-2026-02-24-reading-04"
+      ],
+      "dayScore": 100.0028,
+      "dayBand": "good",
+      "componentScores": {
+        "engagement": 101.3279,
+        "effectiveFocus": 100.9768,
+        "distractionControl": 101.9793,
+        "recovery": 101.8748,
+        "completion": 93.3654
+      },
+      "representativeSessionId": "2026-W09-2026-02-24-writing-02",
+      "representativeReason": "closest_to_day_score",
+      "topFactors": [
+        "completion",
+        "effectiveFocus"
+      ]
+    },
+    {
+      "date": "2026-02-25",
+      "weekdayIndex": 2,
+      "dayContext": "school_day",
+      "observationStatus": "observed",
+      "taskStatus": "has_task",
+      "validSessionCount": 4,
+      "sessionIds": [
+        "2026-W09-2026-02-25-homework-01",
+        "2026-W09-2026-02-25-writing-02",
+        "2026-W09-2026-02-25-piano-03",
+        "2026-W09-2026-02-25-reading-04"
+      ],
+      "dayScore": 97.5607,
+      "dayBand": "good",
+      "componentScores": {
+        "engagement": 103.9701,
+        "effectiveFocus": 98.5494,
+        "distractionControl": 98.286,
+        "recovery": 100.2027,
+        "completion": 93.7524
+      },
+      "representativeSessionId": "2026-W09-2026-02-25-reading-04",
+      "representativeReason": "closest_to_day_score",
+      "topFactors": [
+        "completion",
+        "distractionControl"
+      ]
+    },
+    {
+      "date": "2026-02-26",
+      "weekdayIndex": 3,
+      "dayContext": "school_day",
+      "observationStatus": "unobserved",
+      "taskStatus": "no_task",
+      "validSessionCount": 0,
+      "sessionIds": [],
+      "dayScore": null,
+      "dayBand": "unobserved",
+      "componentScores": {},
+      "representativeSessionId": null,
+      "representativeReason": null,
+      "topFactors": []
+    },
+    {
+      "date": "2026-02-27",
+      "weekdayIndex": 4,
+      "dayContext": "school_day",
+      "observationStatus": "observed",
+      "taskStatus": "has_task",
+      "validSessionCount": 1,
+      "sessionIds": [
+        "2026-W09-2026-02-27-homework-01"
+      ],
+      "dayScore": 105.2442,
+      "dayBand": "good",
+      "componentScores": {
+        "engagement": 106.7449,
+        "effectiveFocus": 106.7449,
+        "distractionControl": 105.4258,
+        "recovery": null,
+        "completion": 100.0
+      },
+      "representativeSessionId": "2026-W09-2026-02-27-homework-01",
+      "representativeReason": "closest_to_day_score",
+      "topFactors": [
+        "completion",
+        "distractionControl"
+      ]
+    },
+    {
+      "date": "2026-02-28",
+      "weekdayIndex": 5,
+      "dayContext": "rest_day",
+      "observationStatus": "observed",
+      "taskStatus": "no_task",
+      "validSessionCount": 0,
+      "sessionIds": [],
+      "dayScore": null,
+      "dayBand": "rest_day",
+      "componentScores": {},
+      "representativeSessionId": null,
+      "representativeReason": null,
+      "topFactors": []
+    },
+    {
+      "date": "2026-03-01",
+      "weekdayIndex": 6,
+      "dayContext": "rest_day",
+      "observationStatus": "observed",
+      "taskStatus": "no_task",
+      "validSessionCount": 0,
+      "sessionIds": [],
+      "dayScore": null,
+      "dayBand": "rest_day",
+      "componentScores": {},
+      "representativeSessionId": null,
+      "representativeReason": null,
+      "topFactors": []
+    }
+  ],
+  "taskDays": 4,
+  "completedSessionCount": 8,
+  "completionRatePct": 80.0,
+  "weekDaySummary": {
+    "strongGoodDays": 0,
+    "goodDays": 4,
+    "watchDays": 0,
+    "poorDays": 0,
+    "noTaskDays": 0,
+    "restDays": 2,
+    "invalidDays": 0,
+    "unobservedDays": 1,
+    "taskDays": 4,
+    "validSessionCount": 10,
+    "completedSessionCount": 8,
+    "completionRatePct": 80.0,
+    "dayScoreMedian": 99.3973,
+    "dayScoreMad": 1.2211,
+    "stabilityLabel": "周内稳定"
+  }
+}
